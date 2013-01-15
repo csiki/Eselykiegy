@@ -1,0 +1,84 @@
+FileObject 1
+{
+    { Name "a80" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C89547D1-A8C5-42d7-8322-48AD5B9D9A1F" }
+}
+
+NodeObject 99999
+{
+    { Name "%%class%%1357665497_0_6344" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3530 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
+}
+
+NodeObject 99998
+{
+    { Name "UserInterface" }
+    { Type UmlObjectInstance }
+    { ObjectId 3535 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
+}
+
+NodeObject 99997
+{
+    { Name "Gamer" }
+    { Type UmlActor }
+    { ObjectId 3529 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_67815237-8A77-41f9-A475-CD1C319C4F89" }
+}
+
+LinkObject 99996
+{
+    { Name "startGame()" }
+    { Type UmlAsynchronousMessage }
+    { ObjectId 3566 }
+    { Sig "%%message%%1357665677_6344" }
+    { ToNodeId 99998 }
+    { FromNodeId 99997 }
+    { GUID "UID_0A3FA901-BAC9-4f95-9100-0564AB702E32" }
+}
+
+CntxObject 99995
+{
+    { Name "getPlayerData" }
+    { Type UmlTimeSent }
+    { ObjectId 3753 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { LinkId 99996 }
+    { GUID "UID_79D39EA4-47AB-400c-9B19-F3BF1B8D578B" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 3799 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 3801 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "getPlayerData" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 3802 }
+}
+

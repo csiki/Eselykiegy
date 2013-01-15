@@ -1,0 +1,24 @@
+NodeObject 	15410
+{
+ { Name 	"Game"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	103}
+ { GUID 	"UID_09BC1CEC-E3E3-421a-AE4A-4A0E85FCE76F"}
+ { SequenceId 	9510}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	15411
+{
+ { Name 	"calculateAlcComsumeVol"}
+ { Type 	UmlOperation}
+ { Sig 	"SolutionOutcome"}
+ { ScopeNodeId 	103}
+ { ObjectId 	8108}
+ { GUID 	"UID_1B226AFD-2C01-4b72-A292-587488CB64B4"}
+ { SequenceId 	9510}
+ { Gocha 	0 }
+}

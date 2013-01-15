@@ -1,0 +1,80 @@
+FileObject 1
+{
+    { Name "a231" }
+    { Type ObjectAnnotation }
+    { GUID "UID_59381CBA-4F5A-4c5d-B4B8-D2A1D97A9171" }
+}
+
+NodeObject 99999
+{
+    { Name "Compiler,Game" }
+    { Type UmlAssociation }
+    { ObjectId 10259 }
+    { Sig "-compilers" }
+    { ScopeNodeId 0 }
+    { GUID "UID_DE98DA43-E11B-46d7-ABA7-A59E811FC1B5" }
+}
+
+NodeObject 99998
+{
+    { Name "Game" }
+    { Type UmlClass }
+    { ObjectId 103 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_09BC1CEC-E3E3-421a-AE4A-4A0E85FCE76F" }
+}
+
+LinkObject 99997
+{
+    { Name "-compilers" }
+    { Type UmlRole }
+    { ObjectId 10317 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_6C925176-9E00-4bb6-8E60-D1F6C1423365" }
+}
+NoteObject 2 
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 10140 }
+}
+
+NoteObject 4 
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 10143 }
+}
+
+NoteObject 5 
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 10145 }
+}
+
+ItemObject 3 
+{
+    { Type UmlAggregationType }
+    { Value "None" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 10141 }
+}
+
+ItemObject 6 
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 5 }
+    { ObjectId 10146 }
+}
+

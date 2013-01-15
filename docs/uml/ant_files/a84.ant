@@ -1,0 +1,84 @@
+FileObject 1
+{
+    { Name "a84" }
+    { Type ObjectAnnotation }
+    { GUID "UID_928CDD11-3FDB-41df-83BC-6C44F5C2B97D" }
+}
+
+NodeObject 99999
+{
+    { Name "Gamer" }
+    { Type UmlActor }
+    { ObjectId 3529 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_67815237-8A77-41f9-A475-CD1C319C4F89" }
+}
+
+NodeObject 99998
+{
+    { Name "%%class%%1357665497_0_6344" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3530 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
+}
+
+NodeObject 99997
+{
+    { Name "UserInterface" }
+    { Type UmlObjectInstance }
+    { ObjectId 3535 }
+    { Sig "" }
+    { ScopeNodeId 99998 }
+    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
+}
+
+LinkObject 99996
+{
+    { Name "int:=getWeight()" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 3889 }
+    { Sig "%%message%%1357666487_6344" }
+    { ToNodeId 99999 }
+    { FromNodeId 99997 }
+    { GUID "UID_3C0AFDDA-1755-4cde-8C6A-BF98304AB804" }
+}
+
+CntxObject 99995
+{
+    { Name "wad" }
+    { Type UmlTimeDelivered }
+    { ObjectId 3945 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { LinkId 99996 }
+    { GUID "UID_8FB58CA9-A12F-4019-8003-86609D96A3DC" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 3950 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 3952 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "wad" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 3953 }
+}
+

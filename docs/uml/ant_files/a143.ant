@@ -1,0 +1,128 @@
+FileObject 1
+{
+    { Name "a143" }
+    { Type ObjectAnnotation }
+    { GUID "UID_7782CFF0-3FBD-4dc7-95AE-609CD22ED08A" }
+}
+
+NodeObject 99999
+{
+    { Name " Task" }
+    { Type UmlObjectClassScope }
+    { ObjectId 6389 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_8FD89C38-1CD3-41f6-A8DA-BDD82082582F" }
+}
+
+NodeObject 99998
+{
+    { Name "task" }
+    { Type UmlObjectInstance }
+    { ObjectId 6390 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_4DBFDFCC-07DF-4dc3-9F0A-0E6A88D270CF" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "Task(allthetaskdata..)" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 6414 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357786915_5312" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_B8421B57-FC33-4e15-BEDB-D7B337B78FE3" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 6468 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 6469 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 6470 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 6471 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 6473 }
+}
+
+ItemObject 7
+{
+    { Type UmlStereotype }
+    { Value "create" }
+    { GuidRef "" }
+    { NoteId 6 }
+    { ObjectId 6482 }
+}
+
+NoteObject 8
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 6475 }
+}
+
+ItemObject 9
+{
+    { Type ObjectName }
+    { Value "Task(allthetaskdata..)" }
+    { GuidRef "" }
+    { NoteId 8 }
+    { ObjectId 6476 }
+}
+

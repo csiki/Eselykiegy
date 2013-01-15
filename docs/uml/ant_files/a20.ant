@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a20" }
+    { Type ObjectAnnotation }
+    { GUID "UID_9F105C5D-552E-4e02-B9BD-0248AD620880" }
+}
+
+NodeObject 99999
+{
+    { Name "Compiler" }
+    { Type UmlClass }
+    { ObjectId 108 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_D295B602-1D1E-490d-9CE2-2505B223FB57" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 642 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 644 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Compiler" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 645 }
+}
+

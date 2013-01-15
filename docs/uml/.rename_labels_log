@@ -1,0 +1,1408 @@
+Rename
+{
+    { ObjId 1058 }
+    { SrcId 1060 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-sex" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 368 }
+    { SrcId 370 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 368 }
+    { SrcId 369 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-solutions" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 173 }
+    { SrcId 174 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-tasks" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 109 }
+    { SrcId 110 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-compilers" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 438 }
+    { SrcId 439 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-beverages" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 273 }
+    { SrcId 274 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-task" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 1509 }
+    { SrcId 1510 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-player" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 2374 }
+    { SrcId 2375 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-compiler" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 3536 }
+    { SrcId 3544 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "start game" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3566 }
+    { SrcId 3574 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "startGame()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3580 }
+    { SrcId 3588 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getPlayerName()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3642 }
+    { SrcId 3650 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "name:=setName()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3642 }
+    { SrcId 3649 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "string:=setName()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3580 }
+    { SrcId 3587 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "String:=getPlayerName()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3754 }
+    { SrcId 3762 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getName" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3754 }
+    { SrcId 3761 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "String:=getName()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3807 }
+    { SrcId 3815 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getSex" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3807 }
+    { SrcId 3814 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Sex:=getSex()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3848 }
+    { SrcId 3856 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getHeight" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3848 }
+    { SrcId 3855 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getHeight()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3889 }
+    { SrcId 3897 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getWeight" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3889 }
+    { SrcId 3896 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getWeight()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3930 }
+    { SrcId 3938 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "aw" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3957 }
+    { SrcId 3965 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "providePlayerData" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 3957 }
+    { SrcId 3963 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "providePlayerData(String,Sex,int,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4106 }
+    { SrcId 4114 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Player:=savePlayer(String,Sex,int,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4106 }
+    { SrcId 4112 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "providePlayerData(String,Sex,int,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4182 }
+    { SrcId 4190 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "d" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4210 }
+    { SrcId 4218 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "daw," }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4253 }
+    { SrcId 4261 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Player()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4356 }
+    { SrcId 4364 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Player" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4356 }
+    { SrcId 4362 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Player(String,Sex,int,int,bloodVol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4472 }
+    { SrcId 4480 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "player loaded" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4498 }
+    { SrcId 4606 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "player ready" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4639 }
+    { SrcId 4647 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "wa" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4454 }
+    { SrcId 4460 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "savePlayerRef(Player)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4454 }
+    { SrcId 4462 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "savePlayerRef(Player)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4764 }
+    { SrcId 4772 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Game" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4910 }
+    { SrcId 4918 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "startGame" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4937 }
+    { SrcId 4943 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "savePlayerRef(Player)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4937 }
+    { SrcId 4945 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "savePlayerRef(Player)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5036 }
+    { SrcId 5044 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "addBeverage" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5105 }
+    { SrcId 5113 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getBevName" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5105 }
+    { SrcId 5112 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "String:=getBevName()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5171 }
+    { SrcId 5179 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getVolume" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5312 }
+    { SrcId 5320 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getAmount" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5312 }
+    { SrcId 5319 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=getAmount()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5377 }
+    { SrcId 5385 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "get" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5403 }
+    { SrcId 5411 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getABV" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5403 }
+    { SrcId 5410 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getABV()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5468 }
+    { SrcId 5476 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Beverage:=saveBeverageData(String,float,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5468 }
+    { SrcId 5474 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "provideBeverageData(String,float,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5586 }
+    { SrcId 5592 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "addBeverage(String,float,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5586 }
+    { SrcId 5594 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "addBeverage(String,float,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5647 }
+    { SrcId 5655 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Beverage" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5647 }
+    { SrcId 5653 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Beverage(String,float,float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 4106 }
+    { SrcId 4113 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "boolean:=savePlayer(String,Sex,int,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5586 }
+    { SrcId 5593 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Beverage:=addBeverage(String,float,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5468 }
+    { SrcId 5475 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Beverage:=provideBeverageData(String,float,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5911 }
+    { SrcId 5919 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "loadTask" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5937 }
+    { SrcId 5945 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getPath" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 5937 }
+    { SrcId 5944 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "String:=getPath()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6003 }
+    { SrcId 6011 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "loadTask" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6003 }
+    { SrcId 6009 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "boolean:=loadTask(String)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6003 }
+    { SrcId 6010 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "boolean:=loadTask(File)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6085 }
+    { SrcId 6093 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "taskValidation" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6127 }
+    { SrcId 6133 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "openFile(File)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6127 }
+    { SrcId 6135 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "openFile(File)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6179 }
+    { SrcId 6187 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "boolean:=taskValidation(Task)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6127 }
+    { SrcId 6134 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Task:=openFile(File)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6179 }
+    { SrcId 6185 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "boolean:=taskValidation_(Task)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6179 }
+    { SrcId 6186 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "boolean:=taskValidation_(Task)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6337 }
+    { SrcId 6343 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshTask(Task)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6337 }
+    { SrcId 6345 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshTask(Task)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6414 }
+    { SrcId 6420 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Task(allthetaskdata..)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6414 }
+    { SrcId 6422 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Task(allthetaskdata..)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6717 }
+    { SrcId 6725 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "sendSolution" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6744 }
+    { SrcId 6752 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getLangID()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6744 }
+    { SrcId 6751 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getLanguage()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6832 }
+    { SrcId 6840 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getCode" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6832 }
+    { SrcId 6839 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "String:=getCode()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6897 }
+    { SrcId 6903 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "SolutionOutcome:=sendSolution(compID:int, code:String)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6897 }
+    { SrcId 6905 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Solution:=sendSolution(int,String)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6944 }
+    { SrcId 6950 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Solution(Compiler,String)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6944 }
+    { SrcId 6952 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "Solution(Compiler,String)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7013 }
+    { SrcId 7021 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "validator" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7013 }
+    { SrcId 7020 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "SolutionOutcome:=validator()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 6897 }
+    { SrcId 6904 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "SolutionOutcome:=sendSolution(int,String)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7338 }
+    { SrcId 7346 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=calculateAlcConsumeVol(Solution)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7338 }
+    { SrcId 7345 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=calculateConsumeVol()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7338 }
+    { SrcId 7344 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=calculateAlcConsumeVol(SolutionOutcome)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7630 }
+    { SrcId 7638 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshBeveragesForVol()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7630 }
+    { SrcId 7636 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshBeveragesForVol(float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7709 }
+    { SrcId 7717 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshBeverageForVal()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7709 }
+    { SrcId 7716 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=refreshBeverageForVal()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7779 }
+    { SrcId 7787 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "chooseBev(minVol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7779 }
+    { SrcId 7785 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "chooseBev(minVol:float, gulp:int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7867 }
+    { SrcId 7873 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getBevToDrink()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7867 }
+    { SrcId 7875 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getBevToDrink(Beverage)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7911 }
+    { SrcId 7917 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=bevToDrink(bevID:int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7911 }
+    { SrcId 7919 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "bevToDrink(Beverage)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8054 }
+    { SrcId 8060 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "calculateBevConsumeVol(bevID:int, alcVol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8054 }
+    { SrcId 8062 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "calculateBevConsumeVol(Beverage,float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8097 }
+    { SrcId 8303 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "calculateBevConsumeVol(bevID:int,alcVol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8097 }
+    { SrcId 8305 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "calculateBevConsumeVol(bevID:int,alcVol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8348 }
+    { SrcId 8354 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "consume(float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8348 }
+    { SrcId 8356 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "consume(float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8406 }
+    { SrcId 8414 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshBev()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8469 }
+    { SrcId 8477 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "pour()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8495 }
+    { SrcId 8503 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getBevToPour" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8495 }
+    { SrcId 8502 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getBevToPour()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8560 }
+    { SrcId 8568 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "bevToPour(Beverage,float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8560 }
+    { SrcId 8566 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "bevToPour(bevID:int, vol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8630 }
+    { SrcId 8638 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "getVolToPour" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8630 }
+    { SrcId 8637 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=getVolToPour()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8695 }
+    { SrcId 8701 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "pour(bevID:int, vol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8695 }
+    { SrcId 8703 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "pour(Beverage,float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8735 }
+    { SrcId 8741 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "pour(float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8735 }
+    { SrcId 8743 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "pour(float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8802 }
+    { SrcId 8910 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshBev()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8948 }
+    { SrcId 8956 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "refreshSolutions()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 9325 }
+    { SrcId 9332 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=addBev(String,float,int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 7911 }
+    { SrcId 7918 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=bevToDrink(int)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 109 }
+    { SrcId 111 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-compilers" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 173 }
+    { SrcId 175 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "" }
+    }
+    { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 7867 }
+    { SrcId 7874 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "int:=getBevToDrink()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 15657 }
+    { SrcId 15659 }
+    { Dependency RoleNameChange }
+    { Label
+        { Text "-solutions" }
+    }
+    { UpdatedAttr sig }
+}
+

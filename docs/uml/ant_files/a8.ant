@@ -1,0 +1,108 @@
+FileObject 1
+{
+    { Name "a8" }
+    { Type ObjectAnnotation }
+    { GUID "UID_444C2713-3A0F-456b-9C18-1CE1520E3F72" }
+}
+
+NodeObject 99999
+{
+    { Name "Game,Task" }
+    { Type UmlAssociation }
+    { ObjectId 173 }
+    { Sig "-tasks" }
+    { ScopeNodeId 0 }
+    { GUID "UID_9740CB9B-54AD-4d94-8EEB-654D0E46785B" }
+}
+
+NodeObject 99998
+{
+    { Name "Task" }
+    { Type UmlClass }
+    { ObjectId 107 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_A427BCD5-9C21-4904-92C9-B2FE61B73014" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlRole }
+    { ObjectId 175 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_F3BCEEFE-F0FB-40b0-A5EE-0C9E8D828CB9" }
+}
+
+NoteObject 2
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 207 }
+}
+
+ItemObject 3
+{
+    { Type UmlMultiplicity }
+    { Value "*" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 238 }
+}
+
+ItemObject 4
+{
+    { Type UmlRoleNavigability }
+    { Value "True" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 15465 }
+}
+
+ItemObject 5
+{
+    { Type UmlRoleIsOrdered }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 10416 }
+}
+
+ItemObject 6
+{
+    { Type UmlAggregationType }
+    { Value "None" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 208 }
+}
+
+NoteObject 7
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 210 }
+}
+
+NoteObject 8
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 212 }
+}
+
+ItemObject 9
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 8 }
+    { ObjectId 10459 }
+}
+

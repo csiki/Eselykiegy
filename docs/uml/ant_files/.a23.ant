@@ -1,0 +1,24 @@
+NodeObject 	8258
+{
+ { Name 	"Beverage"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	105}
+ { GUID 	"UID_22AB7D7D-7A95-441e-93F2-A7B32D8D0590"}
+ { SequenceId 	8244}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	8259
+{
+ { Name 	"consume"}
+ { Type 	UmlOperation}
+ { Sig 	"amount:float"}
+ { ScopeNodeId 	105}
+ { ObjectId 	686}
+ { GUID 	"UID_E1BF55A1-BC0C-45b8-849D-19CD722EBF3E"}
+ { SequenceId 	8244}
+ { Gocha 	0 }
+}

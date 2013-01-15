@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a53" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C16F22AA-9A37-4c64-98D0-467C41DEAA58" }
+}
+
+NodeObject 99999
+{
+    { Name "Solution,Task" }
+    { Type UmlAssociation }
+    { ObjectId 3005 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_635F3561-ADC1-4298-A000-15D8BF8F39BF" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 3012 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 3014 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Solution,Task" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 3015 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 15745 }
+}
+

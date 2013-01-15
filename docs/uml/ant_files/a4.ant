@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a4" }
+    { Type ObjectAnnotation }
+    { GUID "UID_D4F0BF4F-A5F3-45ed-82F4-C3790BD3B6C0" }
+}
+
+NodeObject 99999
+{
+    { Name "Compiler,Game" }
+    { Type UmlAssociation }
+    { ObjectId 109 }
+    { AnnotFileId 1 }
+    { Sig "-compilers:-compilers" }
+    { ScopeNodeId 0 }
+    { GUID "UID_C219D652-94FA-406d-A5F4-74D12AD4AD21" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 134 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 136 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Compiler,Game" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 137 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1334 }
+}
+

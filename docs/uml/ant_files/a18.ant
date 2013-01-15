@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a18" }
+    { Type ObjectAnnotation }
+    { GUID "UID_9AF12656-F3B4-4a61-A826-1CDEF9AC807F" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage" }
+    { Type UmlClass }
+    { ObjectId 105 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_22AB7D7D-7A95-441e-93F2-A7B32D8D0590" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 511 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 513 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Beverage" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 514 }
+}
+

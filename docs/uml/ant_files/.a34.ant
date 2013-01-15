@@ -1,0 +1,96 @@
+NodeObject 	2030
+{
+ { Name 	"Compiler"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	108}
+ { GUID 	"UID_D295B602-1D1E-490d-9CE2-2505B223FB57"}
+ { SequenceId 	1128}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	2031
+{
+ { Name 	"run"}
+ { Type 	UmlOperation}
+ { Sig 	"fileName:String, inputs:String[], output:String"}
+ { ScopeNodeId 	108}
+ { ObjectId 	1679}
+ { GUID 	"UID_277821AD-6267-490e-9EB0-E8C53648FF99"}
+ { SequenceId 	1128}
+ { Gocha 	0 }
+}
+NodeObject 	2207
+{
+ { Name 	"Compiler"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	108}
+ { GUID 	"UID_D295B602-1D1E-490d-9CE2-2505B223FB57"}
+ { SequenceId 	1128}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	2208
+{
+ { Name 	"run"}
+ { Type 	UmlOperation}
+ { Sig 	"fileName:String, inputs:String[], output:String, boolean:error"}
+ { ScopeNodeId 	108}
+ { ObjectId 	1679}
+ { GUID 	"UID_277821AD-6267-490e-9EB0-E8C53648FF99"}
+ { SequenceId 	1128}
+ { Gocha 	0 }
+}
+NodeObject 	2274
+{
+ { Name 	"Compiler"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	108}
+ { GUID 	"UID_D295B602-1D1E-490d-9CE2-2505B223FB57"}
+ { SequenceId 	1128}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	2275
+{
+ { Name 	"run"}
+ { Type 	UmlOperation}
+ { Sig 	"fileName:String, inputs:String[], output:String, error:boolean"}
+ { ScopeNodeId 	108}
+ { ObjectId 	1679}
+ { GUID 	"UID_277821AD-6267-490e-9EB0-E8C53648FF99"}
+ { SequenceId 	1128}
+ { Gocha 	0 }
+}
+NodeObject 	16004
+{
+ { Name 	"Compiler"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	108}
+ { GUID 	"UID_D295B602-1D1E-490d-9CE2-2505B223FB57"}
+ { SequenceId 	9510}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	16005
+{
+ { Name 	"run"}
+ { Type 	UmlOperation}
+ { Sig 	"fileName:String, inputs:String[], output:String, error:Boolean"}
+ { ScopeNodeId 	108}
+ { ObjectId 	1679}
+ { GUID 	"UID_277821AD-6267-490e-9EB0-E8C53648FF99"}
+ { SequenceId 	9510}
+ { Gocha 	0 }
+}

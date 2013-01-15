@@ -1,0 +1,99 @@
+FileObject 1
+{
+    { Name "a243" }
+    { Type ObjectAnnotation }
+    { GUID "UID_28742415-7F89-4486-B597-7DC164C74E87" }
+}
+
+NodeObject 99999
+{
+    { Name "Game,Solution" }
+    { Type UmlAssociation }
+    { ObjectId 15657 }
+    { Sig "-solutions" }
+    { ScopeNodeId 0 }
+    { GUID "UID_CA154B02-DD43-4f33-9F64-A46EF44ACFE6" }
+}
+
+NodeObject 99998
+{
+    { Name "Solution" }
+    { Type UmlClass }
+    { ObjectId 106 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5C9691A9-8B65-4783-9194-2870CC579C16" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlRole }
+    { ObjectId 15658 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_9D26ACAC-0293-427c-BCFB-072C34AA2545" }
+}
+
+NoteObject 2
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 15664 }
+}
+
+ItemObject 3
+{
+    { Type UmlMultiplicity }
+    { Value "0..*" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 15732 }
+}
+
+ItemObject 4
+{
+    { Type UmlRoleNavigability }
+    { Value "True" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 15674 }
+}
+
+ItemObject 5
+{
+    { Type UmlAggregationType }
+    { Value "None" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 15665 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 15667 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 15669 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 15670 }
+}
+

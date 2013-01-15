@@ -1,0 +1,53 @@
+FileObject 1
+{
+    { Name "a34" }
+    { Type ObjectAnnotation }
+    { GUID "UID_5AB0ABEF-4FCF-4a2b-A073-CB4246ACBE5D" }
+}
+
+NodeObject 99999
+{
+    { Name "Compiler" }
+    { Type UmlClass }
+    { ObjectId 108 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_D295B602-1D1E-490d-9CE2-2505B223FB57" }
+}
+
+NodeObject 99998
+{
+    { Name "run" }
+    { Type UmlOperation }
+    { ObjectId 1679 }
+    { AnnotFileId 1 }
+    { Sig "fileName:String, inputs:String[]" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_277821AD-6267-490e-9EB0-E8C53648FF99" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 1987 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 1989 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "run" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1990 }
+}
+

@@ -1,0 +1,119 @@
+FileObject 1
+{
+    { Name "a185" }
+    { Type ObjectAnnotation }
+    { GUID "UID_8F78D230-F42B-439c-92AD-1A6E7FE6F4E6" }
+}
+
+NodeObject 99999
+{
+    { Name "%%class%%1357665497_0_6344" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3530 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
+}
+
+NodeObject 99998
+{
+    { Name "UserInterface" }
+    { Type UmlObjectInstance }
+    { ObjectId 3535 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "float:=refreshBeverageForVal()" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 7709 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357849356_3392" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_0AE89C92-9025-4844-9E1A-FF3FCE934E58" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7741 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7742 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7743 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7744 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7746 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7748 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "refreshBeverageForVal()" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 7749 }
+}
+

@@ -1,0 +1,119 @@
+FileObject 1
+{
+    { Name "a183" }
+    { Type ObjectAnnotation }
+    { GUID "UID_76B80A25-E96A-42a4-A728-D2B06165F4F1" }
+}
+
+NodeObject 99999
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99998
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "float:=calculateAlcConsumeVol(SolutionOutcome)" }
+    { Type UmlBalkingMessage }
+    { ObjectId 7338 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357848490_3392" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_6E9807DD-8C9B-418e-A087-1DD3E05EA851" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7366 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7367 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7368 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7369 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7371 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7373 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "float:=calculateAlcConsumeVol(Solution)" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 15388 }
+}
+

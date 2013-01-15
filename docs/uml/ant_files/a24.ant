@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a24" }
+    { Type ObjectAnnotation }
+    { GUID "UID_E5F22794-EBAC-4a3d-AFF9-3BA6C13F6766" }
+}
+
+NodeObject 99999
+{
+    { Name "Sex" }
+    { Type UmlClass }
+    { ObjectId 984 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_ED7CBE8E-6232-45d2-8A31-A8969727C2B3" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 989 }
+}
+
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "enumeration" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 1011 }
+}
+
+NoteObject 4
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 991 }
+}
+
+ItemObject 5
+{
+    { Type ObjectName }
+    { Value "Sex" }
+    { GuidRef "" }
+    { NoteId 4 }
+    { ObjectId 992 }
+}
+

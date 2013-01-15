@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a16" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C86B5234-DBFE-485d-8635-6DD4E3508CD5" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage,Player" }
+    { Type UmlAssociation }
+    { ObjectId 438 }
+    { AnnotFileId 1 }
+    { Sig "-beverages" }
+    { ScopeNodeId 0 }
+    { GUID "UID_48DC8836-6B73-47d2-B1C5-705866B9ECD0" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 462 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 464 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Beverage,Player" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 465 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1369 }
+}
+

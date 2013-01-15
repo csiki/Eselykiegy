@@ -1,0 +1,83 @@
+FileObject 1
+{
+    { Name "a23" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C1503342-4CB7-475f-AC3F-58283E775063" }
+}
+
+NodeObject 99999
+{
+    { Name "NotEnoughAlcoholException" }
+    { Type UmlClass }
+    { ObjectId 734 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_E73D5DFA-FD64-43e0-BF40-DC63CC3EA404" }
+}
+
+NodeObject 99998
+{
+    { Name "Beverage" }
+    { Type UmlClass }
+    { ObjectId 105 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_22AB7D7D-7A95-441e-93F2-A7B32D8D0590" }
+}
+
+NodeObject 99997
+{
+    { Name "consume" }
+    { Type UmlOperation }
+    { ObjectId 686 }
+    { Sig "amount:int" }
+    { ScopeNodeId 99998 }
+    { GUID "UID_E1BF55A1-BC0C-45b8-849D-19CD722EBF3E" }
+}
+
+LinkObject 99996
+{
+    { Name "" }
+    { Type UmlDependency }
+    { ObjectId 877 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99997 }
+    { GUID "UID_3CCB6616-4BB3-4be2-86C2-78E35511ABD1" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99996 }
+    { ObjectId 882 }
+}
+
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "throws" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 889 }
+}
+
+NoteObject 4
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99996 }
+    { ObjectId 884 }
+}
+
+ItemObject 5
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 4 }
+    { ObjectId 885 }
+}
+

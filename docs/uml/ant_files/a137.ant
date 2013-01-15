@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a137" }
+    { Type ObjectAnnotation }
+    { GUID "UID_1B1A8FA9-520A-4cba-A76E-97F7D7B862AE" }
+}
+
+NodeObject 99999
+{
+    { Name "Gamer" }
+    { Type UmlActor }
+    { ObjectId 3529 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_67815237-8A77-41f9-A475-CD1C319C4F89" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 6315 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 6317 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Gamer" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 6318 }
+}
+

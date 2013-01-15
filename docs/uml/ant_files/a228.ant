@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a228" }
+    { Type ObjectAnnotation }
+    { GUID "UID_0B300005-6F5A-4a2b-81E1-A1798E7888A9" }
+}
+
+NodeObject 99999
+{
+    { Name "Compiler,Game" }
+    { Type UmlAssociation }
+    { ObjectId 10259 }
+    { AnnotFileId 1 }
+    { Sig "-compilers" }
+    { ScopeNodeId 0 }
+    { GUID "UID_DE98DA43-E11B-46d7-ABA7-A59E811FC1B5" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 10265 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 10266 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Compiler,Game" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 10267 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 10268 }
+}
+

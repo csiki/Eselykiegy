@@ -1,0 +1,22 @@
+NodeObject 	16077
+{
+ { Name 	"Game,Solution"}
+ { Type 	UmlAssociation}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	15657}
+ { GUID 	"UID_CA154B02-DD43-4f33-9F64-A46EF44ACFE6"}
+ { SequenceId 	9510}
+ { Gocha 	0 }
+}
+NodeObject 	16101
+{
+ { Name 	"Game,Solution"}
+ { Type 	UmlAssociation}
+ { Sig 	"-solutions"}
+ { ScopeNodeId 	0}
+ { ObjectId 	15657}
+ { GUID 	"UID_CA154B02-DD43-4f33-9F64-A46EF44ACFE6"}
+ { SequenceId 	9510}
+ { Gocha 	0 }
+}

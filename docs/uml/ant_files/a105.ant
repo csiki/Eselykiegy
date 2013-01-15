@@ -1,0 +1,128 @@
+FileObject 1
+{
+    { Name "a105" }
+    { Type ObjectAnnotation }
+    { GUID "UID_5A70C5E3-D979-411a-98B3-061D3E5FB400" }
+}
+
+NodeObject 99999
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99998
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+NodeObject 99997
+{
+    { Name "%%class%%1357665497_0_6344" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3530 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
+}
+
+NodeObject 99996
+{
+    { Name "UserInterface" }
+    { Type UmlObjectInstance }
+    { ObjectId 3535 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
+}
+
+LinkObject 99995
+{
+    { Name "Game()" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 4764 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357668480_6344" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_7A021DCB-3084-4453-9093-388220B78EF9" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 4796 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 4797 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 4798 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 4799 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 4801 }
+}
+
+ItemObject 7
+{
+    { Type UmlStereotype }
+    { Value "create" }
+    { GuidRef "" }
+    { NoteId 6 }
+    { ObjectId 4809 }
+}
+
+NoteObject 8
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 4803 }
+}
+
+ItemObject 9
+{
+    { Type ObjectName }
+    { Value "Game()" }
+    { GuidRef "" }
+    { NoteId 8 }
+    { ObjectId 4804 }
+}
+

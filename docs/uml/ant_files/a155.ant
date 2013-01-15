@@ -1,0 +1,128 @@
+FileObject 1
+{
+    { Name "a155" }
+    { Type ObjectAnnotation }
+    { GUID "UID_D8FF5227-D4CC-48e3-9183-A1D0BD5A6137" }
+}
+
+NodeObject 99999
+{
+    { Name " Solution" }
+    { Type UmlObjectClassScope }
+    { ObjectId 6940 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_BC3B8DD0-7B66-4c91-B514-A2158456A0D4" }
+}
+
+NodeObject 99998
+{
+    { Name "solution" }
+    { Type UmlObjectInstance }
+    { ObjectId 6941 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_7D795AE5-720B-4b97-BA9D-21BE5A64A22E" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "Solution(Compiler,String)" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 6944 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357826253_4196" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_D7036D4D-579D-40d6-B0E2-17B67E3D91EE" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 6988 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 6989 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 6990 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 6991 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 6993 }
+}
+
+ItemObject 7
+{
+    { Type UmlStereotype }
+    { Value "create" }
+    { GuidRef "" }
+    { NoteId 6 }
+    { ObjectId 7001 }
+}
+
+NoteObject 8
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 6995 }
+}
+
+ItemObject 9
+{
+    { Type ObjectName }
+    { Value "Solution(Compiler,String)" }
+    { GuidRef "" }
+    { NoteId 8 }
+    { ObjectId 6996 }
+}
+

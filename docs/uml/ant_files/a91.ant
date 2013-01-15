@@ -1,0 +1,128 @@
+FileObject 1
+{
+    { Name "a91" }
+    { Type ObjectAnnotation }
+    { GUID "UID_73609B3A-9B5B-4970-9BDF-EE045F252E78" }
+}
+
+NodeObject 99999
+{
+    { Name " Player" }
+    { Type UmlObjectClassScope }
+    { ObjectId 4179 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_4357174D-B835-42c1-A004-BD3B424DD60E" }
+}
+
+NodeObject 99998
+{
+    { Name "player" }
+    { Type UmlObjectInstance }
+    { ObjectId 4180 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_DF866A0D-B6FF-4203-A870-7FF203467640" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "Player(String,Sex,int,int,bloodVol:float)" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 4356 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357667290_6344" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_212FF042-3168-4cfa-ADD3-4F9D2CE4DDE1" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 4388 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 4389 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 4390 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 4391 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 4393 }
+}
+
+ItemObject 7
+{
+    { Type UmlStereotype }
+    { Value "create" }
+    { GuidRef "" }
+    { NoteId 6 }
+    { ObjectId 4417 }
+}
+
+NoteObject 8
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 4395 }
+}
+
+ItemObject 9
+{
+    { Type ObjectName }
+    { Value "Player(String,Sex,int,int)" }
+    { GuidRef "" }
+    { NoteId 8 }
+    { ObjectId 15554 }
+}
+

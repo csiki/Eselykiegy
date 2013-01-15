@@ -1,0 +1,119 @@
+FileObject 1
+{
+    { Name "a234" }
+    { Type ObjectAnnotation }
+    { GUID "UID_AA17CF0A-1B77-42de-A106-E8EE5603766B" }
+}
+
+NodeObject 99999
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99998
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "calculateBevConsumeVol(bevID:int,alcVol:float)" }
+    { Type UmlBalkingMessage }
+    { ObjectId 8054 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357865754_7396" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_048ECCC9-C281-4aee-A846-678EF5B2274D" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 11212 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 11213 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 11214 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 11215 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 11217 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 11219 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "calculateBevConsumeVol(bevID:int,vol:float)" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 11405 }
+}
+

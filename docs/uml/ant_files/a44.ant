@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a44" }
+    { Type ObjectAnnotation }
+    { GUID "UID_AACD72F3-FE68-4cb5-BBE1-68DFA85FCAF7" }
+}
+
+NodeObject 99999
+{
+    { Name "SolutionOutcome" }
+    { Type UmlClass }
+    { ObjectId 2624 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_952CB43D-195B-4827-B0D9-C191EA16827A" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 2629 }
+}
+
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "enumeration" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 2648 }
+}
+
+NoteObject 4
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 2631 }
+}
+
+ItemObject 5
+{
+    { Type ObjectName }
+    { Value "SolutionOutcome" }
+    { GuidRef "" }
+    { NoteId 4 }
+    { ObjectId 2632 }
+}
+

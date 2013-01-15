@@ -1,0 +1,119 @@
+FileObject 1
+{
+    { Name "a127" }
+    { Type ObjectAnnotation }
+    { GUID "UID_CE86306C-A9E9-481a-A2AF-2FC7E9DE42C5" }
+}
+
+NodeObject 99999
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99998
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+NodeObject 99997
+{
+    { Name "%%class%%1357665497_0_6344" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3530 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
+}
+
+NodeObject 99996
+{
+    { Name "UserInterface" }
+    { Type UmlObjectInstance }
+    { ObjectId 3535 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
+}
+
+LinkObject 99995
+{
+    { Name "Beverage:=saveBeverageData(String,float,int)" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 5468 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357781979_7916" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_F1872C3E-5D39-4641-9A83-5FDFD51AB28D" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 5500 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 5501 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 5502 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 5503 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 5505 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 5507 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "Beverage:=saveBeverageData(String,float,int)" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 9343 }
+}
+

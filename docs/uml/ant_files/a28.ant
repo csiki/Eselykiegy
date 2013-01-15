@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a28" }
+    { Type ObjectAnnotation }
+    { GUID "UID_18666C28-D92D-40bc-B36E-272C5C84A0C3" }
+}
+
+NodeObject 99999
+{
+    { Name "Task" }
+    { Type UmlClass }
+    { ObjectId 107 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_A427BCD5-9C21-4904-92C9-B2FE61B73014" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 1278 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 1280 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Task" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1281 }
+}
+

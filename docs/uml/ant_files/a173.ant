@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a173" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C16A873E-4B79-4aa4-A7B3-937A134DB279" }
+}
+
+NodeObject 99999
+{
+    { Name "Game" }
+    { Type UmlClass }
+    { ObjectId 103 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_09BC1CEC-E3E3-421a-AE4A-4A0E85FCE76F" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 7434 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 7436 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Game" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 7437 }
+}
+

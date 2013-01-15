@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a32" }
+    { Type ObjectAnnotation }
+    { GUID "UID_469CFA55-9E5D-4f15-B997-4D3342824146" }
+}
+
+NodeObject 99999
+{
+    { Name "Game,Player" }
+    { Type UmlAssociation }
+    { ObjectId 1509 }
+    { AnnotFileId 1 }
+    { Sig "-player" }
+    { ScopeNodeId 0 }
+    { GUID "UID_9F710740-8D6E-4c8b-A2F9-869DFDB671D4" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 1533 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 1535 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Game,Player" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1536 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1550 }
+}
+

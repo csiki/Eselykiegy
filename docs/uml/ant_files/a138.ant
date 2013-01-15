@@ -1,0 +1,53 @@
+FileObject 1
+{
+    { Name "a138" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C9995E53-31F0-4e66-AC07-82CAA62D8F1F" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage" }
+    { Type UmlObjectClassScope }
+    { ObjectId 5644 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_B8147DDD-F71C-44ce-B25F-1ADC50078654" }
+}
+
+NodeObject 99998
+{
+    { Name "bev" }
+    { Type UmlObjectInstance }
+    { ObjectId 5645 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_F75D43A8-7A61-44db-B9E9-ED90A72A374D" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 6396 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 6398 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "bev" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 6399 }
+}
+

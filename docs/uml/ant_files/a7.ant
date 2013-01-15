@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a7" }
+    { Type ObjectAnnotation }
+    { GUID "UID_B76378F5-37CD-4e4f-8601-15DDF0476ACD" }
+}
+
+NodeObject 99999
+{
+    { Name "Game,Task" }
+    { Type UmlAssociation }
+    { ObjectId 173 }
+    { AnnotFileId 1 }
+    { Sig "-tasks" }
+    { ScopeNodeId 0 }
+    { GUID "UID_9740CB9B-54AD-4d94-8EEB-654D0E46785B" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 197 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 199 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Game,Task" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 200 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1259 }
+}
+

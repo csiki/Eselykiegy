@@ -1,0 +1,99 @@
+FileObject 1
+{
+    { Name "a26" }
+    { Type ObjectAnnotation }
+    { GUID "UID_87BE0BBE-F7B6-46e8-89CF-CB6814F7ED41" }
+}
+
+NodeObject 99999
+{
+    { Name "Player,Sex" }
+    { Type UmlAssociation }
+    { ObjectId 1058 }
+    { Sig "-sex" }
+    { ScopeNodeId 0 }
+    { GUID "UID_109760F8-0A6B-4cbd-9C46-6642DB093B5C" }
+}
+
+NodeObject 99998
+{
+    { Name "Sex" }
+    { Type UmlClass }
+    { ObjectId 984 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_ED7CBE8E-6232-45d2-8A31-A8969727C2B3" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlRole }
+    { ObjectId 1059 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_34EC4F8A-5738-40be-BB7D-DD4C9A29DFA7" }
+}
+
+NoteObject 2
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 1076 }
+}
+
+ItemObject 3
+{
+    { Type UmlRoleNavigability }
+    { Value "True" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 15628 }
+}
+
+ItemObject 4
+{
+    { Type UmlRoleIsOrdered }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 1146 }
+}
+
+ItemObject 5
+{
+    { Type UmlAggregationType }
+    { Value "None" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 1077 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 1079 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 1081 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 1082 }
+}
+

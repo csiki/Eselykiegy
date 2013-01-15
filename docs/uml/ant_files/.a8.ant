@@ -1,0 +1,11 @@
+NodeObject 	1252
+{
+ { Name 	"Game,Task"}
+ { Type 	UmlAssociation}
+ { Sig 	"-tasks"}
+ { ScopeNodeId 	0}
+ { ObjectId 	173}
+ { GUID 	"UID_9740CB9B-54AD-4d94-8EEB-654D0E46785B"}
+ { SequenceId 	1128}
+ { Gocha 	0 }
+}

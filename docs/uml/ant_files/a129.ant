@@ -1,0 +1,119 @@
+FileObject 1
+{
+    { Name "a129" }
+    { Type ObjectAnnotation }
+    { GUID "UID_899FEF25-9A09-491f-AE95-C682FFE769A6" }
+}
+
+NodeObject 99999
+{
+    { Name " Player" }
+    { Type UmlObjectClassScope }
+    { ObjectId 4179 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_4357174D-B835-42c1-A004-BD3B424DD60E" }
+}
+
+NodeObject 99998
+{
+    { Name "player" }
+    { Type UmlObjectInstance }
+    { ObjectId 4180 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_DF866A0D-B6FF-4203-A870-7FF203467640" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "Beverage:=addBeverage(String,float,int)" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 5586 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357782183_7916" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_CD3448C4-9893-4170-AEC8-702DA4F5A6B7" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 5630 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 5631 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 5632 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 5633 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 5635 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 5637 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "addBeverage(String,float,int)" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 5638 }
+}
+

@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a36" }
+    { Type ObjectAnnotation }
+    { GUID "UID_BB21505F-E52B-4434-926E-0C7065BBE84F" }
+}
+
+NodeObject 99999
+{
+    { Name "Compiler,Solution" }
+    { Type UmlAssociation }
+    { ObjectId 2374 }
+    { AnnotFileId 1 }
+    { Sig "-compiler" }
+    { ScopeNodeId 0 }
+    { GUID "UID_D482F711-2EF5-4d22-963A-02DF752507E7" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 2398 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 2400 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Compiler,Solution" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 2401 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 2518 }
+}
+

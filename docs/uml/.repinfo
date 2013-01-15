@@ -1,0 +1,4 @@
+server=SQLite
+repname=uml
+msgdContext=51000611-30B9-4f3b-9C90-DB6A83B29181
+repositoryType=SQLite

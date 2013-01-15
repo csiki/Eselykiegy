@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a57" }
+    { Type ObjectAnnotation }
+    { GUID "UID_58378A7E-8314-4a8d-B511-5CB30B91A419" }
+}
+
+NodeObject 99999
+{
+    { Name "Compiler,Solution" }
+    { Type UmlAssociation }
+    { ObjectId 3084 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_AC96A96D-1E7D-4f32-9780-18400A3593D5" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 3108 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 3110 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Compiler,Solution" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 3111 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 15768 }
+}
+

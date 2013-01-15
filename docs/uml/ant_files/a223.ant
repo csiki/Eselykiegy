@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a223" }
+    { Type ObjectAnnotation }
+    { GUID "UID_4E506FA8-39C6-4cbd-8EB9-683A177BD54E" }
+}
+
+NodeObject 99999
+{
+    { Name "GameLogic" }
+    { Type UmlClass }
+    { ObjectId 9797 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_FBBC56F6-599E-46e3-82A8-2D1FD2BC9E3E" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 9802 }
+}
+
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "interface" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 9854 }
+}
+
+NoteObject 4
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 9804 }
+}
+
+ItemObject 5
+{
+    { Type ObjectName }
+    { Value "GameLogic" }
+    { GuidRef "" }
+    { NoteId 4 }
+    { ObjectId 9805 }
+}
+

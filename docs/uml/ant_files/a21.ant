@@ -1,0 +1,60 @@
+FileObject 1
+{
+    { Name "a21" }
+    { Type ObjectAnnotation }
+    { GUID "UID_6263498D-58CA-4c29-AB72-143E05443795" }
+}
+
+NodeObject 99999
+{
+    { Name "NotEnoughAlcoholException" }
+    { Type UmlClass }
+    { ObjectId 734 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_E73D5DFA-FD64-43e0-BF40-DC63CC3EA404" }
+}
+
+NoteObject 2
+{
+    { Type UmlClassDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 771 }
+}
+
+NoteObject 3
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 739 }
+}
+
+ItemObject 4
+{
+    { Type UmlStereotype }
+    { Value "exception" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 874 }
+}
+
+NoteObject 5
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 741 }
+}
+
+ItemObject 6
+{
+    { Type ObjectName }
+    { Value "NotEnoughAlcoholException" }
+    { GuidRef "" }
+    { NoteId 5 }
+    { ObjectId 742 }
+}
+

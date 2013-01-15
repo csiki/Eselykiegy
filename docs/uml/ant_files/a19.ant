@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a19" }
+    { Type ObjectAnnotation }
+    { GUID "UID_90F3F577-255E-4627-ADEA-BF84D0083198" }
+}
+
+NodeObject 99999
+{
+    { Name "Player" }
+    { Type UmlClass }
+    { ObjectId 104 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_63603D53-A905-4a5c-9084-654DC3928D0E" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 596 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 598 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Player" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 599 }
+}
+

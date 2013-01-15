@@ -1,0 +1,130 @@
+NodeObject 	15338
+{
+ { Name 	"%%class%%1357665497_0_6344"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3530}
+ { GUID 	"UID_5F7FF596-5560-413d-A473-76EA54F098B2"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	15339
+{
+ { Name 	"UserInterface"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3530}
+ { ObjectId 	3535}
+ { GUID 	"UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	15340
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	15341
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	15342
+{
+ { Name 	"SolutionOutcome:=sendSolution(compID:int, code:String)"}
+ { Type 	UmlSynchronousMessage}
+ { Sig 	"%%message%%1357825860_4196"}
+ { ObjectId 	6897}
+ { GUID 	"UID_DD84DE26-C93C-4576-AB92-0772D942329D"}
+ { SequenceId 	15307}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3535}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}
+NodeObject 	15350
+{
+ { Name 	"%%class%%1357665497_0_6344"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3530}
+ { GUID 	"UID_5F7FF596-5560-413d-A473-76EA54F098B2"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	15351
+{
+ { Name 	"UserInterface"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3530}
+ { ObjectId 	3535}
+ { GUID 	"UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	15352
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	15353
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	15307}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	15354
+{
+ { Name 	"SolutionOutcome:=sendSolution(compID:int,code:String)"}
+ { Type 	UmlSynchronousMessage}
+ { Sig 	"%%message%%1357825860_4196"}
+ { ObjectId 	6897}
+ { GUID 	"UID_DD84DE26-C93C-4576-AB92-0772D942329D"}
+ { SequenceId 	15307}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3535}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}

@@ -1,0 +1,109 @@
+FileObject 1
+{
+    { Name "a74" }
+    { Type ObjectAnnotation }
+    { GUID "UID_46ECB44C-4C7C-4a3c-8A12-F4FD79784824" }
+}
+
+NodeObject 99999
+{
+    { Name "%%class%%1357665497_0_6344" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3530 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
+}
+
+NodeObject 99998
+{
+    { Name "UserInterface" }
+    { Type UmlObjectInstance }
+    { ObjectId 3535 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
+}
+
+NodeObject 99997
+{
+    { Name "Gamer" }
+    { Type UmlActor }
+    { ObjectId 3529 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_67815237-8A77-41f9-A475-CD1C319C4F89" }
+}
+
+LinkObject 99996
+{
+    { Name "startgame()" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 3536 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357665588_6344" }
+    { ToNodeId 99998 }
+    { FromNodeId 99997 }
+    { GUID "UID_3F7B9B00-3F98-4f56-81AD-BAD73824FBD9" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99996 }
+    { ObjectId 3555 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 3556 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 3557 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 3558 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99996 }
+    { ObjectId 3560 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99996 }
+    { ObjectId 3562 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "startgame()" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 3563 }
+}
+

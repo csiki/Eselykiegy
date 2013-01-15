@@ -1,0 +1,53 @@
+FileObject 1
+{
+    { Name "a73" }
+    { Type ObjectAnnotation }
+    { GUID "UID_A432E731-F1F4-4d3a-BF15-EF8D36101F97" }
+}
+
+NodeObject 99999
+{
+    { Name "Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3510 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_51DC73FD-3DCC-4da5-B219-55293CDA10C9" }
+}
+
+NodeObject 99998
+{
+    { Name "gameLocig" }
+    { Type UmlObjectInstance }
+    { ObjectId 3511 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_5AFC4FA3-FF64-4f7e-B3D9-7C82A51AC2F4" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 3517 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 3519 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "gameLocig" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 3520 }
+}
+

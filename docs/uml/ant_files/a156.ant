@@ -1,0 +1,119 @@
+FileObject 1
+{
+    { Name "a156" }
+    { Type ObjectAnnotation }
+    { GUID "UID_EB5A3D60-4DAC-462e-8F1C-9C28CC600503" }
+}
+
+NodeObject 99999
+{
+    { Name " Solution" }
+    { Type UmlObjectClassScope }
+    { ObjectId 6940 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_BC3B8DD0-7B66-4c91-B514-A2158456A0D4" }
+}
+
+NodeObject 99998
+{
+    { Name "solution" }
+    { Type UmlObjectInstance }
+    { ObjectId 6941 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_7D795AE5-720B-4b97-BA9D-21BE5A64A22E" }
+}
+
+NodeObject 99997
+{
+    { Name " Game" }
+    { Type UmlObjectClassScope }
+    { ObjectId 3526 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+}
+
+NodeObject 99996
+{
+    { Name "gameLogic" }
+    { Type UmlObjectInstance }
+    { ObjectId 3527 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+}
+
+LinkObject 99995
+{
+    { Name "SolutionOutcome:=validator()" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 7013 }
+    { AnnotFileId 1 }
+    { Sig "%%message%%1357826424_4196" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_E3C633D3-3E46-40e2-8476-A83DAA9219F1" }
+}
+
+NoteObject 2
+{
+    { Type UmlMessageDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7045 }
+}
+
+ItemObject 3
+{
+    { Type UmlMessageDirection }
+    { Value "Activation" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7046 }
+}
+
+ItemObject 4
+{
+    { Type UmlMessageIsCreation }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7047 }
+}
+
+ItemObject 5
+{
+    { Type UmlMessageIsDestruction }
+    { Value "False" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 7048 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7050 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 7052 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "validator()" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 15516 }
+}
+

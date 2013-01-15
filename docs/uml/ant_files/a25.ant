@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a25" }
+    { Type ObjectAnnotation }
+    { GUID "UID_A622329C-087E-4dfd-8D06-6D8FE95BE861" }
+}
+
+NodeObject 99999
+{
+    { Name "Player,Sex" }
+    { Type UmlAssociation }
+    { ObjectId 1058 }
+    { AnnotFileId 1 }
+    { Sig "-sex" }
+    { ScopeNodeId 0 }
+    { GUID "UID_109760F8-0A6B-4cbd-9C46-6642DB093B5C" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 1065 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 1067 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Player,Sex" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1068 }
+}
+
+ItemObject 5
+{
+    { Type Color }
+    { Value "000000" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1142 }
+}
+

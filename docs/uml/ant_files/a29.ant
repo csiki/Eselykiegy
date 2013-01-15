@@ -1,0 +1,53 @@
+FileObject 1
+{
+    { Name "a29" }
+    { Type ObjectAnnotation }
+    { GUID "UID_59FF9D3D-908E-4249-AA36-E1413E4A4A10" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage" }
+    { Type UmlClass }
+    { ObjectId 105 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_22AB7D7D-7A95-441e-93F2-A7B32D8D0590" }
+}
+
+NodeObject 99998
+{
+    { Name "consume" }
+    { Type UmlOperation }
+    { ObjectId 686 }
+    { AnnotFileId 1 }
+    { Sig "amount:int" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_E1BF55A1-BC0C-45b8-849D-19CD722EBF3E" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 1388 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 1390 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "consume" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 1391 }
+}
+

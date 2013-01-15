@@ -1,0 +1,234 @@
+NodeObject 	11413
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	11414
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	11415
+{
+ { Name 	"calculateBevConsumeVol(bevID:int, alcVol:float)"}
+ { Type 	UmlBalkingMessage}
+ { Sig 	"%%message%%1357865754_7396"}
+ { ObjectId 	8054}
+ { GUID 	"UID_048ECCC9-C281-4aee-A846-678EF5B2274D"}
+ { SequenceId 	9606}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}
+NodeObject 	11421
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	11422
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	11423
+{
+ { Name 	"calculateBevConsumeVol(bevID:int,alcVol:float)"}
+ { Type 	UmlBalkingMessage}
+ { Sig 	"%%message%%1357865754_7396"}
+ { ObjectId 	8054}
+ { GUID 	"UID_048ECCC9-C281-4aee-A846-678EF5B2274D"}
+ { SequenceId 	9606}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}
+NodeObject 	11432
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	11433
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	11434
+{
+ { Name 	"calculateBevConsumeVol(bevID:int, alcVol:float)"}
+ { Type 	UmlBalkingMessage}
+ { Sig 	"%%message%%1357865754_7396"}
+ { ObjectId 	8054}
+ { GUID 	"UID_048ECCC9-C281-4aee-A846-678EF5B2274D"}
+ { SequenceId 	9606}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}
+NodeObject 	11440
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	11441
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	11442
+{
+ { Name 	"calculateBevConsumeVol(bevID:int,alcVol:float)"}
+ { Type 	UmlBalkingMessage}
+ { Sig 	"%%message%%1357865754_7396"}
+ { ObjectId 	8054}
+ { GUID 	"UID_048ECCC9-C281-4aee-A846-678EF5B2274D"}
+ { SequenceId 	9606}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}
+NodeObject 	11451
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	11452
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	11453
+{
+ { Name 	"calculateBevConsumeVol(bevID:int, alcVol:float)"}
+ { Type 	UmlBalkingMessage}
+ { Sig 	"%%message%%1357865754_7396"}
+ { ObjectId 	8054}
+ { GUID 	"UID_048ECCC9-C281-4aee-A846-678EF5B2274D"}
+ { SequenceId 	9606}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}
+NodeObject 	11459
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	11460
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	9606}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	11461
+{
+ { Name 	"calculateBevConsumeVol(bevID:int,alcVol:float)"}
+ { Type 	UmlBalkingMessage}
+ { Sig 	"%%message%%1357865754_7396"}
+ { ObjectId 	8054}
+ { GUID 	"UID_048ECCC9-C281-4aee-A846-678EF5B2274D"}
+ { SequenceId 	9606}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	3527}
+ { Gocha 	0 }
+}
