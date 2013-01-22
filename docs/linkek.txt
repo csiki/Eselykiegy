@@ -7,3 +7,5 @@ http://stackoverflow.com/questions/3643939/java-process-with-input-output-stream
 A process osztályról: http://docs.oracle.com/javase/7/docs/api/java/lang/Process.html
 
 Coder mail thread: https://mail.google.com/mail/u/0/#label/BME%2FCoderTeam/13a66cbcfab739fa
+
+GridLayout elem hozzáadás: http://stackoverflow.com/questions/1862169/java-gridlayout
