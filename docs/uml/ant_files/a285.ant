@@ -1,0 +1,53 @@
+FileObject 1
+{
+    { Name "a285" }
+    { Type ObjectAnnotation }
+    { GUID "UID_BDCAEEE0-67E6-4117-923E-9CAD7B9C2141" }
+}
+
+NodeObject 99999
+{
+    { Name "GameLogic" }
+    { Type UmlClass }
+    { ObjectId 9797 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_FBBC56F6-599E-46e3-82A8-2D1FD2BC9E3E" }
+}
+
+NodeObject 99998
+{
+    { Name "loadTask" }
+    { Type UmlOperation }
+    { ObjectId 9900 }
+    { AnnotFileId 1 }
+    { Sig "String" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_32E01641-2504-4717-82DA-33FC59193BD9" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 19763 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 19765 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "loadTask" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 19766 }
+}
+

@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "bevToPour(bevID:int,vol:float)" }
+    { Name "float:=bevToPour(int,float)" }
     { Type UmlSynchronousMessage }
     { ObjectId 8560 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "bevToPour(Beverage,float)" }
+    { Value "float:=bevToPour()" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 11110 }
+    { ObjectId 19945 }
 }
 

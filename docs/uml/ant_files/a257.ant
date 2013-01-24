@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a257" }
+    { Type ObjectAnnotation }
+    { GUID "UID_BD5A6B10-2DF8-4a2a-9034-87750CBBC9A0" }
+}
+
+NodeObject 99999
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 18184 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 18186 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "GameState" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 18187 }
+}
+

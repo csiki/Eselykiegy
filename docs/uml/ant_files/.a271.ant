@@ -1,0 +1,52 @@
+NodeObject 	19102
+{
+ { Name 	"GameState"}
+ { Type 	UmlStateMachine}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	17907}
+ { GUID 	"UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	19103
+{
+ { Name 	"newBeverage"}
+ { Type 	UmlState}
+ { Sig 	""}
+ { ScopeNodeId 	17907}
+ { ObjectId 	18334}
+ { GUID 	"UID_66D5D882-EF35-425d-863E-BBBEB0ABEE45"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	19104
+{
+ { Name 	"taskStarted"}
+ { Type 	UmlState}
+ { Sig 	""}
+ { ScopeNodeId 	17907}
+ { ObjectId 	18730}
+ { GUID 	"UID_D11C7DDF-9484-47fa-B8F2-5F3BB277F091"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	19105
+{
+ { Name 	"ok/ [taskLoaded]"}
+ { Type 	UmlTransition}
+ { Sig 	""}
+ { ObjectId 	19056}
+ { GUID 	"UID_2FF1BF05-44EC-4f1d-8F1C-5676F78158BB"}
+ { SequenceId 	17976}
+ { ScopeNodeId 	17907}
+ { FromNodeId 	18334}
+ { ToNodeId 	18730}
+ { Gocha 	0 }
+}

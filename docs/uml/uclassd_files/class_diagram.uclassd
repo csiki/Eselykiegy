@@ -3,20 +3,20 @@ Diagram UmlClassDiagram
     { Name "class_diagram" }
     { Format "1.7" }
     { Scale 1.00 }
-    { PanX -369 }
-    { PanY -43 }
+    { PanX -1104 }
+    { PanY -267 }
     { Alignment 1 }
     { GUID "UID_7C1E4F1D-25F0-46d2-90E5-6EAD94E83329" }
     { Summary
-        { Nodes 68 }
-        { Arcs 63 }
+        { Nodes 76 }
+        { Arcs 71 }
     }
 }
 
 Node 2
 {
     { Type Class }
-    { Loc -288 -56 }
+    { Loc -153 -49 }
     { Scale 865.88 461.80 }
     { Label
         { Text "Game" }
@@ -76,7 +76,7 @@ Node 2
 Node 439
 {
     { Type Attribute }
-    { Loc -389 -116 }
+    { Loc -254 -109 }
     { Scale 445.94 50.20 }
     { Label
         { Text "currentTask" }
@@ -94,7 +94,7 @@ Node 439
 Node 538
 {
     { Type Operation }
-    { Loc -292 -66 }
+    { Loc -157 -59 }
     { Scale 1246.97 50.20 }
     { Label
         { Text "calculateAlcComsumeVol( SolutionOutcome )" }
@@ -112,8 +112,8 @@ Node 538
 Node 541
 {
     { Type Operation }
-    { Loc -351 -24 }
-    { Scale 755.61 50.20 }
+    { Loc -171 -17 }
+    { Scale 1131.35 50.20 }
     { Label
         { Text "taskValidation( Task )" }
     }
@@ -130,7 +130,7 @@ Node 541
 Node 544
 {
     { Type Operation }
-    { Loc -379 -45 }
+    { Loc -244 -38 }
     { Scale 524.39 50.20 }
     { Label
         { Text "openFile( File )" }
@@ -148,7 +148,7 @@ Node 544
 Node 853
 {
     { Type Operation }
-    { Loc -346 -3 }
+    { Loc -211 4 }
     { Scale 796.90 50.20 }
     { Label
         { Text "calculateBloodVol( int, int )" }
@@ -166,7 +166,7 @@ Node 853
 Node 863
 {
     { Type Operation }
-    { Loc -351 18 }
+    { Loc -216 25 }
     { Scale 759.74 50.20 }
     { Label
         { Text "isPassed( taskID:int )" }
@@ -184,7 +184,7 @@ Node 863
 Node 866
 {
     { Type Attribute }
-    { Loc -362 -95 }
+    { Loc -227 -88 }
     { Scale 664.77 50.20 }
     { Label
         { Text "currentTaskStartTime" }
@@ -202,7 +202,7 @@ Node 866
 Node 3
 {
     { Type Class }
-    { Loc 127 4 }
+    { Loc 262 11 }
     { Scale 579.76 461.80 }
     { Label
         { Text "Player" }
@@ -262,7 +262,7 @@ Node 3
 Node 47
 {
     { Type Attribute }
-    { Loc 69 -56 }
+    { Loc 204 -49 }
     { Scale 330.32 50.20 }
     { Label
         { Text "name" }
@@ -280,7 +280,7 @@ Node 47
 Node 53
 {
     { Type Attribute }
-    { Loc 62 -35 }
+    { Loc 197 -28 }
     { Scale 268.39 50.20 }
     { Label
         { Text "weight" }
@@ -298,7 +298,7 @@ Node 53
 Node 56
 {
     { Type Attribute }
-    { Loc 61 -14 }
+    { Loc 196 -7 }
     { Scale 260.13 50.20 }
     { Label
         { Text "height" }
@@ -316,7 +316,7 @@ Node 56
 Node 301
 {
     { Type Attribute }
-    { Loc 88 28 }
+    { Loc 223 35 }
     { Scale 483.10 50.20 }
     { Label
         { Text "consumedAlc" }
@@ -334,7 +334,7 @@ Node 301
 Node 547
 {
     { Type Operation }
-    { Loc 123 57 }
+    { Loc 258 64 }
     { Scale 776.26 50.20 }
     { Label
         { Text "consume( Beverage, float, float )" }
@@ -352,7 +352,7 @@ Node 547
 Node 829
 {
     { Type Operation }
-    { Loc 115 78 }
+    { Loc 250 85 }
     { Scale 706.06 50.20 }
     { Label
         { Text "getBev( bevID:int )" }
@@ -370,7 +370,7 @@ Node 829
 Node 858
 {
     { Type Attribute }
-    { Loc 73 7 }
+    { Loc 208 14 }
     { Scale 359.23 50.20 }
     { Label
         { Text "bloodVol" }
@@ -388,7 +388,7 @@ Node 858
 Node 4
 {
     { Type Class }
-    { Loc 468 -59 }
+    { Loc 603 -52 }
     { Scale 549.65 356.39 }
     { Label
         { Text "Beverage" }
@@ -448,7 +448,7 @@ Node 4
 Node 19
 {
     { Type Attribute }
-    { Loc 416 -98 }
+    { Loc 551 -91 }
     { Scale 330.32 50.20 }
     { Label
         { Text "name" }
@@ -466,7 +466,7 @@ Node 19
 Node 22
 {
     { Type Attribute }
-    { Loc 405 -77 }
+    { Loc 540 -70 }
     { Scale 235.35 50.20 }
     { Label
         { Text "abv" }
@@ -484,7 +484,7 @@ Node 22
 Node 25
 {
     { Type Attribute }
-    { Loc 417 -56 }
+    { Loc 552 -49 }
     { Scale 334.45 50.20 }
     { Label
         { Text "amount" }
@@ -502,7 +502,7 @@ Node 25
 Node 34
 {
     { Type Operation }
-    { Loc 450 -27 }
+    { Loc 585 -20 }
     { Scale 611.10 50.20 }
     { Label
         { Text "pour( amount:float )" }
@@ -520,7 +520,7 @@ Node 34
 Node 37
 {
     { Type Operation }
-    { Loc 464 -6 }
+    { Loc 599 1 }
     { Scale 726.71 50.20 }
     { Label
         { Text "consume( amount:float )" }
@@ -538,7 +538,7 @@ Node 37
 Node 5
 {
     { Type Class }
-    { Loc 78 269 }
+    { Loc 213 276 }
     { Scale 534.59 461.80 }
     { Label
         { Text "Solution" }
@@ -598,7 +598,7 @@ Node 5
 Node 86
 {
     { Type Attribute }
-    { Loc 75 209 }
+    { Loc 210 216 }
     { Scale 706.06 50.20 }
     { Label
         { Text "soutcome" }
@@ -616,7 +616,7 @@ Node 86
 Node 89
 {
     { Type Attribute }
-    { Loc 48 230 }
+    { Loc 183 237 }
     { Scale 487.23 50.20 }
     { Label
         { Text "duration" }
@@ -634,7 +634,7 @@ Node 89
 Node 123
 {
     { Type Attribute }
-    { Loc 54 251 }
+    { Loc 189 258 }
     { Scale 532.65 50.20 }
     { Label
         { Text "runtime" }
@@ -652,7 +652,7 @@ Node 123
 Node 126
 {
     { Type Attribute }
-    { Loc 41 272 }
+    { Loc 176 279 }
     { Scale 429.42 50.20 }
     { Label
         { Text "mistakes" }
@@ -670,7 +670,7 @@ Node 126
 Node 192
 {
     { Type Attribute }
-    { Loc 27 293 }
+    { Loc 162 300 }
     { Scale 313.81 50.20 }
     { Label
         { Text "code" }
@@ -688,7 +688,7 @@ Node 192
 Node 210
 {
     { Type Operation }
-    { Loc 74 322 }
+    { Loc 209 329 }
     { Scale 697.81 50.20 }
     { Label
         { Text "validator()" }
@@ -706,7 +706,7 @@ Node 210
 Node 217
 {
     { Type Operation }
-    { Loc 56 343 }
+    { Loc 191 350 }
     { Scale 553.29 50.20 }
     { Label
         { Text "setCode( String )" }
@@ -724,7 +724,7 @@ Node 217
 Node 6
 {
     { Type Class }
-    { Loc -279 154 }
+    { Loc -144 161 }
     { Scale 479.37 409.10 }
     { Label
         { Text "Task" }
@@ -784,7 +784,7 @@ Node 6
 Node 75
 {
     { Type Attribute }
-    { Loc -299 104 }
+    { Loc -164 111 }
     { Scale 474.84 50.20 }
     { Label
         { Text "priorTaskID" }
@@ -802,7 +802,7 @@ Node 75
 Node 96
 {
     { Type Attribute }
-    { Loc -301 125 }
+    { Loc -166 132 }
     { Scale 458.32 50.20 }
     { Label
         { Text "description" }
@@ -820,7 +820,7 @@ Node 96
 Node 117
 {
     { Type Attribute }
-    { Loc -311 146 }
+    { Loc -176 153 }
     { Scale 375.74 50.20 }
     { Label
         { Text "inputs" }
@@ -838,7 +838,7 @@ Node 117
 Node 120
 {
     { Type Attribute }
-    { Loc -301 167 }
+    { Loc -166 174 }
     { Scale 462.45 50.20 }
     { Label
         { Text "validOutput" }
@@ -856,7 +856,7 @@ Node 120
 Node 129
 {
     { Type Attribute }
-    { Loc -283 188 }
+    { Loc -148 195 }
     { Scale 611.10 50.20 }
     { Label
         { Text "mistakeAlcAmount" }
@@ -874,7 +874,7 @@ Node 129
 Node 132
 {
     { Type Attribute }
-    { Loc -288 209 }
+    { Loc -153 216 }
     { Scale 569.81 50.20 }
     { Label
         { Text "solvedAlcAmount" }
@@ -892,7 +892,7 @@ Node 132
 Node 8
 {
     { Type Class }
-    { Loc -655 176 }
+    { Loc -520 183 }
     { Scale 1187.14 250.98 }
     { Label
         { Text "Compiler" }
@@ -917,21 +917,21 @@ Node 8
             { Style Solid }
             { Fill None }
             { Loc -237 -50 }
-            { End -237 50 }
+            { End -237 49 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -237 50 }
-            { End 236 50 }
+            { Loc -237 49 }
+            { End 236 49 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 236 -50 }
-            { End 236 50 }
+            { End 236 49 }
         }
         { Segment
             { Type Line }
@@ -952,7 +952,7 @@ Node 8
 Node 31
 {
     { Type Attribute }
-    { Loc -821 158 }
+    { Loc -686 165 }
     { Scale 437.68 50.20 }
     { Label
         { Text "langName" }
@@ -970,7 +970,7 @@ Node 31
 Node 105
 {
     { Type Operation }
-    { Loc -659 208 }
+    { Loc -524 215 }
     { Scale 1775.48 50.20 }
     { Label
         { Text "run( fileName:String, inputs:String[], output:String, error:Boolean )" }
@@ -988,7 +988,7 @@ Node 105
 Node 108
 {
     { Type Operation }
-    { Loc -733 187 }
+    { Loc -598 194 }
     { Scale 1164.39 50.20 }
     { Label
         { Text "compile( fileName:String, error:Boolean )" }
@@ -1006,7 +1006,7 @@ Node 108
 Node 40
 {
     { Type Class }
-    { Loc 795 -100 }
+    { Loc 930 -93 }
     { Scale 484.39 133.02 }
     { Label
         { Text "NotEnoughAlcoholException" }
@@ -1022,7 +1022,7 @@ Node 40
 Node 59
 {
     { Type Class }
-    { Loc 102 -234 }
+    { Loc 237 -227 }
     { Scale 308.71 240.94 }
     { Label
         { Text "Sex" }
@@ -1082,7 +1082,7 @@ Node 59
 Node 60
 {
     { Type Attribute }
-    { Loc 73 -233 }
+    { Loc 208 -226 }
     { Scale 123.87 50.20 }
     { Label
         { Text "Male" }
@@ -1100,7 +1100,7 @@ Node 60
 Node 63
 {
     { Type Attribute }
-    { Loc 81 -212 }
+    { Loc 216 -205 }
     { Scale 185.81 50.20 }
     { Label
         { Text "Female" }
@@ -1118,7 +1118,7 @@ Node 63
 Node 197
 {
     { Type Class }
-    { Loc 443 183 }
+    { Loc 578 190 }
     { Scale 363.92 451.76 }
     { Label
         { Text "SolutionOutcome" }
@@ -1128,42 +1128,42 @@ Node 197
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -73 83 }
+            { Loc -72 83 }
             { End 72 83 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -73 -51 }
+            { Loc -72 -51 }
             { End 72 -51 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -73 -90 }
-            { End -73 90 }
+            { Loc -72 -90 }
+            { End -72 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -73 90 }
-            { End 72 90 }
+            { Loc -72 89 }
+            { End 72 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 72 -90 }
-            { End 72 90 }
+            { End 72 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -73 -90 }
+            { Loc -72 -90 }
             { End 72 -90 }
         }
     }
@@ -1178,7 +1178,7 @@ Node 197
 Node 198
 {
     { Type Attribute }
-    { Loc 408 163 }
+    { Loc 543 170 }
     { Scale 165.16 50.20 }
     { Label
         { Text "Solved" }
@@ -1196,7 +1196,7 @@ Node 198
 Node 201
 {
     { Type Attribute }
-    { Loc 439 184 }
+    { Loc 574 191 }
     { Scale 421.16 50.20 }
     { Label
         { Text "CompiletimeError" }
@@ -1214,7 +1214,7 @@ Node 201
 Node 204
 {
     { Type Attribute }
-    { Loc 427 205 }
+    { Loc 562 212 }
     { Scale 322.06 50.20 }
     { Label
         { Text "RuntimeError" }
@@ -1232,7 +1232,7 @@ Node 204
 Node 207
 {
     { Type Attribute }
-    { Loc 426 226 }
+    { Loc 561 233 }
     { Scale 313.81 50.20 }
     { Label
         { Text "InvalidOutput" }
@@ -1250,7 +1250,7 @@ Node 207
 Node 444
 {
     { Type Attribute }
-    { Loc 422 142 }
+    { Loc 557 149 }
     { Scale 280.77 50.20 }
     { Label
         { Text "Unvalidated" }
@@ -1265,17 +1265,35 @@ Node 444
     }
 }
 
+Node 988
+{
+    { Type Attribute }
+    { Loc 548 254 }
+    { Scale 206.45 50.20 }
+    { Label
+        { Text "GivenUp" }
+    }
+    { IsIncluded True }
+    { Parent 197 }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 17808 }
+        { GUID "UID_4EDC2681-9194-4b4a-9784-8793321F40AE" }
+    }
+}
+
 Node 656
 {
     { Type Vertex }
-    { Loc -239 282 }
+    { Loc -104 289 }
     { Scale 128.00 128.00 }
 }
 
 Node 776
 {
     { Type Class }
-    { Loc -540 -271 }
+    { Loc -405 -264 }
     { Scale 762.98 451.76 }
     { Label
         { Text "GameLogic" }
@@ -1335,7 +1353,7 @@ Node 776
 Node 777
 {
     { Type Operation }
-    { Loc -551 -304 }
+    { Loc -416 -297 }
     { Scale 1019.87 50.20 }
     { Label
         { Text "savePlayer( String, Sex, int, int )" }
@@ -1353,7 +1371,7 @@ Node 777
 Node 780
 {
     { Type Operation }
-    { Loc -588 -283 }
+    { Loc -453 -276 }
     { Scale 718.45 50.20 }
     { Label
         { Text "addBev( String, float, int )" }
@@ -1371,8 +1389,8 @@ Node 780
 Node 783
 {
     { Type Operation }
-    { Loc -595 -262 }
-    { Scale 660.65 50.20 }
+    { Loc -414 -255 }
+    { Scale 1036.39 50.20 }
     { Label
         { Text "loadTask( String )" }
     }
@@ -1389,7 +1407,7 @@ Node 783
 Node 786
 {
     { Type Operation }
-    { Loc -544 -241 }
+    { Loc -409 -234 }
     { Scale 1077.68 50.20 }
     { Label
         { Text "sendSolution( int, String )" }
@@ -1407,7 +1425,7 @@ Node 786
 Node 814
 {
     { Type Operation }
-    { Loc -592 -220 }
+    { Loc -457 -213 }
     { Scale 681.29 50.20 }
     { Label
         { Text "bevToDrink( bevID:int )" }
@@ -1425,7 +1443,7 @@ Node 814
 Node 826
 {
     { Type Operation }
-    { Loc -586 -199 }
+    { Loc -451 -192 }
     { Scale 730.84 50.20 }
     { Label
         { Text "bevToPour( bevID:int, vol:float )" }
@@ -1440,21 +1458,229 @@ Node 826
     }
 }
 
-Node 988
+Node 1060
 {
-    { Type Attribute }
-    { Loc 413 247 }
-    { Scale 206.45 50.20 }
+    { Type Class }
+    { Loc -800 -87 }
+    { Scale 604.86 240.94 }
     { Label
-        { Text "GivenUp" }
+        { Text "UserInterface" }
     }
-    { IsIncluded True }
-    { Parent 197 }
+    { DynamicSegments
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -121 -1 }
+            { End 120 -1 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -121 -9 }
+            { End 120 -9 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -121 -48 }
+            { End -121 48 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -121 48 }
+            { End 120 48 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc 120 -48 }
+            { End 120 48 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -121 -48 }
+            { End 120 -48 }
+        }
+    }
     { Object
         { PDMType Node }
         { MappingName ClassMapping }
-        { ID 17808 }
-        { GUID "UID_4EDC2681-9194-4b4a-9784-8793321F40AE" }
+        { ID 19505 }
+        { GUID "UID_235207A6-38A9-4815-8FE5-A1FF08C58093" }
+    }
+}
+
+Node 1061
+{
+    { Type Operation }
+    { Loc -804 -78 }
+    { Scale 817.55 50.20 }
+    { Label
+        { Text "chooseBev( minVol:float, gulp:int )" }
+    }
+    { IsIncluded True }
+    { Parent 1060 }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 19535 }
+        { GUID "UID_EA9FA2E0-6BAC-4bbd-B1FC-93A129B399CE" }
+    }
+}
+
+Node 1074
+{
+    { Type Operation }
+    { Loc -847 -57 }
+    { Scale 458.32 50.20 }
+    { Label
+        { Text "refreshTask( Task )" }
+    }
+    { IsIncluded True }
+    { Parent 1060 }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 19798 }
+        { GUID "UID_A362BCB8-0DCF-47bd-BCF3-81A8F69AEBD2" }
+    }
+}
+
+Node 1064
+{
+    { Type Class }
+    { Loc -30 -309 }
+    { Scale 391.53 294.65 }
+    { Label
+        { Text "TaskValidationOutcome" }
+    }
+    { DynamicSegments
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -78 51 }
+            { End 78 51 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -78 -20 }
+            { End 78 -20 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -78 -59 }
+            { End -78 58 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -78 58 }
+            { End 78 58 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc 78 -59 }
+            { End 78 58 }
+        }
+        { Segment
+            { Type Line }
+            { Style Solid }
+            { Fill None }
+            { Loc -78 -59 }
+            { End 78 -59 }
+        }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 19560 }
+        { GUID "UID_990C8E8D-A530-4033-99BF-CDAC3A2960D2" }
+    }
+}
+
+Node 1065
+{
+    { Type Attribute }
+    { Loc -36 -319 }
+    { Scale 450.06 50.20 }
+    { Label
+        { Text "NotEnoughAlcohol" }
+    }
+    { IsIncluded True }
+    { Parent 1064 }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 19599 }
+        { GUID "UID_A90ED09F-8B8C-44e1-8FED-A726AF9CC6BB" }
+    }
+}
+
+Node 1068
+{
+    { Type Attribute }
+    { Loc -37 -298 }
+    { Scale 441.81 50.20 }
+    { Label
+        { Text "PreTaskNotSolved" }
+    }
+    { IsIncluded True }
+    { Parent 1064 }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 19593 }
+        { GUID "UID_45BCB97B-A207-4c55-AC70-2BFE59546BB9" }
+    }
+}
+
+Node 1071
+{
+    { Type Attribute }
+    { Loc -62 -277 }
+    { Scale 239.48 50.20 }
+    { Label
+        { Text "ValidLoad" }
+    }
+    { IsIncluded True }
+    { Parent 1064 }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 19596 }
+        { GUID "UID_B48AF301-B174-4985-BF4B-E2D17F160238" }
+    }
+}
+
+Node 1081
+{
+    { Type Class }
+    { Loc -988 47 }
+    { Scale 193.25 90.35 }
+    { Label
+        { Text "Interface" }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 19845 }
+        { GUID "UID_D899EFF1-9EDB-49f4-9F94-56664910DE6F" }
     }
 }
 
@@ -1936,12 +2162,12 @@ Arc 199
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 443 183 }
+        { Loc 443 175 }
         { Offset 0 0 }
     }
     { To
         { ID 198 }
-        { Loc 408 163 }
+        { Loc 400 146 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -1952,12 +2178,12 @@ Arc 202
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 443 183 }
+        { Loc 443 175 }
         { Offset 0 0 }
     }
     { To
         { ID 201 }
-        { Loc 439 184 }
+        { Loc 431 167 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -1968,12 +2194,12 @@ Arc 205
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 443 183 }
+        { Loc 443 175 }
         { Offset 0 0 }
     }
     { To
         { ID 204 }
-        { Loc 427 205 }
+        { Loc 419 188 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -1984,12 +2210,12 @@ Arc 208
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 443 183 }
+        { Loc 443 175 }
         { Offset 0 0 }
     }
     { To
         { ID 207 }
-        { Loc 426 226 }
+        { Loc 418 209 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2124,12 +2350,12 @@ Arc 445
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 443 183 }
+        { Loc 443 175 }
         { Offset 0 0 }
     }
     { To
         { ID 444 }
-        { Loc 422 142 }
+        { Loc 414 125 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2161,7 +2387,7 @@ Arc 542
     }
     { To
         { ID 541 }
-        { Loc -370 -24 }
+        { Loc -306 -24 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2441,21 +2667,146 @@ Arc 989
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 443 183 }
+        { Loc 443 175 }
         { Offset 0 0 }
     }
     { To
         { ID 988 }
-        { Loc 413 247 }
+        { Loc 405 230 }
         { Offset 0 0 }
     }
     { IsInclusion True }
 }
 
+Arc 1062
+{
+    { Type Contains }
+    { From
+        { ID 1060 }
+        { Loc -916 -115 }
+        { Offset 0 0 }
+    }
+    { To
+        { ID 1061 }
+        { Loc -920 -96 }
+        { Offset 0 0 }
+    }
+    { IsInclusion True }
+}
+
+Arc 1066
+{
+    { Type Contains }
+    { From
+        { ID 1064 }
+        { Loc -165 -316 }
+        { Offset 0 0 }
+    }
+    { To
+        { ID 1065 }
+        { Loc -171 -326 }
+        { Offset 0 0 }
+    }
+    { IsInclusion True }
+}
+
+Arc 1069
+{
+    { Type Contains }
+    { From
+        { ID 1064 }
+        { Loc -165 -316 }
+        { Offset 0 0 }
+    }
+    { To
+        { ID 1068 }
+        { Loc -172 -305 }
+        { Offset 0 0 }
+    }
+    { IsInclusion True }
+}
+
+Arc 1072
+{
+    { Type Contains }
+    { From
+        { ID 1064 }
+        { Loc -165 -316 }
+        { Offset 0 0 }
+    }
+    { To
+        { ID 1071 }
+        { Loc -197 -284 }
+        { Offset 0 0 }
+    }
+    { IsInclusion True }
+}
+
+Arc 1075
+{
+    { Type Contains }
+    { From
+        { ID 1060 }
+        { Loc -916 -105 }
+        { Offset 0 0 }
+    }
+    { To
+        { ID 1074 }
+        { Loc -963 -75 }
+        { Offset 0 0 }
+    }
+    { IsInclusion True }
+}
+
+Arc 1079
+{
+    { Type Dependency }
+    { From
+        { ID 776 }
+        { Loc -388 -347 }
+        { Offset 30 -69 }
+    }
+    { To
+        { ID 1064 }
+        { Loc -243 -360 }
+        { Offset -26 -47 }
+    }
+}
+
+Arc 1082
+{
+    { Type Implements }
+    { From
+        { ID 1081 }
+        { Loc -1119 22 }
+        { Offset 0 -8 }
+    }
+    { To
+        { ID 1060 }
+        { Loc -1055 -95 }
+        { Offset -102 -34 }
+    }
+}
+
+Arc 1084
+{
+    { Type Dependency }
+    { From
+        { ID 1081 }
+        { Loc -1085 34 }
+        { Offset 9 -6 }
+    }
+    { To
+        { ID 6 }
+        { Loc -374 77 }
+        { Offset 5 -73 }
+    }
+}
+
 Cntx 806
 {
     { Type RelLabelTo }
-    { Loc -495 69 }
+    { Loc -376 87 }
     { Scale 256.00 50.20 }
     { Label
         { Text "-compilers" }
@@ -2472,7 +2823,7 @@ Cntx 806
 Cntx 808
 {
     { Type RelLabelTo }
-    { Loc -247 55 }
+    { Loc -112 62 }
     { Scale 156.90 50.20 }
     { Label
         { Text "-tasks" }
@@ -2489,7 +2840,7 @@ Cntx 808
 Cntx 819
 {
     { Type RelLabelTo }
-    { Loc 247 -106 }
+    { Loc 379 -99 }
     { Scale 264.26 50.20 }
     { Label
         { Text "-beverages" }
@@ -2506,7 +2857,7 @@ Cntx 819
 Cntx 821
 {
     { Type RelLabelFrom }
-    { Loc 100 -90 }
+    { Loc 236 -81 }
     { Scale 111.48 50.20 }
     { Label
         { Text "-sex" }
@@ -2523,7 +2874,7 @@ Cntx 821
 Cntx 825
 {
     { Type RelLabelTo }
-    { Loc -53 -118 }
+    { Loc 97 -108 }
     { Scale 169.29 50.20 }
     { Label
         { Text "-player" }
@@ -2540,7 +2891,7 @@ Cntx 825
 Cntx 846
 {
     { Type RelLabelFrom }
-    { Loc -87 256 }
+    { Loc 24 270 }
     { Scale 227.10 50.20 }
     { Label
         { Text "-compiler" }
@@ -2557,7 +2908,7 @@ Cntx 846
 Cntx 849
 {
     { Type RelLabelFrom }
-    { Loc 0 185 }
+    { Loc 140 193 }
     { Scale 128.00 50.20 }
     { Label
         { Text "-task" }
@@ -2574,7 +2925,7 @@ Cntx 849
 Cntx 870
 {
     { Type RelLabelFrom }
-    { Loc -112 47 }
+    { Loc 23 54 }
     { Scale 239.48 50.20 }
     { Label
         { Text "-solutions" }
@@ -3425,5 +3776,101 @@ Link 990
         { MappingName ContainsMapping }
         { ID 17811 }
         { GUID "UID_19F6B2C8-70BE-4a6f-85FD-22BC7BB4C1FE" }
+    }
+}
+
+Link 1063
+{
+    { FirstArc 1062 }
+    { LastArc 1062 }
+    { Object
+        { PDMType Link }
+        { MappingName ContainsMapping }
+        { ID 19538 }
+        { GUID "UID_EDBA6214-B739-425f-818A-498372FFF435" }
+    }
+}
+
+Link 1067
+{
+    { FirstArc 1066 }
+    { LastArc 1066 }
+    { Object
+        { PDMType Link }
+        { MappingName ContainsMapping }
+        { ID 19704 }
+        { GUID "UID_417078E7-3854-49c7-A5A3-6E3FE76C72B3" }
+    }
+}
+
+Link 1070
+{
+    { FirstArc 1069 }
+    { LastArc 1069 }
+    { Object
+        { PDMType Link }
+        { MappingName ContainsMapping }
+        { ID 19703 }
+        { GUID "UID_5FBE3225-E67A-4af7-9948-AC9439642559" }
+    }
+}
+
+Link 1073
+{
+    { FirstArc 1072 }
+    { LastArc 1072 }
+    { Object
+        { PDMType Link }
+        { MappingName ContainsMapping }
+        { ID 19602 }
+        { GUID "UID_F386CB17-2526-4cee-93AF-E044589FE17D" }
+    }
+}
+
+Link 1076
+{
+    { FirstArc 1075 }
+    { LastArc 1075 }
+    { Object
+        { PDMType Link }
+        { MappingName ContainsMapping }
+        { ID 19801 }
+        { GUID "UID_F8BD2CBE-091A-4e85-8080-5498721D87B9" }
+    }
+}
+
+Link 1080
+{
+    { FirstArc 1079 }
+    { LastArc 1079 }
+    { Object
+        { PDMType Link }
+        { MappingName DependencyMapping }
+        { ID 19841 }
+        { GUID "UID_D1DACAFC-FD79-4c7d-A27E-296637CA2215" }
+    }
+}
+
+Link 1083
+{
+    { FirstArc 1082 }
+    { LastArc 1082 }
+    { Object
+        { PDMType Link }
+        { MappingName ImplementsMapping }
+        { ID 19846 }
+        { GUID "UID_2AF7B68C-D061-4bfb-BDAB-13CAC1F60ABB" }
+    }
+}
+
+Link 1085
+{
+    { FirstArc 1084 }
+    { LastArc 1084 }
+    { Object
+        { PDMType Link }
+        { MappingName DependencyMapping }
+        { ID 19847 }
+        { GUID "UID_F86848F6-5711-4d3e-A591-7DA40C6B9034" }
     }
 }

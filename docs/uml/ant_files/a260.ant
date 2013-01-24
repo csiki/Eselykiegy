@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a260" }
+    { Type ObjectAnnotation }
+    { GUID "UID_47B1A0D1-DE02-41c9-809A-7C5C583DDDD0" }
+}
+
+NodeObject 99999
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99998
+{
+    { Name "startApp" }
+    { Type UmlInitialState }
+    { ObjectId 18019 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_A41B258B-BE00-4815-BA7A-C65816E0A9DA" }
+}
+NoteObject 2 
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 18041 }
+}
+
+NoteObject 3 
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 18043 }
+}
+
+ItemObject 4 
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 18044 }
+}
+

@@ -1,0 +1,65 @@
+NodeObject 	19194
+{
+ { Name 	"taskStarted"}
+ { Type 	UmlStateMachine}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	18774}
+ { GUID 	"UID_F83866DA-6C6F-4cd8-8719-7FAE174BCE15"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	19195
+{
+ { Name 	"mustDrink"}
+ { Type 	UmlState}
+ { Sig 	""}
+ { ScopeNodeId 	18774}
+ { ObjectId 	18932}
+ { GUID 	"UID_0FD11ABD-AB6E-433e-9FA9-30E872B581D7"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	19196
+{
+ { Name 	""}
+ { Type 	UmlFinalState}
+ { Sig 	""}
+ { ScopeNodeId 	18774}
+ { ObjectId 	18877}
+ { GUID 	"UID_EE2F6ABA-C103-4c8b-BA9F-47947D6133CF"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	19197
+{
+ { Name 	"GameState"}
+ { Type 	UmlStateMachine}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	17907}
+ { GUID 	"UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	19198
+{
+ { Name 	"drink/ [properSolution]"}
+ { Type 	UmlTransition}
+ { Sig 	""}
+ { ObjectId 	19145}
+ { GUID 	"UID_07F88652-64D2-488b-9E38-2ED4A147BA72"}
+ { SequenceId 	17976}
+ { ScopeNodeId 	17907}
+ { FromNodeId 	18932}
+ { ToNodeId 	18877}
+ { Gocha 	0 }
+}

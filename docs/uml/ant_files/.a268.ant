@@ -1,0 +1,65 @@
+NodeObject 	18859
+{
+ { Name 	"taskStarted"}
+ { Type 	UmlStateMachine}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	18774}
+ { GUID 	"UID_F83866DA-6C6F-4cd8-8719-7FAE174BCE15"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	18860
+{
+ { Name 	"solving"}
+ { Type 	UmlState}
+ { Sig 	""}
+ { ScopeNodeId 	18774}
+ { ObjectId 	18789}
+ { GUID 	"UID_F4623B46-B914-4f6f-8E91-EDF080B5DFDB"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	18861
+{
+ { Name 	"result"}
+ { Type 	UmlState}
+ { Sig 	""}
+ { ScopeNodeId 	18774}
+ { ObjectId 	18801}
+ { GUID 	"UID_4C5B5172-8AA1-4893-A674-BC2CD2EEA2F4"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	18862
+{
+ { Name 	"GameState"}
+ { Type 	UmlStateMachine}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	17907}
+ { GUID 	"UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550"}
+ { SequenceId 	17976}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	18863
+{
+ { Name 	"evaluate/ openResultWindow"}
+ { Type 	UmlTransition}
+ { Sig 	""}
+ { ObjectId 	18802}
+ { GUID 	"UID_08D66D90-84EB-45ad-967D-921BF39D24B3"}
+ { SequenceId 	17976}
+ { ScopeNodeId 	17907}
+ { FromNodeId 	18789}
+ { ToNodeId 	18801}
+ { Gocha 	0 }
+}

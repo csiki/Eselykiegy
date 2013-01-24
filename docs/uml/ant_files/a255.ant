@@ -1,0 +1,74 @@
+FileObject 1
+{
+    { Name "a255" }
+    { Type ObjectAnnotation }
+    { GUID "UID_B1E3281D-514C-44d2-9172-9CE2B3CBB5FC" }
+}
+
+NodeObject 99999
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99998
+{
+    { Name "closed" }
+    { Type UmlFinalState }
+    { ObjectId 18058 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_002BCAB1-4838-4286-8117-4940B41E0A96" }
+}
+
+NodeObject 99997
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+LinkObject 99996
+{
+    { Name "closeOperation" }
+    { Type UmlTransition }
+    { ObjectId 18059 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99998 }
+    { FromNodeId 99997 }
+    { GUID "UID_A706FEC4-4631-4684-B021-1CB553C9AA9D" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99996 }
+    { ObjectId 18071 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99996 }
+    { ObjectId 18073 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "closeOperation" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 18106 }
+}
+

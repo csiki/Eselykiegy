@@ -1,0 +1,84 @@
+FileObject 1
+{
+    { Name "a267" }
+    { Type ObjectAnnotation }
+    { GUID "UID_B875CD63-1CF8-4509-B1D3-FE9798053D32" }
+}
+
+NodeObject 99999
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99998
+{
+    { Name "taskStarted" }
+    { Type UmlState }
+    { ObjectId 18730 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_D11C7DDF-9484-47fa-B8F2-5F3BB277F091" }
+}
+
+NodeObject 99997
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99996
+{
+    { Name "%%UmlDynamicChoicePoint%%1359036609_1760" }
+    { Type UmlDynamicChoicePoint }
+    { ObjectId 18605 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_E0B610B6-0379-491b-975E-61DB8CA3BD4C" }
+}
+
+LinkObject 99995
+{
+    { Name "[ableToPlay]" }
+    { Type UmlTransition }
+    { ObjectId 18732 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_1CD82EB4-3A4D-4337-BE1C-DF5DDB78A62B" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 18755 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 18757 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "[ableToPlay]" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 18758 }
+}
+

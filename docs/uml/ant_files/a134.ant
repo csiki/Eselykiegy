@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "boolean:=taskValidation(Task)" }
+    { Name "TaskValidationOutcome:=taskValidation(Task)" }
     { Type UmlBalkingMessage }
     { ObjectId 6179 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "boolean:=taskValidation_(Task)" }
+    { Value "boolean:=taskValidation(Task)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 8047 }
+    { ObjectId 19653 }
 }
 

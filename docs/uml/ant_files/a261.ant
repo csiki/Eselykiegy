@@ -1,0 +1,53 @@
+FileObject 1
+{
+    { Name "a261" }
+    { Type ObjectAnnotation }
+    { GUID "UID_EB15C1F6-88A9-4c04-9A10-6753FD2E4B8D" }
+}
+
+NodeObject 99999
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99998
+{
+    { Name "newBeverage" }
+    { Type UmlState }
+    { ObjectId 18334 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_66D5D882-EF35-425d-863E-BBBEB0ABEE45" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 18370 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 18372 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "newBeverage" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 18373 }
+}
+

@@ -1,0 +1,242 @@
+
+FillTable UmlStateTable 
+{
+	{ GUID "UID_4B705417-F658-4bc9-B97D-E133F9E5FA13" }
+	{ Hsect	{ Appid 108 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ ObjectCache { Object { PDMType link } { MappingName StateTableDefinesState } { ID 18380 } { GUID "UID_1D08E905-2D2B-417c-8FF2-0DA313291CE5" }  } }
+		{ Vsect	{ Appid 119 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 148 }
+				{ Cell	{ Appid 149 }
+					 }
+				{ Cell	{ Appid 109 }
+					{ Label "GameState" }
+					
+					{ ObjectCache { Object { PDMType node } { MappingName UmlState } { ID 17907 } { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }  } } }
+				{ Cell	{ Appid 150 }
+					 } } } }
+	{ Hsect	{ Appid 120 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 121 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 151 }
+				{ Cell	{ Appid 152 }
+					 }
+				{ Cell	{ Appid 153 }
+					 }
+				{ Cell	{ Appid 154 }
+					 } } } }
+	{ Hsect	{ Appid 122 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 123 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 155 }
+				{ Cell	{ Appid 156 }
+					 }
+				{ Cell	{ Appid 110 }
+					{ Label "newBeverage" }
+					
+					{ ObjectCache { Object { PDMType node } { MappingName UmlState } { ID 18334 } { GUID "UID_66D5D882-EF35-425d-863E-BBBEB0ABEE45" }  } } }
+				{ Cell	{ Appid 157 }
+					 } } } }
+	{ Hsect	{ Appid 124 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 125 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 158 }
+				{ Cell	{ Appid 159 }
+					 }
+				{ Cell	{ Appid 160 }
+					 }
+				{ Cell	{ Appid 161 }
+					 } } } }
+	{ Hsect	{ Appid 126 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 127 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 162 }
+				{ Cell	{ Appid 111 }
+					
+					{ ObjectCache   } }
+				{ Cell	{ Appid 163 }
+					 }
+				{ Cell	{ Appid 164 }
+					 } } } }
+	{ Hsect	{ Appid 128 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 129 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 165 }
+				{ Cell	{ Appid 166 }
+					 }
+				{ Cell	{ Appid 167 }
+					 }
+				{ Cell	{ Appid 168 }
+					 } } } }
+	{ Hsect	{ Appid 130 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 131 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 169 }
+				{ Cell	{ Appid 112 }
+					
+					{ ObjectCache   } }
+				{ Cell	{ Appid 170 }
+					 }
+				{ Cell	{ Appid 171 }
+					 } } } }
+	{ Hsect	{ Appid 132 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 133 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 172 }
+				{ Cell	{ Appid 173 }
+					 }
+				{ Cell	{ Appid 174 }
+					 }
+				{ Cell	{ Appid 175 }
+					 } } } }
+	{ Hsect	{ Appid 134 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 135 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 176 }
+				{ Cell	{ Appid 113 }
+					
+					{ ObjectCache   } }
+				{ Cell	{ Appid 177 }
+					 }
+				{ Cell	{ Appid 178 }
+					 } } } }
+	{ Hsect	{ Appid 136 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 137 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 179 }
+				{ Cell	{ Appid 180 }
+					 }
+				{ Cell	{ Appid 181 }
+					 }
+				{ Cell	{ Appid 182 }
+					 } } } }
+	{ Hsect	{ Appid 138 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 139 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 183 }
+				{ Cell	{ Appid 114 }
+					
+					{ ObjectCache   } }
+				{ Cell	{ Appid 184 }
+					 }
+				{ Cell	{ Appid 185 }
+					 } } } }
+	{ Hsect	{ Appid 140 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 141 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 186 }
+				{ Cell	{ Appid 187 }
+					 }
+				{ Cell	{ Appid 188 }
+					 }
+				{ Cell	{ Appid 189 }
+					 } } } }
+	{ Hsect	{ Appid 142 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 143 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 190 }
+				{ Cell	{ Appid 115 }
+					
+					{ ObjectCache    } }
+				{ Cell	{ Appid 116 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 117 }
+					
+					{ ObjectCache  } } } } }
+	{ Hsect	{ Appid 144 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 145 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 191 }
+				{ Cell	{ Appid 192 }
+					 }
+				{ Cell	{ Appid 193 }
+					 }
+				{ Cell	{ Appid 194 }
+					 } } } }
+	{ Hsect	{ Appid 146 }
+		{ NumRows 1 }
+		{ Hidden False }
+		{ NumVisRows 1 }
+		{ Vsect	{ Appid 147 }
+		{ NumCols 3 }
+		{ Hidden False }
+		{ NumVisCols 3 }
+			{ Row	{ Appid 195 }
+				{ Cell	{ Appid 118 }
+					
+					{ ObjectCache   } }
+				{ Cell	{ Appid 196 }
+					 }
+				{ Cell	{ Appid 197 }
+					 } } } } }

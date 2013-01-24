@@ -719,7 +719,7 @@ Rename
     { SrcId 6010 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "boolean:=loadTask(File)" }
+        { Text "TaskValidationOutcome:=loadTask(String)" }
     }
     { UpdatedAttr name }
 }
@@ -796,7 +796,7 @@ Rename
     { SrcId 6186 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "boolean:=taskValidation_(Task)" }
+        { Text "TaskValidationOutcome:=taskValidation(Task)" }
     }
     { UpdatedAttr name }
 }
@@ -1404,5 +1404,409 @@ Rename
         { Text "-solutions" }
     }
     { UpdatedAttr sig }
+}
+
+Rename
+{
+    { ObjId 18059 }
+    { SrcId 18066 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "closeOperation" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18122 }
+    { SrcId 18126 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "NewGame/" }
+        { Text "openNewGameWindow" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18122 }
+    { SrcId 18129 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "NewGame" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18220 }
+    { SrcId 18227 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "cancel" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18267 }
+    { SrcId 18274 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "ok" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18336 }
+    { SrcId 18340 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "AddBeverage/" }
+        { Text "openAddBevWindow" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18336 }
+    { SrcId 18343 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "AddBeverage/openAddBevWindow" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18389 }
+    { SrcId 18396 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "ok" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18426 }
+    { SrcId 18430 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "addBev/" }
+        { Text "openAddBevWindow" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18426 }
+    { SrcId 18433 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "addBev/openAddBevWindow" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18479 }
+    { SrcId 18486 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "cancel" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18498 }
+    { SrcId 18505 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "ok" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18519 }
+    { SrcId 18523 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "loadTask/" }
+        { Text "openFileChooser" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18519 }
+    { SrcId 18526 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "loadTask/openFileChooser" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18572 }
+    { SrcId 18579 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "cancel" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18634 }
+    { SrcId 18641 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "/[notAbleToPlay]" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18634 }
+    { SrcId 18639 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "[notAbleToPlay]" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18732 }
+    { SrcId 18738 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "[ableToPlay]" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18802 }
+    { SrcId 18809 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "evaluate" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18802 }
+    { SrcId 18806 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "evaluate/" }
+        { Text "openResultWindow" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18892 }
+    { SrcId 18898 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "[proper solution]" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18941 }
+    { SrcId 18948 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "drink" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 18971 }
+    { SrcId 18978 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "drink" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19027 }
+    { SrcId 19034 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "outOfTime" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19056 }
+    { SrcId 19063 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "ok" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19106 }
+    { SrcId 19113 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "notEnoughAlc" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19125 }
+    { SrcId 19132 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "notEnoughAlc" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19145 }
+    { SrcId 19152 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "drink" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19199 }
+    { SrcId 19206 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "taskEnded" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19199 }
+    { SrcId 19205 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "taskEnded/[haveAlc]" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19199 }
+    { SrcId 19203 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "taskEnded/" }
+        { Text "[haveAlc]/" }
+        { Text "saveSolution" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19332 }
+    { SrcId 19339 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "taskEnded" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19332 }
+    { SrcId 19336 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "taskEnded[noAlc]/" }
+        { Text "saveSolution" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 19332 }
+    { SrcId 19338 }
+    { Dependency ItemTransition }
+    { Label
+        { Text "taskEnded[noAlc]/saveSolution" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8560 }
+    { SrcId 8567 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=bevToPour()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8560 }
+    { SrcId 19929 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=bevToPour(int,float)" }
+    }
+    { UpdatedAttr name }
 }
 

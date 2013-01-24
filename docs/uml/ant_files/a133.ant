@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "boolean:=loadTask(String)" }
+    { Name "TaskValidationOutcome:=loadTask(String)" }
     { Type UmlSynchronousMessage }
     { ObjectId 6003 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "boolean:=loadTask(File)" }
+    { Value "boolean:=loadTask(String)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 9692 }
+    { ObjectId 19627 }
 }
 

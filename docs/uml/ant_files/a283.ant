@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a283" }
+    { Type ObjectAnnotation }
+    { GUID "UID_088FC92A-C7EB-4f46-B28A-DCB62F3F0A16" }
+}
+
+NodeObject 99999
+{
+    { Name "UserInterface" }
+    { Type UmlClass }
+    { ObjectId 19505 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_235207A6-38A9-4815-8FE5-A1FF08C58093" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 19510 }
+}
+
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "interface" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 19529 }
+}
+
+NoteObject 4
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 19512 }
+}
+
+ItemObject 5
+{
+    { Type ObjectName }
+    { Value "UserInterface" }
+    { GuidRef "" }
+    { NoteId 4 }
+    { ObjectId 19513 }
+}
+

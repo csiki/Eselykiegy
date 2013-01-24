@@ -1,0 +1,84 @@
+FileObject 1
+{
+    { Name "a275" }
+    { Type ObjectAnnotation }
+    { GUID "UID_DF1752D2-4D95-4b15-B644-609BD15074AE" }
+}
+
+NodeObject 99999
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99998
+{
+    { Name "ableToLoadTask" }
+    { Type UmlState }
+    { ObjectId 18385 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_F75773F5-8F88-488e-B28E-80875E0091AD" }
+}
+
+NodeObject 99997
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99996
+{
+    { Name "newBeverage" }
+    { Type UmlState }
+    { ObjectId 18334 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_66D5D882-EF35-425d-863E-BBBEB0ABEE45" }
+}
+
+LinkObject 99995
+{
+    { Name "ok/[noTaskLoaded]" }
+    { Type UmlTransition }
+    { ObjectId 18498 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_D925C024-BE6B-49dd-9947-F9D7B5287C14" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 19400 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 19402 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "ok" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 19403 }
+}
+

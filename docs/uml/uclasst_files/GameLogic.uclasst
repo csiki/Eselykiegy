@@ -460,9 +460,9 @@ FillTable UmlClassTable
 					{ Label "String" }
 					 }
 				{ Cell	{ Appid 3117 }
-					{ Label "boolean" }
+					{ Label "TaskValidationOutcome" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 9903 }  } } } }
+					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 19772 }  } } } }
 			{ Row	{ Appid 3188 }
 				{ Cell	{ Appid 3118 }
 					{ Label "sendSolution" }

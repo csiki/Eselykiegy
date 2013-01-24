@@ -556,9 +556,9 @@ FillTable UmlClassTable
 					{ Label "Task" }
 					 }
 				{ Cell	{ Appid 2229 }
-					{ Label "boolean" }
+					{ Label "TaskValidationOutcome" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 8140 }  } } } }
+					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 19781 }  } } } }
 			{ Row	{ Appid 2302 }
 				{ Cell	{ Appid 2300 }
 					{ Label "calculateBloodVol" }

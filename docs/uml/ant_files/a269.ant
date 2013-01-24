@@ -1,0 +1,84 @@
+FileObject 1
+{
+    { Name "a269" }
+    { Type ObjectAnnotation }
+    { GUID "UID_84278CD4-4C81-44a5-AE7D-B5588B811648" }
+}
+
+NodeObject 99999
+{
+    { Name "taskStarted" }
+    { Type UmlStateMachine }
+    { ObjectId 18774 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_F83866DA-6C6F-4cd8-8719-7FAE174BCE15" }
+}
+
+NodeObject 99998
+{
+    { Name "solving" }
+    { Type UmlState }
+    { ObjectId 18789 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_F4623B46-B914-4f6f-8E91-EDF080B5DFDB" }
+}
+
+NodeObject 99997
+{
+    { Name "taskStarted" }
+    { Type UmlStateMachine }
+    { ObjectId 18774 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_F83866DA-6C6F-4cd8-8719-7FAE174BCE15" }
+}
+
+NodeObject 99996
+{
+    { Name "mustDrink" }
+    { Type UmlState }
+    { ObjectId 18932 }
+    { Sig "" }
+    { ScopeNodeId 99997 }
+    { GUID "UID_0FD11ABD-AB6E-433e-9FA9-30E872B581D7" }
+}
+
+LinkObject 99995
+{
+    { Name "drink" }
+    { Type UmlTransition }
+    { ObjectId 18941 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99998 }
+    { FromNodeId 99996 }
+    { GUID "UID_0DBA6258-D157-42ce-A5F4-A678F21BA0CE" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 18965 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99995 }
+    { ObjectId 18967 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "drink" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 18968 }
+}
+

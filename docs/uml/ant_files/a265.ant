@@ -1,0 +1,53 @@
+FileObject 1
+{
+    { Name "a265" }
+    { Type ObjectAnnotation }
+    { GUID "UID_0AEE0EB5-EF61-4f7a-9F9C-F27379CB50C4" }
+}
+
+NodeObject 99999
+{
+    { Name "GameState" }
+    { Type UmlStateMachine }
+    { ObjectId 17907 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_482607D1-8F95-4e58-9E1D-6CAAFE94C550" }
+}
+
+NodeObject 99998
+{
+    { Name "%%UmlDynamicChoicePoint%%1359036593_1760" }
+    { Type UmlDynamicChoicePoint }
+    { ObjectId 18591 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 99999 }
+    { GUID "UID_6C45455A-9F45-42f5-8A14-E61D628ED5E3" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 18594 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99998 }
+    { ObjectId 18601 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "%%UmlDynamicChoicePoint%%1359036593_1760" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 18602 }
+}
+
