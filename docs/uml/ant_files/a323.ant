@@ -1,0 +1,99 @@
+FileObject 1
+{
+    { Name "a323" }
+    { Type ObjectAnnotation }
+    { GUID "UID_A781C81E-0EC7-452e-B0CE-4F5DCC3CB5E1" }
+}
+
+NodeObject 99999
+{
+    { Name "CrateInterface,Game" }
+    { Type UmlAssociation }
+    { ObjectId 22945 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_88EA2C5D-A3D5-4d2f-AA93-3D75805513A9" }
+}
+
+NodeObject 99998
+{
+    { Name "CrateInterface" }
+    { Type UmlClass }
+    { ObjectId 21057 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_BBA09E4E-D876-4250-B383-70317551C5D6" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlRole }
+    { ObjectId 22946 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_04952736-3B1A-4f4b-9D1F-441553025445" }
+}
+
+NoteObject 2
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 22952 }
+}
+
+ItemObject 3
+{
+    { Type UmlMultiplicity }
+    { Value "1" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 22977 }
+}
+
+ItemObject 4
+{
+    { Type UmlRoleNavigability }
+    { Value "True" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 22962 }
+}
+
+ItemObject 5
+{
+    { Type UmlAggregationType }
+    { Value "None" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 22953 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 22955 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 22957 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 22958 }
+}
+

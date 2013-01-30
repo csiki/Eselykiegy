@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a326" }
+    { Type ObjectAnnotation }
+    { GUID "UID_CA099B52-D083-4e6f-8B36-B757888ADC04" }
+}
+
+NodeObject 99999
+{
+    { Name "CrateInterface,Interface" }
+    { Type UmlAssociation }
+    { ObjectId 22985 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_DA263627-BC60-4be2-A72E-8052A881F017" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 23109 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 23111 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "CrateInterface,Interface" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 23112 }
+}
+

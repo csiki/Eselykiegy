@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a324" }
+    { Type ObjectAnnotation }
+    { GUID "UID_BF822A1C-0A61-4b99-BEA4-C2701E20E28E" }
+}
+
+NodeObject 99999
+{
+    { Name "CrateInterface,Game" }
+    { Type UmlAssociation }
+    { ObjectId 22945 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_88EA2C5D-A3D5-4d2f-AA93-3D75805513A9" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 22969 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 22971 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "CrateInterface,Game" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 22972 }
+}
+

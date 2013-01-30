@@ -38,7 +38,10 @@ import javax.swing.border.BevelBorder;
 import javax.swing.UIManager;
 import javax.swing.ScrollPaneConstants;
 
-public class MainFrame implements Runnable {
+import library.Task;
+import library.UserInterface;
+
+public class MainFrame implements Runnable, UserInterface {
 
 	private JFrame frmCodindrinkin;
 	private JTable solutionsTable;
@@ -55,6 +58,21 @@ public class MainFrame implements Runnable {
 	@Override
 	public void run() {
 		initialize();
+	}
+	
+	/*
+	 * Implemented methods from interface UserInterface
+	 */
+	@Override
+	public void chooseBev(float minAlcVol) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void refreshTask(Task task) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	/**

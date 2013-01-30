@@ -3,20 +3,20 @@ Diagram UmlClassDiagram
     { Name "class_diagram" }
     { Format "1.7" }
     { Scale 1.00 }
-    { PanX -785 }
-    { PanY -485 }
+    { PanX -332 }
+    { PanY -92 }
     { Alignment 1 }
     { GUID "UID_7C1E4F1D-25F0-46d2-90E5-6EAD94E83329" }
     { Summary
-        { Nodes 85 }
-        { Arcs 83 }
+        { Nodes 88 }
+        { Arcs 88 }
     }
 }
 
 Node 2
 {
     { Type Class }
-    { Loc -153 66 }
+    { Loc -153 49 }
     { Scale 865.88 461.80 }
     { Label
         { Text "Game" }
@@ -76,7 +76,7 @@ Node 2
 Node 439
 {
     { Type Attribute }
-    { Loc -254 6 }
+    { Loc -254 -11 }
     { Scale 445.94 50.20 }
     { Label
         { Text "currentTask" }
@@ -94,7 +94,7 @@ Node 439
 Node 538
 {
     { Type Operation }
-    { Loc -157 56 }
+    { Loc -157 39 }
     { Scale 1246.97 50.20 }
     { Label
         { Text "calculateAlcComsumeVol( SolutionOutcome )" }
@@ -112,7 +112,7 @@ Node 538
 Node 541
 {
     { Type Operation }
-    { Loc -171 98 }
+    { Loc -171 81 }
     { Scale 1131.35 50.20 }
     { Label
         { Text "taskValidation( Task )" }
@@ -130,7 +130,7 @@ Node 541
 Node 544
 {
     { Type Operation }
-    { Loc -244 77 }
+    { Loc -244 60 }
     { Scale 524.39 50.20 }
     { Label
         { Text "openFile( File )" }
@@ -148,7 +148,7 @@ Node 544
 Node 853
 {
     { Type Operation }
-    { Loc -211 119 }
+    { Loc -211 102 }
     { Scale 796.90 50.20 }
     { Label
         { Text "calculateBloodVol( int, int )" }
@@ -166,7 +166,7 @@ Node 853
 Node 863
 {
     { Type Operation }
-    { Loc -216 140 }
+    { Loc -216 123 }
     { Scale 759.74 50.20 }
     { Label
         { Text "isPassed( taskID:int )" }
@@ -184,7 +184,7 @@ Node 863
 Node 866
 {
     { Type Attribute }
-    { Loc -227 27 }
+    { Loc -227 10 }
     { Scale 664.77 50.20 }
     { Label
         { Text "currentTaskStartTime" }
@@ -202,8 +202,8 @@ Node 866
 Node 3
 {
     { Type Class }
-    { Loc 265 147 }
-    { Scale 667.61 567.22 }
+    { Loc 265 120 }
+    { Scale 665.10 514.51 }
     { Label
         { Text "Player" }
     }
@@ -212,43 +212,43 @@ Node 3
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -133 22 }
-            { End 133 22 }
+            { Loc -133 32 }
+            { End 132 32 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -133 -91 }
-            { End 133 -91 }
+            { Loc -133 -81 }
+            { End 132 -81 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -133 -113 }
-            { End -133 113 }
+            { Loc -133 -103 }
+            { End -133 102 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -133 113 }
-            { End 133 113 }
+            { Loc -133 102 }
+            { End 132 102 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc 133 -113 }
-            { End 133 113 }
+            { Loc 132 -103 }
+            { End 132 102 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -133 -113 }
-            { End 133 -113 }
+            { Loc -133 -103 }
+            { End 132 -103 }
         }
     }
     { Object
@@ -262,7 +262,7 @@ Node 3
 Node 47
 {
     { Type Attribute }
-    { Loc 189 66 }
+    { Loc 190 49 }
     { Scale 330.32 50.20 }
     { Label
         { Text "name" }
@@ -280,7 +280,7 @@ Node 47
 Node 53
 {
     { Type Attribute }
-    { Loc 182 87 }
+    { Loc 183 70 }
     { Scale 268.39 50.20 }
     { Label
         { Text "weight" }
@@ -298,7 +298,7 @@ Node 53
 Node 56
 {
     { Type Attribute }
-    { Loc 181 108 }
+    { Loc 182 91 }
     { Scale 260.13 50.20 }
     { Label
         { Text "height" }
@@ -316,7 +316,7 @@ Node 56
 Node 301
 {
     { Type Attribute }
-    { Loc 208 150 }
+    { Loc 209 133 }
     { Scale 483.10 50.20 }
     { Label
         { Text "consumedAlc" }
@@ -334,7 +334,7 @@ Node 301
 Node 547
 {
     { Type Operation }
-    { Loc 261 179 }
+    { Loc 262 162 }
     { Scale 920.77 50.20 }
     { Label
         { Text "consume( bevID:int, float, alcVol:float )" }
@@ -352,7 +352,7 @@ Node 547
 Node 858
 {
     { Type Attribute }
-    { Loc 193 129 }
+    { Loc 194 112 }
     { Scale 359.23 50.20 }
     { Label
         { Text "bloodVol" }
@@ -370,7 +370,7 @@ Node 858
 Node 1187
 {
     { Type Operation }
-    { Loc 241 221 }
+    { Loc 242 204 }
     { Scale 759.74 50.20 }
     { Label
         { Text "addBev( String, float, float )" }
@@ -388,7 +388,7 @@ Node 1187
 Node 1190
 {
     { Type Operation }
-    { Loc 211 200 }
+    { Loc 212 183 }
     { Scale 512.00 50.20 }
     { Label
         { Text "pour( bevID:int, float )" }
@@ -406,7 +406,7 @@ Node 1190
 Node 4
 {
     { Type Class }
-    { Loc 603 63 }
+    { Loc 603 46 }
     { Scale 479.37 356.39 }
     { Label
         { Text "Beverage" }
@@ -416,42 +416,42 @@ Node 4
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -96 22 }
+            { Loc -95 22 }
             { End 95 22 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -96 -49 }
+            { Loc -95 -49 }
             { End 95 -49 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -96 -71 }
-            { End -96 71 }
+            { Loc -95 -71 }
+            { End -95 70 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -96 71 }
-            { End 95 71 }
+            { Loc -95 70 }
+            { End 95 70 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 95 -71 }
-            { End 95 71 }
+            { End 95 70 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -96 -71 }
+            { Loc -95 -71 }
             { End 95 -71 }
         }
     }
@@ -466,7 +466,7 @@ Node 4
 Node 19
 {
     { Type Attribute }
-    { Loc 565 24 }
+    { Loc 565 7 }
     { Scale 330.32 50.20 }
     { Label
         { Text "name" }
@@ -484,7 +484,7 @@ Node 19
 Node 22
 {
     { Type Attribute }
-    { Loc 554 45 }
+    { Loc 554 28 }
     { Scale 235.35 50.20 }
     { Label
         { Text "abv" }
@@ -502,7 +502,7 @@ Node 22
 Node 25
 {
     { Type Attribute }
-    { Loc 552 66 }
+    { Loc 552 49 }
     { Scale 218.84 50.20 }
     { Label
         { Text "vol" }
@@ -520,7 +520,7 @@ Node 25
 Node 34
 {
     { Type Operation }
-    { Loc 585 95 }
+    { Loc 585 78 }
     { Scale 495.48 50.20 }
     { Label
         { Text "pour( vol:float )" }
@@ -538,7 +538,7 @@ Node 34
 Node 37
 {
     { Type Operation }
-    { Loc 599 116 }
+    { Loc 599 99 }
     { Scale 611.10 50.20 }
     { Label
         { Text "consume( vol:float )" }
@@ -556,8 +556,8 @@ Node 37
 Node 5
 {
     { Type Class }
-    { Loc 213 391 }
-    { Scale 534.59 461.80 }
+    { Loc 213 385 }
+    { Scale 534.59 514.51 }
     { Label
         { Text "Solution" }
     }
@@ -566,43 +566,43 @@ Node 5
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -107 43 }
-            { End 106 43 }
+            { Loc -107 32 }
+            { End 106 32 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -107 -70 }
-            { End 106 -70 }
+            { Loc -107 -81 }
+            { End 106 -81 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -107 -92 }
-            { End -107 91 }
+            { Loc -107 -103 }
+            { End -107 102 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -107 91 }
-            { End 106 91 }
+            { Loc -107 102 }
+            { End 106 102 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc 106 -92 }
-            { End 106 91 }
+            { Loc 106 -103 }
+            { End 106 102 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -107 -92 }
-            { End 106 -92 }
+            { Loc -107 -103 }
+            { End 106 -103 }
         }
     }
     { Object
@@ -616,10 +616,10 @@ Node 5
 Node 86
 {
     { Type Attribute }
-    { Loc 210 331 }
-    { Scale 706.06 50.20 }
+    { Loc 194 314 }
+    { Scale 573.94 50.20 }
     { Label
-        { Text "soutcome" }
+        { Text "sout" }
     }
     { IsIncluded True }
     { Parent 5 }
@@ -634,7 +634,7 @@ Node 86
 Node 89
 {
     { Type Attribute }
-    { Loc 183 352 }
+    { Loc 183 335 }
     { Scale 487.23 50.20 }
     { Label
         { Text "duration" }
@@ -652,7 +652,7 @@ Node 89
 Node 123
 {
     { Type Attribute }
-    { Loc 189 373 }
+    { Loc 189 356 }
     { Scale 532.65 50.20 }
     { Label
         { Text "runtime" }
@@ -670,7 +670,7 @@ Node 123
 Node 126
 {
     { Type Attribute }
-    { Loc 176 394 }
+    { Loc 176 377 }
     { Scale 429.42 50.20 }
     { Label
         { Text "mistakes" }
@@ -688,7 +688,7 @@ Node 126
 Node 192
 {
     { Type Attribute }
-    { Loc 162 415 }
+    { Loc 162 398 }
     { Scale 313.81 50.20 }
     { Label
         { Text "code" }
@@ -706,7 +706,7 @@ Node 192
 Node 210
 {
     { Type Operation }
-    { Loc 209 444 }
+    { Loc 209 427 }
     { Scale 697.81 50.20 }
     { Label
         { Text "validator()" }
@@ -724,7 +724,7 @@ Node 210
 Node 217
 {
     { Type Operation }
-    { Loc 191 465 }
+    { Loc 191 448 }
     { Scale 553.29 50.20 }
     { Label
         { Text "setCode( String )" }
@@ -742,8 +742,8 @@ Node 217
 Node 6
 {
     { Type Class }
-    { Loc -144 276 }
-    { Scale 411.61 409.10 }
+    { Loc -144 259 }
+    { Scale 409.10 409.10 }
     { Label
         { Text "Task" }
     }
@@ -753,14 +753,14 @@ Node 6
             { Style Solid }
             { Fill None }
             { Loc -82 74 }
-            { End 82 74 }
+            { End 81 74 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc -82 -60 }
-            { End 82 -60 }
+            { End 81 -60 }
         }
         { Segment
             { Type Line }
@@ -774,21 +774,21 @@ Node 6
             { Style Solid }
             { Fill None }
             { Loc -82 81 }
-            { End 82 81 }
+            { End 81 81 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc 82 -82 }
-            { End 82 81 }
+            { Loc 81 -82 }
+            { End 81 81 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc -82 -82 }
-            { End 82 -82 }
+            { End 81 -82 }
         }
     }
     { Object
@@ -802,7 +802,7 @@ Node 6
 Node 75
 {
     { Type Attribute }
-    { Loc -151 226 }
+    { Loc -150 209 }
     { Scale 474.84 50.20 }
     { Label
         { Text "priorTaskID" }
@@ -820,7 +820,7 @@ Node 75
 Node 96
 {
     { Type Attribute }
-    { Loc -153 247 }
+    { Loc -152 230 }
     { Scale 458.32 50.20 }
     { Label
         { Text "description" }
@@ -838,7 +838,7 @@ Node 96
 Node 117
 {
     { Type Attribute }
-    { Loc -163 268 }
+    { Loc -162 251 }
     { Scale 375.74 50.20 }
     { Label
         { Text "inputs" }
@@ -856,7 +856,7 @@ Node 117
 Node 120
 {
     { Type Attribute }
-    { Loc -153 289 }
+    { Loc -152 272 }
     { Scale 462.45 50.20 }
     { Label
         { Text "validOutput" }
@@ -874,7 +874,7 @@ Node 120
 Node 129
 {
     { Type Attribute }
-    { Loc -148 310 }
+    { Loc -147 293 }
     { Scale 499.61 50.20 }
     { Label
         { Text "mistakeAlcVol" }
@@ -892,7 +892,7 @@ Node 129
 Node 132
 {
     { Type Attribute }
-    { Loc -153 331 }
+    { Loc -152 314 }
     { Scale 458.32 50.20 }
     { Label
         { Text "solvedAlcVol" }
@@ -910,7 +910,7 @@ Node 132
 Node 8
 {
     { Type Class }
-    { Loc -520 298 }
+    { Loc -520 281 }
     { Scale 1187.14 250.98 }
     { Label
         { Text "Compiler" }
@@ -970,7 +970,7 @@ Node 8
 Node 31
 {
     { Type Attribute }
-    { Loc -686 280 }
+    { Loc -686 263 }
     { Scale 437.68 50.20 }
     { Label
         { Text "langName" }
@@ -988,7 +988,7 @@ Node 31
 Node 105
 {
     { Type Operation }
-    { Loc -524 330 }
+    { Loc -524 313 }
     { Scale 1775.48 50.20 }
     { Label
         { Text "run( fileName:String, inputs:String[], output:String, error:Boolean )" }
@@ -1006,7 +1006,7 @@ Node 105
 Node 108
 {
     { Type Operation }
-    { Loc -598 309 }
+    { Loc -598 292 }
     { Scale 1164.39 50.20 }
     { Label
         { Text "compile( fileName:String, error:Boolean )" }
@@ -1024,7 +1024,7 @@ Node 108
 Node 40
 {
     { Type Class }
-    { Loc 930 22 }
+    { Loc 930 5 }
     { Scale 484.39 133.02 }
     { Label
         { Text "NotEnoughAlcoholException" }
@@ -1040,7 +1040,7 @@ Node 40
 Node 59
 {
     { Type Class }
-    { Loc 441 -58 }
+    { Loc 441 -75 }
     { Scale 308.71 240.94 }
     { Label
         { Text "Sex" }
@@ -1100,7 +1100,7 @@ Node 59
 Node 60
 {
     { Type Attribute }
-    { Loc 412 -57 }
+    { Loc 412 -74 }
     { Scale 123.87 50.20 }
     { Label
         { Text "Male" }
@@ -1118,7 +1118,7 @@ Node 60
 Node 63
 {
     { Type Attribute }
-    { Loc 420 -36 }
+    { Loc 420 -53 }
     { Scale 185.81 50.20 }
     { Label
         { Text "Female" }
@@ -1136,7 +1136,7 @@ Node 63
 Node 197
 {
     { Type Class }
-    { Loc 578 305 }
+    { Loc 578 288 }
     { Scale 338.82 451.76 }
     { Label
         { Text "SolutionOutcome" }
@@ -1146,42 +1146,42 @@ Node 197
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -68 83 }
+            { Loc -67 83 }
             { End 67 83 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -68 -51 }
+            { Loc -67 -51 }
             { End 67 -51 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -68 -90 }
-            { End -68 90 }
+            { Loc -67 -90 }
+            { End -67 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -68 90 }
-            { End 67 90 }
+            { Loc -67 89 }
+            { End 67 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 67 -90 }
-            { End 67 90 }
+            { End 67 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -68 -90 }
+            { Loc -67 -90 }
             { End 67 -90 }
         }
     }
@@ -1196,7 +1196,7 @@ Node 197
 Node 198
 {
     { Type Attribute }
-    { Loc 548 285 }
+    { Loc 548 268 }
     { Scale 165.16 50.20 }
     { Label
         { Text "Solved" }
@@ -1214,7 +1214,7 @@ Node 198
 Node 201
 {
     { Type Attribute }
-    { Loc 579 306 }
+    { Loc 579 289 }
     { Scale 421.16 50.20 }
     { Label
         { Text "CompiletimeError" }
@@ -1232,7 +1232,7 @@ Node 201
 Node 204
 {
     { Type Attribute }
-    { Loc 567 327 }
+    { Loc 567 310 }
     { Scale 322.06 50.20 }
     { Label
         { Text "RuntimeError" }
@@ -1250,7 +1250,7 @@ Node 204
 Node 207
 {
     { Type Attribute }
-    { Loc 566 348 }
+    { Loc 566 331 }
     { Scale 313.81 50.20 }
     { Label
         { Text "InvalidOutput" }
@@ -1268,7 +1268,7 @@ Node 207
 Node 444
 {
     { Type Attribute }
-    { Loc 562 264 }
+    { Loc 562 247 }
     { Scale 280.77 50.20 }
     { Label
         { Text "Unvalidated" }
@@ -1286,7 +1286,7 @@ Node 444
 Node 988
 {
     { Type Attribute }
-    { Loc 553 369 }
+    { Loc 553 352 }
     { Scale 206.45 50.20 }
     { Label
         { Text "GivenUp" }
@@ -1304,14 +1304,14 @@ Node 988
 Node 656
 {
     { Type Vertex }
-    { Loc -104 404 }
+    { Loc -104 387 }
     { Scale 128.00 128.00 }
 }
 
 Node 776
 {
     { Type Class }
-    { Loc -405 -149 }
+    { Loc -405 -166 }
     { Scale 815.69 451.76 }
     { Label
         { Text "GameLogic" }
@@ -1336,21 +1336,21 @@ Node 776
             { Style Solid }
             { Fill None }
             { Loc -163 -90 }
-            { End -163 90 }
+            { End -163 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -163 90 }
-            { End 162 90 }
+            { Loc -163 89 }
+            { End 162 89 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 162 -90 }
-            { End 162 90 }
+            { End 162 89 }
         }
         { Segment
             { Type Line }
@@ -1371,7 +1371,7 @@ Node 776
 Node 777
 {
     { Type Operation }
-    { Loc -409 -182 }
+    { Loc -409 -199 }
     { Scale 1164.39 50.20 }
     { Label
         { Text "savePlayer( String, Sex, int, int )" }
@@ -1389,7 +1389,7 @@ Node 777
 Node 780
 {
     { Type Operation }
-    { Loc -463 -161 }
+    { Loc -463 -178 }
     { Scale 718.45 50.20 }
     { Label
         { Text "addBev( String, float, int )" }
@@ -1407,7 +1407,7 @@ Node 780
 Node 783
 {
     { Type Operation }
-    { Loc -424 -140 }
+    { Loc -424 -157 }
     { Scale 1036.39 50.20 }
     { Label
         { Text "loadTask( String )" }
@@ -1425,7 +1425,7 @@ Node 783
 Node 786
 {
     { Type Operation }
-    { Loc -419 -119 }
+    { Loc -419 -136 }
     { Scale 1077.68 50.20 }
     { Label
         { Text "sendSolution( int, String )" }
@@ -1443,7 +1443,7 @@ Node 786
 Node 814
 {
     { Type Operation }
-    { Loc -467 -98 }
+    { Loc -467 -115 }
     { Scale 681.29 50.20 }
     { Label
         { Text "bevToDrink( bevID:int )" }
@@ -1461,7 +1461,7 @@ Node 814
 Node 826
 {
     { Type Operation }
-    { Loc -461 -77 }
+    { Loc -461 -94 }
     { Scale 730.84 50.20 }
     { Label
         { Text "bevToPour( bevID:int, vol:float )" }
@@ -1479,7 +1479,7 @@ Node 826
 Node 1060
 {
     { Type Class }
-    { Loc -800 28 }
+    { Loc -800 11 }
     { Scale 528.06 240.94 }
     { Label
         { Text "UserInterface" }
@@ -1504,21 +1504,21 @@ Node 1060
             { Style Solid }
             { Fill None }
             { Loc -105 -48 }
-            { End -105 48 }
+            { End -105 47 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -105 48 }
-            { End 105 48 }
+            { Loc -105 47 }
+            { End 105 47 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 105 -48 }
-            { End 105 48 }
+            { End 105 47 }
         }
         { Segment
             { Type Line }
@@ -1539,7 +1539,7 @@ Node 1060
 Node 1061
 {
     { Type Operation }
-    { Loc -805 37 }
+    { Loc -805 20 }
     { Scale 689.55 50.20 }
     { Label
         { Text "chooseBev( minAlcVol:float )" }
@@ -1557,7 +1557,7 @@ Node 1061
 Node 1074
 {
     { Type Operation }
-    { Loc -833 58 }
+    { Loc -833 41 }
     { Scale 458.32 50.20 }
     { Label
         { Text "refreshTask( Task )" }
@@ -1575,7 +1575,7 @@ Node 1074
 Node 1064
 {
     { Type Class }
-    { Loc -30 -194 }
+    { Loc -30 -211 }
     { Scale 391.53 294.65 }
     { Label
         { Text "TaskValidationOutcome" }
@@ -1635,7 +1635,7 @@ Node 1064
 Node 1065
 {
     { Type Attribute }
-    { Loc -36 -204 }
+    { Loc -36 -221 }
     { Scale 450.06 50.20 }
     { Label
         { Text "NotEnoughAlcohol" }
@@ -1653,7 +1653,7 @@ Node 1065
 Node 1068
 {
     { Type Attribute }
-    { Loc -37 -183 }
+    { Loc -37 -200 }
     { Scale 441.81 50.20 }
     { Label
         { Text "PreTaskNotSolved" }
@@ -1671,7 +1671,7 @@ Node 1068
 Node 1071
 {
     { Type Attribute }
-    { Loc -62 -162 }
+    { Loc -62 -179 }
     { Scale 239.48 50.20 }
     { Label
         { Text "ValidLoad" }
@@ -1689,7 +1689,7 @@ Node 1071
 Node 1081
 {
     { Type Class }
-    { Loc -988 162 }
+    { Loc -988 145 }
     { Scale 193.25 90.35 }
     { Label
         { Text "Interface" }
@@ -1705,7 +1705,7 @@ Node 1081
 Node 1166
 {
     { Type Class }
-    { Loc 433 -230 }
+    { Loc 433 -247 }
     { Scale 534.59 250.98 }
     { Label
         { Text "Crate" }
@@ -1730,21 +1730,21 @@ Node 1166
             { Style Solid }
             { Fill None }
             { Loc -107 -50 }
-            { End -107 50 }
+            { End -107 49 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -107 50 }
-            { End 106 50 }
+            { Loc -107 49 }
+            { End 106 49 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 106 -50 }
-            { End 106 50 }
+            { End 106 49 }
         }
         { Segment
             { Type Line }
@@ -1765,7 +1765,7 @@ Node 1166
 Node 1173
 {
     { Type Operation }
-    { Loc 415 -219 }
+    { Loc 415 -236 }
     { Scale 590.45 50.20 }
     { Label
         { Text "pour( bevID:int, vol:float )" }
@@ -1783,7 +1783,7 @@ Node 1173
 Node 1176
 {
     { Type Operation }
-    { Loc 429 -198 }
+    { Loc 429 -215 }
     { Scale 706.06 50.20 }
     { Label
         { Text "consume( bevID:int, vol:float )" }
@@ -1801,10 +1801,10 @@ Node 1176
 Node 1184
 {
     { Type Operation }
-    { Loc 420 -240 }
-    { Scale 631.74 50.20 }
+    { Loc 425 -257 }
+    { Scale 673.03 50.20 }
     { Label
-        { Text "add( String, float, int )" }
+        { Text "add( String, float, float )" }
     }
     { IsIncluded True }
     { Parent 1166 }
@@ -1819,7 +1819,7 @@ Node 1184
 Node 1199
 {
     { Type Class }
-    { Loc -200 -423 }
+    { Loc -200 -440 }
     { Scale 574.75 294.65 }
     { Label
         { Text "CrateInterface" }
@@ -1879,7 +1879,7 @@ Node 1199
 Node 1206
 {
     { Type Operation }
-    { Loc -217 -404 }
+    { Loc -217 -421 }
     { Scale 660.65 50.20 }
     { Label
         { Text "getBevVol( bevID:int )" }
@@ -1897,7 +1897,7 @@ Node 1206
 Node 1213
 {
     { Type Operation }
-    { Loc -212 -383 }
+    { Loc -212 -400 }
     { Scale 697.81 50.20 }
     { Label
         { Text "getBevABV( bevID:int )" }
@@ -1915,7 +1915,7 @@ Node 1213
 Node 1220
 {
     { Type Operation }
-    { Loc -204 -425 }
+    { Loc -204 -442 }
     { Scale 768.00 50.20 }
     { Label
         { Text "getBevName( bevID:int )" }
@@ -1930,21 +1930,69 @@ Node 1220
     }
 }
 
-Node 1223
+Node 1342
 {
-    { Type Operation }
-    { Loc 225 242 }
-    { Scale 623.48 50.20 }
+    { Type Class }
+    { Loc -620 481 }
+    { Scale 256.00 90.35 }
     { Label
-        { Text "getCrate()" }
+        { Text "CppCompiler" }
     }
-    { IsIncluded True }
-    { Parent 3 }
     { Object
         { PDMType Node }
         { MappingName ClassMapping }
-        { ID 21396 }
-        { GUID "UID_A09DA6B4-96F2-493e-B335-31AAA8495AD4" }
+        { ID 22915 }
+        { GUID "UID_855C318A-B32E-4150-8A89-EC3C426D9F0C" }
+    }
+}
+
+Node 1345
+{
+    { Type Class }
+    { Loc -462 476 }
+    { Scale 220.86 90.35 }
+    { Label
+        { Text "CCompiler" }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 22917 }
+        { GUID "UID_A35711B8-6AB8-4233-82BE-29FE49F7F7DE" }
+    }
+}
+
+Node 1348
+{
+    { Type Class }
+    { Loc -325 476 }
+    { Scale 261.02 90.35 }
+    { Label
+        { Text "JavaCompiler" }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 22919 }
+        { GUID "UID_293A6095-91BE-48e9-91A9-85770624D005" }
+    }
+}
+
+Node 1357
+{
+    { Type Operation }
+    { Loc 193 469 }
+    { Scale 569.81 50.20 }
+    { Label
+        { Text "setCompiler( Compiler )" }
+    }
+    { IsIncluded True }
+    { Parent 5 }
+    { Object
+        { PDMType Node }
+        { MappingName ClassMapping }
+        { ID 23330 }
+        { GUID "UID_A127FAB7-BC05-4e92-81E7-28B4C348C240" }
     }
 }
 
@@ -1953,12 +2001,12 @@ Arc 9
     { Type Association }
     { From
         { ID 8 }
-        { Loc -500 133 }
+        { Loc -500 248 }
         { Offset 6 -41 }
     }
     { To
         { ID 2 }
-        { Loc -325 16 }
+        { Loc -325 131 }
         { Offset -112 26 }
     }
 }
@@ -1968,12 +2016,12 @@ Arc 11
     { Type Association }
     { From
         { ID 6 }
-        { Loc -144 80 }
+        { Loc -144 195 }
         { Offset 0 -72 }
     }
     { To
         { ID 2 }
-        { Loc -146 43 }
+        { Loc -146 158 }
         { Offset 4 -83 }
     }
 }
@@ -1983,13 +2031,13 @@ Arc 841
     { Type Association }
     { From
         { ID 2 }
-        { Loc -42 43 }
+        { Loc -42 158 }
         { Offset 79 73 }
     }
     { To
         { ID 5 }
-        { Loc 193 184 }
-        { Offset 2 -79 }
+        { Loc 195 300 }
+        { Offset 2 -90 }
     }
 }
 
@@ -1998,12 +2046,12 @@ Arc 20
     { Type Contains }
     { From
         { ID 4 }
-        { Loc 603 -52 }
+        { Loc 603 63 }
         { Offset 0 0 }
     }
     { To
         { ID 19 }
-        { Loc 565 -91 }
+        { Loc 551 24 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2014,12 +2062,12 @@ Arc 23
     { Type Contains }
     { From
         { ID 4 }
-        { Loc 603 -52 }
+        { Loc 603 63 }
         { Offset 0 0 }
     }
     { To
         { ID 22 }
-        { Loc 554 -70 }
+        { Loc 545 45 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2030,12 +2078,12 @@ Arc 32
     { Type Contains }
     { From
         { ID 8 }
-        { Loc -520 183 }
+        { Loc -520 298 }
         { Offset 0 0 }
     }
     { To
         { ID 31 }
-        { Loc -692 165 }
+        { Loc -692 280 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2046,12 +2094,12 @@ Arc 38
     { Type Contains }
     { From
         { ID 4 }
-        { Loc 603 -52 }
+        { Loc 603 63 }
         { Offset 0 0 }
     }
     { To
         { ID 37 }
-        { Loc 599 1 }
+        { Loc 591 116 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2062,12 +2110,12 @@ Arc 43
     { Type Dependency }
     { From
         { ID 37 }
-        { Loc 673 -6 }
-        { Offset 51 2 }
+        { Loc 664 106 }
+        { Offset 35 2 }
     }
     { To
         { ID 40 }
-        { Loc 834 -79 }
+        { Loc 834 34 }
         { Offset -20 -19 }
     }
 }
@@ -2077,12 +2125,12 @@ Arc 48
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 47 }
-        { Loc 188 -48 }
+        { Loc 159 66 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2093,12 +2141,12 @@ Arc 54
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 53 }
-        { Loc 181 -27 }
+        { Loc 162 87 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2109,12 +2157,12 @@ Arc 57
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 56 }
-        { Loc 180 -6 }
+        { Loc 161 108 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2125,12 +2173,12 @@ Arc 61
     { Type Contains }
     { From
         { ID 59 }
-        { Loc 237 -235 }
+        { Loc 441 -66 }
         { Offset 0 0 }
     }
     { To
         { ID 60 }
-        { Loc 217 -243 }
+        { Loc 421 -74 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2141,12 +2189,12 @@ Arc 64
     { Type Contains }
     { From
         { ID 59 }
-        { Loc 237 -235 }
+        { Loc 441 -66 }
         { Offset 0 0 }
     }
     { To
         { ID 63 }
-        { Loc 225 -222 }
+        { Loc 429 -53 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2157,12 +2205,12 @@ Arc 66
     { Type Association }
     { From
         { ID 3 }
-        { Loc 284 -81 }
-        { Offset 4 -103 }
+        { Loc 282 35 }
+        { Offset 4 -93 }
     }
     { To
         { ID 59 }
-        { Loc 380 -147 }
+        { Loc 380 -32 }
         { Offset 2 -16 }
     }
 }
@@ -2172,12 +2220,12 @@ Arc 76
     { Type Contains }
     { From
         { ID 6 }
-        { Loc -144 161 }
+        { Loc -144 276 }
         { Offset 0 0 }
     }
     { To
         { ID 75 }
-        { Loc -151 111 }
+        { Loc -166 226 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2188,12 +2236,12 @@ Arc 87
     { Type Contains }
     { From
         { ID 5 }
-        { Loc 213 276 }
+        { Loc 213 391 }
         { Offset 0 0 }
     }
     { To
         { ID 86 }
-        { Loc 181 216 }
+        { Loc 194 331 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2204,12 +2252,12 @@ Arc 90
     { Type Contains }
     { From
         { ID 5 }
-        { Loc 213 276 }
+        { Loc 213 391 }
         { Offset 0 0 }
     }
     { To
         { ID 89 }
-        { Loc 175 237 }
+        { Loc 175 352 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2220,12 +2268,12 @@ Arc 92
     { Type Association }
     { From
         { ID 3 }
-        { Loc 179 -81 }
-        { Offset 4 -101 }
+        { Loc 186 35 }
+        { Offset 4 -91 }
     }
     { To
         { ID 2 }
-        { Loc 19 -105 }
+        { Loc 19 10 }
         { Offset -1 -80 }
     }
 }
@@ -2235,12 +2283,12 @@ Arc 97
     { Type Contains }
     { From
         { ID 6 }
-        { Loc -144 161 }
+        { Loc -144 276 }
         { Offset 0 0 }
     }
     { To
         { ID 96 }
-        { Loc -153 132 }
+        { Loc -166 247 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2251,12 +2299,12 @@ Arc 106
     { Type Contains }
     { From
         { ID 8 }
-        { Loc -520 183 }
+        { Loc -520 298 }
         { Offset 0 0 }
     }
     { To
         { ID 105 }
-        { Loc -532 215 }
+        { Loc -532 330 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2267,12 +2315,12 @@ Arc 109
     { Type Contains }
     { From
         { ID 8 }
-        { Loc -520 183 }
+        { Loc -520 298 }
         { Offset 0 0 }
     }
     { To
         { ID 108 }
-        { Loc -604 194 }
+        { Loc -604 309 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2283,12 +2331,12 @@ Arc 118
     { Type Contains }
     { From
         { ID 6 }
-        { Loc -144 161 }
+        { Loc -144 276 }
         { Offset 0 0 }
     }
     { To
         { ID 117 }
-        { Loc -163 153 }
+        { Loc -180 268 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2299,12 +2347,12 @@ Arc 121
     { Type Contains }
     { From
         { ID 6 }
-        { Loc -144 161 }
+        { Loc -144 276 }
         { Offset 0 0 }
     }
     { To
         { ID 120 }
-        { Loc -153 174 }
+        { Loc -166 289 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2315,12 +2363,12 @@ Arc 124
     { Type Contains }
     { From
         { ID 5 }
-        { Loc 213 276 }
+        { Loc 213 391 }
         { Offset 0 0 }
     }
     { To
         { ID 123 }
-        { Loc 174 258 }
+        { Loc 174 373 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2331,12 +2379,12 @@ Arc 127
     { Type Contains }
     { From
         { ID 5 }
-        { Loc 213 276 }
+        { Loc 213 391 }
         { Offset 0 0 }
     }
     { To
         { ID 126 }
-        { Loc 179 279 }
+        { Loc 179 394 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2347,12 +2395,12 @@ Arc 130
     { Type Contains }
     { From
         { ID 6 }
-        { Loc -144 161 }
+        { Loc -144 276 }
         { Offset 0 0 }
     }
     { To
         { ID 129 }
-        { Loc -148 195 }
+        { Loc -156 310 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2363,12 +2411,12 @@ Arc 133
     { Type Contains }
     { From
         { ID 6 }
-        { Loc -144 161 }
+        { Loc -144 276 }
         { Offset 0 0 }
     }
     { To
         { ID 132 }
-        { Loc -153 216 }
+        { Loc -161 331 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2379,12 +2427,12 @@ Arc 193
     { Type Contains }
     { From
         { ID 5 }
-        { Loc 213 276 }
+        { Loc 213 391 }
         { Offset 0 0 }
     }
     { To
         { ID 192 }
-        { Loc 166 300 }
+        { Loc 166 415 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2395,12 +2443,12 @@ Arc 199
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 578 190 }
+        { Loc 578 297 }
         { Offset 0 0 }
     }
     { To
         { ID 198 }
-        { Loc 548 170 }
+        { Loc 535 268 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2411,12 +2459,12 @@ Arc 202
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 578 190 }
+        { Loc 578 297 }
         { Offset 0 0 }
     }
     { To
         { ID 201 }
-        { Loc 579 191 }
+        { Loc 566 289 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2427,12 +2475,12 @@ Arc 205
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 578 190 }
+        { Loc 578 297 }
         { Offset 0 0 }
     }
     { To
         { ID 204 }
-        { Loc 567 212 }
+        { Loc 554 310 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2443,12 +2491,12 @@ Arc 208
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 578 190 }
+        { Loc 578 297 }
         { Offset 0 0 }
     }
     { To
         { ID 207 }
-        { Loc 566 233 }
+        { Loc 553 331 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2459,12 +2507,12 @@ Arc 213
     { Type Dependency }
     { From
         { ID 210 }
-        { Loc 191 319 }
+        { Loc 191 434 }
         { Offset -42 3 }
     }
     { To
         { ID 197 }
-        { Loc 511 143 }
+        { Loc 511 258 }
         { Offset -7 -79 }
     }
 }
@@ -2474,12 +2522,12 @@ Arc 215
     { Type Contains }
     { From
         { ID 5 }
-        { Loc 213 276 }
+        { Loc 213 391 }
         { Offset 0 0 }
     }
     { To
         { ID 210 }
-        { Loc 180 329 }
+        { Loc 180 444 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2490,12 +2538,12 @@ Arc 218
     { Type Contains }
     { From
         { ID 5 }
-        { Loc 213 276 }
+        { Loc 213 391 }
         { Offset 0 0 }
     }
     { To
         { ID 217 }
-        { Loc 201 350 }
+        { Loc 201 465 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2506,12 +2554,12 @@ Arc 292
     { Type Association }
     { From
         { ID 5 }
-        { Loc 180 184 }
-        { Offset -4 -84 }
+        { Loc 184 300 }
+        { Offset -4 -95 }
     }
     { To
         { ID 6 }
-        { Loc -62 110 }
+        { Loc -63 224 }
         { Offset -1 -75 }
     }
 }
@@ -2521,12 +2569,12 @@ Arc 294
     { Type Association }
     { From
         { ID 5 }
-        { Loc 107 222 }
-        { Offset -6 -84 }
+        { Loc 107 337 }
+        { Offset -6 -95 }
     }
     { To
         { ID 656 }
-        { Loc -104 289 }
+        { Loc -104 404 }
         { Offset 0 0 }
     }
 }
@@ -2536,12 +2584,12 @@ Arc 302
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 301 }
-        { Loc 207 36 }
+        { Loc 183 150 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2552,12 +2600,12 @@ Arc 440
     { Type Contains }
     { From
         { ID 2 }
-        { Loc -153 -49 }
+        { Loc -153 66 }
         { Offset 0 0 }
     }
     { To
         { ID 439 }
-        { Loc -263 -109 }
+        { Loc -263 6 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2568,12 +2616,12 @@ Arc 442
     { Type Dependency }
     { From
         { ID 2 }
-        { Loc 19 -72 }
+        { Loc 19 43 }
         { Offset -5 -83 }
     }
     { To
         { ID 197 }
-        { Loc 511 102 }
+        { Loc 511 217 }
         { Offset -11 -70 }
     }
 }
@@ -2583,12 +2631,12 @@ Arc 445
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 578 190 }
+        { Loc 578 297 }
         { Offset 0 0 }
     }
     { To
         { ID 444 }
-        { Loc 562 149 }
+        { Loc 549 247 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2599,12 +2647,12 @@ Arc 539
     { Type Contains }
     { From
         { ID 2 }
-        { Loc -153 -49 }
+        { Loc -153 66 }
         { Offset 0 0 }
     }
     { To
         { ID 538 }
-        { Loc -165 -59 }
+        { Loc -165 56 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2615,12 +2663,12 @@ Arc 542
     { Type Contains }
     { From
         { ID 2 }
-        { Loc -153 -49 }
+        { Loc -153 66 }
         { Offset 0 0 }
     }
     { To
         { ID 541 }
-        { Loc -235 -17 }
+        { Loc -235 98 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2631,12 +2679,12 @@ Arc 545
     { Type Contains }
     { From
         { ID 2 }
-        { Loc -153 -49 }
+        { Loc -153 66 }
         { Offset 0 0 }
     }
     { To
         { ID 544 }
-        { Loc -254 -38 }
+        { Loc -254 77 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2647,12 +2695,12 @@ Arc 548
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 547 }
-        { Loc 260 65 }
+        { Loc 254 179 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2663,12 +2711,12 @@ Arc 550
     { Type Contains }
     { From
         { ID 4 }
-        { Loc 603 -52 }
+        { Loc 603 63 }
         { Offset 0 0 }
     }
     { To
         { ID 34 }
-        { Loc 585 -20 }
+        { Loc 577 95 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2679,12 +2727,12 @@ Arc 854
     { Type Contains }
     { From
         { ID 2 }
-        { Loc -153 -49 }
+        { Loc -153 66 }
         { Offset 0 0 }
     }
     { To
         { ID 853 }
-        { Loc -219 4 }
+        { Loc -219 119 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2695,12 +2743,12 @@ Arc 657
     { Type Association }
     { From
         { ID 656 }
-        { Loc -104 289 }
+        { Loc -104 404 }
         { Offset 0 0 }
     }
     { To
         { ID 8 }
-        { Loc -284 224 }
+        { Loc -284 339 }
         { Offset 3 -40 }
     }
 }
@@ -2710,12 +2758,12 @@ Arc 859
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 858 }
-        { Loc 192 15 }
+        { Loc 168 129 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2726,12 +2774,12 @@ Arc 864
     { Type Contains }
     { From
         { ID 2 }
-        { Loc -153 -49 }
+        { Loc -153 66 }
         { Offset 0 0 }
     }
     { To
         { ID 863 }
-        { Loc -234 25 }
+        { Loc -234 140 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2742,12 +2790,12 @@ Arc 867
     { Type Contains }
     { From
         { ID 2 }
-        { Loc -153 -49 }
+        { Loc -153 66 }
         { Offset 0 0 }
     }
     { To
         { ID 866 }
-        { Loc -235 -88 }
+        { Loc -235 27 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2758,12 +2806,12 @@ Arc 778
     { Type Contains }
     { From
         { ID 776 }
-        { Loc -405 -264 }
+        { Loc -405 -157 }
         { Offset 0 0 }
     }
     { To
         { ID 777 }
-        { Loc -409 -297 }
+        { Loc -417 -199 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2774,12 +2822,12 @@ Arc 781
     { Type Contains }
     { From
         { ID 776 }
-        { Loc -405 -264 }
+        { Loc -405 -157 }
         { Offset 0 0 }
     }
     { To
         { ID 780 }
-        { Loc -463 -276 }
+        { Loc -438 -178 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2790,12 +2838,12 @@ Arc 784
     { Type Contains }
     { From
         { ID 776 }
-        { Loc -405 -264 }
+        { Loc -405 -157 }
         { Offset 0 0 }
     }
     { To
         { ID 783 }
-        { Loc -424 -255 }
+        { Loc -460 -157 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2806,12 +2854,12 @@ Arc 787
     { Type Contains }
     { From
         { ID 776 }
-        { Loc -405 -264 }
+        { Loc -405 -157 }
         { Offset 0 0 }
     }
     { To
         { ID 786 }
-        { Loc -419 -234 }
+        { Loc -437 -136 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2822,12 +2870,12 @@ Arc 797
     { Type Implements }
     { From
         { ID 2 }
-        { Loc -165 -141 }
+        { Loc -165 -26 }
         { Offset 2 -80 }
     }
     { To
         { ID 776 }
-        { Loc -243 -208 }
+        { Loc -243 -93 }
         { Offset 1 -79 }
     }
 }
@@ -2837,12 +2885,12 @@ Arc 815
     { Type Contains }
     { From
         { ID 776 }
-        { Loc -405 -264 }
+        { Loc -405 -157 }
         { Offset 0 0 }
     }
     { To
         { ID 814 }
-        { Loc -467 -213 }
+        { Loc -447 -115 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2853,12 +2901,12 @@ Arc 827
     { Type Contains }
     { From
         { ID 776 }
-        { Loc -405 -264 }
+        { Loc -405 -157 }
         { Offset 0 0 }
     }
     { To
         { ID 826 }
-        { Loc -461 -192 }
+        { Loc -423 -94 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2869,12 +2917,12 @@ Arc 989
     { Type Contains }
     { From
         { ID 197 }
-        { Loc 578 190 }
+        { Loc 578 297 }
         { Offset 0 0 }
     }
     { To
         { ID 988 }
-        { Loc 553 254 }
+        { Loc 540 352 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2885,12 +2933,12 @@ Arc 1062
     { Type Contains }
     { From
         { ID 1060 }
-        { Loc -800 -87 }
+        { Loc -800 20 }
         { Offset 0 0 }
     }
     { To
         { ID 1061 }
-        { Loc -805 -78 }
+        { Loc -812 20 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2901,12 +2949,12 @@ Arc 1066
     { Type Contains }
     { From
         { ID 1064 }
-        { Loc -30 -318 }
+        { Loc -30 -203 }
         { Offset 0 0 }
     }
     { To
         { ID 1065 }
-        { Loc -52 -336 }
+        { Loc -52 -221 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2917,12 +2965,12 @@ Arc 1069
     { Type Contains }
     { From
         { ID 1064 }
-        { Loc -30 -318 }
+        { Loc -30 -203 }
         { Offset 0 0 }
     }
     { To
         { ID 1068 }
-        { Loc -53 -315 }
+        { Loc -53 -200 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2933,12 +2981,12 @@ Arc 1072
     { Type Contains }
     { From
         { ID 1064 }
-        { Loc -30 -318 }
+        { Loc -30 -203 }
         { Offset 0 0 }
     }
     { To
         { ID 1071 }
-        { Loc -78 -294 }
+        { Loc -78 -179 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2949,12 +2997,12 @@ Arc 1075
     { Type Contains }
     { From
         { ID 1060 }
-        { Loc -800 -87 }
+        { Loc -800 20 }
         { Offset 0 0 }
     }
     { To
         { ID 1074 }
-        { Loc -833 -57 }
+        { Loc -840 41 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -2965,12 +3013,12 @@ Arc 1079
     { Type Dependency }
     { From
         { ID 776 }
-        { Loc -243 -341 }
+        { Loc -243 -226 }
         { Offset 30 -69 }
     }
     { To
         { ID 1064 }
-        { Loc -108 -353 }
+        { Loc -108 -238 }
         { Offset -26 -47 }
     }
 }
@@ -2980,13 +3028,13 @@ Arc 1082
     { Type Implements }
     { From
         { ID 1081 }
-        { Loc -984 29 }
+        { Loc -983 144 }
         { Offset 0 -8 }
     }
     { To
         { ID 1060 }
-        { Loc -905 -115 }
-        { Offset -102 -34 }
+        { Loc -905 11 }
+        { Offset -95 -34 }
     }
 }
 
@@ -2995,12 +3043,12 @@ Arc 1084
     { Type Dependency }
     { From
         { ID 1081 }
-        { Loc -950 41 }
+        { Loc -950 156 }
         { Offset 9 -6 }
     }
     { To
         { ID 6 }
-        { Loc -226 84 }
+        { Loc -225 199 }
         { Offset 5 -73 }
     }
 }
@@ -3010,12 +3058,12 @@ Arc 1161
     { Type Dependency }
     { From
         { ID 2 }
-        { Loc -325 -122 }
+        { Loc -325 -7 }
         { Offset 0 -74 }
     }
     { To
         { ID 1060 }
-        { Loc -695 -113 }
+        { Loc -695 2 }
         { Offset 1 -26 }
     }
 }
@@ -3025,12 +3073,12 @@ Arc 1167
     { Type Association }
     { From
         { ID 4 }
-        { Loc 618 -123 }
+        { Loc 618 -8 }
         { Offset 20 -63 }
     }
     { To
         { ID 1166 }
-        { Loc 497 -295 }
+        { Loc 497 -180 }
         { Offset 0 -42 }
     }
 }
@@ -3040,12 +3088,12 @@ Arc 1169
     { Type Association }
     { From
         { ID 3 }
-        { Loc 293 -81 }
-        { Offset 22 -97 }
+        { Loc 293 35 }
+        { Offset 22 -87 }
     }
     { To
         { ID 1166 }
-        { Loc 389 -295 }
+        { Loc 389 -180 }
         { Offset -6 -39 }
     }
 }
@@ -3055,12 +3103,12 @@ Arc 1174
     { Type Contains }
     { From
         { ID 1166 }
-        { Loc 433 -345 }
+        { Loc 433 -230 }
         { Offset 0 0 }
     }
     { To
         { ID 1173 }
-        { Loc 415 -334 }
+        { Loc 408 -219 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3071,12 +3119,12 @@ Arc 1177
     { Type Contains }
     { From
         { ID 1166 }
-        { Loc 433 -345 }
+        { Loc 433 -230 }
         { Offset 0 0 }
     }
     { To
         { ID 1176 }
-        { Loc 429 -313 }
+        { Loc 422 -198 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3087,12 +3135,12 @@ Arc 1182
     { Type Contains }
     { From
         { ID 4 }
-        { Loc 603 -52 }
+        { Loc 603 63 }
         { Offset 0 0 }
     }
     { To
         { ID 25 }
-        { Loc 552 -49 }
+        { Loc 543 66 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3103,12 +3151,12 @@ Arc 1185
     { Type Contains }
     { From
         { ID 1166 }
-        { Loc 433 -345 }
+        { Loc 433 -230 }
         { Offset 0 0 }
     }
     { To
         { ID 1184 }
-        { Loc 420 -355 }
+        { Loc 425 -240 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3119,12 +3167,12 @@ Arc 1188
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 1187 }
-        { Loc 240 107 }
+        { Loc 221 221 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3135,12 +3183,12 @@ Arc 1191
     { Type Contains }
     { From
         { ID 3 }
-        { Loc 264 33 }
+        { Loc 265 147 }
         { Offset 0 0 }
     }
     { To
         { ID 1190 }
-        { Loc 226 86 }
+        { Loc 204 200 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3151,12 +3199,12 @@ Arc 1207
     { Type Contains }
     { From
         { ID 1199 }
-        { Loc -200 -538 }
+        { Loc -200 -432 }
         { Offset 0 0 }
     }
     { To
         { ID 1206 }
-        { Loc -217 -540 }
+        { Loc -220 -421 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3167,12 +3215,12 @@ Arc 1214
     { Type Contains }
     { From
         { ID 1199 }
-        { Loc -200 -538 }
+        { Loc -200 -432 }
         { Offset 0 0 }
     }
     { To
         { ID 1213 }
-        { Loc -212 -519 }
+        { Loc -215 -400 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3183,12 +3231,12 @@ Arc 1216
     { Type Dependency }
     { From
         { ID 1081 }
-        { Loc -971 29 }
+        { Loc -971 144 }
         { Offset 1 -5 }
     }
     { To
         { ID 1199 }
-        { Loc -314 -511 }
+        { Loc -314 -396 }
         { Offset -20 -49 }
     }
 }
@@ -3198,12 +3246,12 @@ Arc 1218
     { Type Implements }
     { From
         { ID 1166 }
-        { Loc 411 -395 }
+        { Loc 411 -280 }
         { Offset 7 -42 }
     }
     { To
         { ID 1199 }
-        { Loc -86 -543 }
+        { Loc -86 -428 }
         { Offset 11 -34 }
     }
 }
@@ -3213,28 +3261,12 @@ Arc 1221
     { Type Contains }
     { From
         { ID 1199 }
-        { Loc -200 -538 }
+        { Loc -200 -432 }
         { Offset 0 0 }
     }
     { To
         { ID 1220 }
-        { Loc -204 -498 }
-        { Offset 0 0 }
-    }
-    { IsInclusion True }
-}
-
-Arc 1224
-{
-    { Type Contains }
-    { From
-        { ID 3 }
-        { Loc 265 32 }
-        { Offset 0 0 }
-    }
-    { To
-        { ID 1223 }
-        { Loc 179 127 }
+        { Loc -212 -442 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -3245,20 +3277,111 @@ Arc 1226
     { Type Dependency }
     { From
         { ID 2 }
-        { Loc -150 -141 }
+        { Loc -150 -26 }
         { Offset 3 -82 }
     }
     { To
         { ID 1199 }
-        { Loc -154 -479 }
+        { Loc -154 -364 }
         { Offset 46 -36 }
     }
+}
+
+Arc 1343
+{
+    { Type Generalization }
+    { From
+        { ID 1342 }
+        { Loc -595 480 }
+        { Offset 21 -4 }
+    }
+    { To
+        { ID 8 }
+        { Loc -542 348 }
+        { Offset 13 -40 }
+    }
+}
+
+Arc 1346
+{
+    { Type Generalization }
+    { From
+        { ID 1345 }
+        { Loc -454 475 }
+        { Offset 9 -6 }
+    }
+    { To
+        { ID 8 }
+        { Loc -479 348 }
+        { Offset 26 -36 }
+    }
+}
+
+Arc 1349
+{
+    { Type Generalization }
+    { From
+        { ID 1348 }
+        { Loc -319 475 }
+        { Offset 13 -8 }
+    }
+    { To
+        { ID 8 }
+        { Loc -413 348 }
+        { Offset 38 -46 }
+    }
+}
+
+Arc 1353
+{
+    { Type Association }
+    { From
+        { ID 2 }
+        { Loc -115 -26 }
+        { Offset 38 -82 }
+    }
+    { To
+        { ID 1199 }
+        { Loc -117 -364 }
+        { Offset 83 -23 }
+    }
+}
+
+Arc 1355
+{
+    { Type Association }
+    { From
+        { ID 1081 }
+        { Loc -958 144 }
+        { Offset 17 -7 }
+    }
+    { To
+        { ID 1199 }
+        { Loc -314 -382 }
+        { Offset -2 -50 }
+    }
+}
+
+Arc 1358
+{
+    { Type Contains }
+    { From
+        { ID 5 }
+        { Loc 213 402 }
+        { Offset 0 0 }
+    }
+    { To
+        { ID 1357 }
+        { Loc 193 486 }
+        { Offset 0 0 }
+    }
+    { IsInclusion True }
 }
 
 Cntx 806
 {
     { Type RelLabelTo }
-    { Loc -390 212 }
+    { Loc -402 204 }
     { Scale 256.00 50.20 }
     { Label
         { Text "-compilers" }
@@ -3275,7 +3398,7 @@ Cntx 806
 Cntx 808
 {
     { Type RelLabelTo }
-    { Loc -112 177 }
+    { Loc -112 160 }
     { Scale 156.90 50.20 }
     { Label
         { Text "-tasks" }
@@ -3292,7 +3415,7 @@ Cntx 808
 Cntx 821
 {
     { Type RelLabelFrom }
-    { Loc 276 22 }
+    { Loc 276 8 }
     { Scale 111.48 50.20 }
     { Label
         { Text "-sex" }
@@ -3309,7 +3432,7 @@ Cntx 821
 Cntx 825
 {
     { Type RelLabelTo }
-    { Loc 118 16 }
+    { Loc 134 3 }
     { Scale 169.29 50.20 }
     { Label
         { Text "-player" }
@@ -3326,7 +3449,7 @@ Cntx 825
 Cntx 846
 {
     { Type RelLabelFrom }
-    { Loc 4 391 }
+    { Loc -12 379 }
     { Scale 227.10 50.20 }
     { Label
         { Text "-compiler" }
@@ -3343,7 +3466,7 @@ Cntx 846
 Cntx 849
 {
     { Type RelLabelFrom }
-    { Loc 144 309 }
+    { Loc 153 294 }
     { Scale 128.00 50.20 }
     { Label
         { Text "-task" }
@@ -3360,7 +3483,7 @@ Cntx 849
 Cntx 870
 {
     { Type RelLabelFrom }
-    { Loc 23 169 }
+    { Loc 23 152 }
     { Scale 239.48 50.20 }
     { Label
         { Text "-solutions" }
@@ -4442,18 +4565,6 @@ Link 1222
     }
 }
 
-Link 1225
-{
-    { FirstArc 1224 }
-    { LastArc 1224 }
-    { Object
-        { PDMType Link }
-        { MappingName ContainsMapping }
-        { ID 21400 }
-        { GUID "UID_36C36BEE-2F5E-4f6b-A0C4-466202AAC95A" }
-    }
-}
-
 Link 1227
 {
     { FirstArc 1226 }
@@ -4463,5 +4574,101 @@ Link 1227
         { MappingName DependencyMapping }
         { ID 21426 }
         { GUID "UID_E07F75C2-B5B6-4570-AAA8-156D947572C8" }
+    }
+}
+
+Link 1344
+{
+    { FirstArc 1343 }
+    { LastArc 1343 }
+    { Object
+        { PDMType Link }
+        { MappingName GeneralizationMapping }
+        { ID 22916 }
+        { GUID "UID_F55FA4B2-1FAF-4410-BD4C-3A566BA2102A" }
+    }
+}
+
+Link 1347
+{
+    { FirstArc 1346 }
+    { LastArc 1346 }
+    { Object
+        { PDMType Link }
+        { MappingName GeneralizationMapping }
+        { ID 22918 }
+        { GUID "UID_E8412853-31DA-4183-B2DB-6FB3951C7645" }
+    }
+}
+
+Link 1350
+{
+    { FirstArc 1349 }
+    { LastArc 1349 }
+    { Object
+        { PDMType Link }
+        { MappingName GeneralizationMapping }
+        { ID 22920 }
+        { GUID "UID_9F564DA6-7A92-4cc8-9F96-F1D3AB8F6F55" }
+    }
+}
+
+Link 1354
+{
+    { FirstArc 1353 }
+    { LastArc 1353 }
+    { Object
+        { PDMType Node }
+        { MappingName AssociationNodeMapping }
+        { ID 22945 }
+        { GUID "UID_88EA2C5D-A3D5-4d2f-AA93-3D75805513A9" }
+    }
+    { Object
+        { PDMType Link }
+        { MappingName FromMapping }
+        { ID 22947 }
+        { GUID "UID_6098964E-C786-49b2-A54D-769C55D33743" }
+    }
+    { Object
+        { PDMType Link }
+        { MappingName ToMapping }
+        { ID 22946 }
+        { GUID "UID_04952736-3B1A-4f4b-9D1F-441553025445" }
+    }
+}
+
+Link 1356
+{
+    { FirstArc 1355 }
+    { LastArc 1355 }
+    { Object
+        { PDMType Node }
+        { MappingName AssociationNodeMapping }
+        { ID 22985 }
+        { GUID "UID_DA263627-BC60-4be2-A72E-8052A881F017" }
+    }
+    { Object
+        { PDMType Link }
+        { MappingName FromMapping }
+        { ID 22987 }
+        { GUID "UID_4B204363-5A66-4107-9840-7771CBEE84B4" }
+    }
+    { Object
+        { PDMType Link }
+        { MappingName ToMapping }
+        { ID 22986 }
+        { GUID "UID_6EBAA2F0-B8A5-4ae6-9172-C38A0CE208EC" }
+    }
+}
+
+Link 1359
+{
+    { FirstArc 1358 }
+    { LastArc 1358 }
+    { Object
+        { PDMType Link }
+        { MappingName ContainsMapping }
+        { ID 23333 }
+        { GUID "UID_D88DC5E7-3E1C-4603-BF6E-5F82D1B2A77D" }
     }
 }

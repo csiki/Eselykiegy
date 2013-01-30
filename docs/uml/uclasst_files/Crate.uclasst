@@ -433,7 +433,7 @@ FillTable UmlClassTable
 					{ PropertyList { UmlCxxCodeGenId "107" } }
 					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 20682 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 20667 }  } { Object { PDMType node } { MappingName Operation } { ID 20665 } { GUID "UID_5DD92C15-8FAE-4021-B1EC-787B2CE5C86F" }  } } }
 				{ Cell	{ Appid 717 }
-					{ Label "String, float, int" }
+					{ Label "String, float, float" }
 					 }
 				{ Cell	{ Appid 709 }
 					{ Label "int" }

@@ -1,8 +1,5 @@
 package main;
 
-import java.awt.EventQueue;
-import java.awt.Window;
-
 import frame.MainFrame;
 
 /**

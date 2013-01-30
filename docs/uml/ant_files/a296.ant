@@ -47,15 +47,6 @@ NoteObject 2
 
 ItemObject 3
 {
-    { Type UmlRoleNavigability }
-    { Value "True" }
-    { GuidRef "" }
-    { NoteId 2 }
-    { ObjectId 20314 }
-}
-
-ItemObject 4
-{
     { Type UmlAggregationType }
     { Value "Composition" }
     { GuidRef "" }
@@ -63,7 +54,7 @@ ItemObject 4
     { ObjectId 20315 }
 }
 
-NoteObject 5
+NoteObject 4
 {
     { Type UmlExtensibilityDefinition }
     { Name "" }
@@ -71,7 +62,7 @@ NoteObject 5
     { ObjectId 20292 }
 }
 
-NoteObject 6
+NoteObject 5
 {
     { Type GenericObject }
     { Name "" }
@@ -79,12 +70,12 @@ NoteObject 6
     { ObjectId 20294 }
 }
 
-ItemObject 7
+ItemObject 6
 {
     { Type ObjectName }
     { Value "" }
     { GuidRef "" }
-    { NoteId 6 }
+    { NoteId 5 }
     { ObjectId 20295 }
 }
 

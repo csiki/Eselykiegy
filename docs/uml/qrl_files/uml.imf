@@ -1,0 +1,5459 @@
+{ NormalClass
+  Id 103
+  GUID UID_09BC1CEC-E3E3-421a-AE4A-4A0E85FCE76F
+  Name Game
+  { MAttribute
+    Id 7450
+    GUID UID_38954F29-5A50-4587-BA71-C51DE45DD81B
+    Name currentTask
+    Type Task
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 16040
+    GUID UID_D007EA9A-2B23-4f1b-9974-5D481D506FB1
+    Name currentTaskStartTime
+    Type long
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MOperation
+    Id 8108
+    GUID UID_1B226AFD-2C01-4b72-A292-587488CB64B4
+    Name calculateAlcComsumeVol
+    ReturnType float
+    Access private
+    Binding normal
+    { OpPara
+      Id 8108_Para_0
+      GUID UID_1B226AFD-2C01-4b72-A292-587488CB64B4_Para_0
+      Name SolutionOutcome
+    }
+  }
+  { MOperation
+    Id 8180
+    GUID UID_C7FDCC96-2262-44a1-B941-8A834BFBA493
+    Name openFile
+    ReturnType Task
+    Access private
+    Binding normal
+    { OpPara
+      Id 8180_Para_0
+      GUID UID_C7FDCC96-2262-44a1-B941-8A834BFBA493_Para_0
+      Name File
+    }
+  }
+  { MOperation
+    Id 8137
+    GUID UID_F36D2511-B785-4d87-9880-7FD93E3B6F3A
+    Name taskValidation
+    ReturnType TaskValidationOutcome
+    Access private
+    Binding normal
+    { OpPara
+      Id 8137_Para_0
+      GUID UID_F36D2511-B785-4d87-9880-7FD93E3B6F3A_Para_0
+      Name Task
+    }
+  }
+  { MOperation
+    Id 15846
+    GUID UID_7E121FAC-A9A4-4165-8C32-7C940467B668
+    Name calculateBloodVol
+    ReturnType float
+    Access private
+    Binding normal
+    { OpPara
+      Id 15846_Para_0
+      GUID UID_7E121FAC-A9A4-4165-8C32-7C940467B668_Para_0
+      Name int
+    }
+    { OpPara
+      Id 15846_Para_1
+      GUID UID_7E121FAC-A9A4-4165-8C32-7C940467B668_Para_1
+      Name int
+    }
+  }
+  { MOperation
+    Id 15934
+    GUID UID_6E6733E2-4372-499f-8F59-814D22E3CB12
+    Name isPassed
+    ReturnType boolean
+    Access private
+    Binding normal
+    { OpPara
+      Id 15934_Para_0
+      GUID UID_6E6733E2-4372-499f-8F59-814D22E3CB12_Para_0
+      Name taskID
+      Type int
+    }
+  }
+}
+{ NormalClass
+  Id 104
+  GUID UID_63603D53-A905-4a5c-9084-654DC3928D0E
+  Name Player
+  { MAttribute
+    Id 910
+    GUID UID_6B5AA682-8E4E-4240-81D9-CAE95A89F4B0
+    Name name
+    Type String
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 898
+    GUID UID_447F58E4-70A5-44ae-8D17-F61566C891E7
+    Name sex
+    Type Sex
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 902
+    GUID UID_43BB7C23-3BA3-41e0-89EE-D4F67FF564EC
+    Name weight
+    Type int
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 906
+    GUID UID_46A270D9-3162-4db5-A585-7C118384CBA0
+    Name height
+    Type int
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 15893
+    GUID UID_BBC6A076-1AAD-4417-B8CE-39919D5F8678
+    Name bloodVol
+    Type float
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 3259
+    GUID UID_69B076FB-F3F4-4899-8872-B41AF48BB8EB
+    Name consumedAlc
+    Type float
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MOperation
+    Id 8212
+    GUID UID_E5EEB772-3B97-4f56-9FC6-2F0F8B252B6B
+    Name consume
+    Access public
+    Binding normal
+    { OpPara
+      Id 8212_Para_0
+      GUID UID_E5EEB772-3B97-4f56-9FC6-2F0F8B252B6B_Para_0
+      Name bevID
+      Type int
+    }
+    { OpPara
+      Id 8212_Para_1
+      GUID UID_E5EEB772-3B97-4f56-9FC6-2F0F8B252B6B_Para_1
+      Name float
+    }
+    { OpPara
+      Id 8212_Para_2
+      GUID UID_E5EEB772-3B97-4f56-9FC6-2F0F8B252B6B_Para_2
+      Name alcVol
+      Type float
+    }
+  }
+  { MOperation
+    Id 20836
+    GUID UID_B3DD9F22-3538-48e7-A6FC-91F84C4F6E2B
+    Name pour
+    Access public
+    Binding normal
+    { OpPara
+      Id 20836_Para_0
+      GUID UID_B3DD9F22-3538-48e7-A6FC-91F84C4F6E2B_Para_0
+      Name bevID
+      Type int
+    }
+    { OpPara
+      Id 20836_Para_1
+      GUID UID_B3DD9F22-3538-48e7-A6FC-91F84C4F6E2B_Para_1
+      Name float
+    }
+  }
+  { MOperation
+    Id 20699
+    GUID UID_6AB9F920-B1F9-4ad4-BFEA-C6D8A03FE8D9
+    Name addBev
+    ReturnType int
+    Access public
+    Binding normal
+    { OpPara
+      Id 20699_Para_0
+      GUID UID_6AB9F920-B1F9-4ad4-BFEA-C6D8A03FE8D9_Para_0
+      Name String
+    }
+    { OpPara
+      Id 20699_Para_1
+      GUID UID_6AB9F920-B1F9-4ad4-BFEA-C6D8A03FE8D9_Para_1
+      Name float
+    }
+    { OpPara
+      Id 20699_Para_2
+      GUID UID_6AB9F920-B1F9-4ad4-BFEA-C6D8A03FE8D9_Para_2
+      Name float
+    }
+  }
+  { MOperation
+    Id 21396
+    GUID UID_A09DA6B4-96F2-493e-B335-31AAA8495AD4
+    Name getCrate
+    ReturnType CrateInterface
+    Access public
+    Binding normal
+  }
+}
+{ NormalClass
+  Id 105
+  GUID UID_22AB7D7D-7A95-441e-93F2-A7B32D8D0590
+  Name Beverage
+  { MAttribute
+    Id 535
+    GUID UID_9D85A8D1-AA89-4a34-9EBC-576E1AAC755D
+    Name name
+    Type String
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 527
+    GUID UID_02FD7AD5-3C4E-45c7-B3ED-18D3F415837E
+    Name abv
+    Type float
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 531
+    GUID UID_9EC7EF2C-59AF-4d9b-A064-C74290A08622
+    Name vol
+    Type float
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MOperation
+    Id 690
+    GUID UID_01E9FC7F-9AA8-4a60-8C1B-8CD096FD0BC9
+    Name pour
+    ReturnType void
+    Access public
+    Binding normal
+    { OpPara
+      Id 690_Para_0
+      GUID UID_01E9FC7F-9AA8-4a60-8C1B-8CD096FD0BC9_Para_0
+      Name vol
+      Type float
+    }
+  }
+  { MOperation
+    Id 686
+    GUID UID_E1BF55A1-BC0C-45b8-849D-19CD722EBF3E
+    Name consume
+    ReturnType void
+    Access public
+    Binding normal
+    { OpPara
+      Id 686_Para_0
+      GUID UID_E1BF55A1-BC0C-45b8-849D-19CD722EBF3E_Para_0
+      Name vol
+      Type float
+    }
+  }
+}
+{ NormalClass
+  Id 106
+  GUID UID_5C9691A9-8B65-4783-9194-2870CC579C16
+  Name Solution
+  { MAttribute
+    Id 1457
+    GUID UID_1EF27C18-370B-4aa2-9C5D-AB4347443A10
+    Name soutcome
+    Type SolutionOutcome
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 1483
+    GUID UID_95747001-B635-4b79-976E-8B6684D36110
+    Name duration
+    Type float
+    Access private
+    DefaultValue 0.0
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 1996
+    GUID UID_C052A19E-5A39-47e8-880F-4B559411D825
+    Name runtime
+    Type double
+    Access private
+    DefaultValue 0.0
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2065
+    GUID UID_412287FC-4BE8-42d9-AD85-4FD534E76714
+    Name mistakes
+    Type int
+    Access private
+    DefaultValue 0
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2307
+    GUID UID_89BBB79E-4FBA-4704-8F57-3CD04954DF45
+    Name code
+    Type String
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MOperation
+    Id 2731
+    GUID UID_B2EAEEFB-1FDD-46cc-B12D-2E0904B00727
+    Name validator
+    ReturnType SolutionOutcome
+    Access public
+    Binding normal
+  }
+  { MOperation
+    Id 2791
+    GUID UID_3CD95CC5-9880-4f39-ADBE-B70810D4AF91
+    Name setCode
+    ReturnType void
+    Access public
+    Binding normal
+    { OpPara
+      Id 2791_Para_0
+      GUID UID_3CD95CC5-9880-4f39-ADBE-B70810D4AF91_Para_0
+      Name String
+    }
+  }
+}
+{ NormalClass
+  Id 107
+  GUID UID_A427BCD5-9C21-4904-92C9-B2FE61B73014
+  Name Task
+  { MAttribute
+    Id 1294
+    GUID UID_E0971A9B-319E-43a8-903B-6A24EF1BA217
+    Name priorTaskID
+    Type int
+    Access public
+    DefaultValue 0
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 1591
+    GUID UID_871A9369-BC45-458d-9FFB-F6DFAC9A61DC
+    Name description
+    Type String
+    Access public
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 1930
+    GUID UID_132B860D-04B0-434e-B64F-9B6767397858
+    Name inputs
+    Type String
+    Multiplicity NONE
+    Access public
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 1958
+    GUID UID_50359A6C-60FC-4074-A280-9987EE4F07F5
+    Name validOutput
+    Type String
+    Access public
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2094
+    GUID UID_A3F78C96-D9A3-4c88-AD40-9D7932CC2710
+    Name mistakeAlcVol
+    Type float
+    Access public
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2098
+    GUID UID_0FB1ADF3-F600-455d-93B3-0775FCC1065C
+    Name solvedAlcVol
+    Type float
+    Access public
+    Key False
+    Binding normal
+    Derived False
+  }
+}
+{ NormalClass
+  Id 108
+  GUID UID_D295B602-1D1E-490d-9CE2-2505B223FB57
+  Name Compiler
+  { MAttribute
+    Id 658
+    GUID UID_AFE8601D-9BD9-4edb-82DD-51DB4CED1EB5
+    Name langName
+    Type String
+    Access private
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MOperation
+    Id 1789
+    GUID UID_0D72E72C-D766-4191-B7D4-C5C98FB07E49
+    Name compile
+    ReturnType String
+    Access public
+    Binding normal
+    { OpPara
+      Id 1789_Para_0
+      GUID UID_0D72E72C-D766-4191-B7D4-C5C98FB07E49_Para_0
+      Name fileName
+      Type String
+    }
+    { OpPara
+      Id 1789_Para_1
+      GUID UID_0D72E72C-D766-4191-B7D4-C5C98FB07E49_Para_1
+      Name error
+      Type Boolean
+    }
+  }
+  { MOperation
+    Id 1679
+    GUID UID_277821AD-6267-490e-9EB0-E8C53648FF99
+    Name run
+    ReturnType double
+    Access public
+    Binding normal
+    { OpPara
+      Id 1679_Para_0
+      GUID UID_277821AD-6267-490e-9EB0-E8C53648FF99_Para_0
+      Name fileName
+      Type String
+    }
+    { OpPara
+      Id 1679_Para_1
+      GUID UID_277821AD-6267-490e-9EB0-E8C53648FF99_Para_1
+      Name inputs
+      Type String
+      Multiplicity NONE
+    }
+    { OpPara
+      Id 1679_Para_2
+      GUID UID_277821AD-6267-490e-9EB0-E8C53648FF99_Para_2
+      Name output
+      Type String
+    }
+    { OpPara
+      Id 1679_Para_3
+      GUID UID_277821AD-6267-490e-9EB0-E8C53648FF99_Para_3
+      Name error
+      Type Boolean
+    }
+  }
+}
+{ NormalClass
+  Id 734
+  GUID UID_E73D5DFA-FD64-43e0-BF40-DC63CC3EA404
+  Name NotEnoughAlcoholException
+}
+{ NormalClass
+  Id 984
+  GUID UID_ED7CBE8E-6232-45d2-8A31-A8969727C2B3
+  Name Sex
+  { MAttribute
+    Id 1020
+    GUID UID_87891597-594F-45c9-85C5-23830764272F
+    Name Male
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 1017
+    GUID UID_C782573E-E910-44c9-828F-D6BAC9A1588A
+    Name Female
+    Key False
+    Binding normal
+    Derived False
+  }
+}
+{ NormalClass
+  Id 2624
+  GUID UID_952CB43D-195B-4827-B0D9-C191EA16827A
+  Name SolutionOutcome
+  { MAttribute
+    Id 7479
+    GUID UID_12710A66-D1CA-4280-B7DB-91ACCAE630F5
+    Name Unvalidated
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2660
+    GUID UID_1F452FA5-2911-4438-8A92-BE3C0358F0D6
+    Name Solved
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2651
+    GUID UID_A66352D4-81CB-42ac-AA40-53B63BD09F23
+    Name CompiletimeError
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2654
+    GUID UID_00345533-DE1C-4250-92B2-60BA8BF4609C
+    Name RuntimeError
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 2657
+    GUID UID_D1D7C817-8A87-4f9a-B357-87664275A9CA
+    Name InvalidOutput
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 17808
+    GUID UID_4EDC2681-9194-4b4a-9784-8793321F40AE
+    Name GivenUp
+    Key False
+    Binding normal
+    Derived False
+  }
+}
+{ MInterface
+  Id 9797
+  GUID UID_FBBC56F6-599E-46e3-82A8-2D1FD2BC9E3E
+  Name GameLogic
+  { MOperation
+    Id 9818
+    GUID UID_C0FB6B48-0223-41ba-88CE-49E905E664E5
+    Name savePlayer
+    ReturnType CrateInterface
+    Access public
+    Binding normal
+    { OpPara
+      Id 9818_Para_0
+      GUID UID_C0FB6B48-0223-41ba-88CE-49E905E664E5_Para_0
+      Name String
+    }
+    { OpPara
+      Id 9818_Para_1
+      GUID UID_C0FB6B48-0223-41ba-88CE-49E905E664E5_Para_1
+      Name Sex
+    }
+    { OpPara
+      Id 9818_Para_2
+      GUID UID_C0FB6B48-0223-41ba-88CE-49E905E664E5_Para_2
+      Name int
+    }
+    { OpPara
+      Id 9818_Para_3
+      GUID UID_C0FB6B48-0223-41ba-88CE-49E905E664E5_Para_3
+      Name int
+    }
+  }
+  { MOperation
+    Id 9896
+    GUID UID_5EE039FD-301E-4083-9BBA-3437E65938EF
+    Name addBev
+    ReturnType int
+    Access public
+    Binding normal
+    { OpPara
+      Id 9896_Para_0
+      GUID UID_5EE039FD-301E-4083-9BBA-3437E65938EF_Para_0
+      Name String
+    }
+    { OpPara
+      Id 9896_Para_1
+      GUID UID_5EE039FD-301E-4083-9BBA-3437E65938EF_Para_1
+      Name float
+    }
+    { OpPara
+      Id 9896_Para_2
+      GUID UID_5EE039FD-301E-4083-9BBA-3437E65938EF_Para_2
+      Name int
+    }
+  }
+  { MOperation
+    Id 9900
+    GUID UID_32E01641-2504-4717-82DA-33FC59193BD9
+    Name loadTask
+    ReturnType TaskValidationOutcome
+    Access public
+    Binding normal
+    { OpPara
+      Id 9900_Para_0
+      GUID UID_32E01641-2504-4717-82DA-33FC59193BD9_Para_0
+      Name String
+    }
+  }
+  { MOperation
+    Id 9904
+    GUID UID_6A672316-93C1-493b-BEED-00CE7CCAF36D
+    Name sendSolution
+    ReturnType SolutionOutcome
+    Access public
+    Binding normal
+    { OpPara
+      Id 9904_Para_0
+      GUID UID_6A672316-93C1-493b-BEED-00CE7CCAF36D_Para_0
+      Name int
+    }
+    { OpPara
+      Id 9904_Para_1
+      GUID UID_6A672316-93C1-493b-BEED-00CE7CCAF36D_Para_1
+      Name String
+    }
+  }
+  { MOperation
+    Id 10587
+    GUID UID_F3134CC4-03E4-442e-862B-FB41A4AE288A
+    Name bevToDrink
+    ReturnType float
+    Access public
+    Binding normal
+    { OpPara
+      Id 10587_Para_0
+      GUID UID_F3134CC4-03E4-442e-862B-FB41A4AE288A_Para_0
+      Name bevID
+      Type int
+    }
+  }
+  { MOperation
+    Id 11073
+    GUID UID_B493E1B8-774C-42e2-B562-956D61B0368B
+    Name bevToPour
+    Access public
+    Binding normal
+    { OpPara
+      Id 11073_Para_0
+      GUID UID_B493E1B8-774C-42e2-B562-956D61B0368B_Para_0
+      Name bevID
+      Type int
+    }
+    { OpPara
+      Id 11073_Para_1
+      GUID UID_B493E1B8-774C-42e2-B562-956D61B0368B_Para_1
+      Name vol
+      Type float
+    }
+  }
+}
+{ MInterface
+  Id 19505
+  GUID UID_235207A6-38A9-4815-8FE5-A1FF08C58093
+  Name UserInterface
+  { MOperation
+    Id 19535
+    GUID UID_EA9FA2E0-6BAC-4bbd-B1FC-93A129B399CE
+    Name chooseBev
+    Access public
+    Binding normal
+    { OpPara
+      Id 19535_Para_0
+      GUID UID_EA9FA2E0-6BAC-4bbd-B1FC-93A129B399CE_Para_0
+      Name minAlcVol
+      Type float
+    }
+  }
+  { MOperation
+    Id 19798
+    GUID UID_A362BCB8-0DCF-47bd-BCF3-81A8F69AEBD2
+    Name refreshTask
+    Access public
+    Binding normal
+    { OpPara
+      Id 19798_Para_0
+      GUID UID_A362BCB8-0DCF-47bd-BCF3-81A8F69AEBD2_Para_0
+      Name Task
+    }
+  }
+}
+{ NormalClass
+  Id 19560
+  GUID UID_990C8E8D-A530-4033-99BF-CDAC3A2960D2
+  Name TaskValidationOutcome
+  { MAttribute
+    Id 19599
+    GUID UID_A90ED09F-8B8C-44e1-8FED-A726AF9CC6BB
+    Name NotEnoughAlcohol
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 19593
+    GUID UID_45BCB97B-A207-4c55-AC70-2BFE59546BB9
+    Name PreTaskNotSolved
+    Key False
+    Binding normal
+    Derived False
+  }
+  { MAttribute
+    Id 19596
+    GUID UID_B48AF301-B174-4985-BF4B-E2D17F160238
+    Name ValidLoad
+    Key False
+    Binding normal
+    Derived False
+  }
+}
+{ NormalClass
+  Id 19845
+  GUID UID_D899EFF1-9EDB-49f4-9F94-56664910DE6F
+  Name Interface
+}
+{ NormalClass
+  Id 20281
+  GUID UID_809A52FE-6B60-4307-8841-0001AD78A5AD
+  Name Crate
+  { MOperation
+    Id 20665
+    GUID UID_5DD92C15-8FAE-4021-B1EC-787B2CE5C86F
+    Name add
+    ReturnType int
+    Access public
+    Binding normal
+    { OpPara
+      Id 20665_Para_0
+      GUID UID_5DD92C15-8FAE-4021-B1EC-787B2CE5C86F_Para_0
+      Name String
+    }
+    { OpPara
+      Id 20665_Para_1
+      GUID UID_5DD92C15-8FAE-4021-B1EC-787B2CE5C86F_Para_1
+      Name float
+    }
+    { OpPara
+      Id 20665_Para_2
+      GUID UID_5DD92C15-8FAE-4021-B1EC-787B2CE5C86F_Para_2
+      Name int
+    }
+  }
+  { MOperation
+    Id 20424
+    GUID UID_484483B1-BDAD-43fc-91C4-A4B4A1873F91
+    Name pour
+    Access public
+    Binding normal
+    { OpPara
+      Id 20424_Para_0
+      GUID UID_484483B1-BDAD-43fc-91C4-A4B4A1873F91_Para_0
+      Name bevID
+      Type int
+    }
+    { OpPara
+      Id 20424_Para_1
+      GUID UID_484483B1-BDAD-43fc-91C4-A4B4A1873F91_Para_1
+      Name vol
+      Type float
+    }
+  }
+  { MOperation
+    Id 20421
+    GUID UID_79002E67-8242-426e-BC98-EDF5AAB9DF7E
+    Name consume
+    Access public
+    Binding normal
+    { OpPara
+      Id 20421_Para_0
+      GUID UID_79002E67-8242-426e-BC98-EDF5AAB9DF7E_Para_0
+      Name bevID
+      Type int
+    }
+    { OpPara
+      Id 20421_Para_1
+      GUID UID_79002E67-8242-426e-BC98-EDF5AAB9DF7E_Para_1
+      Name vol
+      Type float
+    }
+  }
+}
+{ MInterface
+  Id 21057
+  GUID UID_BBA09E4E-D876-4250-B383-70317551C5D6
+  Name CrateInterface
+  { MOperation
+    Id 21343
+    GUID UID_BB19AD42-9B3F-4009-8314-440B7D307CDF
+    Name getBevName
+    ReturnType String
+    Access public
+    Binding normal
+    { OpPara
+      Id 21343_Para_0
+      GUID UID_BB19AD42-9B3F-4009-8314-440B7D307CDF_Para_0
+      Name bevID
+      Type int
+    }
+  }
+  { MOperation
+    Id 21232
+    GUID UID_7E4C4242-F3D1-4b72-8A95-64872B08EE55
+    Name getBevVol
+    ReturnType float
+    Access public
+    Binding normal
+    { OpPara
+      Id 21232_Para_0
+      GUID UID_7E4C4242-F3D1-4b72-8A95-64872B08EE55_Para_0
+      Name bevID
+      Type int
+    }
+  }
+  { MOperation
+    Id 21312
+    GUID UID_3BFEC5DA-32A3-4141-87C8-04323929C4BA
+    Name getBevABV
+    ReturnType float
+    Access public
+    Binding normal
+    { OpPara
+      Id 21312_Para_0
+      GUID UID_3BFEC5DA-32A3-4141-87C8-04323929C4BA_Para_0
+      Name bevID
+      Type int
+    }
+  }
+}
+{ MActor
+  Id 3529
+  GUID UID_67815237-8A77-41f9-A475-CD1C319C4F89
+  Name Gamer
+}
+{ MActiveObject
+  Id 3535
+  GUID UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C
+  Name UserInterface
+}
+{ MPassiveObject
+  Id 5645
+  GUID UID_F75D43A8-7A61-44db-B9E9-ED90A72A374D
+  MClassId 105
+  Name bev
+}
+{ Implementation
+  InterfaceId 9797
+  ClassId 103
+}
+{ Implementation
+  InterfaceId 19505
+  ClassId 19845
+}
+{ Implementation
+  InterfaceId 21057
+  ClassId 20281
+}
+{ MAssociation
+  Id 173
+  GUID UID_9740CB9B-54AD-4d94-8EEB-654D0E46785B
+  { MAssociationEnd
+    Id 174
+    GUID UID_F005950F-F25F-4fb6-B988-A9924F8F1C13
+    MClassId 103
+    Name -tasks
+    isNavigable FALSE
+    Aggregation None
+    Ordering False
+  }
+  { MAssociationEnd
+    Id 175
+    GUID UID_F3BCEEFE-F0FB-40b0-A5EE-0C9E8D828CB9
+    MClassId 107
+    isNavigable TRUE
+    Aggregation None
+    Multiplicity *
+    Ordering False
+  }
+}
+{ MAssociation
+  Id 273
+  GUID UID_6345FB13-E9DC-4b35-B6C8-35F133980F05
+  { MAssociationEnd
+    Id 274
+    GUID UID_532905DE-2E4F-42ca-AABC-FBDD35D77BAF
+    MClassId 106
+    Name -task
+    isNavigable FALSE
+    Aggregation None
+    Ordering False
+  }
+  { MAssociationEnd
+    Id 275
+    GUID UID_F024740C-CB9A-45a8-9261-A82DADFFD804
+    MClassId 107
+    isNavigable TRUE
+    Aggregation None
+    Multiplicity 1
+    Ordering False
+  }
+}
+{ MAssociation
+  Id 1058
+  GUID UID_109760F8-0A6B-4cbd-9C46-6642DB093B5C
+  { MAssociationEnd
+    Id 1059
+    GUID UID_34EC4F8A-5738-40be-BB7D-DD4C9A29DFA7
+    MClassId 984
+    isNavigable TRUE
+    Aggregation None
+    Ordering False
+  }
+  { MAssociationEnd
+    Id 1060
+    GUID UID_76C29E06-04CA-4580-877C-76DB44AE09DC
+    MClassId 104
+    Name -sex
+    isNavigable FALSE
+    Aggregation None
+    Ordering False
+  }
+}
+{ MAssociation
+  Id 1509
+  GUID UID_9F710740-8D6E-4c8b-A2F9-869DFDB671D4
+  { MAssociationEnd
+    Id 1510
+    GUID UID_34868EE4-16A5-43c2-A358-91D313919EAF
+    MClassId 103
+    Name -player
+    isNavigable FALSE
+    Aggregation None
+    Ordering False
+  }
+  { MAssociationEnd
+    Id 1511
+    GUID UID_5C308405-31A7-4f84-81E8-64C1BB1F3005
+    MClassId 104
+    isNavigable TRUE
+    Aggregation None
+    Multiplicity 1
+    Ordering False
+  }
+}
+{ MAssociation
+  Id 2374
+  GUID UID_D482F711-2EF5-4d22-963A-02DF752507E7
+  { MAssociationEnd
+    Id 2375
+    GUID UID_AF56F19E-F8AE-493e-BAD8-0D82593BF080
+    MClassId 106
+    Name -compiler
+    isNavigable FALSE
+    Aggregation None
+    Ordering False
+  }
+  { MAssociationEnd
+    Id 2376
+    GUID UID_4594B772-6F45-4825-8E89-D355CF37B5C1
+    MClassId 108
+    isNavigable TRUE
+    Aggregation None
+    Multiplicity 1
+    Ordering False
+  }
+}
+{ MAssociation
+  Id 10259
+  GUID UID_DE98DA43-E11B-46d7-ABA7-A59E811FC1B5
+  { MAssociationEnd
+    Id 10317
+    GUID UID_6C925176-9E00-4bb6-8E60-D1F6C1423365
+    MClassId 103
+    Name -compilers
+    isNavigable FALSE
+    Aggregation None
+    Ordering FALSE
+  }
+  { MAssociationEnd
+    Id 10318
+    GUID UID_1C718323-1F45-42a4-B169-766E1411C68C
+    MClassId 108
+    isNavigable TRUE
+    Aggregation None
+    Ordering FALSE
+  }
+}
+{ MAssociation
+  Id 15657
+  GUID UID_CA154B02-DD43-4f33-9F64-A46EF44ACFE6
+  { MAssociationEnd
+    Id 15658
+    GUID UID_9D26ACAC-0293-427c-BCFB-072C34AA2545
+    MClassId 106
+    isNavigable TRUE
+    Aggregation None
+    Multiplicity 0..*
+    Ordering FALSE
+  }
+  { MAssociationEnd
+    Id 15659
+    GUID UID_1C5831E7-335D-4ad3-A0E2-35D8FAA7AF00
+    MClassId 103
+    Name -solutions
+    isNavigable FALSE
+    Aggregation None
+    Ordering False
+  }
+}
+{ MAssociation
+  Id 20282
+  GUID UID_1BE4A6B6-EF11-4a11-9ADF-945AE0E9091A
+  { MAssociationEnd
+    Id 20283
+    GUID UID_724E20F8-6468-4a21-91FD-616E5BB2C498
+    MClassId 20281
+    isNavigable TRUE
+    Aggregation Composition
+    Ordering FALSE
+  }
+  { MAssociationEnd
+    Id 20284
+    GUID UID_91B83ABB-0559-4eac-BA42-10DDD33ACEFE
+    MClassId 105
+    isNavigable TRUE
+    Aggregation None
+    Multiplicity 0..*
+    Ordering FALSE
+  }
+}
+{ MAssociation
+  Id 20361
+  GUID UID_ED59E027-65A8-476c-B1EC-2867D1ABE55C
+  { MAssociationEnd
+    Id 20362
+    GUID UID_B58DE8A8-5AC9-4015-BED1-2EA7CFB9773C
+    MClassId 20281
+    isNavigable TRUE
+    Aggregation None
+    Multiplicity 1
+    Ordering FALSE
+  }
+  { MAssociationEnd
+    Id 20363
+    GUID UID_F6EB129C-7E95-4db8-ABA2-BC60B9B5AC3C
+    MClassId 104
+    isNavigable FALSE
+    Aggregation None
+    Ordering FALSE
+  }
+}
+{ Dependency
+  Id 877
+  GUID UID_3CCB6616-4BB3-4be2-86C2-78E35511ABD1
+  supplierId 734
+  clientId 686
+}
+{ Dependency
+  Id 2757
+  GUID UID_5C0F0F8C-AF8B-41ba-B700-8AF6FEB94034
+  supplierId 2624
+  clientId 2731
+}
+{ Dependency
+  Id 7475
+  GUID UID_D0991691-78FD-4785-BB00-204E52B9DABC
+  supplierId 2624
+  clientId 103
+}
+{ Dependency
+  Id 19841
+  GUID UID_D1DACAFC-FD79-4c7d-A27E-296637CA2215
+  supplierId 19560
+  clientId 9797
+}
+{ Dependency
+  Id 19847
+  GUID UID_F86848F6-5711-4d3e-A591-7DA40C6B9034
+  supplierId 107
+  clientId 19845
+}
+{ Dependency
+  Id 20205
+  GUID UID_CD4D8940-7C71-4ad5-ADD3-5AA9E91D69F5
+  supplierId 19505
+  clientId 103
+}
+{ Dependency
+  Id 21338
+  GUID UID_719EB81C-04D6-4cad-8DB7-6961CC8E41C4
+  supplierId 21057
+  clientId 19845
+}
+{ Dependency
+  Id 21426
+  GUID UID_E07F75C2-B5B6-4570-AAA8-156D947572C8
+  supplierId 21057
+  clientId 103
+}
+{ MSimpleMessage
+  Id 4910
+  Name startGame
+  GUID UID_0B56CB1C-ED06-40c0-8DCB-07F9D597F8D8
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 5036
+  Name addBeverage
+  GUID UID_D6481A7E-974E-4dc2-8CF8-3E8C71278EAC
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 5911
+  Name loadTask
+  GUID UID_4018D629-202E-4ba2-B1D7-3FFCDB7DB19B
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 6717
+  Name sendSolution
+  GUID UID_DB3237A1-0360-4a6f-8DA1-0C6DD6DFF330
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 8469
+  Name pour
+  GUID UID_D3E7144C-8BBA-4162-94A1-E74B1494FB8B
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 21593
+  Name pour
+  GUID UID_25FA4EDE-5321-478c-9A2F-21BFECA8290F
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 21800
+  Name sendSolution
+  GUID UID_244678CF-5D23-4265-A410-34109A855CC1
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 21899
+  Name loadTask
+  GUID UID_B468FA30-E088-4c1d-920C-0CEBEBB88B1A
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 21998
+  Name startGame
+  GUID UID_95F9468F-7BD2-492b-BD38-7B06F2540303
+  FromId 3529
+  ToId 3535
+}
+{ MSimpleMessage
+  Id 22007
+  Name addBeverage
+  GUID UID_A6AEA895-B2CE-452c-8674-237ECE3630E3
+  FromId 3529
+  ToId 3535
+}
+{ MSynchronousMessage
+  Id 3754
+  Name getName
+  GUID UID_0A88FEB9-38F0-4ddb-9485-0002DB3B6541
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 3807
+  Name getSex
+  GUID UID_38A81650-64D7-43ab-8D5E-A1501CB32694
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType Sex
+}
+{ MSynchronousMessage
+  Id 3848
+  Name getHeight
+  GUID UID_FC4E9BC5-627D-4b2c-A3B9-A7EB223F0694
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 3889
+  Name getWeight
+  GUID UID_3C0AFDDA-1755-4cde-8C6A-BF98304AB804
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 5105
+  Name getBevName
+  GUID UID_C83F46CC-5365-44b6-B19F-374154DEC329
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 5312
+  Name getAmount
+  GUID UID_8A527B0A-76AC-4154-920D-E20A869147A1
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType float
+}
+{ MSynchronousMessage
+  Id 5403
+  Name getABV
+  GUID UID_5EA6354C-267B-4fc8-8605-4F769FEAECEE
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 5937
+  Name getPath
+  GUID UID_74CE0E90-D349-438a-90FD-7E5C354320F3
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 6744
+  Name getLangID
+  GUID UID_0653BCB6-FD0D-4e4c-AB25-73351B587EC2
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 6832
+  Name getCode
+  GUID UID_AFC8D89D-5731-4203-A041-8248DD299CBB
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 7867
+  Name getBevToDrink
+  GUID UID_20FF69A1-CE80-4d77-A94F-DBAD6FE46D09
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 8495
+  Name getBevToPour
+  GUID UID_A9E5397E-BC99-4571-BAB6-49F772D55119
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 8630
+  Name getVolToPour
+  GUID UID_43C6EB78-1904-424d-99B3-FA00517C2484
+  FromId 3535
+  ToId 3529
+  Creation False
+  Destruction False
+  ReturnType float
+}
+{ MSynchronousMessage
+  Id 21557
+  Name getBevToPour
+  GUID UID_1C777E4E-81D6-450e-8CD2-50129A3E5E96
+  FromId 3535
+  ToId 3529
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 21575
+  Name getVolToPour
+  GUID UID_B8980AC0-8873-4ced-8689-1448BAF55A07
+  FromId 3535
+  ToId 3529
+  ReturnType float
+}
+{ MSynchronousMessage
+  Id 21719
+  Name getBevToDrink
+  GUID UID_D6993400-EE0B-438f-A912-BAF0F839D036
+  FromId 3535
+  ToId 3529
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 21773
+  Name getLangID
+  GUID UID_B8DBC09F-0B60-46c6-896A-0E09580BB728
+  FromId 3535
+  ToId 3529
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 21782
+  Name getCode
+  GUID UID_3AE034C4-3E24-44b4-88E0-A25B25A85842
+  FromId 3535
+  ToId 3529
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 21881
+  Name getPath
+  GUID UID_E7A77E83-FB8D-4f59-9C93-8C6044695174
+  FromId 3535
+  ToId 3529
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 21971
+  Name getBevName
+  GUID UID_697A3CCD-E894-4ca5-AC96-0FEA87725E59
+  FromId 3535
+  ToId 3529
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 21980
+  Name getAmount
+  GUID UID_313E96F3-51BC-4b5e-8A8D-6FC50010687E
+  FromId 3535
+  ToId 3529
+  ReturnType float
+}
+{ MSynchronousMessage
+  Id 21989
+  Name getABV
+  GUID UID_CECD5422-4483-4ff8-8928-EE31569BD147
+  FromId 3535
+  ToId 3529
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 22070
+  Name getName
+  GUID UID_E63FB3E7-966D-4365-82F4-84C1D61AC62F
+  FromId 3535
+  ToId 3529
+  ReturnType String
+}
+{ MSynchronousMessage
+  Id 22079
+  Name getSex
+  GUID UID_F06E23C9-DC8D-48af-9AC9-AED51D701904
+  FromId 3535
+  ToId 3529
+  ReturnType Sex
+}
+{ MSynchronousMessage
+  Id 22088
+  Name getHeight
+  GUID UID_A6A56269-BC53-41d9-93C8-86812ED704EB
+  FromId 3535
+  ToId 3529
+  ReturnType int
+}
+{ MSynchronousMessage
+  Id 22097
+  Name getWeight
+  GUID UID_5E6C4659-0DD3-4c80-9637-0DB721911F2C
+  FromId 3535
+  ToId 3529
+  ReturnType int
+}
+{ MReturnMessage
+  Id 4665
+  GUID UID_8B206DC1-4808-4d4f-88BA-712331E77E10
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 5893
+  GUID UID_417E4626-71F3-4014-9902-AB7FDC76F445
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 6705
+  GUID UID_9F2B5A4B-2670-4389-AD44-DD4CC820E171
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 8443
+  GUID UID_EE7FC266-3904-4ff0-BEA9-6E0129CFC2EA
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 8939
+  GUID UID_B1AD60C2-AD9C-4d4c-A9BA-F6C2A28528CD
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 21584
+  GUID UID_B591FC37-1109-4e43-9C37-3C7A92A6B609
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 21665
+  GUID UID_57494764-310E-4aa2-89B2-C1E8D15738F4
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 21764
+  GUID UID_EE808F8D-C105-4fe5-A441-6ECFE71AFC4A
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 21917
+  GUID UID_BC66C352-5B68-4863-B363-BAA3BA94488B
+  FromId 3535
+  ToId 3529
+}
+{ MReturnMessage
+  Id 22043
+  GUID UID_384718BB-A9F8-4a26-A70C-664C8FF80EDE
+  FromId 3535
+  ToId 3529
+}
+{ MStereotype
+  Id 874_ST
+  Name exception
+  SemElementId 734
+}
+{ MStereotype
+  Id 1011_ST
+  Name enumeration
+  SemElementId 984
+  SemElementId 2624
+  SemElementId 19560
+}
+{ MStereotype
+  Id 9854_ST
+  Name interface
+  SemElementId 9797
+  SemElementId 19505
+  SemElementId 21057
+}
+{ MStereotype
+  Id 18609_ST
+  Name DynamicChoicePoint
+}
+{ MStereotype
+  Id 889_ST
+  Name throws
+  SemElementId 877
+}
+{ MStereotype
+  Id 2769_ST
+  Name returns
+  SemElementId 2757
+}
+{ MStereotype
+  Id 4417_ST
+  Name create
+}
+{ MNote
+  Id 5582
+  Desc asking for player's data
+}
+{ MNote
+  Id 5585
+  Desc adding a beverage
+}
+{ MNote
+  Id 5910
+  Desc load a task
+}
+{ MNote
+  Id 6716
+  Desc send solution
+}
+{ MNote
+  Id 8465
+  Desc choose beverage to drink
+}
+{ MNote
+  Id 8468
+  Desc pour to an existing beverage
+}
+{ MNote
+  Id 20710
+  Desc stores in Crate
+}
+{ MNote
+  Id 21139
+  Desc creates Crate
+}
+{ MNote
+  Id 22803
+  Desc first message to Crate
+}
+{ MFile
+  Id 17903
+  Type UmlStateDiagram
+  Name scd
+  GUID UID_D4DF2DB2-36FF-4ce2-AA8B-DEE63DF03AF1
+}
+{ MFile
+  Id 22106
+  Type UmlCommunicationDiagram
+  Name cd
+  GUID UID_7A0C030B-DCD9-4c9f-A87D-A0EC16EB3B4E
+  { MFileContainment
+    Id 22646
+    MElementId 3529
+  }
+  { MFileContainment
+    Id 22650
+    MElementId 3535
+  }
+  { MFileContainment
+    Id 22659
+    MElementId 5645
+  }
+  { MFileContainment
+    Id 22673
+    MElementId 22097
+  }
+  { MFileContainment
+    Id 22674
+    MElementId 22088
+  }
+  { MFileContainment
+    Id 22675
+    MElementId 22079
+  }
+  { MFileContainment
+    Id 22676
+    MElementId 22070
+  }
+  { MFileContainment
+    Id 22679
+    MElementId 22043
+  }
+  { MFileContainment
+    Id 22683
+    MElementId 22007
+  }
+  { MFileContainment
+    Id 22684
+    MElementId 21998
+  }
+  { MFileContainment
+    Id 22685
+    MElementId 21989
+  }
+  { MFileContainment
+    Id 22686
+    MElementId 21980
+  }
+  { MFileContainment
+    Id 22687
+    MElementId 21971
+  }
+  { MFileContainment
+    Id 22693
+    MElementId 21917
+  }
+  { MFileContainment
+    Id 22695
+    MElementId 21899
+  }
+  { MFileContainment
+    Id 22697
+    MElementId 21881
+  }
+  { MFileContainment
+    Id 22706
+    MElementId 21800
+  }
+  { MFileContainment
+    Id 22708
+    MElementId 21782
+  }
+  { MFileContainment
+    Id 22709
+    MElementId 21773
+  }
+  { MFileContainment
+    Id 22710
+    MElementId 21764
+  }
+  { MFileContainment
+    Id 22715
+    MElementId 21719
+  }
+  { MFileContainment
+    Id 22721
+    MElementId 21665
+  }
+  { MFileContainment
+    Id 22729
+    MElementId 21593
+  }
+  { MFileContainment
+    Id 22730
+    MElementId 21584
+  }
+  { MFileContainment
+    Id 22731
+    MElementId 21575
+  }
+  { MFileContainment
+    Id 22733
+    MElementId 21557
+  }
+}
+{ MFile
+  Id 4015
+  Type UmlSequenceDiagram
+  Name sd
+  GUID UID_21CCCA42-8E1A-4bd8-8866-DE350AF9E3CF
+  { MFileContainment
+    Id 4070
+    MElementId 3529
+  }
+  { MFileContainment
+    Id 4074
+    MElementId 3535
+  }
+  { MFileContainment
+    Id 5809
+    MElementId 5645
+  }
+  { MFileContainment
+    Id 4077
+    MElementId 3889
+  }
+  { MFileContainment
+    Id 4078
+    MElementId 3848
+  }
+  { MFileContainment
+    Id 4079
+    MElementId 3807
+  }
+  { MFileContainment
+    Id 4080
+    MElementId 3754
+  }
+  { MFileContainment
+    Id 4761
+    MElementId 4665
+  }
+  { MFileContainment
+    Id 5063
+    MElementId 5036
+  }
+  { MFileContainment
+    Id 5064
+    MElementId 4910
+  }
+  { MFileContainment
+    Id 5811
+    MElementId 5403
+  }
+  { MFileContainment
+    Id 5812
+    MElementId 5312
+  }
+  { MFileContainment
+    Id 5813
+    MElementId 5105
+  }
+  { MFileContainment
+    Id 5903
+    MElementId 5893
+  }
+  { MFileContainment
+    Id 6491
+    MElementId 5911
+  }
+  { MFileContainment
+    Id 6493
+    MElementId 5937
+  }
+  { MFileContainment
+    Id 7097
+    MElementId 6717
+  }
+  { MFileContainment
+    Id 7099
+    MElementId 6832
+  }
+  { MFileContainment
+    Id 7100
+    MElementId 6744
+  }
+  { MFileContainment
+    Id 7101
+    MElementId 6705
+  }
+  { MFileContainment
+    Id 7905
+    MElementId 7867
+  }
+  { MFileContainment
+    Id 8453
+    MElementId 8443
+  }
+  { MFileContainment
+    Id 8979
+    MElementId 8469
+  }
+  { MFileContainment
+    Id 8980
+    MElementId 8939
+  }
+  { MFileContainment
+    Id 8981
+    MElementId 8630
+  }
+  { MFileContainment
+    Id 8983
+    MElementId 8495
+  }
+}
+{ MFile
+  Id 1704
+  Type UmlClassDiagram
+  Name class_diagram
+  GUID UID_7C1E4F1D-25F0-46d2-90E5-6EAD94E83329
+  { MFileContainment
+    Id 1708
+    MElementId 103
+  }
+  { MFileContainment
+    Id 1709
+    MElementId 104
+  }
+  { MFileContainment
+    Id 1710
+    MElementId 105
+  }
+  { MFileContainment
+    Id 1711
+    MElementId 106
+  }
+  { MFileContainment
+    Id 1712
+    MElementId 107
+  }
+  { MFileContainment
+    Id 1713
+    MElementId 108
+  }
+  { MFileContainment
+    Id 1714
+    MElementId 535
+  }
+  { MFileContainment
+    Id 1715
+    MElementId 527
+  }
+  { MFileContainment
+    Id 1716
+    MElementId 531
+  }
+  { MFileContainment
+    Id 1718
+    MElementId 658
+  }
+  { MFileContainment
+    Id 1719
+    MElementId 690
+  }
+  { MFileContainment
+    Id 1720
+    MElementId 686
+  }
+  { MFileContainment
+    Id 1721
+    MElementId 734
+  }
+  { MFileContainment
+    Id 1722
+    MElementId 910
+  }
+  { MFileContainment
+    Id 1723
+    MElementId 902
+  }
+  { MFileContainment
+    Id 1724
+    MElementId 906
+  }
+  { MFileContainment
+    Id 1725
+    MElementId 984
+  }
+  { MFileContainment
+    Id 1726
+    MElementId 1020
+  }
+  { MFileContainment
+    Id 1727
+    MElementId 1017
+  }
+  { MFileContainment
+    Id 1728
+    MElementId 1294
+  }
+  { MFileContainment
+    Id 1729
+    MElementId 1457
+  }
+  { MFileContainment
+    Id 1730
+    MElementId 1483
+  }
+  { MFileContainment
+    Id 1731
+    MElementId 1591
+  }
+  { MFileContainment
+    Id 1732
+    MElementId 1679
+  }
+  { MFileContainment
+    Id 1733
+    MElementId 1509
+  }
+  { MFileContainment
+    Id 1736
+    MElementId 1058
+  }
+  { MFileContainment
+    Id 1761
+    MElementId 173
+  }
+  { MFileContainment
+    Id 2168
+    MElementId 1789
+  }
+  { MFileContainment
+    Id 2170
+    MElementId 1930
+  }
+  { MFileContainment
+    Id 2171
+    MElementId 1958
+  }
+  { MFileContainment
+    Id 2172
+    MElementId 1996
+  }
+  { MFileContainment
+    Id 2173
+    MElementId 2065
+  }
+  { MFileContainment
+    Id 2174
+    MElementId 2094
+  }
+  { MFileContainment
+    Id 2175
+    MElementId 2098
+  }
+  { MFileContainment
+    Id 2818
+    MElementId 2307
+  }
+  { MFileContainment
+    Id 2819
+    MElementId 2624
+  }
+  { MFileContainment
+    Id 2820
+    MElementId 2660
+  }
+  { MFileContainment
+    Id 2821
+    MElementId 2651
+  }
+  { MFileContainment
+    Id 2822
+    MElementId 2654
+  }
+  { MFileContainment
+    Id 2823
+    MElementId 2657
+  }
+  { MFileContainment
+    Id 2824
+    MElementId 2731
+  }
+  { MFileContainment
+    Id 2825
+    MElementId 2791
+  }
+  { MFileContainment
+    Id 3303
+    MElementId 3259
+  }
+  { MFileContainment
+    Id 7551
+    MElementId 7450
+  }
+  { MFileContainment
+    Id 7552
+    MElementId 7479
+  }
+  { MFileContainment
+    Id 8276
+    MElementId 8108
+  }
+  { MFileContainment
+    Id 8277
+    MElementId 8137
+  }
+  { MFileContainment
+    Id 8278
+    MElementId 8180
+  }
+  { MFileContainment
+    Id 8279
+    MElementId 8212
+  }
+  { MFileContainment
+    Id 11033
+    MElementId 9797
+  }
+  { MFileContainment
+    Id 11034
+    MElementId 9818
+  }
+  { MFileContainment
+    Id 11035
+    MElementId 9896
+  }
+  { MFileContainment
+    Id 11036
+    MElementId 9900
+  }
+  { MFileContainment
+    Id 11037
+    MElementId 9904
+  }
+  { MFileContainment
+    Id 11038
+    MElementId 10587
+  }
+  { MFileContainment
+    Id 11040
+    MElementId 10259
+  }
+  { MFileContainment
+    Id 11099
+    MElementId 11073
+  }
+  { MFileContainment
+    Id 15970
+    MElementId 15846
+  }
+  { MFileContainment
+    Id 15971
+    MElementId 15893
+  }
+  { MFileContainment
+    Id 15972
+    MElementId 15934
+  }
+  { MFileContainment
+    Id 15979
+    MElementId 2374
+  }
+  { MFileContainment
+    Id 15982
+    MElementId 273
+  }
+  { MFileContainment
+    Id 16120
+    MElementId 16040
+  }
+  { MFileContainment
+    Id 16121
+    MElementId 15657
+  }
+  { MFileContainment
+    Id 17833
+    MElementId 17808
+  }
+  { MFileContainment
+    Id 19824
+    MElementId 19505
+  }
+  { MFileContainment
+    Id 19825
+    MElementId 19535
+  }
+  { MFileContainment
+    Id 19826
+    MElementId 19560
+  }
+  { MFileContainment
+    Id 19827
+    MElementId 19599
+  }
+  { MFileContainment
+    Id 19828
+    MElementId 19593
+  }
+  { MFileContainment
+    Id 19829
+    MElementId 19596
+  }
+  { MFileContainment
+    Id 19830
+    MElementId 19798
+  }
+  { MFileContainment
+    Id 19849
+    MElementId 19845
+  }
+  { MFileContainment
+    Id 20590
+    MElementId 20281
+  }
+  { MFileContainment
+    Id 20591
+    MElementId 20424
+  }
+  { MFileContainment
+    Id 20592
+    MElementId 20421
+  }
+  { MFileContainment
+    Id 20595
+    MElementId 20361
+  }
+  { MFileContainment
+    Id 20598
+    MElementId 20282
+  }
+  { MFileContainment
+    Id 20692
+    MElementId 20665
+  }
+  { MFileContainment
+    Id 20884
+    MElementId 20699
+  }
+  { MFileContainment
+    Id 20885
+    MElementId 20836
+  }
+  { MFileContainment
+    Id 21370
+    MElementId 21057
+  }
+  { MFileContainment
+    Id 21371
+    MElementId 21232
+  }
+  { MFileContainment
+    Id 21372
+    MElementId 21312
+  }
+  { MFileContainment
+    Id 21373
+    MElementId 21343
+  }
+  { MFileContainment
+    Id 21423
+    MElementId 21396
+  }
+  { MFileContainment
+    Id 1734
+    MElementId 1511
+  }
+  { MFileContainment
+    Id 1735
+    MElementId 1510
+  }
+  { MFileContainment
+    Id 1737
+    MElementId 1060
+  }
+  { MFileContainment
+    Id 1738
+    MElementId 1059
+  }
+  { MFileContainment
+    Id 1762
+    MElementId 175
+  }
+  { MFileContainment
+    Id 1763
+    MElementId 174
+  }
+  { MFileContainment
+    Id 2826
+    MElementId 877
+  }
+  { MFileContainment
+    Id 2834
+    MElementId 2757
+  }
+  { MFileContainment
+    Id 7553
+    MElementId 7475
+  }
+  { MFileContainment
+    Id 11041
+    MElementId 10318
+  }
+  { MFileContainment
+    Id 11042
+    MElementId 10317
+  }
+  { MFileContainment
+    Id 11048
+    MElementId 10317
+  }
+  { MFileContainment
+    Id 11049
+    MElementId 174
+  }
+  { MFileContainment
+    Id 11052
+    MElementId 1060
+  }
+  { MFileContainment
+    Id 11053
+    MElementId 1510
+  }
+  { MFileContainment
+    Id 15980
+    MElementId 2375
+  }
+  { MFileContainment
+    Id 15981
+    MElementId 2376
+  }
+  { MFileContainment
+    Id 15983
+    MElementId 274
+  }
+  { MFileContainment
+    Id 15984
+    MElementId 275
+  }
+  { MFileContainment
+    Id 15985
+    MElementId 2375
+  }
+  { MFileContainment
+    Id 15986
+    MElementId 274
+  }
+  { MFileContainment
+    Id 16122
+    MElementId 15659
+  }
+  { MFileContainment
+    Id 16123
+    MElementId 15658
+  }
+  { MFileContainment
+    Id 16125
+    MElementId 15659
+  }
+  { MFileContainment
+    Id 19850
+    MElementId 19841
+  }
+  { MFileContainment
+    Id 19851
+    MElementId 19847
+  }
+  { MFileContainment
+    Id 20594
+    MElementId 20205
+  }
+  { MFileContainment
+    Id 20596
+    MElementId 20363
+  }
+  { MFileContainment
+    Id 20597
+    MElementId 20362
+  }
+  { MFileContainment
+    Id 20599
+    MElementId 20284
+  }
+  { MFileContainment
+    Id 20600
+    MElementId 20283
+  }
+  { MFileContainment
+    Id 21374
+    MElementId 21338
+  }
+  { MFileContainment
+    Id 21428
+    MElementId 21426
+  }
+}
+{ MAnnotNote
+  Id 199
+  MElementId 173
+  Type GenericObject
+  { MAnnotItem
+    Id 1259
+    Type Color
+    Value 000000
+  }
+}
+{ MAnnotNote
+  Id 180
+  MElementId 174
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 1263
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 10355
+    Type UmlAggregationType
+    Value None
+  }
+}
+{ MAnnotNote
+  Id 207
+  MElementId 175
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 208
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 238
+    Type UmlMultiplicity
+    Value *
+  }
+  { MAnnotItem
+    Id 10416
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 15465
+    Type UmlRoleNavigability
+    Value True
+  }
+}
+{ MAnnotNote
+  Id 299
+  MElementId 273
+  Type GenericObject
+  { MAnnotItem
+    Id 1416
+    Type Color
+    Value 000000
+  }
+}
+{ MAnnotNote
+  Id 280
+  MElementId 274
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 1426
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 15754
+    Type UmlAggregationType
+    Value None
+  }
+}
+{ MAnnotNote
+  Id 307
+  MElementId 275
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 308
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 317
+    Type UmlMultiplicity
+    Value 1
+  }
+  { MAnnotItem
+    Id 318
+    Type UmlRoleNavigability
+    Value True
+  }
+  { MAnnotItem
+    Id 1420
+    Type UmlRoleIsOrdered
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 529
+  MElementId 527
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 530
+    Type UmlAttributeType
+    Value float
+  }
+  { MAnnotItem
+    Id 577
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 570
+  MElementId 527
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 578
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 579
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 580
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 533
+  MElementId 531
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 534
+    Type UmlAttributeType
+    Value float
+  }
+  { MAnnotItem
+    Id 581
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 572
+  MElementId 531
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 582
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 583
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 584
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 537
+  MElementId 535
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 538
+    Type UmlAttributeType
+    Value String
+  }
+  { MAnnotItem
+    Id 573
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 568
+  MElementId 535
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 574
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 575
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 576
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 660
+  MElementId 658
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 661
+    Type UmlAttributeType
+    Value String
+  }
+  { MAnnotItem
+    Id 674
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 673
+  MElementId 658
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 675
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 676
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 677
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 688
+  MElementId 686
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 689
+    Type UmlOperationReturnType
+    Value void
+  }
+  { MAnnotItem
+    Id 724
+    Type UmlMemberVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 725
+    Type UmlOperationThrows
+    Value NotEnoughAlcoholException
+  }
+}
+{ MAnnotNote
+  Id 716
+  MElementId 686
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 726
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 727
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 692
+  MElementId 690
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 693
+    Type UmlOperationReturnType
+    Value void
+  }
+  { MAnnotItem
+    Id 719
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 714
+  MElementId 690
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 720
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 721
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 739
+  MElementId 734
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 874
+    Type UmlStereotype
+    Value exception
+  }
+}
+{ MAnnotNote
+  Id 882
+  MElementId 877
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 889
+    Type UmlStereotype
+    Value throws
+  }
+}
+{ MAnnotNote
+  Id 900
+  MElementId 898
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 901
+    Type UmlAttributeType
+    Value Sex
+  }
+  { MAnnotItem
+    Id 963
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 954
+  MElementId 898
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 964
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 965
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 966
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 904
+  MElementId 902
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 905
+    Type UmlAttributeType
+    Value int
+  }
+  { MAnnotItem
+    Id 967
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 956
+  MElementId 902
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 968
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 969
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 970
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 908
+  MElementId 906
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 909
+    Type UmlAttributeType
+    Value int
+  }
+  { MAnnotItem
+    Id 971
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 958
+  MElementId 906
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 972
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 973
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 974
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 912
+  MElementId 910
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 913
+    Type UmlAttributeType
+    Value String
+  }
+  { MAnnotItem
+    Id 959
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 952
+  MElementId 910
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 960
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 961
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 962
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 989
+  MElementId 984
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 1011
+    Type UmlStereotype
+    Value enumeration
+  }
+}
+{ MAnnotNote
+  Id 1045
+  MElementId 1017
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1049
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1050
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1051
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1043
+  MElementId 1020
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1046
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1047
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1048
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1067
+  MElementId 1058
+  Type GenericObject
+  { MAnnotItem
+    Id 1142
+    Type Color
+    Value 000000
+  }
+}
+{ MAnnotNote
+  Id 1076
+  MElementId 1059
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 1077
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 1146
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 15628
+    Type UmlRoleNavigability
+    Value True
+  }
+}
+{ MAnnotNote
+  Id 1093
+  MElementId 1060
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 1152
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 10913
+    Type UmlAggregationType
+    Value None
+  }
+}
+{ MAnnotNote
+  Id 1296
+  MElementId 1294
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 3211
+    Type UmlAttributeType
+    Value int
+  }
+  { MAnnotItem
+    Id 3212
+    Type UmlAttributeDefaultValue
+    Value 0
+  }
+  { MAnnotItem
+    Id 16188
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 1310
+  MElementId 1294
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1312
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1313
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1314
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1459
+  MElementId 1457
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 1474
+    Type UmlMemberVisibility
+    Value private
+  }
+  { MAnnotItem
+    Id 7523
+    Type UmlAttributeType
+    Value SolutionOutcome
+  }
+}
+{ MAnnotNote
+  Id 1473
+  MElementId 1457
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1475
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1476
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1477
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1485
+  MElementId 1483
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 1486
+    Type UmlAttributeType
+    Value float
+  }
+  { MAnnotItem
+    Id 1487
+    Type UmlAttributeDefaultValue
+    Value 0.0
+  }
+  { MAnnotItem
+    Id 1500
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 1499
+  MElementId 1483
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1501
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1502
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1503
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1535
+  MElementId 1509
+  Type GenericObject
+  { MAnnotItem
+    Id 1550
+    Type Color
+    Value 000000
+  }
+}
+{ MAnnotNote
+  Id 1516
+  MElementId 1510
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 1556
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 10973
+    Type UmlAggregationType
+    Value None
+  }
+}
+{ MAnnotNote
+  Id 1566
+  MElementId 1511
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 1567
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 1576
+    Type UmlMultiplicity
+    Value 1
+  }
+  { MAnnotItem
+    Id 1578
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 15496
+    Type UmlRoleNavigability
+    Value True
+  }
+}
+{ MAnnotNote
+  Id 1593
+  MElementId 1591
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 1594
+    Type UmlAttributeType
+    Value String
+  }
+  { MAnnotItem
+    Id 16189
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 1606
+  MElementId 1591
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1608
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1609
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1610
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1681
+  MElementId 1679
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 1696
+    Type UmlMemberVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 2046
+    Type UmlOperationReturnType
+    Value double
+  }
+}
+{ MAnnotNote
+  Id 1693
+  MElementId 1679
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 1697
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 1698
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1791
+  MElementId 1789
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 1806
+    Type UmlMemberVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 1816
+    Type UmlOperationReturnType
+    Value String
+  }
+}
+{ MAnnotNote
+  Id 1803
+  MElementId 1789
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 1807
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 1808
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1932
+  MElementId 1930
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 1933
+    Type UmlAttributeType
+    Value String[]
+  }
+  { MAnnotItem
+    Id 16190
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 1945
+  MElementId 1930
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1947
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1948
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1949
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1960
+  MElementId 1958
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 1961
+    Type UmlAttributeType
+    Value String
+  }
+  { MAnnotItem
+    Id 16191
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 1973
+  MElementId 1958
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 1975
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 1976
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 1977
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 1998
+  MElementId 1996
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 2012
+    Type UmlMemberVisibility
+    Value private
+  }
+  { MAnnotItem
+    Id 2055
+    Type UmlAttributeType
+    Value double
+  }
+  { MAnnotItem
+    Id 2056
+    Type UmlAttributeDefaultValue
+    Value 0.0
+  }
+}
+{ MAnnotNote
+  Id 2011
+  MElementId 1996
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2013
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2014
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2015
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2067
+  MElementId 2065
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 2068
+    Type UmlAttributeType
+    Value int
+  }
+  { MAnnotItem
+    Id 2069
+    Type UmlAttributeDefaultValue
+    Value 0
+  }
+  { MAnnotItem
+    Id 2082
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 2081
+  MElementId 2065
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2083
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2084
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2085
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2096
+  MElementId 2094
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 2097
+    Type UmlAttributeType
+    Value float
+  }
+  { MAnnotItem
+    Id 16192
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 2122
+  MElementId 2094
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2126
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2127
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2128
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2100
+  MElementId 2098
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 2101
+    Type UmlAttributeType
+    Value float
+  }
+  { MAnnotItem
+    Id 16193
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 2124
+  MElementId 2098
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2130
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2131
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2132
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2582
+  MElementId 2307
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 2583
+    Type UmlAttributeType
+    Value String
+  }
+  { MAnnotItem
+    Id 2595
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 2594
+  MElementId 2307
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2596
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2597
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2598
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2400
+  MElementId 2374
+  Type GenericObject
+  { MAnnotItem
+    Id 2518
+    Type Color
+    Value 000000
+  }
+}
+{ MAnnotNote
+  Id 2381
+  MElementId 2375
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 2544
+    Type UmlRoleIsOrdered
+    Value False
+  }
+  { MAnnotItem
+    Id 15777
+    Type UmlAggregationType
+    Value None
+  }
+}
+{ MAnnotNote
+  Id 2524
+  MElementId 2376
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 2525
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 2534
+    Type UmlMultiplicity
+    Value 1
+  }
+  { MAnnotItem
+    Id 2535
+    Type UmlRoleNavigability
+    Value True
+  }
+  { MAnnotItem
+    Id 2536
+    Type UmlRoleIsOrdered
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2629
+  MElementId 2624
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 2648
+    Type UmlStereotype
+    Value enumeration
+  }
+}
+{ MAnnotNote
+  Id 2703
+  MElementId 2651
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2711
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2712
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2713
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2705
+  MElementId 2654
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2714
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2715
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2716
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2707
+  MElementId 2657
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2717
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2718
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2719
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2701
+  MElementId 2660
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 2708
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 2709
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 2710
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2733
+  MElementId 2731
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 2734
+    Type UmlOperationReturnType
+    Value SolutionOutcome
+  }
+  { MAnnotItem
+    Id 2749
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 2746
+  MElementId 2731
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 2750
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 2751
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 2762
+  MElementId 2757
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 2769
+    Type UmlStereotype
+    Value returns
+  }
+}
+{ MAnnotNote
+  Id 2793
+  MElementId 2791
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 2794
+    Type UmlOperationReturnType
+    Value void
+  }
+  { MAnnotItem
+    Id 2809
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 2806
+  MElementId 2791
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 2810
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 2811
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 3261
+  MElementId 3259
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 3262
+    Type UmlAttributeType
+    Value float
+  }
+  { MAnnotItem
+    Id 3275
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 3274
+  MElementId 3259
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 3276
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 3277
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 3278
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 3772
+  MElementId 3754
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 3773
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 3774
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 3775
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 4052
+  MElementId 3754
+  Name UmlSequenceDiagram%sd%55
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 4057
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 4058
+    Type UmlObjectName
+    Value getName
+  }
+}
+{ MAnnotNote
+  Id 3825
+  MElementId 3807
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 3826
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 3827
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 3828
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 4044
+  MElementId 3807
+  Name UmlSequenceDiagram%sd%58
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 4049
+    Type UmlReturnType
+    Value Sex
+  }
+  { MAnnotItem
+    Id 4050
+    Type UmlObjectName
+    Value getSex
+  }
+}
+{ MAnnotNote
+  Id 3866
+  MElementId 3848
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 3867
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 3868
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 3869
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 4036
+  MElementId 3848
+  Name UmlSequenceDiagram%sd%60
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 4041
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 4042
+    Type UmlObjectName
+    Value getHeight
+  }
+}
+{ MAnnotNote
+  Id 3907
+  MElementId 3889
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 3908
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 3909
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 3910
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 4028
+  MElementId 3889
+  Name UmlSequenceDiagram%sd%62
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 4033
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 4034
+    Type UmlObjectName
+    Value getWeight
+  }
+}
+{ MAnnotNote
+  Id 4912
+  MElementId 4910
+  Name UmlSequenceDiagram%sd%141
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 4918
+    Type UmlObjectName
+    Value startGame
+  }
+}
+{ MAnnotNote
+  Id 5038
+  MElementId 5036
+  Name UmlSequenceDiagram%sd%160
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 5044
+    Type UmlObjectName
+    Value addBeverage
+  }
+}
+{ MAnnotNote
+  Id 5107
+  MElementId 5105
+  Name UmlSequenceDiagram%sd%164
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 5112
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 5113
+    Type UmlObjectName
+    Value getBevName
+  }
+}
+{ MAnnotNote
+  Id 5136
+  MElementId 5105
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 5137
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 5138
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 5139
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 5314
+  MElementId 5312
+  Name UmlSequenceDiagram%sd%168
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 5319
+    Type UmlReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 5320
+    Type UmlObjectName
+    Value getAmount
+  }
+}
+{ MAnnotNote
+  Id 5342
+  MElementId 5312
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 5343
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 5344
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 5345
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 5405
+  MElementId 5403
+  Name UmlSequenceDiagram%sd%172
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 5410
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 5411
+    Type UmlObjectName
+    Value getABV
+  }
+}
+{ MAnnotNote
+  Id 5433
+  MElementId 5403
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 5434
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 5435
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 5436
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 5913
+  MElementId 5911
+  Name UmlSequenceDiagram%sd%196
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 5919
+    Type UmlObjectName
+    Value loadTask
+  }
+}
+{ MAnnotNote
+  Id 5939
+  MElementId 5937
+  Name UmlSequenceDiagram%sd%198
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 5944
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 5945
+    Type UmlObjectName
+    Value getPath
+  }
+}
+{ MAnnotNote
+  Id 5967
+  MElementId 5937
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 5968
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 5969
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 5970
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 6719
+  MElementId 6717
+  Name UmlSequenceDiagram%sd%319
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 6725
+    Type UmlObjectName
+    Value sendSolution
+  }
+}
+{ MAnnotNote
+  Id 6746
+  MElementId 6744
+  Name UmlSequenceDiagram%sd%321
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 6751
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 6752
+    Type UmlObjectName
+    Value getLangID
+  }
+}
+{ MAnnotNote
+  Id 6774
+  MElementId 6744
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 6775
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 6776
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 6777
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 6834
+  MElementId 6832
+  Name UmlSequenceDiagram%sd%323
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 6839
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 6840
+    Type UmlObjectName
+    Value getCode
+  }
+}
+{ MAnnotNote
+  Id 6862
+  MElementId 6832
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 6863
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 6864
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 6865
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 7452
+  MElementId 7450
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 7453
+    Type UmlAttributeType
+    Value Task
+  }
+  { MAnnotItem
+    Id 7466
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 7465
+  MElementId 7450
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 7467
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 7468
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 7469
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 7493
+  MElementId 7479
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 7494
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 7495
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 7496
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 7869
+  MElementId 7867
+  Name UmlSequenceDiagram%sd%424
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 7874
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 7875
+    Type UmlObjectName
+    Value getBevToDrink
+  }
+}
+{ MAnnotNote
+  Id 9100
+  MElementId 7867
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 9101
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 9102
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 9103
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 8110
+  MElementId 8108
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 8111
+    Type UmlOperationReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 8126
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 8123
+  MElementId 8108
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 8127
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 8128
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 8139
+  MElementId 8137
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 8167
+    Type UmlMemberVisibility
+    Value private
+  }
+  { MAnnotItem
+    Id 19781
+    Type UmlOperationReturnType
+    Value TaskValidationOutcome
+  }
+}
+{ MAnnotNote
+  Id 8152
+  MElementId 8137
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 8156
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 8157
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 8182
+  MElementId 8180
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 8183
+    Type UmlOperationReturnType
+    Value Task
+  }
+  { MAnnotItem
+    Id 8198
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 8195
+  MElementId 8180
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 8199
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 8200
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 8214
+  MElementId 8212
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 8229
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 8226
+  MElementId 8212
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 8230
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 8231
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 8471
+  MElementId 8469
+  Name UmlSequenceDiagram%sd%524
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 8477
+    Type UmlObjectName
+    Value pour
+  }
+}
+{ MAnnotNote
+  Id 8497
+  MElementId 8495
+  Name UmlSequenceDiagram%sd%526
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 8502
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 8503
+    Type UmlObjectName
+    Value getBevToPour
+  }
+}
+{ MAnnotNote
+  Id 8525
+  MElementId 8495
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 8526
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 8527
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 8528
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 8632
+  MElementId 8630
+  Name UmlSequenceDiagram%sd%534
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 8637
+    Type UmlReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 8638
+    Type UmlObjectName
+    Value getVolToPour
+  }
+}
+{ MAnnotNote
+  Id 8660
+  MElementId 8630
+  Type UmlMessageDefinition
+  { MAnnotItem
+    Id 8661
+    Type UmlMessageDirection
+    Value Activation
+  }
+  { MAnnotItem
+    Id 8662
+    Type UmlMessageIsCreation
+    Value False
+  }
+  { MAnnotItem
+    Id 8663
+    Type UmlMessageIsDestruction
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 9802
+  MElementId 9797
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 9854
+    Type UmlStereotype
+    Value interface
+  }
+}
+{ MAnnotNote
+  Id 9872
+  MElementId 9818
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 9888
+    Type UmlMemberVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 21385
+    Type UmlOperationReturnType
+    Value CrateInterface
+  }
+}
+{ MAnnotNote
+  Id 9885
+  MElementId 9818
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 9889
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 9890
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 9898
+  MElementId 9896
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 9899
+    Type UmlOperationReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 9944
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 9937
+  MElementId 9896
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 9945
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 9946
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 9902
+  MElementId 9900
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 9949
+    Type UmlMemberVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 19772
+    Type UmlOperationReturnType
+    Value TaskValidationOutcome
+  }
+}
+{ MAnnotNote
+  Id 9939
+  MElementId 9900
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 9950
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 9951
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 9906
+  MElementId 9904
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 9907
+    Type UmlOperationReturnType
+    Value SolutionOutcome
+  }
+  { MAnnotItem
+    Id 9954
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 9941
+  MElementId 9904
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 9955
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 9956
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 10266
+  MElementId 10259
+  Type GenericObject
+  { MAnnotItem
+    Id 10268
+    Type Color
+    Value 000000
+  }
+}
+{ MAnnotNote
+  Id 10322
+  MElementId 10317
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 10323
+    Type UmlAggregationType
+    Value None
+  }
+}
+{ MAnnotNote
+  Id 10328
+  MElementId 10318
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 10329
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 10330
+    Type UmlRoleNavigability
+    Value True
+  }
+}
+{ MAnnotNote
+  Id 10589
+  MElementId 10587
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 10590
+    Type UmlOperationReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 10605
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 10602
+  MElementId 10587
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 10606
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 10607
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 11075
+  MElementId 11073
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 11090
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 11087
+  MElementId 11073
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 11091
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 11092
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 15683
+  MElementId 15657
+  Type GenericObject
+  { MAnnotItem
+    Id 15695
+    Type Color
+    Value 000000
+  }
+}
+{ MAnnotNote
+  Id 15664
+  MElementId 15658
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 15665
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 15674
+    Type UmlRoleNavigability
+    Value True
+  }
+  { MAnnotItem
+    Id 15732
+    Type UmlMultiplicity
+    Value 0..*
+  }
+}
+{ MAnnotNote
+  Id 15701
+  MElementId 15659
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 15702
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 15711
+    Type UmlRoleIsOrdered
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 15848
+  MElementId 15846
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 15849
+    Type UmlOperationReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 15864
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 15861
+  MElementId 15846
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 15865
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 15866
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 15895
+  MElementId 15893
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 15896
+    Type UmlAttributeType
+    Value float
+  }
+  { MAnnotItem
+    Id 15909
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 15908
+  MElementId 15893
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 15910
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 15911
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 15912
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 15936
+  MElementId 15934
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 15937
+    Type UmlOperationReturnType
+    Value boolean
+  }
+  { MAnnotItem
+    Id 15964
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 15949
+  MElementId 15934
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 15953
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 15954
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 16042
+  MElementId 16040
+  Type UmlAttributeDefinition
+  { MAnnotItem
+    Id 16043
+    Type UmlAttributeType
+    Value long
+  }
+  { MAnnotItem
+    Id 16056
+    Type UmlMemberVisibility
+    Value private
+  }
+}
+{ MAnnotNote
+  Id 16055
+  MElementId 16040
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 16057
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 16058
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 16059
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 17822
+  MElementId 17808
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 17824
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 17825
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 17826
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 19510
+  MElementId 19505
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 19529
+    Type UmlStereotype
+    Value interface
+  }
+}
+{ MAnnotNote
+  Id 19537
+  MElementId 19535
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 19552
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 19549
+  MElementId 19535
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 19553
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 19554
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 19565
+  MElementId 19560
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 19587
+    Type UmlStereotype
+    Value enumeration
+  }
+}
+{ MAnnotNote
+  Id 19733
+  MElementId 19593
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 19741
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 19742
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 19743
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 19735
+  MElementId 19596
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 19745
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 19746
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 19747
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 19731
+  MElementId 19599
+  Type UmlAttributeCsharpImplementation
+  { MAnnotItem
+    Id 19737
+    Type UmlCsharpAttributeStatic
+    Value False
+  }
+  { MAnnotItem
+    Id 19738
+    Type UmlCsharpAttributeGetter
+    Value False
+  }
+  { MAnnotItem
+    Id 19739
+    Type UmlCsharpAttributeSetter
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 19800
+  MElementId 19798
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 19815
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 19812
+  MElementId 19798
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 19816
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 19817
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 20289
+  MElementId 20283
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 20314
+    Type UmlRoleNavigability
+    Value True
+  }
+  { MAnnotItem
+    Id 20315
+    Type UmlAggregationType
+    Value Composition
+  }
+}
+{ MAnnotNote
+  Id 20323
+  MElementId 20284
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 20324
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 20333
+    Type UmlMultiplicity
+    Value 0..*
+  }
+  { MAnnotItem
+    Id 20334
+    Type UmlRoleNavigability
+    Value True
+  }
+}
+{ MAnnotNote
+  Id 20368
+  MElementId 20362
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 20369
+    Type UmlAggregationType
+    Value None
+  }
+  { MAnnotItem
+    Id 20378
+    Type UmlRoleNavigability
+    Value True
+  }
+  { MAnnotItem
+    Id 20409
+    Type UmlMultiplicity
+    Value 1
+  }
+}
+{ MAnnotNote
+  Id 20395
+  MElementId 20363
+  Type UmlRoleDefinition
+  { MAnnotItem
+    Id 20396
+    Type UmlAggregationType
+    Value None
+  }
+}
+{ MAnnotNote
+  Id 20423
+  MElementId 20421
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 20457
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 20449
+  MElementId 20421
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 20458
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 20459
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 20426
+  MElementId 20424
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 20452
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 20447
+  MElementId 20424
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 20453
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 20454
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 20667
+  MElementId 20665
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 20668
+    Type UmlOperationReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 20683
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 20680
+  MElementId 20665
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 20684
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 20685
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 20701
+  MElementId 20699
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 20816
+    Type UmlMemberVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 20827
+    Type UmlOperationReturnType
+    Value int
+  }
+}
+{ MAnnotNote
+  Id 20813
+  MElementId 20699
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 20817
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 20818
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 20838
+  MElementId 20836
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 20853
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 20850
+  MElementId 20836
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 20854
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 20855
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 21062
+  MElementId 21057
+  Type UmlExtensibilityDefinition
+  { MAnnotItem
+    Id 21101
+    Type UmlStereotype
+    Value interface
+  }
+}
+{ MAnnotNote
+  Id 21234
+  MElementId 21232
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 21249
+    Type UmlMemberVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 21292
+    Type UmlOperationReturnType
+    Value float
+  }
+}
+{ MAnnotNote
+  Id 21246
+  MElementId 21232
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 21250
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 21251
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 21314
+  MElementId 21312
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 21315
+    Type UmlOperationReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 21330
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 21327
+  MElementId 21312
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 21331
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 21332
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 21345
+  MElementId 21343
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 21346
+    Type UmlOperationReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 21361
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 21358
+  MElementId 21343
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 21362
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 21363
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 21398
+  MElementId 21396
+  Type UmlOperationDefinition
+  { MAnnotItem
+    Id 21399
+    Type UmlOperationReturnType
+    Value CrateInterface
+  }
+  { MAnnotItem
+    Id 21414
+    Type UmlMemberVisibility
+    Value public
+  }
+}
+{ MAnnotNote
+  Id 21411
+  MElementId 21396
+  Type UmlOperationCsharpImplementation
+  { MAnnotItem
+    Id 21415
+    Type UmlCsharpOperationVisibility
+    Value public
+  }
+  { MAnnotItem
+    Id 21416
+    Type UmlCsharpOperationStatic
+    Value False
+  }
+}
+{ MAnnotNote
+  Id 22159
+  MElementId 21557
+  Name UmlCommunicationDiagram%cd%86
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22164
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 22165
+    Type UmlObjectName
+    Value getBevToPour
+  }
+}
+{ MAnnotNote
+  Id 22175
+  MElementId 21575
+  Name UmlCommunicationDiagram%cd%84
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22180
+    Type UmlReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 22181
+    Type UmlObjectName
+    Value getVolToPour
+  }
+}
+{ MAnnotNote
+  Id 22191
+  MElementId 21593
+  Name UmlCommunicationDiagram%cd%82
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22197
+    Type UmlObjectName
+    Value pour
+  }
+}
+{ MAnnotNote
+  Id 22303
+  MElementId 21719
+  Name UmlCommunicationDiagram%cd%68
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22308
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 22309
+    Type UmlObjectName
+    Value getBevToDrink
+  }
+}
+{ MAnnotNote
+  Id 22351
+  MElementId 21773
+  Name UmlCommunicationDiagram%cd%60
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22356
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 22357
+    Type UmlObjectName
+    Value getLangID
+  }
+}
+{ MAnnotNote
+  Id 22359
+  MElementId 21782
+  Name UmlCommunicationDiagram%cd%59
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22364
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 22365
+    Type UmlObjectName
+    Value getCode
+  }
+}
+{ MAnnotNote
+  Id 22375
+  MElementId 21800
+  Name UmlCommunicationDiagram%cd%57
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22381
+    Type UmlObjectName
+    Value sendSolution
+  }
+}
+{ MAnnotNote
+  Id 22447
+  MElementId 21881
+  Name UmlCommunicationDiagram%cd%40
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22452
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 22453
+    Type UmlObjectName
+    Value getPath
+  }
+}
+{ MAnnotNote
+  Id 22463
+  MElementId 21899
+  Name UmlCommunicationDiagram%cd%38
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22469
+    Type UmlObjectName
+    Value loadTask
+  }
+}
+{ MAnnotNote
+  Id 22527
+  MElementId 21971
+  Name UmlCommunicationDiagram%cd%28
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22532
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 22533
+    Type UmlObjectName
+    Value getBevName
+  }
+}
+{ MAnnotNote
+  Id 22535
+  MElementId 21980
+  Name UmlCommunicationDiagram%cd%27
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22540
+    Type UmlReturnType
+    Value float
+  }
+  { MAnnotItem
+    Id 22541
+    Type UmlObjectName
+    Value getAmount
+  }
+}
+{ MAnnotNote
+  Id 22543
+  MElementId 21989
+  Name UmlCommunicationDiagram%cd%26
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22548
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 22549
+    Type UmlObjectName
+    Value getABV
+  }
+}
+{ MAnnotNote
+  Id 22551
+  MElementId 21998
+  Name UmlCommunicationDiagram%cd%25
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22557
+    Type UmlObjectName
+    Value startGame
+  }
+}
+{ MAnnotNote
+  Id 22559
+  MElementId 22007
+  Name UmlCommunicationDiagram%cd%24
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22565
+    Type UmlObjectName
+    Value addBeverage
+  }
+}
+{ MAnnotNote
+  Id 22615
+  MElementId 22070
+  Name UmlCommunicationDiagram%cd%13
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22620
+    Type UmlReturnType
+    Value String
+  }
+  { MAnnotItem
+    Id 22621
+    Type UmlObjectName
+    Value getName
+  }
+}
+{ MAnnotNote
+  Id 22623
+  MElementId 22079
+  Name UmlCommunicationDiagram%cd%12
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22628
+    Type UmlReturnType
+    Value Sex
+  }
+  { MAnnotItem
+    Id 22629
+    Type UmlObjectName
+    Value getSex
+  }
+}
+{ MAnnotNote
+  Id 22631
+  MElementId 22088
+  Name UmlCommunicationDiagram%cd%11
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22636
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 22637
+    Type UmlObjectName
+    Value getHeight
+  }
+}
+{ MAnnotNote
+  Id 22639
+  MElementId 22097
+  Name UmlCommunicationDiagram%cd%10
+  Type UmlMessageNote
+  { MAnnotItem
+    Id 22644
+    Type UmlReturnType
+    Value int
+  }
+  { MAnnotItem
+    Id 22645
+    Type UmlObjectName
+    Value getWeight
+  }
+}
+{ MTaggedValue
+  Id 725
+  MElementId 686
+  Tag UmlOperationDefinition:UmlOperationThrows
+  Value NotEnoughAlcoholException
+}
