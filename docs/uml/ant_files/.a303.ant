@@ -1,0 +1,24 @@
+NodeObject 	20623
+{
+ { Name 	"Beverage"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	105}
+ { GUID 	"UID_22AB7D7D-7A95-441e-93F2-A7B32D8D0590"}
+ { SequenceId 	20470}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	20624
+{
+ { Name 	"vol"}
+ { Type 	UmlAttribute}
+ { Sig 	""}
+ { ScopeNodeId 	105}
+ { ObjectId 	531}
+ { GUID 	"UID_9EC7EF2C-59AF-4d9b-A064-C74290A08622"}
+ { SequenceId 	20470}
+ { Gocha 	0 }
+}

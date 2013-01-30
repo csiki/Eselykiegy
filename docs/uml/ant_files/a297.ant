@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a297" }
+    { Type ObjectAnnotation }
+    { GUID "UID_9611A1F7-14B7-4374-AE73-434001079ED7" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage,Crate" }
+    { Type UmlAssociation }
+    { ObjectId 20282 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_1BE4A6B6-EF11-4a11-9ADF-945AE0E9091A" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20306 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20308 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Beverage,Crate" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 20309 }
+}
+

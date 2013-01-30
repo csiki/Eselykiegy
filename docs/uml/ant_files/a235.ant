@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "consume(bevID:int,alcVol:float,vol:float)" }
+    { Name "consume(bevID:int,vol:float,alcVol:float)" }
     { Type UmlSynchronousMessage }
     { ObjectId 8097 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "consume(Beverage,float,float)" }
+    { Value "calculateBevConsumeVol(bevID:int,alcVol:float)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 11293 }
+    { ObjectId 20795 }
 }
 

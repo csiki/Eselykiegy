@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a294" }
+    { Type ObjectAnnotation }
+    { GUID "UID_0A3C5AA9-FD1E-4adf-885E-91868C584180" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage,Create" }
+    { Type UmlAssociation }
+    { ObjectId 20207 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_AC1B91ED-6AEA-431a-B969-2478E523F174" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20231 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20233 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Beverage,Create" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 20234 }
+}
+

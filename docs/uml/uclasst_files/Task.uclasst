@@ -257,7 +257,7 @@ FillTable UmlClassTable
 					{ ObjectCache  } } }
 			{ Row	{ Appid 2868 }
 				{ Cell	{ Appid 2862 }
-					{ Label "mistakeAlcAmount" }
+					{ Label "mistakeAlcVol" }
 					
 					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 2096 }  } { Object { PDMType node } { MappingName Attribute } { ID 2094 } { GUID "UID_A3F78C96-D9A3-4c88-AD40-9D7932CC2710" }  } } }
 				{ Cell	{ Appid 2863 }
@@ -269,7 +269,7 @@ FillTable UmlClassTable
 					{ ObjectCache  } } }
 			{ Row	{ Appid 2901 }
 				{ Cell	{ Appid 2865 }
-					{ Label "solvedAlcAmount" }
+					{ Label "solvedAlcVol" }
 					
 					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 2100 }  } { Object { PDMType node } { MappingName Attribute } { ID 2098 } { GUID "UID_0FB1ADF3-F600-455d-93B3-0775FCC1065C" }  } } }
 				{ Cell	{ Appid 2866 }

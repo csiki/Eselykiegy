@@ -2,13 +2,13 @@ Diagram UmlSequenceDiagram
 {
     { Name "sd" }
     { Format "1.7" }
-    { Scale 0.92 }
-    { PanX -919 }
-    { PanY 479 }
+    { Scale 0.82 }
+    { PanX -747 }
+    { PanY -124 }
     { Alignment 1 }
     { GUID "UID_21CCCA42-8E1A-4bd8-8866-DE350AF9E3CF" }
     { Summary
-        { Nodes 29 }
+        { Nodes 33 }
         { Arcs 83 }
     }
 }
@@ -39,12 +39,12 @@ Node 7
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%active object%%1357665497_6344" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357665497_0_6344" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%active object%%1357665497_6344" }
         }
     }
     { Object
@@ -83,12 +83,12 @@ Node 85
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357666931_6344" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357666931_0_6344" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357666931_6344" }
         }
     }
     { Object
@@ -121,12 +121,12 @@ Node 88
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357667013_6344" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357667013_0_6344" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357667013_6344" }
         }
     }
     { Object
@@ -213,12 +213,12 @@ Node 180
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357782237_7916" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357782237_0_7916" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357782237_7916" }
         }
     }
     { Object
@@ -334,12 +334,12 @@ Node 270
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357786683_7916" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357786683_0_7916" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357786683_7916" }
         }
     }
     { Object
@@ -399,12 +399,12 @@ Node 327
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357826121_4196" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357826121_0_4196" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357826121_4196" }
         }
     }
     { Object
@@ -537,6 +537,114 @@ Node 523
     }
 }
 
+Node 607
+{
+    { Type Note }
+    { Loc 275 -617 }
+    { Scale 352.78 219.43 }
+    { Label
+        { Text "stores in Crate" }
+    }
+    { PropertyList
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%note%%1359554912_6184" }
+        }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName NoteNodeMapping }
+        { ID 20708 }
+        { GUID "UID_31EC23B3-9D9D-47a0-A064-F53A54373019" }
+    }
+    { Object
+        { PDMType Note }
+        { MappingName Default }
+        { ID 20710 }
+    }
+}
+
+Node 610
+{
+    { Type Note }
+    { Loc 221 -881 }
+    { Scale 330.93 219.43 }
+    { Label
+        { Text "creates Crate" }
+    }
+    { PropertyList
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%note%%1359556960_6184" }
+        }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName NoteNodeMapping }
+        { ID 21137 }
+        { GUID "UID_F501A04B-EBD3-4b7f-B7CB-C24984AAADE4" }
+    }
+    { Object
+        { PDMType Note }
+        { MappingName Default }
+        { ID 21139 }
+    }
+}
+
+Node 611
+{
+    { Type Note }
+    { Loc 304 322 }
+    { Scale 487.02 219.43 }
+    { Label
+        { Text "first message to Crate" }
+    }
+    { PropertyList
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%note%%1359557525_6184" }
+        }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName NoteNodeMapping }
+        { ID 21201 }
+        { GUID "UID_EF20FF0E-666B-4fda-8D43-D005DD04E768" }
+    }
+    { Object
+        { PDMType Note }
+        { MappingName Default }
+        { ID 22803 }
+    }
+}
+
+Node 612
+{
+    { Type Note }
+    { Loc 299 618 }
+    { Scale 487.02 219.43 }
+    { Label
+        { Text "first message to Crate" }
+    }
+    { PropertyList
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%note%%1359557525_6184" }
+        }
+    }
+    { Object
+        { PDMType Node }
+        { MappingName NoteNodeMapping }
+        { ID 21201 }
+        { GUID "UID_EF20FF0E-666B-4fda-8D43-D005DD04E768" }
+    }
+    { Object
+        { PDMType Note }
+        { MappingName Default }
+        { ID 22803 }
+    }
+}
+
 Arc 55
 {
     { Type SynchronousMessage }
@@ -647,7 +755,7 @@ Arc 86
         { Offset 0 -789 }
     }
     { Label
-        { Text "boolean:=savePlayer(String,Sex,int,int)" }
+        { Text "CrateInterface:=savePlayer(String,Sex,int,int)" }
     }
     { PropertyList
         { Property
@@ -992,7 +1100,7 @@ Arc 178
         { Offset 1 -784 }
     }
     { Label
-        { Text "Beverage:=addBeverage(String,float,int)" }
+        { Text "int:=addBeverage(String,float,float)" }
     }
     { PropertyList
         { Property
@@ -1763,7 +1871,7 @@ Arc 420
         { Offset 0 168 }
     }
     { Label
-        { Text "chooseBev(minVol:float, gulp:int)" }
+        { Text "chooseBev(minAlcVol:float)" }
     }
     { PropertyList
         { Property
@@ -1961,7 +2069,7 @@ Arc 506
         { Offset 1 242 }
     }
     { Label
-        { Text "calculateBevConsumeVol(bevID:int,alcVol:float)" }
+        { Text "consume(bevID:int,vol:float,alcVol:float)" }
     }
     { PropertyList
         { Property
@@ -1985,7 +2093,7 @@ Arc 510
         { Offset 1 200 }
     }
     { Label
-        { Text "consume(float)" }
+        { Text "consume(vol:float)" }
     }
     { PropertyList
         { Property
@@ -2213,7 +2321,7 @@ Arc 542
         { Offset 1 486 }
     }
     { Label
-        { Text "pour(float)" }
+        { Text "pour(vol:float)" }
     }
     { PropertyList
         { Property

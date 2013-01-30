@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a299" }
+    { Type ObjectAnnotation }
+    { GUID "UID_97B935E8-C2BA-4490-8531-7A57E3035B82" }
+}
+
+NodeObject 99999
+{
+    { Name "Crate" }
+    { Type UmlClass }
+    { ObjectId 20281 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_809A52FE-6B60-4307-8841-0001AD78A5AD" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20345 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20347 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Crate" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 20348 }
+}
+

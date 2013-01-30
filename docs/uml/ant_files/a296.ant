@@ -1,0 +1,90 @@
+FileObject 1
+{
+    { Name "a296" }
+    { Type ObjectAnnotation }
+    { GUID "UID_0862E328-5373-409d-BFDC-62CAD6887889" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage,Crate" }
+    { Type UmlAssociation }
+    { ObjectId 20282 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_1BE4A6B6-EF11-4a11-9ADF-945AE0E9091A" }
+}
+
+NodeObject 99998
+{
+    { Name "Crate" }
+    { Type UmlClass }
+    { ObjectId 20281 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_809A52FE-6B60-4307-8841-0001AD78A5AD" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlRole }
+    { ObjectId 20283 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_724E20F8-6468-4a21-91FD-616E5BB2C498" }
+}
+
+NoteObject 2
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 20289 }
+}
+
+ItemObject 3
+{
+    { Type UmlRoleNavigability }
+    { Value "True" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 20314 }
+}
+
+ItemObject 4
+{
+    { Type UmlAggregationType }
+    { Value "Composition" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 20315 }
+}
+
+NoteObject 5
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 20292 }
+}
+
+NoteObject 6
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 20294 }
+}
+
+ItemObject 7
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 6 }
+    { ObjectId 20295 }
+}
+

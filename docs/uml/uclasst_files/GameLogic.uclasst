@@ -436,9 +436,9 @@ FillTable UmlClassTable
 					{ Label "String, Sex, int, int" }
 					 }
 				{ Cell	{ Appid 3087 }
-					{ Label "boolean" }
+					{ Label "CrateInterface" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 9873 }  } } } }
+					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 21385 }  } } } }
 			{ Row	{ Appid 3120 }
 				{ Cell	{ Appid 3114 }
 					{ Label "addBev" }

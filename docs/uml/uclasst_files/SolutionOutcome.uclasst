@@ -343,8 +343,9 @@ FillTable UmlClassTable
 					 } }
 			{ Row	{ Appid 2376 }
 				{ Cell	{ Appid 2382 }
+					{ Label "" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName AttributeVisibility } { ID 17823 }  } } }
+					{ ObjectCache  } }
 				{ Cell	{ Appid 2383 }
 					
 					{ ObjectCache  } }

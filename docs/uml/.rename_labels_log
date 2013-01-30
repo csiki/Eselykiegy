@@ -587,7 +587,7 @@ Rename
     { SrcId 5592 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "addBeverage(String,float,int)" }
+        { Text "Beverage:=addBeverage(String,float,float)" }
     }
     { UpdatedAttr name }
 }
@@ -631,7 +631,7 @@ Rename
     { SrcId 4113 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "boolean:=savePlayer(String,Sex,int,int)" }
+        { Text "CrateInterface:=savePlayer(String,Sex,int,int)" }
     }
     { UpdatedAttr name }
 }
@@ -642,7 +642,7 @@ Rename
     { SrcId 5593 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "Beverage:=addBeverage(String,float,int)" }
+        { Text "int:=addBeverage(String,float,float)" }
     }
     { UpdatedAttr name }
 }
@@ -1071,7 +1071,7 @@ Rename
     { SrcId 7785 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "chooseBev(minVol:float, gulp:int)" }
+        { Text "chooseBev(minAlcVol:float)" }
     }
     { UpdatedAttr name }
 }
@@ -1148,7 +1148,7 @@ Rename
     { SrcId 8303 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "calculateBevConsumeVol(bevID:int,alcVol:float)" }
+        { Text "consume(bevID:int,vol:float,alcVol:float)" }
     }
     { UpdatedAttr name }
 }
@@ -1159,7 +1159,7 @@ Rename
     { SrcId 8305 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "calculateBevConsumeVol(bevID:int,alcVol:float)" }
+        { Text "consume(bevID:int,vol:float,alcVol:float)" }
     }
     { UpdatedAttr name }
 }
@@ -1170,7 +1170,7 @@ Rename
     { SrcId 8354 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "consume(float)" }
+        { Text "consume(vol:float)" }
     }
     { UpdatedAttr name }
 }
@@ -1302,7 +1302,7 @@ Rename
     { SrcId 8741 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "pour(float)" }
+        { Text "pour(vol:float)" }
     }
     { UpdatedAttr name }
 }
@@ -1806,6 +1806,72 @@ Rename
     { Dependency MessageItemValueChange }
     { Label
         { Text "float:=bevToPour(int,float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8741 }
+    { SrcId 690 }
+    { Dependency MessageArgsChange }
+    { Label
+        { Text "vol:float" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 16428 }
+    { SrcId 16434 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "vol:float" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 16434 }
+    { SrcId 690 }
+    { Dependency MessageArgsChange }
+    { Label
+        { Text "vol:float" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8354 }
+    { SrcId 686 }
+    { Dependency MessageArgsChange }
+    { Label
+        { Text "vol:float" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 16527 }
+    { SrcId 16533 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "vol:float" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 16533 }
+    { SrcId 686 }
+    { Dependency MessageArgsChange }
+    { Label
+        { Text "vol:float" }
     }
     { UpdatedAttr name }
 }

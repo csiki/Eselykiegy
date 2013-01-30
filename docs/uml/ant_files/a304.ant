@@ -1,0 +1,52 @@
+FileObject 1
+{
+    { Name "a304" }
+    { Type ObjectAnnotation }
+    { GUID "UID_74A6B86A-AE39-4196-84A5-B9EB6EB3C405" }
+}
+
+NodeObject 99999
+{
+    { Name "CrateInterface" }
+    { Type UmlClass }
+    { ObjectId 21057 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_BBA09E4E-D876-4250-B383-70317551C5D6" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 21062 }
+}
+
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "interface" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 21101 }
+}
+
+NoteObject 4
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 21064 }
+}
+
+ItemObject 5
+{
+    { Type ObjectName }
+    { Value "CrateInterface" }
+    { GuidRef "" }
+    { NoteId 4 }
+    { ObjectId 21065 }
+}
+

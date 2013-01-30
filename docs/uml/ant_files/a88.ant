@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "boolean:=savePlayer(String,Sex,int,int)" }
+    { Name "CrateInterface:=savePlayer(String,Sex,int,int)" }
     { Type UmlSynchronousMessage }
     { ObjectId 4106 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "Player:=savePlayer(String,Sex,int,int)" }
+    { Value "Crate:=savePlayer(String,Sex,int,int)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 9627 }
+    { ObjectId 21187 }
 }
 

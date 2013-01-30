@@ -1,0 +1,99 @@
+FileObject 1
+{
+    { Name "a295" }
+    { Type ObjectAnnotation }
+    { GUID "UID_4E36FA96-709E-4687-9DF0-43CE241C6936" }
+}
+
+NodeObject 99999
+{
+    { Name "Beverage,Create" }
+    { Type UmlAssociation }
+    { ObjectId 20207 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_AC1B91ED-6AEA-431a-B969-2478E523F174" }
+}
+
+NodeObject 99998
+{
+    { Name "Beverage" }
+    { Type UmlClass }
+    { ObjectId 105 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_22AB7D7D-7A95-441e-93F2-A7B32D8D0590" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlRole }
+    { ObjectId 20209 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_C2FC3146-34E5-4e01-9C7A-34004EE613DB" }
+}
+
+NoteObject 2
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 20248 }
+}
+
+ItemObject 3
+{
+    { Type UmlMultiplicity }
+    { Value "0..*" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 20273 }
+}
+
+ItemObject 4
+{
+    { Type UmlRoleNavigability }
+    { Value "True" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 20258 }
+}
+
+ItemObject 5
+{
+    { Type UmlAggregationType }
+    { Value "None" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 20249 }
+}
+
+NoteObject 6
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 20251 }
+}
+
+NoteObject 7
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 20253 }
+}
+
+ItemObject 8
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 7 }
+    { ObjectId 20254 }
+}
+

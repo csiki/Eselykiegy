@@ -1,60 +1,60 @@
 FileObject 1
 {
-    { Name "a186" }
+    { Name "a313" }
     { Type ObjectAnnotation }
-    { GUID "UID_ABB28D7C-23D7-4425-A52F-0B87451FC47A" }
+    { GUID "UID_95584C8E-459F-47c0-8F67-3E72F2ACD97C" }
 }
 
 NodeObject 99999
 {
-    { Name "%%class%%1357665497_0_6344" }
+    { Name "Beverage" }
     { Type UmlObjectClassScope }
-    { ObjectId 3530 }
+    { ObjectId 5644 }
     { Sig "" }
     { ScopeNodeId 0 }
-    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
+    { GUID "UID_B8147DDD-F71C-44ce-B25F-1ADC50078654" }
 }
 
 NodeObject 99998
 {
-    { Name "UserInterface" }
+    { Name "bev" }
     { Type UmlObjectInstance }
-    { ObjectId 3535 }
+    { ObjectId 5645 }
     { Sig "" }
     { ScopeNodeId 99999 }
-    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
+    { GUID "UID_F75D43A8-7A61-44db-B9E9-ED90A72A374D" }
 }
 
 NodeObject 99997
 {
-    { Name " Game" }
+    { Name " Player" }
     { Type UmlObjectClassScope }
-    { ObjectId 3526 }
+    { ObjectId 4179 }
     { Sig "" }
     { ScopeNodeId 0 }
-    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+    { GUID "UID_4357174D-B835-42c1-A004-BD3B424DD60E" }
 }
 
 NodeObject 99996
 {
-    { Name "gameLogic" }
+    { Name "player" }
     { Type UmlObjectInstance }
-    { ObjectId 3527 }
+    { ObjectId 4180 }
     { Sig "" }
     { ScopeNodeId 99997 }
-    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+    { GUID "UID_DF866A0D-B6FF-4203-A870-7FF203467640" }
 }
 
 LinkObject 99995
 {
-    { Name "chooseBev(minAlcVol:float)" }
-    { Type UmlAsynchronousMessage }
-    { ObjectId 7779 }
+    { Name "consume(vol:float)" }
+    { Type UmlSynchronousMessage }
+    { ObjectId 8348 }
     { AnnotFileId 1 }
-    { Sig "%%message%%1357849501_3392" }
+    { Sig "%%message%%1357866240_7396" }
     { ToNodeId 99998 }
     { FromNodeId 99996 }
-    { GUID "UID_EC0FCCCF-047F-4c48-98C4-C8FB44179BEB" }
+    { GUID "UID_306EE4A4-654D-42fc-ACD9-6E24D514A4E9" }
 }
 
 NoteObject 2
@@ -62,7 +62,7 @@ NoteObject 2
     { Type UmlMessageDefinition }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 7811 }
+    { ObjectId 20916 }
 }
 
 ItemObject 3
@@ -71,7 +71,7 @@ ItemObject 3
     { Value "Activation" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 7812 }
+    { ObjectId 20917 }
 }
 
 ItemObject 4
@@ -80,7 +80,7 @@ ItemObject 4
     { Value "False" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 7813 }
+    { ObjectId 20918 }
 }
 
 ItemObject 5
@@ -89,7 +89,7 @@ ItemObject 5
     { Value "False" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 7814 }
+    { ObjectId 20919 }
 }
 
 NoteObject 6
@@ -97,7 +97,7 @@ NoteObject 6
     { Type UmlExtensibilityDefinition }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 7816 }
+    { ObjectId 20921 }
 }
 
 NoteObject 7
@@ -105,15 +105,15 @@ NoteObject 7
     { Type GenericObject }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 7818 }
+    { ObjectId 20923 }
 }
 
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "chooseBev(minVol:float,gulp:int)" }
+    { Value "consume(vol)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 10775 }
+    { ObjectId 20924 }
 }
 

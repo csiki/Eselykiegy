@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a301" }
+    { Type ObjectAnnotation }
+    { GUID "UID_B23676F3-E38B-4b5a-B958-AAB3F5A2FC03" }
+}
+
+NodeObject 99999
+{
+    { Name "Crate,Player" }
+    { Type UmlAssociation }
+    { ObjectId 20361 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_ED59E027-65A8-476c-B1EC-2867D1ABE55C" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20385 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 20387 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Crate,Player" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 20388 }
+}
+
