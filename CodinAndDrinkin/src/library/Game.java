@@ -1,8 +1,15 @@
 package library;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
+import misc.FileClassLoader;
 
 public class Game implements GameLogic {
 	private Task currentTask;
@@ -12,6 +19,7 @@ public class Game implements GameLogic {
 	private List<Compiler> compilers = new ArrayList<Compiler>();
 	private List<Solution> solutions = new ArrayList<Solution>();
 	private CrateInterface crate;
+	private float alcToDrink = 0.0F;
 	
 	
 	/**
@@ -19,9 +27,13 @@ public class Game implements GameLogic {
 	 * @param sout
 	 * @return alcohol volume
 	 */
-	private float calculateAlcComsumeVol(SolutionOutcome sout) { // TODO
-		float alcVol = 0.0F;
-		return alcVol;
+	private float calculateAlcComsumeVol(SolutionOutcome sout) {
+		if (sout == SolutionOutcome.Solved)
+			return currentTask.solvedAlcVol;
+		else if (sout.code > 1 && sout.code < 6)
+			return currentTask.mistakeAlcVol;
+
+		return 0.0F;
 	}
 	
 	/**
@@ -29,8 +41,40 @@ public class Game implements GameLogic {
 	 * @param file
 	 * @return task: the opened Task object, null if cannot find the file, or not valid
 	 */
-	private Task openFile(File file) { // TODO
+	private Task openFile(File file) {
+		
+		if (!file.exists())
+			return null;
+			
+		FileInputStream fis = null;
+		ObjectInputStream ois = null;
+		try {
+			fis = new FileInputStream(file);
+			ois = new ObjectInputStream(fis);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
 		Task task = null;
+		try {
+			task = (Task) ois.readObject();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			ois.close();
+			fis.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		return task;
 	}
 	
@@ -39,16 +83,35 @@ public class Game implements GameLogic {
 	 * @param task previously loaded task
 	 * @return tvout: enum of the various outcomes
 	 */
-	private TaskValidationOutcome taskValidation(Task task) { // TODO
-		TaskValidationOutcome tvout = null;
-		return tvout;
+	private TaskValidationOutcome taskValidation(Task task) {
+		
+		if (!isPassed(task.priorTaskID))
+			return TaskValidationOutcome.PreTaskNotSolved;
+		
+		if (task.solvedAlcVol > sumAlcohol())
+			return TaskValidationOutcome.NotEnoughAlcohol;
+		
+		return TaskValidationOutcome.ValidLoad;
+	}
+	
+	/**
+	 * Sums the alcohol volume in crate.
+	 * @return sum
+	 */
+	private float sumAlcohol() {
+		float sum = 0.0F;
+		
+		for (int i=0; i<crate.getSize(); ++i)
+			sum += crate.getBevVol(i) * crate.getBevABV(i);
+		
+		return sum;
 	}
 	
 	/**
 	 * Calculate the blood volume of the player according to http://easycalculation.com/medical/blood-volume.php.
 	 * @param height in cm
 	 * @param weight in kg
-	 * @return bvol: blood volume
+	 * @return blood volume
 	 */
 	private float calculateBloodVol(int height, int weight) {
 		float heightInM3 = (float) Math.pow((((float)height)/100), 3);
@@ -63,9 +126,13 @@ public class Game implements GameLogic {
 	 * @param taskID
 	 * @return
 	 */
-	private boolean isPassed(int taskID) { // TODO
-		boolean passed = false;
-		return passed;
+	private boolean isPassed(int taskID) {
+		
+		for (Solution s : solutions)
+			if (s.getTask().id == taskID)
+				return true;
+
+		return false;
 	}
 	
 	/**
@@ -82,9 +149,10 @@ public class Game implements GameLogic {
 	 */
 	
 	@Override
-	public CrateInterface savePlayer(String name, Sex sex, int height, int weight) { // TODO
-		CrateInterface retVal = null;
-		return retVal;
+	public CrateInterface savePlayer(String name, Sex sex, int height, int weight) {
+		Player player = new Player(name, sex, height, weight, calculateBloodVol(height, weight));
+		
+		return player.getCrate();
 	}
 	
 	@Override
@@ -93,9 +161,22 @@ public class Game implements GameLogic {
 	}
 	
 	@Override
-	public TaskValidationOutcome loadTask(String path) { // TODO
-		TaskValidationOutcome retVal = null;
-		return retVal;
+	public TaskValidationOutcome loadTask(String path) {
+		TaskValidationOutcome tvout = null;
+		
+		Task task = openFile(new File(path));
+		
+		if (task == null)
+			return TaskValidationOutcome.NoFileFound;
+		
+		tvout = taskValidation(task);
+		
+		if (tvout == TaskValidationOutcome.ValidLoad) {
+			// TODO if needed.. valid task load, currentTaskStartTime set, call UserInterface.refreshTask()
+			this.currentTask = task;
+		}
+		
+		return tvout;
 	}
 	
 	@Override
@@ -105,10 +186,12 @@ public class Game implements GameLogic {
 	}
 	
 	@Override
-	public void bevToDrink(int bevID) { // TODO
+	public float bevToDrink(int bevID) { // TODO
+		return 0.0F;
 	}
 	
 	@Override
-	public void bevToPour(int bevID, float vol) { // TODO
+	public void bevToPour(int bevID, float vol) {
+		player.pour(bevID, vol);
 	}
 }

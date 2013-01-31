@@ -35,7 +35,7 @@ public class Beverage {
 	public void consume(float vol) throws NotEnoughAlcoholException {
 		if (vol > this.vol) {
 			this.vol = 0.0F;
-			throw new NotEnoughAlcoholException();
+			throw new NotEnoughAlcoholException("Pour sommore harrr!");
 		}
 		else
 			this.vol -= vol;

@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "chooseBev(minAlcVol:float)" }
+    { Name "chooseBev(alcVol:float)" }
     { Type UmlAsynchronousMessage }
     { ObjectId 7779 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "chooseBev(minVol:float,gulp:int)" }
+    { Value "chooseBev(minAlcVol:float)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 10775 }
+    { ObjectId 24157 }
 }
 

@@ -385,6 +385,24 @@ public class MainFrame implements Runnable, UserInterface {
 		lblBeverages.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		panel_9.add(lblBeverages);
 		
+		JLabel dlLeft = new JLabel("3");
+		dlLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
+		dlLeft.setForeground(Color.RED);
+		panel_9.add(dlLeft);
+		
+		JLabel lblLeft = new JLabel("dl left");
+		lblLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
+		panel_9.add(lblLeft);
+		
+		JLabel label_2 = new JLabel("~");
+		panel_9.add(label_2);
+		
+		JLabel gulpsLeft = new JLabel("15");
+		panel_9.add(gulpsLeft);
+		
+		JLabel lblGulps = new JLabel("gulps");
+		panel_9.add(lblGulps);
+		
 		JScrollPane scrollPane_1 = new JScrollPane();
 		scrollPane_1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		scrollPane_1.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);

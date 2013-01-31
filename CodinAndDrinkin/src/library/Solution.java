@@ -34,4 +34,12 @@ public class Solution {
 	public void setCompiler(Compiler compiler) {
 		this.compiler = compiler;
 	}
+	
+	/**
+	 * Returns with task. Uses Game.isPassed(int).
+	 * @return
+	 */
+	public Task getTask() {
+		return this.task;
+	}
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Crate implements CrateInterface {
-	protected List<Beverage> beverages = new ArrayList<Beverage>();
+	private List<Beverage> beverages = new ArrayList<Beverage>();
 	
 	/**
 	 * Add a beverage to the Crate
@@ -41,6 +41,11 @@ public class Crate implements CrateInterface {
 	@Override
 	public float getBevABV(int bevID) {
 		return beverages.get(bevID).getABV();
+	}
+
+	@Override
+	public int getSize() {
+		return this.beverages.size();
 	}
 	
 }

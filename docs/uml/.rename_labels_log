@@ -1071,7 +1071,7 @@ Rename
     { SrcId 7785 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "chooseBev(minAlcVol:float)" }
+        { Text "chooseBev(alcVol:float)" }
     }
     { UpdatedAttr name }
 }
@@ -1357,7 +1357,7 @@ Rename
     { SrcId 7918 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "bevToDrink(bevID:int)" }
+        { Text "float:=bevToDrink(bevID:int)" }
     }
     { UpdatedAttr name }
 }

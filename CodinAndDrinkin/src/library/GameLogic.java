@@ -12,7 +12,7 @@ public interface GameLogic {
 	 * @param sex
 	 * @param height in cm
 	 * @param weight in kg
-	 * @return CrateInterface: the crate that has been created after the player had.
+	 * @return the crate that has been created after the player had.
 	 */
 	public CrateInterface savePlayer(String name, Sex sex, int height, int weight);
 	
@@ -21,14 +21,14 @@ public interface GameLogic {
 	 * @param name
 	 * @param vol in dl
 	 * @param ABV like 40(%)
-	 * @return bevID: int, the id of the beverage in the crate, for later use
+	 * @return the id of the beverage in the crate, for later use
 	 */
 	public int addBev(String name, float vol, int ABV);
 	
 	/**
 	 * Loads a task, if it can be.
 	 * @param path
-	 * @return TaskValidationOutcome: the interface can load or not the task, and if not, the problem
+	 * @return the interface can load or not the task, and if not, the problem
 	 */
 	public TaskValidationOutcome loadTask(String path);
 	
@@ -41,10 +41,11 @@ public interface GameLogic {
 	public SolutionOutcome sendSolution(int compilerID, String code);
 	
 	/**
-	 * Receives the chosen beverage to drink. Calculates the volume that should be drunk of that beverage, than call player to drink it.
+	 * Receives the chosen beverage to drink. Calculates the volume that should be drunk of that beverage, than call player to drink it. Sets Game.alcToDrink.
 	 * @param bevID as in the crate
+	 * @return the volume of alcohol left, if there was not enough in the chosen beverage
 	 */
-	public void bevToDrink(int bevID);
+	public float bevToDrink(int bevID);
 	
 	/**
 	 * Pour extra volume, to a previously added beverage, by the help of the player.

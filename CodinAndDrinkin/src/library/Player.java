@@ -28,6 +28,8 @@ public class Player {
 		this.height = height;
 		this.weight = weight;
 		this.bloodVol = bloodVol;
+		
+		this.crate = new Crate();
 	}
 	
 	/**
@@ -67,6 +69,14 @@ public class Player {
 		Beverage bev = new Beverage(name, vol, abv);
 		
 		return crate.add(bev);
+	}
+	
+	/**
+	 * Uses Game.savePlayer. For Game and UserUnterface.
+	 * @return CrateInterface
+	 */
+	public CrateInterface getCrate() {
+		return (CrateInterface) this.crate;
 	}
 	
 	public Sex getSex() {
