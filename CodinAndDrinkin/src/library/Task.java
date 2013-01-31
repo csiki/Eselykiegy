@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Task implements Serializable {
 	
+	public final int id;
 	public final int priorTaskID; 
 	public final String description;
 	public final List<String> inputs;
@@ -13,6 +14,7 @@ public class Task implements Serializable {
 	public final float solvedAlcVol;
 	
 	Task(
+			int id,
 			int priorTaskID,
 			String description,
 			List<String> inputs,
@@ -20,6 +22,7 @@ public class Task implements Serializable {
 			float mistakeAlcVol,
 			float solvedAlcVol
 	) {
+		this.id = id;
 		this.priorTaskID = priorTaskID;
 		this.description = description;
 		this.inputs = inputs;

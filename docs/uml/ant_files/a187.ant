@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "float:=bevToDrink(bevID:int)" }
+    { Name "bevToDrink(bevID:int)" }
     { Type UmlSynchronousMessage }
     { ObjectId 7911 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "float:=bevToDrink(int)" }
+    { Value "float:=bevToDrink(bevID:int)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 10807 }
+    { ObjectId 23527 }
 }
 

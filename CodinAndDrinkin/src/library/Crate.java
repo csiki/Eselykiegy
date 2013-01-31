@@ -1,37 +1,46 @@
 package library;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Crate implements CrateInterface {
-	protected List<Beverage> beverages;
+	protected List<Beverage> beverages = new ArrayList<Beverage>();
 	
-	public int add(String name, float vol, float ABV ) { // TODO
-		int bevID = 0;
-		return bevID;
+	/**
+	 * Add a beverage to the Crate
+	 * @param bev
+	 * @return the id of the added beverage as in Crate
+	 */
+	public int add(Beverage bev) {
+		beverages.add(bev);
+		return beverages.size() - 1;
 	}
 	
-	public void pour(int bevID, float vol) { // TODO
-	}
-	
-	public void consume(int bevID, float vol) { // TODO
+	/**
+	 * Returns with a reference to a beverage by the given bevID.
+	 * @param bevID as in Crate
+	 * @return Beverage
+	 */
+	public Beverage get(int bevID) {
+		return beverages.get(bevID);
 	}
 	
 	/*
 	 * Implemented methods from interface CrateInterface
 	 */
 	@Override
-	public String getBevName(int bevID) { // TODO
-		return null;
+	public String getBevName(int bevID) {
+		return beverages.get(bevID).getName();
 	}
 
 	@Override
-	public float getBevVol(int bevID) { // TODO
-		return 0;
+	public float getBevVol(int bevID) {
+		return beverages.get(bevID).getVol();
 	}
 
 	@Override
-	public float getBevABV(int bevID) { // TODO
-		return 0;
+	public float getBevABV(int bevID) {
+		return beverages.get(bevID).getABV();
 	}
 	
 }

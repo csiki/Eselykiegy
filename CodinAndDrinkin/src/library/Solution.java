@@ -10,14 +10,28 @@ public class Solution {
 	private Task task;
 	private Compiler compiler;
 	
+	/**
+	 * Validates itself according to code, using compiler. Updates mistakes, runtime, duration and sout (returns with the last).
+	 * @return SolutionOutcome: outcome of the validation
+	 */
 	public SolutionOutcome validator() { // TODO
 		SolutionOutcome retVal = null;
 		return retVal;
 	}
 	
-	public void setCode(String code) { // TODO
+	/**
+	 * Update code.
+	 * @param code programming code
+	 */
+	public void setCode(String code) {
+		this.code = code;
 	}
 	
-	public void setCompiler(Compiler cmp) { // TODO
+	/**
+	 * Update compiler.
+	 * @param cmp
+	 */
+	public void setCompiler(Compiler compiler) {
+		this.compiler = compiler;
 	}
 }

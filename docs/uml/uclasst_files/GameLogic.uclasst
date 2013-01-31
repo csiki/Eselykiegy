@@ -484,9 +484,8 @@ FillTable UmlClassTable
 					{ Label "bevID:int" }
 					 }
 				{ Cell	{ Appid 3223 }
-					{ Label "float" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 10590 }  } } } }
+					{ ObjectCache  } } }
 			{ Row	{ Appid 3260 }
 				{ Cell	{ Appid 3258 }
 					{ Label "bevToPour" }

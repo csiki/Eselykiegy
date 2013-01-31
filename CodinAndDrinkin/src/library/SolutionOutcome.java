@@ -6,7 +6,8 @@ public enum SolutionOutcome {
 	CompileTimeError(2),
 	RuntimeError(3),
 	InvalidOutput(4),
-	GivenUp(5);
+	OutOfTime(5),
+	GivenUp(6);
 	
 	public final int code;
 	

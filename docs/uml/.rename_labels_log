@@ -1357,7 +1357,7 @@ Rename
     { SrcId 7918 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "float:=bevToDrink(int)" }
+        { Text "bevToDrink(bevID:int)" }
     }
     { UpdatedAttr name }
 }
