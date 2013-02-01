@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a344" }
+    { Type ObjectAnnotation }
+    { GUID "UID_92441D2B-9069-41a1-BCE4-26B5A68A4E55" }
+}
+
+NodeObject 99999
+{
+    { Name "Trigger" }
+    { Type UmlClass }
+    { ObjectId 24842 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_4E819CDA-D9BE-492f-87E7-4733213EBE82" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 24847 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 24849 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Trigger" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 24850 }
+}
+

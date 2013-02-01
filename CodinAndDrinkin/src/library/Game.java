@@ -12,15 +12,27 @@ import java.util.List;
 import misc.FileClassLoader;
 
 public class Game implements GameLogic {
+	
+	UserInterface ui;
 	private Task currentTask;
+	/**
+	 * in milliseconds; System.currentTimeMillis()
+	 */
 	private long currentTaskStartTime;
 	private List<Task> tasks = new ArrayList<Task>();
 	private Player player;
 	private List<Compiler> compilers = new ArrayList<Compiler>();
 	private List<Solution> solutions = new ArrayList<Solution>();
 	private CrateInterface crate;
+	/**
+	 * in dl
+	 */
 	private float alcToDrink = 0.0F;
 	
+	
+	Game(UserInterface ui) {
+		this.ui = ui;
+	}
 	
 	/**
 	 * Calculates the volume of alcohol, that should be drunk, according to currentTask and sout.
@@ -173,7 +185,18 @@ public class Game implements GameLogic {
 		
 		if (tvout == TaskValidationOutcome.ValidLoad) {
 			// TODO if needed.. valid task load, currentTaskStartTime set, call UserInterface.refreshTask()
+			/// save current task
 			this.currentTask = task;
+			
+			/// add a new Solution
+			this.solutions.add(new Solution(this.currentTask));
+			
+			/// refresh UserInterface
+			ui.refreshTask(this.currentTask);
+			currentTaskStartTime = System.currentTimeMillis();
+			
+			/// install Trigger
+			// TODO !!!! initiate Trigger interface, and Stopper class + delete currentTaskStartTime if not necessary !!!!
 		}
 		
 		return tvout;

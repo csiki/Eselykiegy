@@ -1,0 +1,130 @@
+NodeObject 	24751
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	24752
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	24753
+{
+ { Name 	" Solution"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	6940}
+ { GUID 	"UID_BC3B8DD0-7B66-4c91-B514-A2158456A0D4"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	24754
+{
+ { Name 	"solution"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	6940}
+ { ObjectId 	6941}
+ { GUID 	"UID_7D795AE5-720B-4b97-BA9D-21BE5A64A22E"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	24755
+{
+ { Name 	"SolutionOutcome:=validator(Compiler, String)"}
+ { Type 	UmlSynchronousMessage}
+ { Sig 	"%%message%%1359731153_7596"}
+ { ObjectId 	24605}
+ { GUID 	"UID_DD068982-B7EB-4708-8B7A-DA59EC9B4A81"}
+ { SequenceId 	24614}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	6941}
+ { Gocha 	0 }
+}
+NodeObject 	24756
+{
+ { Name 	" Game"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	3526}
+ { GUID 	"UID_353659D0-765B-4f7b-976E-56512C37A9F7"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	24757
+{
+ { Name 	"gameLogic"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	3526}
+ { ObjectId 	3527}
+ { GUID 	"UID_28C20985-3238-4735-A79D-541976D05DED"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	24758
+{
+ { Name 	" Solution"}
+ { Type 	UmlObjectClassScope}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	6940}
+ { GUID 	"UID_BC3B8DD0-7B66-4c91-B514-A2158456A0D4"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	24759
+{
+ { Name 	"solution"}
+ { Type 	UmlObjectInstance}
+ { Sig 	""}
+ { ScopeNodeId 	6940}
+ { ObjectId 	6941}
+ { GUID 	"UID_7D795AE5-720B-4b97-BA9D-21BE5A64A22E"}
+ { SequenceId 	24614}
+ { Gocha 	-1 }
+}
+
+
+LinkObject 	24760
+{
+ { Name 	"SolutionOutcome:=validator(Compiler,String)"}
+ { Type 	UmlSynchronousMessage}
+ { Sig 	"%%message%%1359731153_7596"}
+ { ObjectId 	24605}
+ { GUID 	"UID_DD068982-B7EB-4708-8B7A-DA59EC9B4A81"}
+ { SequenceId 	24614}
+ { ScopeNodeId 	0}
+ { FromNodeId 	3527}
+ { ToNodeId 	6941}
+ { Gocha 	0 }
+}

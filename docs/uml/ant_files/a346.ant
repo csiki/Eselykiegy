@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a346" }
+    { Type ObjectAnnotation }
+    { GUID "UID_2C72DD18-8EBA-42cf-BDD7-4460A52B3DDF" }
+}
+
+NodeObject 99999
+{
+    { Name "Game,Stopper" }
+    { Type UmlAssociation }
+    { ObjectId 24892 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_8F05DDB7-D4C3-4e9c-B65B-854CFFC0669E" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 24916 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 24918 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Game,Stopper" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 24919 }
+}
+

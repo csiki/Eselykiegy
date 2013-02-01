@@ -814,6 +814,7 @@ FillTable UmlClassTable
 					{ PropertyList { UmlCxxCodeGenId "24" } }
 					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 2748 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 2733 }  } { Object { PDMType node } { MappingName Operation } { ID 2731 } { GUID "UID_B2EAEEFB-1FDD-46cc-B12D-2E0904B00727" }  } } }
 				{ Cell	{ Appid 1566 }
+					{ Label "Compiler, String" }
 					 }
 				{ Cell	{ Appid 1567 }
 					{ Label "SolutionOutcome" }

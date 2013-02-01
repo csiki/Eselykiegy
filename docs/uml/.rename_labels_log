@@ -928,7 +928,7 @@ Rename
     { SrcId 6950 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "Solution(Compiler,String)" }
+        { Text "Solution(Task)" }
     }
     { UpdatedAttr name }
 }
@@ -1872,6 +1872,39 @@ Rename
     { Dependency MessageArgsChange }
     { Label
         { Text "vol:float" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 24605 }
+    { SrcId 24613 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "SolutionOutcome:=validator()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 24605 }
+    { SrcId 24612 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "SolutionOutcome:=validator()" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 24605 }
+    { SrcId 24611 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "SolutionOutcome:=validator(Compiler, String)" }
     }
     { UpdatedAttr name }
 }

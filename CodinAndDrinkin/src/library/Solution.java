@@ -2,7 +2,7 @@ package library;
 
 public class Solution {
 	
-	private SolutionOutcome sout;
+	private SolutionOutcome sout = SolutionOutcome.Unvalidated;
 	private float duration = 0.0F;
 	private double runtime = 0.0;
 	private int mistakes = 0;
@@ -10,11 +10,15 @@ public class Solution {
 	private Task task;
 	private Compiler compiler;
 	
+	Solution(Task task) {
+		this.task = task;
+	}
+	
 	/**
 	 * Validates itself according to code, using compiler. Updates mistakes, runtime, duration and sout (returns with the last).
 	 * @return SolutionOutcome: outcome of the validation
 	 */
-	public SolutionOutcome validator() { // TODO
+	public SolutionOutcome validator(Compiler compiler, String code) { // TODO
 		SolutionOutcome retVal = null;
 		return retVal;
 	}

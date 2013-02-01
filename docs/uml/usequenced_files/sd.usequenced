@@ -3,20 +3,20 @@ Diagram UmlSequenceDiagram
     { Name "sd" }
     { Format "1.7" }
     { Scale 0.82 }
-    { PanX -1037 }
-    { PanY -189 }
+    { PanX -542 }
+    { PanY -463 }
     { Alignment 1 }
     { GUID "UID_21CCCA42-8E1A-4bd8-8866-DE350AF9E3CF" }
     { Summary
         { Nodes 33 }
-        { Arcs 83 }
+        { Arcs 82 }
     }
 }
 
 Node 6
 {
     { Type Actor }
-    { Loc -853 -30 }
+    { Loc -857 -30 }
     { Scale 128.00 13281.52 }
     { Label
         { Text "Gamer" }
@@ -32,19 +32,19 @@ Node 6
 Node 7
 {
     { Type ActiveObject }
-    { Loc -604 3 }
+    { Loc -608 3 }
     { Scale 128.00 13714.29 }
     { Label
         { Text "UserInterface" }
     }
     { PropertyList
         { Property
-            { Name "AnonymousNameClass" }
-            { Value "%%class%%1357665497_0_6344" }
-        }
-        { Property
             { Name "AnonymousName" }
             { Value "%%active object%%1357665497_6344" }
+        }
+        { Property
+            { Name "AnonymousNameClass" }
+            { Value "%%class%%1357665497_0_6344" }
         }
     }
     { Object
@@ -76,19 +76,19 @@ Node 7
 Node 85
 {
     { Type PassiveObject }
-    { Loc -194 -128 }
+    { Loc -198 -128 }
     { Scale 128.00 12123.43 }
     { Label
         { Text "gameLogic : Game" }
     }
     { PropertyList
         { Property
-            { Name "AnonymousNameClass" }
-            { Value "%%class%%1357666931_0_6344" }
-        }
-        { Property
             { Name "AnonymousName" }
             { Value "%%passive object%%1357666931_6344" }
+        }
+        { Property
+            { Name "AnonymousNameClass" }
+            { Value "%%class%%1357666931_0_6344" }
         }
     }
     { Object
@@ -114,19 +114,19 @@ Node 85
 Node 88
 {
     { Type PassiveObject }
-    { Loc 159 107 }
+    { Loc 155 107 }
     { Scale 128.00 12617.14 }
     { Label
         { Text "player : Player" }
     }
     { PropertyList
         { Property
-            { Name "AnonymousNameClass" }
-            { Value "%%class%%1357667013_0_6344" }
-        }
-        { Property
             { Name "AnonymousName" }
             { Value "%%passive object%%1357667013_6344" }
+        }
+        { Property
+            { Name "AnonymousNameClass" }
+            { Value "%%class%%1357667013_0_6344" }
         }
     }
     { Object
@@ -152,7 +152,7 @@ Node 88
 Node 176
 {
     { Type Note }
-    { Loc -573 -1043 }
+    { Loc -577 -1043 }
     { Scale 502.63 219.43 }
     { Label
         { Text "asking for player's data" }
@@ -179,7 +179,7 @@ Node 176
 Node 177
 {
     { Type Note }
-    { Loc -820 -826 }
+    { Loc -824 -826 }
     { Scale 412.10 219.43 }
     { Label
         { Text "adding a beverage" }
@@ -206,19 +206,19 @@ Node 177
 Node 180
 {
     { Type PassiveObject }
-    { Loc 438 175 }
+    { Loc 434 175 }
     { Scale 128.00 10483.81 }
     { Label
         { Text "bev:Beverage" }
     }
     { PropertyList
         { Property
-            { Name "AnonymousNameClass" }
-            { Value "%%class%%1357782237_0_7916" }
-        }
-        { Property
             { Name "AnonymousName" }
             { Value "%%passive object%%1357782237_7916" }
+        }
+        { Property
+            { Name "AnonymousNameClass" }
+            { Value "%%class%%1357782237_0_7916" }
         }
     }
     { Object
@@ -244,7 +244,7 @@ Node 180
 Node 195
 {
     { Type Note }
-    { Loc -827 -555 }
+    { Loc -831 -555 }
     { Scale 287.22 219.43 }
     { Label
         { Text "load a task" }
@@ -271,75 +271,75 @@ Node 195
 Node 231
 {
     { Type Vertex }
-    { Loc -159 -473 }
+    { Loc -163 -473 }
     { Scale 128.00 128.00 }
 }
 
 Node 233
 {
     { Type Vertex }
-    { Loc -159 -448 }
+    { Loc -163 -448 }
     { Scale 128.00 128.00 }
 }
 
 Node 245
 {
     { Type Vertex }
-    { Loc -164 -422 }
+    { Loc -168 -422 }
     { Scale 128.00 128.00 }
 }
 
 Node 247
 {
     { Type Vertex }
-    { Loc -164 -401 }
+    { Loc -168 -401 }
     { Scale 128.00 128.00 }
 }
 
 Node 251
 {
     { Type Vertex }
-    { Loc -153 -385 }
+    { Loc -157 -385 }
     { Scale 128.00 128.00 }
 }
 
 Node 253
 {
     { Type Vertex }
-    { Loc -153 -352 }
+    { Loc -157 -352 }
     { Scale 128.00 128.00 }
 }
 
 Node 260
 {
     { Type Vertex }
-    { Loc -163 -324 }
+    { Loc -167 -324 }
     { Scale 128.00 128.00 }
 }
 
 Node 262
 {
     { Type Vertex }
-    { Loc -163 -300 }
+    { Loc -167 -300 }
     { Scale 128.00 128.00 }
 }
 
 Node 270
 {
     { Type PassiveObject }
-    { Loc 634 -34 }
+    { Loc 630 -34 }
     { Scale 128.00 5254.10 }
     { Label
         { Text "task : Task" }
     }
     { PropertyList
         { Property
-            { Name "AnonymousNameClass" }
-            { Value "%%class%%1357786683_0_7916" }
-        }
-        { Property
             { Name "AnonymousName" }
             { Value "%%passive object%%1357786683_7916" }
+        }
+        { Property
+            { Name "AnonymousNameClass" }
+            { Value "%%class%%1357786683_0_7916" }
         }
     }
     { Object
@@ -365,7 +365,7 @@ Node 270
 Node 318
 {
     { Type Note }
-    { Loc -837 -164 }
+    { Loc -841 -164 }
     { Scale 327.80 219.43 }
     { Label
         { Text "send solution" }
@@ -392,19 +392,19 @@ Node 318
 Node 327
 {
     { Type PassiveObject }
-    { Loc 861 314 }
+    { Loc 864 78 }
     { Scale 128.00 4608.00 }
     { Label
         { Text "solution : Solution" }
     }
     { PropertyList
         { Property
-            { Name "AnonymousNameClass" }
-            { Value "%%class%%1357826121_0_4196" }
-        }
-        { Property
             { Name "AnonymousName" }
             { Value "%%passive object%%1357826121_4196" }
+        }
+        { Property
+            { Name "AnonymousNameClass" }
+            { Value "%%class%%1357826121_0_4196" }
         }
     }
     { Object
@@ -430,63 +430,63 @@ Node 327
 Node 392
 {
     { Type Vertex }
-    { Loc -135 63 }
+    { Loc -139 63 }
     { Scale 128.00 128.00 }
 }
 
 Node 394
 {
     { Type Vertex }
-    { Loc -135 103 }
+    { Loc -139 103 }
     { Scale 128.00 128.00 }
 }
 
 Node 406
 {
     { Type Vertex }
-    { Loc -148 127 }
+    { Loc -152 127 }
     { Scale 128.00 128.00 }
 }
 
 Node 408
 {
     { Type Vertex }
-    { Loc -148 151 }
+    { Loc -152 151 }
     { Scale 128.00 128.00 }
 }
 
 Node 494
 {
     { Type Vertex }
-    { Loc -131 249 }
+    { Loc -135 249 }
     { Scale 128.00 128.00 }
 }
 
 Node 496
 {
     { Type Vertex }
-    { Loc -131 287 }
+    { Loc -135 287 }
     { Scale 128.00 128.00 }
 }
 
 Node 500
 {
     { Type Vertex }
-    { Loc -146 305 }
+    { Loc -150 305 }
     { Scale 128.00 128.00 }
 }
 
 Node 502
 {
     { Type Vertex }
-    { Loc -146 328 }
+    { Loc -150 328 }
     { Scale 128.00 128.00 }
 }
 
 Node 522
 {
     { Type Note }
-    { Loc -809 184 }
+    { Loc -813 184 }
     { Scale 536.98 219.43 }
     { Label
         { Text "choose beverage to drink" }
@@ -513,7 +513,7 @@ Node 522
 Node 523
 {
     { Type Note }
-    { Loc -820 505 }
+    { Loc -824 505 }
     { Scale 593.17 219.43 }
     { Label
         { Text "pour to an existing beverage" }
@@ -540,7 +540,7 @@ Node 523
 Node 607
 {
     { Type Note }
-    { Loc 275 -617 }
+    { Loc 271 -617 }
     { Scale 352.78 219.43 }
     { Label
         { Text "stores in Crate" }
@@ -567,7 +567,7 @@ Node 607
 Node 610
 {
     { Type Note }
-    { Loc 221 -881 }
+    { Loc 217 -881 }
     { Scale 330.93 219.43 }
     { Label
         { Text "creates Crate" }
@@ -594,7 +594,7 @@ Node 610
 Node 611
 {
     { Type Note }
-    { Loc 304 322 }
+    { Loc 300 322 }
     { Scale 487.02 219.43 }
     { Label
         { Text "first message to Crate" }
@@ -621,7 +621,7 @@ Node 611
 Node 612
 {
     { Type Note }
-    { Loc 299 618 }
+    { Loc 295 618 }
     { Scale 487.02 219.43 }
     { Label
         { Text "first message to Crate" }
@@ -1667,16 +1667,16 @@ Arc 329
     { Type SynchronousMessage }
     { From
         { ID 85 }
-        { Loc -188 -42 }
-        { Offset 1 86 }
+        { Loc -188 -278 }
+        { Offset 1 -150 }
     }
     { To
         { ID 327 }
-        { Loc 855 -42 }
+        { Loc 862 -278 }
         { Offset 1 -356 }
     }
     { Label
-        { Text "Solution(Compiler,String)" }
+        { Text "Solution(Task)" }
     }
     { PropertyList
         { Property
@@ -1691,13 +1691,13 @@ Arc 331
     { Type ReturnMessage }
     { From
         { ID 327 }
-        { Loc 855 -18 }
+        { Loc 862 -254 }
         { Offset 2 -332 }
     }
     { To
         { ID 85 }
-        { Loc -188 -18 }
-        { Offset 0 110 }
+        { Loc -188 -254 }
+        { Offset 0 -126 }
     }
     { PropertyList
         { Property
@@ -1707,47 +1707,26 @@ Arc 331
     }
 }
 
-Arc 333
+Arc 698
 {
     { Type SynchronousMessage }
     { From
         { ID 85 }
-        { Loc -188 18 }
-        { Offset -1 146 }
+        { Loc -188 -35 }
+        { Offset -1 93 }
     }
     { To
         { ID 327 }
-        { Loc 855 18 }
-        { Offset 1 -296 }
+        { Loc 862 -35 }
+        { Offset 1 -113 }
     }
     { Label
-        { Text "SolutionOutcome:=validator()" }
+        { Text "SolutionOutcome:=validator(Compiler, String)" }
     }
     { PropertyList
         { Property
             { Name "AnonymousNameMessage" }
-            { Value "%%message%%1357826424_4196" }
-        }
-    }
-}
-
-Arc 335
-{
-    { Type ReturnMessage }
-    { From
-        { ID 327 }
-        { Loc 855 43 }
-        { Offset 1 -271 }
-    }
-    { To
-        { ID 85 }
-        { Loc -188 43 }
-        { Offset -1 171 }
-    }
-    { PropertyList
-        { Property
-            { Name "AnonymousNameMessage" }
-            { Value "%%message%%1357826518_4196" }
+            { Value "%%message%%1359731153_7596" }
         }
     }
 }
@@ -4342,97 +4321,50 @@ Link 332
     }
 }
 
-Link 334
+Link 699
 {
-    { FirstArc 333 }
-    { LastArc 333 }
+    { FirstArc 698 }
+    { LastArc 698 }
     { Object
         { PDMType Link }
         { MappingName MessageInstanceMapping }
-        { ID 7013 }
-        { GUID "UID_E3C633D3-3E46-40e2-8476-A83DAA9219F1" }
+        { ID 24605 }
+        { GUID "UID_DD068982-B7EB-4708-8B7A-DA59EC9B4A81" }
     }
     { Object
         { PDMType Note }
         { MappingName Default }
-        { ID 7015 }
+        { ID 24607 }
     }
     { Object
         { PDMType Item }
         { MappingName MessageName }
-        { ID 7021 }
+        { ID 24613 }
     }
     { Object
         { PDMType Item }
         { MappingName ReturnType }
-        { ID 7020 }
+        { ID 24612 }
     }
     { Object
         { PDMType Item }
         { MappingName MessageArgs }
-        { ID 7019 }
+        { ID 24611 }
     }
     { Object
         { PDMType Item }
         { MappingName PredecessorGuard }
-        { ID 7018 }
+        { ID 24610 }
     }
     { Object
         { PDMType Item }
         { MappingName MessageSequence }
-        { ID 7017 }
+        { ID 24609 }
     }
     { Object
         { PDMType Item }
         { MappingName MessageRecurrence }
-        { ID 7016 }
-    }
-}
-
-Link 336
-{
-    { FirstArc 335 }
-    { LastArc 335 }
-    { Object
-        { PDMType Link }
-        { MappingName MessageInstanceMapping }
-        { ID 7083 }
-        { GUID "UID_01540596-976A-4e2d-8C90-12C0802132FB" }
-    }
-    { Object
-        { PDMType Note }
-        { MappingName Default }
-        { ID 7085 }
-    }
-    { Object
-        { PDMType Item }
-        { MappingName MessageName }
-        { ID 7091 }
-    }
-    { Object
-        { PDMType Item }
-        { MappingName ReturnType }
-        { ID 7090 }
-    }
-    { Object
-        { PDMType Item }
-        { MappingName MessageArgs }
-        { ID 7089 }
-    }
-    { Object
-        { PDMType Item }
-        { MappingName PredecessorGuard }
-        { ID 7088 }
-    }
-    { Object
-        { PDMType Item }
-        { MappingName MessageSequence }
-        { ID 7087 }
-    }
-    { Object
-        { PDMType Item }
-        { MappingName MessageRecurrence }
-        { ID 7086 }
+        { ID 24608 }
     }
 }
 

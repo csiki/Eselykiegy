@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a343" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C1F80607-118A-4256-BB31-287401866C3B" }
+}
+
+NodeObject 99999
+{
+    { Name "Stopper" }
+    { Type UmlClass }
+    { ObjectId 24537 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_CDEE3F19-E248-449f-B4AE-FA719A1D3850" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 24542 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 24544 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "Stopper" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 24545 }
+}
+

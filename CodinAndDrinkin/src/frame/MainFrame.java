@@ -1,6 +1,5 @@
 package frame;
 
-import java.awt.EventQueue;
 import javax.swing.JFrame;
 import java.awt.Dimension;
 import javax.swing.JMenuBar;
@@ -38,18 +37,21 @@ import javax.swing.border.BevelBorder;
 import javax.swing.UIManager;
 import javax.swing.ScrollPaneConstants;
 
+import library.GameLogic;
 import library.Task;
 import library.UserInterface;
 
 public class MainFrame implements Runnable, UserInterface {
 
+	private GameLogic game;
 	private JFrame frmCodindrinkin;
 	private JTable solutionsTable;
 
 	/**
 	 * Create the application.
 	 */
-	public MainFrame() {
+	public MainFrame(GameLogic game) {
+		this.game = game;
 	}
 	
 	/**

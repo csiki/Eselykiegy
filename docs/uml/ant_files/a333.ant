@@ -1,8 +1,8 @@
 FileObject 1
 {
-    { Name "a155" }
+    { Name "a333" }
     { Type ObjectAnnotation }
-    { GUID "UID_D8FF5227-D4CC-48e3-9183-A1D0BD5A6137" }
+    { GUID "UID_9DD4C5D6-1A4D-4726-9F9F-C1B1DB3F5F2B" }
 }
 
 NodeObject 99999
@@ -47,14 +47,14 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "Solution(Task)" }
+    { Name "SolutionOutcome:=validator(Compiler,String)" }
     { Type UmlSynchronousMessage }
-    { ObjectId 6944 }
+    { ObjectId 24605 }
     { AnnotFileId 1 }
-    { Sig "%%message%%1357826253_4196" }
+    { Sig "%%message%%1359731153_7596" }
     { ToNodeId 99998 }
     { FromNodeId 99996 }
-    { GUID "UID_D7036D4D-579D-40d6-B0E2-17B67E3D91EE" }
+    { GUID "UID_DD068982-B7EB-4708-8B7A-DA59EC9B4A81" }
 }
 
 NoteObject 2
@@ -62,7 +62,7 @@ NoteObject 2
     { Type UmlMessageDefinition }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 6988 }
+    { ObjectId 24638 }
 }
 
 ItemObject 3
@@ -71,7 +71,7 @@ ItemObject 3
     { Value "Activation" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 6989 }
+    { ObjectId 24639 }
 }
 
 ItemObject 4
@@ -80,7 +80,7 @@ ItemObject 4
     { Value "False" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 6990 }
+    { ObjectId 24640 }
 }
 
 ItemObject 5
@@ -89,7 +89,7 @@ ItemObject 5
     { Value "False" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 6991 }
+    { ObjectId 24641 }
 }
 
 NoteObject 6
@@ -97,32 +97,23 @@ NoteObject 6
     { Type UmlExtensibilityDefinition }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 6993 }
+    { ObjectId 24643 }
 }
 
-ItemObject 7
-{
-    { Type UmlStereotype }
-    { Value "create" }
-    { GuidRef "" }
-    { NoteId 6 }
-    { ObjectId 7001 }
-}
-
-NoteObject 8
+NoteObject 7
 {
     { Type GenericObject }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 6995 }
+    { ObjectId 24645 }
 }
 
-ItemObject 9
+ItemObject 8
 {
     { Type ObjectName }
-    { Value "Solution(Compiler,String)" }
+    { Value "SolutionOutcome:=validator()" }
     { GuidRef "" }
-    { NoteId 8 }
-    { ObjectId 6996 }
+    { NoteId 7 }
+    { ObjectId 24734 }
 }
 
