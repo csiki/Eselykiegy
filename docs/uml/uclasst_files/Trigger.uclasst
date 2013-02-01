@@ -429,7 +429,7 @@ FillTable UmlClassTable
 		{ NumVisCols 3 }
 			{ Row	{ Appid 2718 }
 				{ Cell	{ Appid 2725 }
-					{ Label "endTrigger" }
+					{ Label "shoot" }
 					{ PropertyList { UmlCxxCodeGenId "165" } }
 					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 24879 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 24865 }  } { Object { PDMType node } { MappingName Operation } { ID 24863 } { GUID "UID_8A05A870-8ED8-4897-83E2-2400CFB056E9" }  } } }
 				{ Cell	{ Appid 2726 }

@@ -10,24 +10,29 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import misc.FileClassLoader;
+import misc.Stopper;
+import misc.Trigger;
 
-public class Game implements GameLogic {
+public class Game implements GameLogic, Trigger {
 	
 	UserInterface ui;
 	private Task currentTask;
-	/**
-	 * in milliseconds; System.currentTimeMillis()
-	 */
-	private long currentTaskStartTime;
 	private List<Task> tasks = new ArrayList<Task>();
 	private Player player;
 	private List<Compiler> compilers = new ArrayList<Compiler>();
 	private List<Solution> solutions = new ArrayList<Solution>();
+	/**
+	 * Player's beverages
+	 */
 	private CrateInterface crate;
 	/**
 	 * in dl
 	 */
 	private float alcToDrink = 0.0F;
+	/**
+	 * timer
+	 */
+	private Stopper stopper;
 	
 	
 	Game(UserInterface ui) {
@@ -184,7 +189,7 @@ public class Game implements GameLogic {
 		tvout = taskValidation(task);
 		
 		if (tvout == TaskValidationOutcome.ValidLoad) {
-			// TODO if needed.. valid task load, currentTaskStartTime set, call UserInterface.refreshTask()
+
 			/// save current task
 			this.currentTask = task;
 			
@@ -192,11 +197,12 @@ public class Game implements GameLogic {
 			this.solutions.add(new Solution(this.currentTask));
 			
 			/// refresh UserInterface
-			ui.refreshTask(this.currentTask);
-			currentTaskStartTime = System.currentTimeMillis();
+			ui.startTask(this.currentTask);
 			
 			/// install Trigger
-			// TODO !!!! initiate Trigger interface, and Stopper class + delete currentTaskStartTime if not necessary !!!!
+			this.stopper = new Stopper(this, System.currentTimeMillis() + this.currentTask.timeAllowed);
+			Thread th = new Thread(this.stopper);
+			th.start();
 		}
 		
 		return tvout;
@@ -216,5 +222,16 @@ public class Game implements GameLogic {
 	@Override
 	public void bevToPour(int bevID, float vol) {
 		player.pour(bevID, vol);
+	}
+	
+	
+	/*
+	 * Implemented method from interface Trigger:
+	 */
+	
+	@Override
+	public void shoot() {
+		// TODO Auto-generated method stub
+		
 	}
 }

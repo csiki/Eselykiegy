@@ -12,5 +12,10 @@ public interface UserInterface {
 	 * Updates the current task section on user interface.
 	 * @param task
 	 */
-	public void refreshTask(Task task);
+	public void startTask(Task task);
+	
+	/**
+	 * Signals the user that time expired and makes impossible to evaluate more solutions.
+	 */
+	public void endTask();
 }

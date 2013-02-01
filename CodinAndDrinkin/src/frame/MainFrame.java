@@ -72,7 +72,13 @@ public class MainFrame implements Runnable, UserInterface {
 	}
 
 	@Override
-	public void refreshTask(Task task) {
+	public void startTask(Task task) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void endTask() {
 		// TODO Auto-generated method stub
 		
 	}
@@ -684,4 +690,5 @@ public class MainFrame implements Runnable, UserInterface {
 	public JFrame getFrmCodindrinkin() {
 		return frmCodindrinkin;
 	}
+	
 }

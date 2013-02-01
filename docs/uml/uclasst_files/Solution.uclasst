@@ -224,9 +224,9 @@ FillTable UmlClassTable
 					
 					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 1485 }  } { Object { PDMType node } { MappingName Attribute } { ID 1483 } { GUID "UID_95747001-B635-4b79-976E-8B6684D36110" }  } } }
 				{ Cell	{ Appid 1379 }
-					{ Label "float" }
+					{ Label "long" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName AttributeType } { ID 1486 }  } } }
+					{ ObjectCache { Object { PDMType item } { MappingName AttributeType } { ID 25180 }  } } }
 				{ Cell	{ Appid 1380 }
 					{ Label "0.0" }
 					
@@ -237,9 +237,9 @@ FillTable UmlClassTable
 					
 					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 1998 }  } { Object { PDMType node } { MappingName Attribute } { ID 1996 } { GUID "UID_C052A19E-5A39-47e8-880F-4B559411D825" }  } } }
 				{ Cell	{ Appid 1415 }
-					{ Label "double" }
+					{ Label "long" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName AttributeType } { ID 2055 }  } } }
+					{ ObjectCache { Object { PDMType item } { MappingName AttributeType } { ID 25181 }  } } }
 				{ Cell	{ Appid 1416 }
 					{ Label "0.0" }
 					

@@ -76,7 +76,7 @@ public class Player {
 	 * @return CrateInterface
 	 */
 	public CrateInterface getCrate() {
-		return (CrateInterface) this.crate;
+		return this.crate;
 	}
 	
 	public Sex getSex() {

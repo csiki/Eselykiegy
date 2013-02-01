@@ -3,8 +3,17 @@ package library;
 public class Solution {
 	
 	private SolutionOutcome sout = SolutionOutcome.Unvalidated;
-	private float duration = 0.0F;
-	private double runtime = 0.0;
+	/**
+	 * time taken solving the task, in millisecs
+	 */
+	private long duration = 0;
+	/**
+	 * time spent running the (solution) program
+	 */
+	private long runtime = 0;
+	/**
+	 * number of evaluating invalid solutions
+	 */
 	private int mistakes = 0;
 	private String code;
 	private Task task;
