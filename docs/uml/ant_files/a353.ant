@@ -1,28 +1,28 @@
 FileObject 1
 {
-    { Name "a234" }
+    { Name "a353" }
     { Type ObjectAnnotation }
-    { GUID "UID_AA17CF0A-1B77-42de-A106-E8EE5603766B" }
+    { GUID "UID_07B0803E-E81F-4001-831D-705353B3DDB0" }
 }
 
 NodeObject 99999
 {
-    { Name " Game" }
+    { Name "%%class%%1357665497_0_6344" }
     { Type UmlObjectClassScope }
-    { ObjectId 3526 }
+    { ObjectId 3530 }
     { Sig "" }
     { ScopeNodeId 0 }
-    { GUID "UID_353659D0-765B-4f7b-976E-56512C37A9F7" }
+    { GUID "UID_5F7FF596-5560-413d-A473-76EA54F098B2" }
 }
 
 NodeObject 99998
 {
-    { Name "gameLogic" }
+    { Name "UserInterface" }
     { Type UmlObjectInstance }
-    { ObjectId 3527 }
+    { ObjectId 3535 }
     { Sig "" }
     { ScopeNodeId 99999 }
-    { GUID "UID_28C20985-3238-4735-A79D-541976D05DED" }
+    { GUID "UID_1AA29853-49EB-44b0-AF24-F8C0EA35A09C" }
 }
 
 NodeObject 99997
@@ -47,14 +47,14 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "float:=calculateBevConsumeVol(bevID:int,alcLeft:Float)" }
-    { Type UmlBalkingMessage }
-    { ObjectId 8054 }
+    { Name "startTask(Task)" }
+    { Type UmlAsynchronousMessage }
+    { ObjectId 6337 }
     { AnnotFileId 1 }
-    { Sig "%%message%%1357865754_7396" }
+    { Sig "%%message%%1357786629_7916" }
     { ToNodeId 99998 }
     { FromNodeId 99996 }
-    { GUID "UID_048ECCC9-C281-4aee-A846-678EF5B2274D" }
+    { GUID "UID_D4A5A366-DFF7-4f8a-9E15-56684CBDE14F" }
 }
 
 NoteObject 2
@@ -62,7 +62,7 @@ NoteObject 2
     { Type UmlMessageDefinition }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 11212 }
+    { ObjectId 25609 }
 }
 
 ItemObject 3
@@ -71,7 +71,7 @@ ItemObject 3
     { Value "Activation" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 11213 }
+    { ObjectId 25610 }
 }
 
 ItemObject 4
@@ -80,7 +80,7 @@ ItemObject 4
     { Value "False" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 11214 }
+    { ObjectId 25611 }
 }
 
 ItemObject 5
@@ -89,7 +89,7 @@ ItemObject 5
     { Value "False" }
     { GuidRef "" }
     { NoteId 2 }
-    { ObjectId 11215 }
+    { ObjectId 25612 }
 }
 
 NoteObject 6
@@ -97,7 +97,7 @@ NoteObject 6
     { Type UmlExtensibilityDefinition }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 11217 }
+    { ObjectId 25614 }
 }
 
 NoteObject 7
@@ -105,15 +105,15 @@ NoteObject 7
     { Type GenericObject }
     { Name "" }
     { OwnerId 99995 }
-    { ObjectId 11219 }
+    { ObjectId 25616 }
 }
 
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "float:=calculateBevConsumeVol(bevID:int,alcVol:float)" }
+    { Value "refreshTask(Task)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 25850 }
+    { ObjectId 25617 }
 }
 

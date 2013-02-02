@@ -17,31 +17,89 @@ import javax.swing.JTextField;
 import javax.swing.JRadioButton;
 import java.awt.Dimension;
 import javax.swing.SwingConstants;
+import javax.swing.AbstractAction;
+import java.awt.event.ActionEvent;
+import javax.swing.Action;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class NewGameDialog extends JDialog {
-
+	private static final long serialVersionUID = -4923393269220341951L;
+	
+	InterfaceForDialogs main;
 	private final JPanel contentPanel = new JPanel();
 	private JTextField height;
 	private JTextField name;
 	private JTextField weight;
-
-	/**
-	 * Launch the application.
+	JRadioButton rdbtnMale = new JRadioButton("male");
+	JRadioButton rdbtnFemale = new JRadioButton("female");
+	JButton okButton = new JButton("OK");
+	private final Action action = new SwingAction(this);
+	
+	/*
+	 * Own methods
 	 */
-	public static void main(String[] args) {
-		try {
-			NewGameDialog dialog = new NewGameDialog();
-			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-			dialog.setVisible(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	void checkIfOK() {
+		okButton.setEnabled(inputValidation());
 	}
-
+	
+	boolean inputValidation() {
+		/// name
+		if (name.getText().length() == 0)
+			return false;
+		
+		/// sex
+		if (!rdbtnMale.isSelected() && !rdbtnFemale.isSelected())
+			return false;
+		
+		/// height
+		Pattern hp = Pattern.compile("[1-2][0-9][0-9]");
+		Matcher hm = hp.matcher(height.getText());
+		if (!hm.matches())
+			return false;
+		
+		/// weight
+		Pattern wp = Pattern.compile("[1-2]?[0-9][0-9]");
+		Matcher wm = wp.matcher(weight.getText());
+		if (!wm.matches())
+			return false;
+		
+		return true;
+	}
+	
+	/*
+	 * Getters
+	 */
+	public String getInputName() {
+		return this.name.getText();
+	}
+	
+	public String getInputHeight() {
+		return this.height.getText();
+	}
+	
+	public String getInputWeight() {
+		return this.weight.getText();
+	}
+	
+	public boolean getInputSexMale() {
+		return this.rdbtnMale.isSelected();
+	}
+	
+	public boolean getInputSexFemale() {
+		return this.rdbtnFemale.isSelected();
+	}
+	
 	/**
 	 * Create the dialog.
 	 */
-	public NewGameDialog() {
+	public NewGameDialog(InterfaceForDialogs main) {
+		this.main = main;
+		
 		setTitle("Let's get drunk");
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
@@ -79,6 +137,12 @@ public class NewGameDialog extends JDialog {
 		}
 		{
 			name = new JTextField();
+			name.addKeyListener(new KeyAdapter() {
+				@Override
+				public void keyReleased(KeyEvent e) {
+					checkIfOK();
+				}
+			});
 			contentPanel.add(name, "8, 4, left, default");
 			name.setColumns(15);
 		}
@@ -89,9 +153,20 @@ public class NewGameDialog extends JDialog {
 		{
 			ButtonGroup sex = new ButtonGroup();
 			
-			JRadioButton rdbtnMale = new JRadioButton("male");
+			rdbtnMale.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseClicked(MouseEvent arg0) {
+					checkIfOK();
+				}
+			});
 			contentPanel.add(rdbtnMale, "8, 6");
-			JRadioButton rdbtnFemale = new JRadioButton("female");
+			
+			rdbtnFemale.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseClicked(MouseEvent arg0) {
+					checkIfOK();
+				}
+			});
 			contentPanel.add(rdbtnFemale, "8, 8");
 			
 			sex.add(rdbtnMale);
@@ -107,6 +182,12 @@ public class NewGameDialog extends JDialog {
 			panel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 			{
 				height = new JTextField();
+				height.addKeyListener(new KeyAdapter() {
+					@Override
+					public void keyReleased(KeyEvent e) {
+						checkIfOK();
+					}
+				});
 				height.setHorizontalAlignment(SwingConstants.RIGHT);
 				height.setPreferredSize(new Dimension(5, 20));
 				height.setMinimumSize(new Dimension(5, 20));
@@ -128,6 +209,12 @@ public class NewGameDialog extends JDialog {
 			panel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 			{
 				weight = new JTextField();
+				weight.addKeyListener(new KeyAdapter() {
+					@Override
+					public void keyReleased(KeyEvent e) {
+						checkIfOK();
+					}
+				});
 				weight.setHorizontalAlignment(SwingConstants.RIGHT);
 				panel.add(weight);
 				weight.setColumns(3);
@@ -142,7 +229,7 @@ public class NewGameDialog extends JDialog {
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
-				JButton okButton = new JButton("OK");
+				okButton.addMouseListener(new OkAction(this, this.main));
 				okButton.setEnabled(false);
 				okButton.setActionCommand("OK");
 				buttonPane.add(okButton);
@@ -150,10 +237,40 @@ public class NewGameDialog extends JDialog {
 			}
 			{
 				JButton cancelButton = new JButton("Cancel");
+				cancelButton.setAction(action);
 				cancelButton.setActionCommand("Cancel");
 				buttonPane.add(cancelButton);
 			}
 		}
 	}
 
+	private class SwingAction extends AbstractAction {
+		private static final long serialVersionUID = -6281457554887252620L;
+		
+		JDialog jd;
+		
+		public SwingAction(JDialog jd) {
+			this.jd = jd;
+			putValue(NAME, "Cancel");
+		}
+		public void actionPerformed(ActionEvent e) {
+			jd.dispose();
+		}
+	}
+	
+	private class OkAction extends MouseAdapter {
+		InterfaceForDialogs main;
+		JDialog jd;
+		
+		OkAction(JDialog jd, InterfaceForDialogs main) {
+			this.jd = jd;
+			this.main = main;
+		}
+		
+		@Override
+		public void mouseClicked(MouseEvent arg0) {
+			this.main.newGameDialogReady();
+			jd.dispose();
+		}
+	}
 }

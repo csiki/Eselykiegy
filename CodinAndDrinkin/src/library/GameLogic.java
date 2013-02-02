@@ -33,12 +33,17 @@ public interface GameLogic {
 	public TaskValidationOutcome loadTask(String path);
 	
 	/**
-	 * Validate the solution, returns the outcome.
+	 * Validate the solution, calculates the consumable alcohol for the validation outcome, signal UserInterface if it's >0 about choosing beverage to drink.
 	 * @param compilerID as in the list, compilers
 	 * @param code the programming code
-	 * @return SolutionOutcome
+	 * @return outcome of the solution validation
 	 */
 	public SolutionOutcome sendSolution(int compilerID, String code);
+	
+	/**
+	 * Stops the timer.
+	 */
+	public void giveUp();
 	
 	/**
 	 * Receives the chosen beverage to drink. Calculates the volume that should be drunk of that beverage, than call player to drink it. Sets Game.alcToDrink.

@@ -22,6 +22,7 @@ import com.jgoodies.forms.factories.FormFactory;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.border.LineBorder;
+import javax.swing.JDialog;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.JComboBox;
@@ -38,14 +39,21 @@ import javax.swing.UIManager;
 import javax.swing.ScrollPaneConstants;
 
 import library.GameLogic;
+import library.Sex;
 import library.Task;
 import library.UserInterface;
+import javax.swing.AbstractAction;
+import java.awt.event.ActionEvent;
+import javax.swing.Action;
 
-public class MainFrame implements Runnable, UserInterface {
+public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 
 	private GameLogic game;
 	private JFrame frmCodindrinkin;
 	private JTable solutionsTable;
+	NewGameDialog ngd;
+	
+	private final Action newGameAction = new NewGameAction(this);
 
 	/**
 	 * Create the application.
@@ -82,6 +90,39 @@ public class MainFrame implements Runnable, UserInterface {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	public void refreshTime(int min, int sec) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	/*
+	 * Implemented methods from interface InterfaceForDialogs
+	 */
+	
+	@Override
+	public void setNewGameDialog(NewGameDialog ngd) {
+		this.ngd = ngd;
+		
+	}
+	
+	@Override
+	public void newGameDialogReady() {
+		
+		/// sex
+		Sex sex;
+		if (this.ngd.getInputSexMale())
+			sex = Sex.Male;
+		else
+			sex = Sex.Female;
+		
+		game.savePlayer(
+				this.ngd.getName(),
+				sex,
+				Integer.parseInt(this.ngd.getInputHeight()),
+				Integer.parseInt(this.ngd.getInputWeight()));
+	}
 
 	/**
 	 * Initialize the contents of the frame.
@@ -103,6 +144,7 @@ public class MainFrame implements Runnable, UserInterface {
 		menuBar.add(mnGame);
 		
 		JMenuItem mntmNewGame = new JMenuItem("New Game");
+		mntmNewGame.setAction(newGameAction);
 		mnGame.add(mntmNewGame);
 		
 		JMenuItem mntmExit = new JMenuItem("Exit");
@@ -393,23 +435,14 @@ public class MainFrame implements Runnable, UserInterface {
 		lblBeverages.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		panel_9.add(lblBeverages);
 		
-		JLabel dlLeft = new JLabel("3");
+		JLabel dlLeft = new JLabel("0");
 		dlLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
 		dlLeft.setForeground(Color.RED);
 		panel_9.add(dlLeft);
 		
-		JLabel lblLeft = new JLabel("dl left");
+		JLabel lblLeft = new JLabel("cl alc left to drink");
 		lblLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
 		panel_9.add(lblLeft);
-		
-		JLabel label_2 = new JLabel("~");
-		panel_9.add(label_2);
-		
-		JLabel gulpsLeft = new JLabel("15");
-		panel_9.add(gulpsLeft);
-		
-		JLabel lblGulps = new JLabel("gulps");
-		panel_9.add(lblGulps);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
 		scrollPane_1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
@@ -545,7 +578,6 @@ public class MainFrame implements Runnable, UserInterface {
 		solutionsTable.setBackground(SystemColor.desktop);
 		solutionsTable.setModel(new DefaultTableModel(
 			new Object[][] {
-				{Boolean.FALSE, null, null, null},
 			},
 			new String[] {
 				"Done", "Time used", "Attempt", "Lang"
@@ -625,7 +657,7 @@ public class MainFrame implements Runnable, UserInterface {
 		
 		JPanel panel_4 = new JPanel();
 		panel_4.setMinimumSize(new Dimension(200, 40));
-		panel_4.setPreferredSize(new Dimension(200, 40));
+		panel_4.setPreferredSize(new Dimension(250, 40));
 		GridBagConstraints gbc_panel_4 = new GridBagConstraints();
 		gbc_panel_4.anchor = GridBagConstraints.EAST;
 		gbc_panel_4.gridwidth = 16;
@@ -649,6 +681,10 @@ public class MainFrame implements Runnable, UserInterface {
 			new RowSpec[] {
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,}));
+		
+		JButton btnGiveup = new JButton("GiveUp");
+		btnGiveup.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panel_4.add(btnGiveup, "10, 2");
 		
 		JButton btnSend = new JButton("Evaluate");
 		btnSend.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -691,4 +727,22 @@ public class MainFrame implements Runnable, UserInterface {
 		return frmCodindrinkin;
 	}
 	
+	private class NewGameAction extends AbstractAction {
+		
+		InterfaceForDialogs main;
+		
+		public NewGameAction(InterfaceForDialogs main) {
+			this.main = main;
+			
+			putValue(NAME, "New Game");
+			putValue(SHORT_DESCRIPTION, "Starts a new game");
+		}
+		public void actionPerformed(ActionEvent e) {
+			NewGameDialog ngd = new NewGameDialog(this.main);
+			ngd.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+			ngd.setVisible(true);
+			
+			main.setNewGameDialog(ngd);
+		}
+	}
 }

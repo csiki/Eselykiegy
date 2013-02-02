@@ -1,0 +1,90 @@
+FileObject 1
+{
+    { Name "a364" }
+    { Type ObjectAnnotation }
+    { GUID "UID_C7F15C93-7D3C-4963-99BE-4E6A1625F541" }
+}
+
+NodeObject 99999
+{
+    { Name "GameLogic,Interface" }
+    { Type UmlAssociation }
+    { ObjectId 26099 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_4BCE0883-216F-4306-A364-0C51B50D2FBF" }
+}
+
+NodeObject 99998
+{
+    { Name "GameLogic" }
+    { Type UmlClass }
+    { ObjectId 9797 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_FBBC56F6-599E-46e3-82A8-2D1FD2BC9E3E" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlRole }
+    { ObjectId 26100 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_D6950FF9-DA51-446c-9C5B-79BC7E47408F" }
+}
+
+NoteObject 2
+{
+    { Type UmlRoleDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 26106 }
+}
+
+ItemObject 3
+{
+    { Type UmlRoleNavigability }
+    { Value "True" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 26116 }
+}
+
+ItemObject 4
+{
+    { Type UmlAggregationType }
+    { Value "None" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 26107 }
+}
+
+NoteObject 5
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 26109 }
+}
+
+NoteObject 6
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 26111 }
+}
+
+ItemObject 7
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 6 }
+    { ObjectId 26112 }
+}
+

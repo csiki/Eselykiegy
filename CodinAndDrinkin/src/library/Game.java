@@ -17,7 +17,6 @@ public class Game implements GameLogic, Trigger {
 	
 	UserInterface ui;
 	private Task currentTask;
-	private List<Task> tasks = new ArrayList<Task>();
 	private Player player;
 	private List<Compiler> compilers = new ArrayList<Compiler>();
 	private List<Solution> solutions = new ArrayList<Solution>();
@@ -35,8 +34,7 @@ public class Game implements GameLogic, Trigger {
 	private Stopper stopper;
 	
 	
-	Game(UserInterface ui) {
-		this.ui = ui;
+	public Game() {
 	}
 	
 	/**
@@ -46,9 +44,9 @@ public class Game implements GameLogic, Trigger {
 	 */
 	private float calculateAlcComsumeVol(SolutionOutcome sout) {
 		if (sout == SolutionOutcome.Solved)
-			return currentTask.solvedAlcVol;
+			return this.currentTask.solvedAlcVol;
 		else if (sout.code > 1 && sout.code < 6)
-			return currentTask.mistakeAlcVol;
+			return this.currentTask.mistakeAlcVol;
 
 		return 0.0F;
 	}
@@ -126,16 +124,35 @@ public class Game implements GameLogic, Trigger {
 	
 	/**
 	 * Calculate the blood volume of the player according to http://easycalculation.com/medical/blood-volume.php.
+	 * @param sex
 	 * @param height in cm
 	 * @param weight in kg
 	 * @return blood volume
 	 */
-	private float calculateBloodVol(int height, int weight) {
+	private float calculateBloodVol(Sex sex, int height, int weight) {
 		float heightInM3 = (float) Math.pow((((float)height)/100), 3);
-		if (player.getSex() == Sex.Male)
-			return (float) (0.3669 * heightInM3 + 0.03219 * ((float)player.getWeight()) + 0.6041);
+		if (sex == Sex.Male)
+			return (float) (0.3669 * heightInM3 + 0.03219 * ((float)weight) + 0.6041);
 		else
-			return (float) (0.3561 * heightInM3 + 0.03308 * ((float)player.getWeight()) + 0.1833);
+			return (float) (0.3561 * heightInM3 + 0.03308 * ((float)weight) + 0.1833);
+	}
+	
+	/**
+	 * Calculates how much of the given beverage should be consumed, considering alcVol alcohol volume.
+	 * @param bevID as in crate
+	 * @param alcLeft in dl, reference, set in method; >0 if volume of the beverage was not enough
+	 * @return volume of the beverage should be consumed
+	 */
+	private float calculateBevConsumeVol(int bevID, Float alcLeft) {
+		alcLeft = 0.0F;
+		float bevAlcVol = crate.getBevVol(bevID) * crate.getBevABV(bevID);
+		
+		if (this.alcToDrink > bevAlcVol) {
+			alcLeft = this.alcToDrink - bevAlcVol;
+			return crate.getBevVol(bevID); // drink the whole of it
+		}
+		
+		return this.alcToDrink / crate.getBevABV(bevID);
 	}
 	
 	/**
@@ -144,12 +161,20 @@ public class Game implements GameLogic, Trigger {
 	 * @return
 	 */
 	private boolean isPassed(int taskID) {
-		
+		// TODO kérdés: ha már a betöltött taskot játszotta, játszhatja e újra ???
 		for (Solution s : solutions)
 			if (s.getTask().id == taskID)
 				return true;
 
 		return false;
+	}
+	
+	/**
+	 * Sets the user interface.
+	 * @param ui user interface
+	 */
+	public void setUI(UserInterface ui) {
+		this.ui = ui;
 	}
 	
 	/**
@@ -167,7 +192,7 @@ public class Game implements GameLogic, Trigger {
 	
 	@Override
 	public CrateInterface savePlayer(String name, Sex sex, int height, int weight) {
-		Player player = new Player(name, sex, height, weight, calculateBloodVol(height, weight));
+		Player player = new Player(name, sex, height, weight, calculateBloodVol(sex, height, weight));
 		
 		return player.getCrate();
 	}
@@ -200,7 +225,7 @@ public class Game implements GameLogic, Trigger {
 			ui.startTask(this.currentTask);
 			
 			/// install Trigger
-			this.stopper = new Stopper(this, System.currentTimeMillis() + this.currentTask.timeAllowed);
+			this.stopper = new Stopper(this, System.currentTimeMillis(), System.currentTimeMillis() + this.currentTask.timeAllowed, 1000); // warn in every 1sec
 			Thread th = new Thread(this.stopper);
 			th.start();
 		}
@@ -209,14 +234,41 @@ public class Game implements GameLogic, Trigger {
 	}
 	
 	@Override
-	public SolutionOutcome sendSolution(int compilerID, String code) { // TODO
-		SolutionOutcome retVal = null;
-		return retVal;
+	public SolutionOutcome sendSolution(int compilerID, String code) {
+		
+		SolutionOutcome sout = this.solutions.get(this.solutions.size() - 1).validator(this.compilers.get(compilerID), code);
+		
+		this.alcToDrink = this.calculateAlcComsumeVol(sout);
+		
+		/// terminate stopper if solved
+		if (sout == SolutionOutcome.Solved)
+			stopper.surrender();
+		
+		/// choose beverage
+		if (this.alcToDrink > 0)
+			ui.chooseBev(this.alcToDrink);
+		
+		return sout;
 	}
 	
 	@Override
-	public float bevToDrink(int bevID) { // TODO
-		return 0.0F;
+	public void giveUp() {
+		stopper.surrender();
+	}
+	
+	@Override
+	public float bevToDrink(int bevID) {
+		Float alcLeft = 0.0F;
+		
+		float bevToDrink = calculateBevConsumeVol(bevID, alcLeft);
+		
+		this.player.consume(bevID, bevToDrink, this.alcToDrink - alcLeft);
+		this.alcToDrink = alcLeft;
+		
+		if (this.alcToDrink > 0)
+			ui.chooseBev(this.alcToDrink);
+		
+		return this.alcToDrink;
 	}
 	
 	@Override
@@ -230,8 +282,17 @@ public class Game implements GameLogic, Trigger {
 	 */
 	
 	@Override
-	public void shoot() {
-		// TODO Auto-generated method stub
+	public void warn(long elapsedTime) {
+		int elapsedSeconds = (int) (elapsedTime / 1000);
+		int secondsDisplay = elapsedSeconds % 60;
+		int minutesDisplay = elapsedSeconds / 60;
 		
+		ui.refreshTime(minutesDisplay, secondsDisplay);
 	}
+	
+	@Override
+	public void shoot() {
+		ui.endTask();
+	}
+
 }

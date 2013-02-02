@@ -818,7 +818,7 @@ Rename
     { SrcId 6345 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "refreshTask(Task)" }
+        { Text "startTask(Task)" }
     }
     { UpdatedAttr name }
 }
@@ -1905,6 +1905,28 @@ Rename
     { Dependency MessageItemValueChange }
     { Label
         { Text "SolutionOutcome:=validator(Compiler, String)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8054 }
+    { SrcId 8061 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=calculateBevConsumeVol(bevID:int,alcVol:float)" }
+    }
+    { UpdatedAttr name }
+}
+
+Rename
+{
+    { ObjId 8054 }
+    { SrcId 15368 }
+    { Dependency MessageItemValueChange }
+    { Label
+        { Text "float:=calculateBevConsumeVol(bevID:int,alcLeft:Float)" }
     }
     { UpdatedAttr name }
 }
