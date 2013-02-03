@@ -1,5 +1,10 @@
 package library;
 
+/**
+ * Storing one solution's data and a reference to a Task. Able to validate itself.
+ * @author csiki
+ *
+ */
 public class Solution {
 	
 	private SolutionOutcome sout = SolutionOutcome.Unvalidated;

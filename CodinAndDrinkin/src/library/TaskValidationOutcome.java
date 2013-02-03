@@ -1,5 +1,10 @@
 package library;
 
+/**
+ * Enumeration for classifying a task load.
+ * @author csiki
+ *
+ */
 public enum TaskValidationOutcome {
 	NotEnoughAlcohol(1),
 	PreTaskNotSolved(2),

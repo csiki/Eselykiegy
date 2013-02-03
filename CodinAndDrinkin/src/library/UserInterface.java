@@ -1,5 +1,10 @@
 package library;
 
+/**
+ * Interface for the main window. Game uses to communicate.
+ * @author csiki
+ *
+ */
 public interface UserInterface {
 	
 	/**

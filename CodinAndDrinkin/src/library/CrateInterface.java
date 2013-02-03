@@ -1,5 +1,10 @@
 package library;
 
+/**
+ * Crate interface for functionalities Game and UserInterface uses.
+ * @author csiki
+ *
+ */
 public interface CrateInterface {
 	
 	/**

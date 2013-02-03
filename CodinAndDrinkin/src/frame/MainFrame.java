@@ -51,7 +51,10 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	private GameLogic game;
 	private JFrame frmCodindrinkin;
 	private JTable solutionsTable;
+	
 	NewGameDialog ngd;
+	
+	JMenuItem mntmNewGame;
 	
 	private final Action newGameAction = new NewGameAction(this);
 
@@ -69,6 +72,22 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	public void run() {
 		initialize();
 	}
+	
+	/*
+	 * Methods run at state switch
+	 */
+	private void toStateOutOfBeverage() {
+		// TODO
+	}
+	
+	private void toStateAbleToLoadTask() {
+		// TODO
+	}
+	
+	private void toStateTaskStarted() {
+		// TODO
+	}
+	
 	
 	/*
 	 * Implemented methods from interface UserInterface
@@ -110,6 +129,9 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	@Override
 	public void newGameDialogReady() {
 		
+		/// GUI update
+		
+		
 		/// sex
 		Sex sex;
 		if (this.ngd.getInputSexMale())
@@ -143,7 +165,7 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		JMenu mnGame = new JMenu("Game");
 		menuBar.add(mnGame);
 		
-		JMenuItem mntmNewGame = new JMenuItem("New Game");
+		mntmNewGame = new JMenuItem("New Game");
 		mntmNewGame.setAction(newGameAction);
 		mnGame.add(mntmNewGame);
 		

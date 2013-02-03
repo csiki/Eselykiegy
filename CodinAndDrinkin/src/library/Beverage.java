@@ -1,5 +1,10 @@
 package library;
 
+/**
+ * Stores and manages a drink.
+ * @author csiki
+ *
+ */
 public class Beverage {
 	private String name;
 	

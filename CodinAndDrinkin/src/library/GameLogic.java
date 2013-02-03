@@ -1,9 +1,10 @@
 package library;
 
-/*
- * Realized by class Game
+/**
+ * Interface for functionalities UserInterface uses, Game realizes.
+ * @author csiki
+ *
  */
-
 public interface GameLogic {
 	
 	/**

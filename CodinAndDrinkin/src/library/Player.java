@@ -1,5 +1,10 @@
 package library;
 
+/**
+ * Stores player's data, crate. Manifest an ingame player with its functionalities.
+ * @author csiki
+ *
+ */
 public class Player {
 	
 	private final String name;

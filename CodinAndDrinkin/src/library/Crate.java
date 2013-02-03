@@ -3,6 +3,11 @@ package library;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Stores multiple Beverage references.
+ * @author csiki
+ *
+ */
 public class Crate implements CrateInterface {
 	private List<Beverage> beverages = new ArrayList<Beverage>();
 	

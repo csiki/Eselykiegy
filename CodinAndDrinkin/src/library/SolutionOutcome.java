@@ -1,5 +1,10 @@
 package library;
 
+/**
+ * Enumeration for classifying solutions when evaluating one.
+ * @author csiki
+ *
+ */
 public enum SolutionOutcome {
 	Unvalidated(0),
 	Solved(1),

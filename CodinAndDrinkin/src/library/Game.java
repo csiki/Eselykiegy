@@ -2,17 +2,18 @@ package library;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
-import misc.FileClassLoader;
 import misc.Stopper;
 import misc.Trigger;
 
+/**
+ * Runs the game.
+ * @author csiki
+ *
+ */
 public class Game implements GameLogic, Trigger {
 	
 	UserInterface ui;
@@ -156,17 +157,22 @@ public class Game implements GameLogic, Trigger {
 	}
 	
 	/**
-	 * Returns if the Task, given by the taskID, has been solved or not (returns true, whether the solution was valid or not).
+	 * Check if the Task, given by the taskID, has been solved or not (returns true, whether the solution was valid or not).
+	 * If the loaded task has been solved already, returns false.
 	 * @param taskID
 	 * @return
 	 */
 	private boolean isPassed(int taskID) {
-		// TODO kérdés: ha már a betöltött taskot játszotta, játszhatja e újra ???
-		for (Solution s : solutions)
+		boolean pretaskSolved = false;
+		
+		for (Solution s : solutions) {
 			if (s.getTask().id == taskID)
-				return true;
-
-		return false;
+				pretaskSolved = true;
+			if (s.getTask().id == taskID)
+				return false;
+		}
+		
+		return pretaskSolved;
 	}
 	
 	/**

@@ -3,6 +3,11 @@ package library;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * Storing data describing a task. Can be serialized and then loaded.
+ * @author csiki
+ *
+ */
 public class Task implements Serializable {
 	
 	public final int id;

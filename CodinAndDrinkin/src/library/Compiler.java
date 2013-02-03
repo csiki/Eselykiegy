@@ -1,6 +1,13 @@
 package library;
 
+
+/**
+ * Abstract parent class of the Compiler classes.
+ * @author csiki
+ *
+ */
 public abstract class Compiler {
+	
 	protected String langName;
 	
 	/**
