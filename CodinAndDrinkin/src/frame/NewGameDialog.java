@@ -27,27 +27,29 @@ import java.awt.event.MouseEvent;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class NewGameDialog extends JDialog {
+public class NewGameDialog extends JDialog implements DialogInputValidationInterface {
 	private static final long serialVersionUID = -4923393269220341951L;
 	
-	InterfaceForDialogs main;
+	private MainInterfaceForDialogs main;
 	private final JPanel contentPanel = new JPanel();
 	private JTextField height;
 	private JTextField name;
 	private JTextField weight;
-	JRadioButton rdbtnMale = new JRadioButton("male");
-	JRadioButton rdbtnFemale = new JRadioButton("female");
-	JButton okButton = new JButton("OK");
-	private final Action action = new SwingAction(this);
+	private JRadioButton rdbtnMale = new JRadioButton("male");
+	private JRadioButton rdbtnFemale = new JRadioButton("female");
+	private JButton okButton = new JButton("OK");
+	private final Action cancelAction = new CancelAction(this);
 	
 	/*
-	 * Own methods
+	 * Implemented methods from interface DialogInputValidationInterface
 	 */
-	void checkIfOK() {
+	@Override
+	public void checkIfOK() {
 		okButton.setEnabled(inputValidation());
 	}
 	
-	boolean inputValidation() {
+	@Override
+	public boolean inputValidation() {
 		/// name
 		if (name.getText().length() == 0)
 			return false;
@@ -97,7 +99,7 @@ public class NewGameDialog extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public NewGameDialog(InterfaceForDialogs main) {
+	public NewGameDialog(MainInterfaceForDialogs main) {
 		this.main = main;
 		
 		setTitle("Let's get drunk");
@@ -237,19 +239,19 @@ public class NewGameDialog extends JDialog {
 			}
 			{
 				JButton cancelButton = new JButton("Cancel");
-				cancelButton.setAction(action);
+				cancelButton.setAction(cancelAction);
 				cancelButton.setActionCommand("Cancel");
 				buttonPane.add(cancelButton);
 			}
 		}
 	}
 
-	private class SwingAction extends AbstractAction {
+	private class CancelAction extends AbstractAction {
 		private static final long serialVersionUID = -6281457554887252620L;
 		
 		JDialog jd;
 		
-		public SwingAction(JDialog jd) {
+		public CancelAction(JDialog jd) {
 			this.jd = jd;
 			putValue(NAME, "Cancel");
 		}
@@ -259,10 +261,10 @@ public class NewGameDialog extends JDialog {
 	}
 	
 	private class OkAction extends MouseAdapter {
-		InterfaceForDialogs main;
+		MainInterfaceForDialogs main;
 		JDialog jd;
 		
-		OkAction(JDialog jd, InterfaceForDialogs main) {
+		OkAction(JDialog jd, MainInterfaceForDialogs main) {
 			this.jd = jd;
 			this.main = main;
 		}

@@ -198,14 +198,14 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 	
 	@Override
 	public CrateInterface savePlayer(String name, Sex sex, int height, int weight) {
-		Player player = new Player(name, sex, height, weight, calculateBloodVol(sex, height, weight));
+		this.player = new Player(name, sex, height, weight, calculateBloodVol(sex, height, weight));
 		
 		return player.getCrate();
 	}
 	
 	@Override
 	public int addBev(String name, float vol, int abv) {
-		return player.addBev(name, vol, abv);
+		return this.player.addBev(name, vol, abv);
 	}
 	
 	@Override

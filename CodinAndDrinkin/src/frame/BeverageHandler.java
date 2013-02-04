@@ -1,0 +1,129 @@
+package frame;
+
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+/**
+ * One line in BeverageList.
+ * @author csiki
+ *
+ */
+public class BeverageHandler {
+	
+	private BevListInterfaceForHandler bevList;
+	private int id;
+	
+	/// items
+	private JButton btnDrink;
+	private JButton btnPour;
+	private JLabel lblBevName;
+	private JLabel lblVol;
+	private JLabel lblDl;
+	
+	
+	BeverageHandler(BevListInterfaceForHandler bevList, int id, String name, String vol) {
+		this.bevList = bevList;
+		this.id = id;
+		
+		/// items
+		this.btnDrink = new JButton("Drink");
+		this.btnPour = new JButton("Pour");
+		this.lblBevName = new JLabel(name);
+		this.lblVol = new JLabel(vol);
+		this.lblDl = new JLabel("dl");
+	}
+	
+	public void updateVol(String vol) {
+		lblVol.setText(vol);
+	}
+	
+	public GridBagConstraints initBtnDrink() {
+		this.btnDrink.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		this.btnDrink.setMinimumSize(new Dimension(20, 23));
+		GridBagConstraints gbc_btnDrink = new GridBagConstraints();
+		gbc_btnDrink.insets = new Insets(0, 0, 0, 5);
+		gbc_btnDrink.gridx = 0;
+		gbc_btnDrink.gridy = this.id;
+		
+		return gbc_btnDrink;
+	}
+	
+	public GridBagConstraints initBtnPour() {
+		this.btnPour.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		GridBagConstraints gbc_btnPour = new GridBagConstraints();
+		gbc_btnPour.insets = new Insets(0, 0, 0, 5);
+		gbc_btnPour.gridx = 1;
+		gbc_btnPour.gridy = this.id;
+		
+		return gbc_btnPour;
+	}
+	
+	public GridBagConstraints initLblBevName() {
+		this.lblBevName.setMaximumSize(new Dimension(100, 14));
+		this.lblBevName.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		this.lblBevName.setMinimumSize(new Dimension(20, 14));
+		this.lblBevName.setPreferredSize(new Dimension(58, 14));
+		GridBagConstraints gbc_lblBevName = new GridBagConstraints();
+		gbc_lblBevName.insets = new Insets(0, 0, 0, 5);
+		gbc_lblBevName.gridx = 2;
+		gbc_lblBevName.gridy = this.id;
+		
+		return gbc_lblBevName;
+	}
+	
+	public GridBagConstraints initLblVol() {
+		GridBagConstraints gbc_lbldl = new GridBagConstraints();
+		gbc_lbldl.insets = new Insets(0, 0, 0, 5);
+		gbc_lbldl.gridx = 3;
+		gbc_lbldl.gridy = this.id;
+		
+		return gbc_lbldl;
+	}
+	
+	public GridBagConstraints initLblDl() {
+		this.lblDl.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		GridBagConstraints gbc_lblDl = new GridBagConstraints();
+		gbc_lblDl.insets = new Insets(0, 0, 0, 5);
+		gbc_lblDl.gridx = 4;
+		gbc_lblDl.gridy = this.id;
+		
+		return gbc_lblDl;
+	}
+	
+	public void setDrinkBtnEnabled(boolean e) {
+		this.btnDrink.setEnabled(e);
+	}
+	
+	
+	/*
+	 * Getters
+	 */
+	public int getId() {
+		return id;
+	}
+
+	public JButton getBtnDrink() {
+		return btnDrink;
+	}
+
+	public JButton getBtnPour() {
+		return btnPour;
+	}
+
+	public JLabel getLblBevName() {
+		return lblBevName;
+	}
+
+	public JLabel getLblVol() {
+		return lblVol;
+	}
+
+	public JLabel getLblDl() {
+		return lblDl;
+	}
+}

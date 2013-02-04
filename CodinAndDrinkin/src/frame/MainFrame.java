@@ -38,6 +38,7 @@ import javax.swing.border.BevelBorder;
 import javax.swing.UIManager;
 import javax.swing.ScrollPaneConstants;
 
+import library.CrateInterface;
 import library.GameLogic;
 import library.Sex;
 import library.Task;
@@ -46,9 +47,11 @@ import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
 import javax.swing.Action;
 
-public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
+public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialogs, MainInterfaceForBeverageList {
 
 	private GameLogic game;
+	private CrateInterface crate;
+	private BeverageList bevList;
 	private JFrame frmCodindrinkin = new JFrame();
 	private JTable solutionsTable;
 	
@@ -65,10 +68,15 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	private JEditorPane code;
 	private JButton btnGiveup;
 	private JButton btnSend;
+	private JLabel namelbl;
+	private JLabel sexlbl;
+	private JLabel bloodAlcContentlbl;
+	
 	
 	/// actions
 	private final Action newGameAction = new NewGameAction(this);
-	private final Action action = new ExitAction(frmCodindrinkin);
+	private final Action exitAction = new ExitAction(frmCodindrinkin);
+	private final Action addBevAction = new AddBevAction(this);
 
 	/**
 	 * Create the application.
@@ -133,7 +141,7 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	 * Implemented methods from interface UserInterface
 	 */
 	@Override
-	public void chooseBev(float minAlcVol) {
+	public void chooseBev(float alcVol) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -163,14 +171,10 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	@Override
 	public void setNewGameDialog(NewGameDialog ngd) {
 		this.ngd = ngd;
-		
 	}
 	
 	@Override
 	public void newGameDialogReady() {
-		
-		/// GUI update
-		
 		
 		/// sex
 		Sex sex;
@@ -179,11 +183,55 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		else
 			sex = Sex.Female;
 		
-		game.savePlayer(
-				this.ngd.getName(),
+		this.crate = game.savePlayer(
+				this.ngd.getInputName(),
 				sex,
 				Integer.parseInt(this.ngd.getInputHeight()),
 				Integer.parseInt(this.ngd.getInputWeight()));
+		
+		/// state transition
+		this.toStateOutOfBeverage();
+		
+		/// update user data on GUI
+		this.namelbl.setText(this.ngd.getInputName());
+		if (sex == Sex.Male)
+			this.sexlbl.setText("male");
+		else
+			this.sexlbl.setText("female");
+		this.bloodAlcContentlbl.setText("0");
+	}
+	
+	@Override
+	public void setAddBevDialog(AddBevDialog abd) {
+		this.abd = abd;
+	}
+	
+	@Override
+	public void addBevDialogReady() {
+		/// add to Crate
+		int bevID = game.addBev(abd.getInputName(), Float.parseFloat(abd.getInputVol()), Integer.parseInt(abd.getInputAlcVol()));
+		
+		/// state transition
+		toStateAbleToLoadTask();
+		
+		/// add beverage to GUI list
+		// TODO
+	}
+	
+	/*
+	 * Implemented methods from interface MainInterfaceForBeverageList
+	 */
+	
+	@Override
+	public void bevDrink(int bevID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void bevPour(int bevID) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	/**
@@ -209,13 +257,14 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		mnGame.add(mntmNewGame);
 		
 		JMenuItem mntmExit = new JMenuItem("Exit");
-		mntmExit.setAction(action);
+		mntmExit.setAction(exitAction);
 		mnGame.add(mntmExit);
 		
 		JMenu mnBeverage = new JMenu("Beverage");
 		menuBar.add(mnBeverage);
 		
 		mntmAddBeverage = new JMenuItem("Add beverage");
+		mntmAddBeverage.setAction(addBevAction);
 		mntmAddBeverage.setEnabled(false);
 		mnBeverage.add(mntmAddBeverage);
 		
@@ -298,11 +347,11 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		lblName.setMinimumSize(new Dimension(20, 14));
 		panel_5.add(lblName, "2, 2");
 		
-		JLabel name = new JLabel("-");
-		name.setFont(new Font("Tahoma", Font.BOLD, 12));
-		name.setMinimumSize(new Dimension(80, 14));
-		name.setPreferredSize(new Dimension(10, 14));
-		panel_5.add(name, "4, 2, 7, 1");
+		namelbl = new JLabel("-");
+		namelbl.setFont(new Font("Tahoma", Font.BOLD, 12));
+		namelbl.setMinimumSize(new Dimension(80, 14));
+		namelbl.setPreferredSize(new Dimension(10, 14));
+		panel_5.add(namelbl, "4, 2, 7, 1");
 		
 		JLabel lblSex = new JLabel("Sex:");
 		lblSex.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -311,11 +360,11 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		lblSex.setMinimumSize(new Dimension(20, 14));
 		panel_5.add(lblSex, "2, 4");
 		
-		JLabel sex = new JLabel("-");
-		sex.setFont(new Font("Tahoma", Font.BOLD, 12));
-		sex.setPreferredSize(new Dimension(10, 14));
-		sex.setMinimumSize(new Dimension(80, 14));
-		panel_5.add(sex, "4, 4, 7, 1");
+		sexlbl = new JLabel("-");
+		sexlbl.setFont(new Font("Tahoma", Font.BOLD, 12));
+		sexlbl.setPreferredSize(new Dimension(10, 14));
+		sexlbl.setMinimumSize(new Dimension(80, 14));
+		panel_5.add(sexlbl, "4, 4, 7, 1");
 		
 		JLabel lblBloodalccontent = new JLabel("BloodAlcContent:");
 		lblBloodalccontent.setFont(new Font("Tahoma", Font.PLAIN, 11));
@@ -324,9 +373,9 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		lblBloodalccontent.setPreferredSize(new Dimension(120, 14));
 		panel_5.add(lblBloodalccontent, "2, 6, 5, 1");
 		
-		JLabel bloodAlcContent = new JLabel("-");
-		bloodAlcContent.setFont(new Font("Tahoma", Font.BOLD, 11));
-		panel_5.add(bloodAlcContent, "8, 6");
+		bloodAlcContentlbl = new JLabel("-");
+		bloodAlcContentlbl.setFont(new Font("Tahoma", Font.BOLD, 11));
+		panel_5.add(bloodAlcContentlbl, "8, 6");
 		
 		JLabel label_3 = new JLabel("\u2030");
 		label_3.setFont(new Font("Tahoma", Font.PLAIN, 11));
@@ -517,7 +566,7 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		
 		JPanel bevPanel = new JPanel();
 		bevPanel.setBackground(SystemColor.inactiveCaption);
-		scrollPane_1.setViewportView(bevPanel);
+		scrollPane_1.setColumnHeaderView(bevPanel);
 		GridBagLayout gbl_bevPanel = new GridBagLayout();
 		gbl_bevPanel.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0};
 		gbl_bevPanel.rowHeights = new int[]{0, 0};
@@ -648,6 +697,10 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 				"Done", "Time used", "Attempt", "Lang"
 			}
 		) {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = -2844255540862281738L;
 			Class[] columnTypes = new Class[] {
 				Boolean.class, Object.class, String.class, String.class
 			};
@@ -798,9 +851,11 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	
 	private class NewGameAction extends AbstractAction {
 		
-		InterfaceForDialogs main;
+		private static final long serialVersionUID = -2173983948654467929L;
 		
-		public NewGameAction(InterfaceForDialogs main) {
+		MainInterfaceForDialogs main;
+		
+		public NewGameAction(MainInterfaceForDialogs main) {
 			this.main = main;
 			
 			putValue(NAME, "New Game");
@@ -815,6 +870,8 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		}
 	}
 	private class ExitAction extends AbstractAction {
+		private static final long serialVersionUID = -1678701054654365490L;
+		
 		private JFrame frame;
 		
 		public ExitAction(JFrame frame) {
@@ -825,6 +882,25 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		
 		public void actionPerformed(ActionEvent e) {
 			this.frame.dispose();
+		}
+	}
+	private class AddBevAction extends AbstractAction {
+		private static final long serialVersionUID = 8189324588774534630L;
+		
+		MainInterfaceForDialogs main;
+		
+		public AddBevAction(MainInterfaceForDialogs main) {
+			this.main = main;
+			
+			putValue(NAME, "Add beverage");
+			putValue(SHORT_DESCRIPTION, "Adds a drink to the repertoire");
+		}
+		public void actionPerformed(ActionEvent arg0) {
+			AddBevDialog abd = new AddBevDialog(this.main);
+			abd.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+			abd.setVisible(true);
+			
+			main.setAddBevDialog(abd);
 		}
 	}
 }

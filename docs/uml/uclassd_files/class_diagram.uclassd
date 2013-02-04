@@ -3,7 +3,7 @@ Diagram UmlClassDiagram
     { Name "class_diagram" }
     { Format "1.7" }
     { Scale 0.92 }
-    { PanX -726 }
+    { PanX -1087 }
     { PanY -455 }
     { Alignment 1 }
     { GUID "UID_7C1E4F1D-25F0-46d2-90E5-6EAD94E83329" }
@@ -1792,21 +1792,21 @@ Node 1060
             { Style Solid }
             { Fill None }
             { Loc -107 -69 }
-            { End -107 69 }
+            { End -107 68 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -107 69 }
-            { End 106 69 }
+            { Loc -107 68 }
+            { End 106 68 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
             { Loc 106 -69 }
-            { End 106 69 }
+            { End 106 68 }
         }
         { Segment
             { Type Line }
@@ -1827,10 +1827,10 @@ Node 1060
 Node 1061
 {
     { Type Operation }
-    { Loc -805 16 }
-    { Scale 689.55 50.20 }
+    { Loc -817 16 }
+    { Scale 594.58 50.20 }
     { Label
-        { Text "chooseBev( minAlcVol:float )" }
+        { Text "chooseBev( alcVol:float )" }
     }
     { IsIncluded True }
     { Parent 1060 }
@@ -2505,43 +2505,43 @@ Node 2139
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -95 -10 }
-            { End 94 -10 }
+            { Loc -94 -9 }
+            { End 94 -9 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -95 -18 }
-            { End 94 -18 }
+            { Loc -94 -17 }
+            { End 94 -17 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -95 -40 }
-            { End -95 39 }
+            { Loc -94 -39 }
+            { End -94 39 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -95 39 }
+            { Loc -94 39 }
             { End 94 39 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc 94 -40 }
+            { Loc 94 -39 }
             { End 94 39 }
         }
         { Segment
             { Type Line }
             { Style Solid }
             { Fill None }
-            { Loc -95 -40 }
-            { End 94 -40 }
+            { Loc -94 -39 }
+            { End 94 -39 }
         }
     }
     { Object
@@ -2555,7 +2555,7 @@ Node 2139
 Node 2140
 {
     { Type Operation }
-    { Loc -865 -107 }
+    { Loc -865 -106 }
     { Scale 173.42 50.20 }
     { Label
         { Text "shoot()" }
@@ -2573,7 +2573,7 @@ Node 2140
 Node 2437
 {
     { Type Operation }
-    { Loc -813 -128 }
+    { Loc -813 -127 }
     { Scale 602.84 50.20 }
     { Label
         { Text "warn( elapsedTime:long )" }
@@ -4136,12 +4136,12 @@ Arc 2141
     { Type Contains }
     { From
         { ID 2139 }
-        { Loc -809 -128 }
+        { Loc -809 -127 }
         { Offset 0 0 }
     }
     { To
         { ID 2140 }
-        { Loc -873 -107 }
+        { Loc -873 -106 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -4325,12 +4325,12 @@ Arc 2438
     { Type Contains }
     { From
         { ID 2139 }
-        { Loc -809 -128 }
+        { Loc -809 -127 }
         { Offset 0 0 }
     }
     { To
         { ID 2437 }
-        { Loc -821 -128 }
+        { Loc -821 -127 }
         { Offset 0 0 }
     }
     { IsInclusion True }
@@ -4448,7 +4448,7 @@ Arc 2675
 Cntx 806
 {
     { Type RelLabelTo }
-    { Loc -462 230 }
+    { Loc -465 234 }
     { Scale 256.00 50.20 }
     { Label
         { Text "-compilers" }
@@ -4465,7 +4465,7 @@ Cntx 806
 Cntx 821
 {
     { Type RelLabelFrom }
-    { Loc 284 12 }
+    { Loc 284 13 }
     { Scale 111.48 50.20 }
     { Label
         { Text "-sex" }
@@ -4482,7 +4482,7 @@ Cntx 821
 Cntx 825
 {
     { Type RelLabelTo }
-    { Loc 219 13 }
+    { Loc 221 13 }
     { Scale 169.29 50.20 }
     { Label
         { Text "-player" }
@@ -4499,7 +4499,7 @@ Cntx 825
 Cntx 846
 {
     { Type RelLabelFrom }
-    { Loc -116 488 }
+    { Loc -121 492 }
     { Scale 227.10 50.20 }
     { Label
         { Text "-compiler" }
@@ -4516,7 +4516,7 @@ Cntx 846
 Cntx 849
 {
     { Type RelLabelFrom }
-    { Loc 171 293 }
+    { Loc 172 293 }
     { Scale 128.00 50.20 }
     { Label
         { Text "-task" }
@@ -4533,7 +4533,7 @@ Cntx 849
 Cntx 870
 {
     { Type RelLabelFrom }
-    { Loc 125 187 }
+    { Loc 134 195 }
     { Scale 239.48 50.20 }
     { Label
         { Text "-solutions" }
