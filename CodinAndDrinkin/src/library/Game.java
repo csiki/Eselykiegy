@@ -204,8 +204,8 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 	}
 	
 	@Override
-	public int addBev(String name, float vol, int abv) {
-		return this.player.addBev(name, vol, abv);
+	public void addBev(String name, float vol, int abv) {
+		this.player.addBev(name, vol, abv);
 	}
 	
 	@Override

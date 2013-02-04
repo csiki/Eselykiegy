@@ -1346,7 +1346,7 @@ Rename
     { SrcId 9332 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "int:=addBev(String,float,int)" }
+        { Text "addBev(String,float,int)" }
     }
     { UpdatedAttr name }
 }
@@ -1794,7 +1794,7 @@ Rename
     { SrcId 8567 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "float:=bevToPour()" }
+        { Text "bevToPour(int,float)" }
     }
     { UpdatedAttr name }
 }

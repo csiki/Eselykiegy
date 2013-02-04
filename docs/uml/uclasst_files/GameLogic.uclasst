@@ -448,9 +448,8 @@ FillTable UmlClassTable
 					{ Label "String, float, int" }
 					 }
 				{ Cell	{ Appid 3115 }
-					{ Label "int" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 9899 }  } } } }
+					{ ObjectCache  } } }
 			{ Row	{ Appid 3154 }
 				{ Cell	{ Appid 3116 }
 					{ Label "loadTask" }

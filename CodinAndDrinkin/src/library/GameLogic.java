@@ -24,7 +24,7 @@ public interface GameLogic {
 	 * @param ABV like 40(%)
 	 * @return the id of the beverage in the crate, for later use
 	 */
-	public int addBev(String name, float vol, int ABV);
+	public void addBev(String name, float vol, int ABV);
 	
 	/**
 	 * Loads a task, if it can be.

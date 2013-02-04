@@ -2,7 +2,6 @@ package frame;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.JButton;
@@ -16,19 +15,18 @@ import com.jgoodies.forms.factories.FormFactory;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import javax.swing.SwingConstants;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class AddBevDialog extends JDialog implements DialogInputValidationInterface {
+
+	private static final long serialVersionUID = 2630925821214975124L;
 	
 	private MainInterfaceForDialogs main;
 	private final JPanel contentPanel = new JPanel();
@@ -58,13 +56,13 @@ public class AddBevDialog extends JDialog implements DialogInputValidationInterf
 		/// vol
 		Pattern vp = Pattern.compile("[1-2]?[0-9]?[0-9][.]?[0-9]?");
 		Matcher vm = vp.matcher(vol.getText());
-		if (!vm.matches())
+		if (!vm.matches() || Float.parseFloat(vol.getText()) == 0.0F)
 			return false;
 		
 		/// alcVol
 		Pattern avp = Pattern.compile("[1-9]?[0-9]");
 		Matcher avm = avp.matcher(alcVol.getText());
-		if (!avm.matches())
+		if (!avm.matches() || Integer.parseInt(alcVol.getText()) == 0)
 			return false;
 		
 		return true;

@@ -23,10 +23,9 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 	CrateInterface crate;
 	List<BeverageHandler> beverages = new ArrayList<BeverageHandler>();
 	
-	BeverageList(MainInterfaceForBeverageList main, CrateInterface crate) {
+	BeverageList(MainInterfaceForBeverageList main) {
 		super();
 		this.main = main;
-		this.crate = crate;
 		
 		/// settings
 		this.setBackground(SystemColor.inactiveCaption);
@@ -64,6 +63,8 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 		
 		gbc = bev.initLblDl();
 		this.add(bev.getLblDl(), gbc);
+		
+		this.validate();
 	}
 	
 	public void bevVolChanged(int bevID) {
@@ -75,6 +76,9 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 			bh.setDrinkBtnEnabled(e);
 	}
 	
+	public void setCrate(CrateInterface crate) {
+		this.crate = crate;
+	}
 	
 	/*
 	 * Implemented methods from interface BevListInterfaceForHandler

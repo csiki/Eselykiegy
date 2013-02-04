@@ -23,6 +23,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.border.LineBorder;
 import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.JComboBox;
@@ -45,6 +46,9 @@ import library.Task;
 import library.UserInterface;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import javax.swing.Action;
 
 public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialogs, MainInterfaceForBeverageList {
@@ -199,6 +203,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		else
 			this.sexlbl.setText("female");
 		this.bloodAlcContentlbl.setText("0");
+		
+		/// set crate for BeverageList
+		bevList.setCrate(crate);
 	}
 	
 	@Override
@@ -209,13 +216,13 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	@Override
 	public void addBevDialogReady() {
 		/// add to Crate
-		int bevID = game.addBev(abd.getInputName(), Float.parseFloat(abd.getInputVol()), Integer.parseInt(abd.getInputAlcVol()));
+		game.addBev(abd.getInputName(), Float.parseFloat(abd.getInputVol()), Integer.parseInt(abd.getInputAlcVol()));
 		
 		/// state transition
 		toStateAbleToLoadTask();
 		
 		/// add beverage to GUI list
-		// TODO
+		bevList.bevAdded();
 	}
 	
 	/*
@@ -230,8 +237,15 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 
 	@Override
 	public void bevPour(int bevID) {
-		// TODO Auto-generated method stub
+		String amount = JOptionPane.showInputDialog(null, "How much to pour?");
+
+		Pattern ap = Pattern.compile("[0-9]+[.]?[0-9]?");
+		Matcher am = ap.matcher(amount);
+		if (!am.matches() || Float.parseFloat(amount) == 0)
+			return;
 		
+		this.game.bevToPour(bevID, Float.parseFloat(amount));
+		this.bevList.bevVolChanged(bevID);
 	}
 
 	/**
@@ -558,30 +572,25 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		lblLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
 		panel_9.add(lblLeft);
 		
-		JScrollPane scrollPane_1 = new JScrollPane();
-		scrollPane_1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-		scrollPane_1.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-		scrollPane_1.setBackground(Color.DARK_GRAY);
-		panel_1.add(scrollPane_1, BorderLayout.CENTER);
-		
-		JPanel bevPanel = new JPanel();
-		bevPanel.setBackground(SystemColor.inactiveCaption);
-		scrollPane_1.setColumnHeaderView(bevPanel);
+		/// BeverageList
+		bevList = new BeverageList(this);
+		bevList.setBackground(SystemColor.inactiveCaption);
+		panel_1.add(bevList, BorderLayout.CENTER);
 		GridBagLayout gbl_bevPanel = new GridBagLayout();
 		gbl_bevPanel.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0};
 		gbl_bevPanel.rowHeights = new int[]{0, 0};
 		gbl_bevPanel.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		gbl_bevPanel.rowWeights = new double[]{0.0, Double.MIN_VALUE};
-		bevPanel.setLayout(gbl_bevPanel);
+		bevList.setLayout(gbl_bevPanel);
 		
-		JButton btnDrink = new JButton("Drink");
+		/*JButton btnDrink = new JButton("Drink");
 		btnDrink.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnDrink.setMinimumSize(new Dimension(20, 23));
 		GridBagConstraints gbc_btnDrink = new GridBagConstraints();
 		gbc_btnDrink.insets = new Insets(0, 0, 0, 5);
 		gbc_btnDrink.gridx = 0;
 		gbc_btnDrink.gridy = 0;
-		bevPanel.add(btnDrink, gbc_btnDrink);
+		bevList.add(btnDrink, gbc_btnDrink);
 		
 		JButton btnPour = new JButton("Pour");
 		btnPour.setFont(new Font("Tahoma", Font.PLAIN, 9));
@@ -589,7 +598,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		gbc_btnPour.insets = new Insets(0, 0, 0, 5);
 		gbc_btnPour.gridx = 1;
 		gbc_btnPour.gridy = 0;
-		bevPanel.add(btnPour, gbc_btnPour);
+		bevList.add(btnPour, gbc_btnPour);
 		
 		JLabel lblBevName = new JLabel("Ballentines");
 		lblBevName.setMaximumSize(new Dimension(100, 14));
@@ -600,14 +609,14 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		gbc_lblBevName.insets = new Insets(0, 0, 0, 5);
 		gbc_lblBevName.gridx = 2;
 		gbc_lblBevName.gridy = 0;
-		bevPanel.add(lblBevName, gbc_lblBevName);
+		bevList.add(lblBevName, gbc_lblBevName);
 		
 		JLabel lbldl = new JLabel("14");
 		GridBagConstraints gbc_lbldl = new GridBagConstraints();
 		gbc_lbldl.insets = new Insets(0, 0, 0, 5);
 		gbc_lbldl.gridx = 3;
 		gbc_lbldl.gridy = 0;
-		bevPanel.add(lbldl, gbc_lbldl);
+		bevList.add(lbldl, gbc_lbldl);
 		
 		JLabel lblDl = new JLabel("dl");
 		lblDl.setFont(new Font("Tahoma", Font.PLAIN, 11));
@@ -615,7 +624,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		gbc_lblDl.insets = new Insets(0, 0, 0, 5);
 		gbc_lblDl.gridx = 4;
 		gbc_lblDl.gridy = 0;
-		bevPanel.add(lblDl, gbc_lblDl);
+		bevList.add(lblDl, gbc_lblDl);*/
 		
 		JPanel panel_6 = new JPanel();
 		panel_6.setPreferredSize(new Dimension(10, 380));

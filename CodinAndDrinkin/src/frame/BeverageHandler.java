@@ -4,6 +4,8 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -39,12 +41,15 @@ public class BeverageHandler {
 	}
 	
 	public void updateVol(String vol) {
-		lblVol.setText(vol);
+		this.lblVol.setText(vol);
 	}
 	
 	public GridBagConstraints initBtnDrink() {
+		this.btnDrink = new JButton("Drink");
 		this.btnDrink.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		this.btnDrink.setMinimumSize(new Dimension(20, 23));
+		this.btnDrink.setEnabled(false);
+		this.btnDrink.addMouseListener(new DrinkAction());
 		GridBagConstraints gbc_btnDrink = new GridBagConstraints();
 		gbc_btnDrink.insets = new Insets(0, 0, 0, 5);
 		gbc_btnDrink.gridx = 0;
@@ -54,7 +59,10 @@ public class BeverageHandler {
 	}
 	
 	public GridBagConstraints initBtnPour() {
+		this.btnPour = new JButton("Pour");
 		this.btnPour.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		this.btnPour.setEnabled(true);
+		this.btnPour.addMouseListener(new PourAction());
 		GridBagConstraints gbc_btnPour = new GridBagConstraints();
 		gbc_btnPour.insets = new Insets(0, 0, 0, 5);
 		gbc_btnPour.gridx = 1;
@@ -125,5 +133,19 @@ public class BeverageHandler {
 
 	public JLabel getLblDl() {
 		return lblDl;
+	}
+	
+	private class PourAction extends MouseAdapter {
+		@Override
+		public void mouseClicked(MouseEvent arg0) {
+			bevList.pourPressed(id);
+		}
+	}
+	
+	private class DrinkAction extends MouseAdapter {
+		@Override
+		public void mouseClicked(MouseEvent arg0) {
+			bevList.drinkPressed(id);
+		}
 	}
 }
