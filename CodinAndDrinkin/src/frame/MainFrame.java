@@ -49,14 +49,26 @@ import javax.swing.Action;
 public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 
 	private GameLogic game;
-	private JFrame frmCodindrinkin;
+	private JFrame frmCodindrinkin = new JFrame();
 	private JTable solutionsTable;
 	
-	NewGameDialog ngd;
+	/// dialogs
+	private NewGameDialog ngd;
+	private AddBevDialog abd;
 	
-	JMenuItem mntmNewGame;
+	/// items
+	private JMenuItem mntmNewGame;
+	private JMenuItem mntmAddBeverage;
+	private JMenuItem mntmLoadNewTask;
+	private JMenuItem mntmEndCurrentTask;
+	private JComboBox langChoose;
+	private JEditorPane code;
+	private JButton btnGiveup;
+	private JButton btnSend;
 	
+	/// actions
 	private final Action newGameAction = new NewGameAction(this);
+	private final Action action = new ExitAction(frmCodindrinkin);
 
 	/**
 	 * Create the application.
@@ -78,14 +90,42 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	 */
 	private void toStateOutOfBeverage() {
 		// TODO
+		/// enable/disable items
+		mntmAddBeverage.setEnabled(true);
+		mntmNewGame.setEnabled(false);
+		mntmLoadNewTask.setEnabled(false);
+		mntmEndCurrentTask.setEnabled(false);
+		langChoose.setEnabled(false);
+		code.setEnabled(false);
+		btnGiveup.setEnabled(false);
+		btnSend.setEnabled(false);
+		
 	}
 	
 	private void toStateAbleToLoadTask() {
 		// TODO
+		/// enable/disable items
+		mntmAddBeverage.setEnabled(true);
+		mntmNewGame.setEnabled(false);
+		mntmLoadNewTask.setEnabled(true);
+		mntmEndCurrentTask.setEnabled(false);
+		langChoose.setEnabled(false);
+		code.setEnabled(false);
+		btnGiveup.setEnabled(false);
+		btnSend.setEnabled(false);
 	}
 	
 	private void toStateTaskStarted() {
 		// TODO
+		/// enable/disable items
+		mntmAddBeverage.setEnabled(true);
+		mntmNewGame.setEnabled(false);
+		mntmLoadNewTask.setEnabled(false);
+		mntmEndCurrentTask.setEnabled(true);
+		langChoose.setEnabled(true);
+		code.setEnabled(true);
+		btnGiveup.setEnabled(true);
+		btnSend.setEnabled(true);
 	}
 	
 	
@@ -150,7 +190,6 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		setFrmCodindrinkin(new JFrame());
 		getFrmCodindrinkin().setResizable(false);
 		getFrmCodindrinkin().setTitle("Codin&Drinkin");
 		getFrmCodindrinkin().setIconImage(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("/javax/swing/plaf/metal/icons/ocean/computer.gif")));
@@ -170,21 +209,25 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		mnGame.add(mntmNewGame);
 		
 		JMenuItem mntmExit = new JMenuItem("Exit");
+		mntmExit.setAction(action);
 		mnGame.add(mntmExit);
 		
 		JMenu mnBeverage = new JMenu("Beverage");
 		menuBar.add(mnBeverage);
 		
-		JMenuItem mntmAddBeverage = new JMenuItem("Add beverage");
+		mntmAddBeverage = new JMenuItem("Add beverage");
+		mntmAddBeverage.setEnabled(false);
 		mnBeverage.add(mntmAddBeverage);
 		
 		JMenu mnTask = new JMenu("Task");
 		menuBar.add(mnTask);
 		
-		JMenuItem mntmLoadNewTask = new JMenuItem("Load new task");
+		mntmLoadNewTask = new JMenuItem("Load new task");
+		mntmLoadNewTask.setEnabled(false);
 		mnTask.add(mntmLoadNewTask);
 		
-		JMenuItem mntmEndCurrentTask = new JMenuItem("End current task");
+		mntmEndCurrentTask = new JMenuItem("End current task");
+		mntmEndCurrentTask.setEnabled(false);
 		mnTask.add(mntmEndCurrentTask);
 		
 		JMenu mnHelp = new JMenu("Help");
@@ -656,14 +699,16 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 		lblProgrammingLanguage.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_3.add(lblProgrammingLanguage, "2, 2, right, default");
 		
-		JComboBox langChoose = new JComboBox();
+		langChoose = new JComboBox();
+		langChoose.setEnabled(false);
 		langChoose.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		langChoose.setModel(new DefaultComboBoxModel(new String[] {"C", "C++", "Java"}));
 		langChoose.setMinimumSize(new Dimension(200, 10));
 		langChoose.setPreferredSize(new Dimension(80, 10));
 		panel_3.add(langChoose, "4, 2, fill, fill");
 		
-		JEditorPane code = new JEditorPane();
+		code = new JEditorPane();
+		code.setEnabled(false);
 		code.setBorder(new LineBorder(new Color(0, 0, 0)));
 		code.setPreferredSize(new Dimension(106, 280));
 		code.setMinimumSize(new Dimension(6, 220));
@@ -704,11 +749,13 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,}));
 		
-		JButton btnGiveup = new JButton("GiveUp");
+		btnGiveup = new JButton("GiveUp");
+		btnGiveup.setEnabled(false);
 		btnGiveup.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_4.add(btnGiveup, "10, 2");
 		
-		JButton btnSend = new JButton("Evaluate");
+		btnSend = new JButton("Evaluate");
+		btnSend.setEnabled(false);
 		btnSend.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_4.add(btnSend, "12, 2, right, default");
 		
@@ -765,6 +812,19 @@ public class MainFrame implements Runnable, UserInterface, InterfaceForDialogs {
 			ngd.setVisible(true);
 			
 			main.setNewGameDialog(ngd);
+		}
+	}
+	private class ExitAction extends AbstractAction {
+		private JFrame frame;
+		
+		public ExitAction(JFrame frame) {
+			this.frame = frame;
+			
+			putValue(NAME, "Exit");
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			this.frame.dispose();
 		}
 	}
 }

@@ -14,7 +14,7 @@ import misc.Trigger;
  * @author csiki
  *
  */
-public class Game implements GameLogic, Trigger {
+public class Game implements GameLogic, Trigger {  // TODO send blood alc content information to MainFrame!!!
 	
 	UserInterface ui;
 	private Task currentTask;
