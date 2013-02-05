@@ -1,5 +1,7 @@
 package library;
 
+import java.io.File;
+
 /**
  * Interface for functionalities UserInterface uses, Game realizes.
  * @author csiki
@@ -31,7 +33,7 @@ public interface GameLogic {
 	 * @param path
 	 * @return the interface can load or not the task, and if not, the problem
 	 */
-	public TaskValidationOutcome loadTask(String path);
+	public TaskValidationOutcome loadTask(File taskFile);
 	
 	/**
 	 * Validate the solution, calculates the consumable alcohol for the validation outcome, signal UserInterface if it's >0 about choosing beverage to drink.
@@ -39,7 +41,7 @@ public interface GameLogic {
 	 * @param code the programming code
 	 * @return outcome of the solution validation
 	 */
-	public SolutionOutcome sendSolution(int compilerID, String code);
+	public SolutionOutcome evaluateSolution(int compilerID, String code);
 	
 	/**
 	 * Stops the timer.
@@ -49,7 +51,7 @@ public interface GameLogic {
 	/**
 	 * Receives the chosen beverage to drink. Calculates the volume that should be drunk of that beverage, than call player to drink it. Sets Game.alcToDrink.
 	 * @param bevID as in the crate
-	 * @return the volume of alcohol left, if there was not enough in the chosen beverage
+	 * @return in dl, the volume of beverage to drink
 	 */
 	public float bevToDrink(int bevID);
 	
@@ -60,4 +62,33 @@ public interface GameLogic {
 	 */
 	public void bevToPour(int bevID, float vol);
 	
+	/**
+	 * Determines if any task is loaded according to Game.currentTask.
+	 * @return whether a task is loaded or not
+	 */
+	public boolean isAnyTaskLoaded();
+	
+	/**
+	 * Sums the solved solutions left unused time.
+	 * @return in millisecs
+	 */
+	public long sumTimeLeft();
+	
+	/**
+	 * Sum of number of solved tasks divided by sum of mistakes.
+	 * @return in %
+	 */
+	public int rateOfRightSolutions();
+	
+	/**
+	 * Returns with the volume of consumed alcohol so far.
+	 * @return in dl
+	 */
+	public float consumedAlcohol();
+	
+	/**
+	 * Returns with blood alcohol content.
+	 * @return in thousandth
+	 */
+	public float bloodAlcContent();
 }

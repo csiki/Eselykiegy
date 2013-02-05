@@ -1,0 +1,24 @@
+NodeObject 	28553
+{
+ { Name 	"GameLogic"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	9797}
+ { GUID 	"UID_FBBC56F6-599E-46e3-82A8-2D1FD2BC9E3E"}
+ { SequenceId 	28178}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	28554
+{
+ { Name 	"loadTask"}
+ { Type 	UmlOperation}
+ { Sig 	"File"}
+ { ScopeNodeId 	9797}
+ { ObjectId 	9900}
+ { GUID 	"UID_32E01641-2504-4717-82DA-33FC59193BD9"}
+ { SequenceId 	28178}
+ { Gocha 	0 }
+}

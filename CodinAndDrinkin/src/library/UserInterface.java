@@ -20,9 +20,9 @@ public interface UserInterface {
 	public void startTask(Task task);
 	
 	/**
-	 * Signals the user that time expired and makes impossible to evaluate more solutions.
+	 * Signals the user that time expired or mistakes reached its allowed maximum and makes impossible to evaluate more solutions.
 	 */
-	public void endTask();
+	public void endTask(SolutionInterface solution);
 	
 	/**
 	 * Refresh the elapsed time on screen.
@@ -30,4 +30,10 @@ public interface UserInterface {
 	 * @param sec
 	 */
 	public void refreshTime(int min, int sec);
+	
+	/**
+	 * Refresh the number of attempts on screen.
+	 * @param num
+	 */
+	public void refreshAttemptNum(int num);
 }

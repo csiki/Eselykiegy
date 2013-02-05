@@ -23,6 +23,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.border.LineBorder;
 import javax.swing.JDialog;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
@@ -42,10 +43,14 @@ import javax.swing.ScrollPaneConstants;
 import library.CrateInterface;
 import library.GameLogic;
 import library.Sex;
+import library.SolutionInterface;
+import library.SolutionOutcome;
 import library.Task;
+import library.TaskValidationOutcome;
 import library.UserInterface;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
+import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -58,10 +63,12 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	private BeverageList bevList;
 	private JFrame frmCodindrinkin = new JFrame();
 	private JTable solutionsTable;
+	SolutionsData solutionsData = new SolutionsData();
 	
 	/// dialogs
 	private NewGameDialog ngd;
 	private AddBevDialog abd;
+	private FileChooserFrame fcf = new FileChooserFrame();
 	
 	/// items
 	private JMenuItem mntmNewGame;
@@ -75,12 +82,25 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	private JLabel namelbl;
 	private JLabel sexlbl;
 	private JLabel bloodAlcContentlbl;
-	
+	private JLabel alcLeft;
+	private JLabel taskName;
+	private JLabel taskID;
+	private JLabel preTaskID;
+	private JLabel ellapsedTime;
+	private JLabel deadline;
+	private JLabel solutionsSent;
+	private JLabel solutionsPermited;
+	private JLabel outcome;
+	private JTextPane taskDescription;
+	private JLabel timeLeft;
+	private JLabel rateOfSolutions;
+	private JLabel consumedAlc;
 	
 	/// actions
 	private final Action newGameAction = new NewGameAction(this);
 	private final Action exitAction = new ExitAction(frmCodindrinkin);
 	private final Action addBevAction = new AddBevAction(this);
+	private final Action loadTaskAction = new LoadTaskAction(this);
 
 	/**
 	 * Create the application.
@@ -101,7 +121,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	 * Methods run at state switch
 	 */
 	private void toStateOutOfBeverage() {
-		// TODO
+		// TODO message ablak
 		/// enable/disable items
 		mntmAddBeverage.setEnabled(true);
 		mntmNewGame.setEnabled(false);
@@ -112,10 +132,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		btnGiveup.setEnabled(false);
 		btnSend.setEnabled(false);
 		
+		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
 	private void toStateAbleToLoadTask() {
-		// TODO
+		// TODO message ablak
 		/// enable/disable items
 		mntmAddBeverage.setEnabled(true);
 		mntmNewGame.setEnabled(false);
@@ -125,6 +146,8 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		code.setEnabled(false);
 		btnGiveup.setEnabled(false);
 		btnSend.setEnabled(false);
+		
+		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
 	private void toStateTaskStarted() {
@@ -138,6 +161,22 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		code.setEnabled(true);
 		btnGiveup.setEnabled(true);
 		btnSend.setEnabled(true);
+		
+		this.bevList.setDrinkBtnEnabled(false);
+	}
+	
+	private void toStateMustDrink() {
+		// TODO message ablak
+		mntmAddBeverage.setEnabled(true);
+		mntmNewGame.setEnabled(false);
+		mntmLoadNewTask.setEnabled(false);
+		mntmEndCurrentTask.setEnabled(false);
+		langChoose.setEnabled(false);
+		code.setEnabled(false);
+		btnGiveup.setEnabled(false);
+		btnSend.setEnabled(false);
+		
+		this.bevList.setDrinkBtnEnabled(true);
 	}
 	
 	
@@ -146,26 +185,57 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	 */
 	@Override
 	public void chooseBev(float alcVol) {
-		// TODO Auto-generated method stub
+		this.alcLeft.setText(Float.toString(alcVol * 10.0F)); // from dl to cl
 		
+		/// state transition
+		toStateMustDrink();
 	}
 
 	@Override
 	public void startTask(Task task) {
-		// TODO Auto-generated method stub
 		
+		/// set items
+		this.taskID.setText(Integer.toString(task.id));
+		this.preTaskID.setText(Integer.toString(task.priorTaskID));
+		this.taskDescription.setText(task.description);
+		
+		this.outcome.setText(SolutionOutcome.Unvalidated.toString());
+		this.ellapsedTime.setText("0");
+		
+		int seconds = (int) (task.timeAllowed / 1000);
+		this.deadline.setText(seconds / 60 + ":" + seconds % 60);
+		this.solutionsSent.setText("0");
+		this.solutionsPermited.setText(Integer.toString(task.attemptsAllowed));
+		
+		/// state transition
+		toStateTaskStarted();
 	}
 
 	@Override
-	public void endTask() {
-		// TODO Auto-generated method stub
+	public void endTask(SolutionInterface solution) {
+		/// state transition
+		if (this.crate.gotAnyAlcohol())
+			toStateAbleToLoadTask();
+		else
+			toStateOutOfBeverage();
 		
+		/// update GUI Solutions table
+		solutionsData.addSolution(solution); // fire included
+		
+		/// update Time left, Rate of right solutions
+		int secs = (int) (this.game.sumTimeLeft() / 1000);
+		this.timeLeft.setText(Integer.toString(secs / 60) + ":" + Integer.toString(secs % 60));
+		this.rateOfSolutions.setText(Integer.toString(this.game.rateOfRightSolutions()));
 	}
 	
 	@Override
 	public void refreshTime(int min, int sec) {
-		// TODO Auto-generated method stub
-		
+		this.ellapsedTime.setText(Integer.toString(min) + ":" + Integer.toString(sec));
+	}
+	
+	@Override
+	public void refreshAttemptNum(int num) {
+		this.solutionsSent.setText(Integer.toString(num));		
 	}
 	
 	/*
@@ -218,12 +288,30 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		/// add to Crate
 		game.addBev(abd.getInputName(), Float.parseFloat(abd.getInputVol()), Integer.parseInt(abd.getInputAlcVol()));
 		
-		/// state transition
-		toStateAbleToLoadTask();
-		
 		/// add beverage to GUI list
 		bevList.bevAdded();
+		
+		/// state transition
+		if (game.isAnyTaskLoaded())
+			toStateTaskStarted();
+		else
+			toStateAbleToLoadTask();
 	}
+	
+	@Override
+	public void loadTask(File taskFile) {
+		TaskValidationOutcome tvo = this.game.loadTask(taskFile);
+		
+		if (tvo == TaskValidationOutcome.NoFileFound) {
+			// TODO message
+		} else if (tvo == TaskValidationOutcome.NotEnoughAlcohol) {
+			// TODO message
+		} else if (tvo == TaskValidationOutcome.PreTaskNotSolved) {
+			// TODO message
+		}
+		// if valid Game calls UserInterface.taskStarted()
+	}
+	
 	
 	/*
 	 * Implemented methods from interface MainInterfaceForBeverageList
@@ -231,8 +319,10 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	
 	@Override
 	public void bevDrink(int bevID) {
-		// TODO Auto-generated method stub
-		
+		float howMuchToDrink = game.bevToDrink(bevID);
+
+		String msg = "Drink " + howMuchToDrink + " dl of your " + crate.getBevName(bevID) + "!";
+		JOptionPane.showMessageDialog(null, msg);
 	}
 
 	@Override
@@ -285,11 +375,12 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		JMenu mnTask = new JMenu("Task");
 		menuBar.add(mnTask);
 		
-		mntmLoadNewTask = new JMenuItem("Load new task");
+		mntmLoadNewTask = new JMenuItem("Loads new task");
+		mntmLoadNewTask.setAction(this.loadTaskAction);
 		mntmLoadNewTask.setEnabled(false);
 		mnTask.add(mntmLoadNewTask);
 		
-		mntmEndCurrentTask = new JMenuItem("End current task");
+		mntmEndCurrentTask = new JMenuItem("Ends current task");
 		mntmEndCurrentTask.setEnabled(false);
 		mnTask.add(mntmEndCurrentTask);
 		
@@ -428,34 +519,34 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_7.add(lblNewLabel_1, "2, 2");
 		
-		JLabel taskName = new JLabel("-");
-		taskName.setPreferredSize(new Dimension(150, 14));
-		taskName.setName("");
-		taskName.setMaximumSize(new Dimension(130, 14));
-		taskName.setMinimumSize(new Dimension(120, 14));
-		taskName.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		panel_7.add(taskName, "4, 2, 5, 1");
+		this.taskName = new JLabel("-");
+		this.taskName.setPreferredSize(new Dimension(150, 14));
+		this.taskName.setName("");
+		this.taskName.setMaximumSize(new Dimension(130, 14));
+		this.taskName.setMinimumSize(new Dimension(120, 14));
+		this.taskName.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		panel_7.add(this.taskName, "4, 2, 5, 1");
 		
 		JLabel lblNewLabel_2 = new JLabel("Task ID:");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_7.add(lblNewLabel_2, "2, 4");
 		
-		JLabel taskID = new JLabel("-");
-		taskID.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		taskID.setMaximumSize(new Dimension(100, 14));
-		taskID.setPreferredSize(new Dimension(100, 14));
-		taskID.setMinimumSize(new Dimension(25, 14));
-		panel_7.add(taskID, "4, 4, default, center");
+		this.taskID = new JLabel("-");
+		this.taskID.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		this.taskID.setMaximumSize(new Dimension(100, 14));
+		this.taskID.setPreferredSize(new Dimension(100, 14));
+		this.taskID.setMinimumSize(new Dimension(25, 14));
+		panel_7.add(this.taskID, "4, 4, default, center");
 		
 		JLabel lblPretaskId = new JLabel("PreTask ID:");
 		lblPretaskId.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_7.add(lblPretaskId, "2, 6");
 		
-		JLabel preTaskID = new JLabel("-");
-		preTaskID.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		preTaskID.setMaximumSize(new Dimension(100, 14));
-		preTaskID.setPreferredSize(new Dimension(100, 14));
-		panel_7.add(preTaskID, "4, 6");
+		this.preTaskID = new JLabel("-");
+		this.preTaskID.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		this.preTaskID.setMaximumSize(new Dimension(100, 14));
+		this.preTaskID.setPreferredSize(new Dimension(100, 14));
+		panel_7.add(this.preTaskID, "4, 6");
 		
 		JPanel panel_8 = new JPanel();
 		panel_8.setBackground(SystemColor.inactiveCaption);
@@ -488,35 +579,35 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		lblTime.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		panel_8.add(lblTime, "2, 2");
 		
-		JLabel ellapsedTime = new JLabel("-");
-		ellapsedTime.setFont(new Font("Tahoma", Font.BOLD, 14));
-		panel_8.add(ellapsedTime, "4, 2");
+		this.ellapsedTime = new JLabel("-");
+		this.ellapsedTime.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panel_8.add(this.ellapsedTime, "4, 2");
 		
 		JLabel label = new JLabel("/");
 		panel_8.add(label, "6, 2");
 		
-		JLabel deadline = new JLabel("-");
-		panel_8.add(deadline, "8, 2");
+		this.deadline = new JLabel("-");
+		panel_8.add(this.deadline, "8, 2");
 		
 		JLabel lblSent = new JLabel("Attempt:");
 		lblSent.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		panel_8.add(lblSent, "2, 4");
 		
-		JLabel solutionsSent = new JLabel("-");
-		solutionsSent.setFont(new Font("Tahoma", Font.BOLD, 14));
-		panel_8.add(solutionsSent, "4, 4");
+		this.solutionsSent = new JLabel("-");
+		this.solutionsSent.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panel_8.add(this.solutionsSent, "4, 4");
 		
 		JLabel label_1 = new JLabel("/");
 		panel_8.add(label_1, "6, 4");
 		
-		JLabel solutionsPermited = new JLabel("-");
-		panel_8.add(solutionsPermited, "8, 4");
+		this.solutionsPermited = new JLabel("-");
+		panel_8.add(this.solutionsPermited, "8, 4");
 		
-		JLabel outcome = new JLabel("-");
-		outcome.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		outcome.setPreferredSize(new Dimension(80, 14));
-		outcome.setMaximumSize(new Dimension(100, 14));
-		panel_8.add(outcome, "2, 6, 7, 1");
+		this.outcome = new JLabel("-");
+		this.outcome.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		this.outcome.setPreferredSize(new Dimension(80, 14));
+		this.outcome.setMaximumSize(new Dimension(100, 14));
+		panel_8.add(this.outcome, "2, 6, 7, 1");
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setPreferredSize(new Dimension(2, 45));
@@ -528,15 +619,15 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		gbc_scrollPane.gridy = 1;
 		panel_2.add(scrollPane, gbc_scrollPane);
 		
-		JTextPane taskDescription = new JTextPane();
-		taskDescription.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		taskDescription.setBackground(SystemColor.inactiveCaption);
-		taskDescription.setMinimumSize(new Dimension(6, 200));
-		taskDescription.setPreferredSize(new Dimension(6, 220));
-		taskDescription.setEditable(false);
-		taskDescription.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		taskDescription.setText("Task description: -");
-		scrollPane.setViewportView(taskDescription);
+		this.taskDescription = new JTextPane();
+		this.taskDescription.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		this.taskDescription.setBackground(SystemColor.inactiveCaption);
+		this.taskDescription.setMinimumSize(new Dimension(6, 200));
+		this.taskDescription.setPreferredSize(new Dimension(6, 220));
+		this.taskDescription.setEditable(false);
+		this.taskDescription.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		this.taskDescription.setText("Task description: -");
+		scrollPane.setViewportView(this.taskDescription);
 		
 		JPanel panel = new JPanel();
 		panel.setPreferredSize(new Dimension(150, 10));
@@ -563,10 +654,10 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		lblBeverages.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		panel_9.add(lblBeverages);
 		
-		JLabel dlLeft = new JLabel("0");
-		dlLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
-		dlLeft.setForeground(Color.RED);
-		panel_9.add(dlLeft);
+		alcLeft = new JLabel("0");
+		alcLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
+		alcLeft.setForeground(Color.RED);
+		panel_9.add(alcLeft);
 		
 		JLabel lblLeft = new JLabel("cl alc left to drink");
 		lblLeft.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -583,48 +674,6 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		gbl_bevPanel.rowWeights = new double[]{0.0, Double.MIN_VALUE};
 		bevList.setLayout(gbl_bevPanel);
 		
-		/*JButton btnDrink = new JButton("Drink");
-		btnDrink.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		btnDrink.setMinimumSize(new Dimension(20, 23));
-		GridBagConstraints gbc_btnDrink = new GridBagConstraints();
-		gbc_btnDrink.insets = new Insets(0, 0, 0, 5);
-		gbc_btnDrink.gridx = 0;
-		gbc_btnDrink.gridy = 0;
-		bevList.add(btnDrink, gbc_btnDrink);
-		
-		JButton btnPour = new JButton("Pour");
-		btnPour.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		GridBagConstraints gbc_btnPour = new GridBagConstraints();
-		gbc_btnPour.insets = new Insets(0, 0, 0, 5);
-		gbc_btnPour.gridx = 1;
-		gbc_btnPour.gridy = 0;
-		bevList.add(btnPour, gbc_btnPour);
-		
-		JLabel lblBevName = new JLabel("Ballentines");
-		lblBevName.setMaximumSize(new Dimension(100, 14));
-		lblBevName.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		lblBevName.setMinimumSize(new Dimension(20, 14));
-		lblBevName.setPreferredSize(new Dimension(58, 14));
-		GridBagConstraints gbc_lblBevName = new GridBagConstraints();
-		gbc_lblBevName.insets = new Insets(0, 0, 0, 5);
-		gbc_lblBevName.gridx = 2;
-		gbc_lblBevName.gridy = 0;
-		bevList.add(lblBevName, gbc_lblBevName);
-		
-		JLabel lbldl = new JLabel("14");
-		GridBagConstraints gbc_lbldl = new GridBagConstraints();
-		gbc_lbldl.insets = new Insets(0, 0, 0, 5);
-		gbc_lbldl.gridx = 3;
-		gbc_lbldl.gridy = 0;
-		bevList.add(lbldl, gbc_lbldl);
-		
-		JLabel lblDl = new JLabel("dl");
-		lblDl.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		GridBagConstraints gbc_lblDl = new GridBagConstraints();
-		gbc_lblDl.insets = new Insets(0, 0, 0, 5);
-		gbc_lblDl.gridx = 4;
-		gbc_lblDl.gridy = 0;
-		bevList.add(lblDl, gbc_lblDl);*/
 		
 		JPanel panel_6 = new JPanel();
 		panel_6.setPreferredSize(new Dimension(10, 380));
@@ -662,17 +711,17 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		lblTimeLeft.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_11.add(lblTimeLeft, "2, 2");
 		
-		JLabel timeLeft = new JLabel("-");
-		timeLeft.setFont(new Font("Tahoma", Font.BOLD, 12));
-		panel_11.add(timeLeft, "4, 2");
+		this.timeLeft = new JLabel("-");
+		this.timeLeft.setFont(new Font("Tahoma", Font.BOLD, 12));
+		panel_11.add(this.timeLeft, "4, 2");
 		
 		JLabel lblRateOf = new JLabel("Rate of right solutions:");
 		lblRateOf.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_11.add(lblRateOf, "2, 4");
 		
-		JLabel rateOfSolutions = new JLabel("-");
-		rateOfSolutions.setFont(new Font("Tahoma", Font.BOLD, 12));
-		panel_11.add(rateOfSolutions, "4, 4, right, default");
+		this.rateOfSolutions = new JLabel("-");
+		this.rateOfSolutions.setFont(new Font("Tahoma", Font.BOLD, 12));
+		panel_11.add(this.rateOfSolutions, "4, 4, right, default");
 		
 		JLabel label_5 = new JLabel("%");
 		label_5.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -682,9 +731,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		lblConsumedAlcohol.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_11.add(lblConsumedAlcohol, "2, 6");
 		
-		JLabel consumedAlc = new JLabel("-");
-		consumedAlc.setFont(new Font("Tahoma", Font.BOLD, 12));
-		panel_11.add(consumedAlc, "4, 6");
+		this.consumedAlc = new JLabel("-");
+		this.consumedAlc.setFont(new Font("Tahoma", Font.BOLD, 12));
+		panel_11.add(this.consumedAlc, "4, 6");
 		
 		JLabel lblDl_1 = new JLabel("dl");
 		lblDl_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -699,30 +748,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		
 		solutionsTable = new JTable();
 		solutionsTable.setBackground(SystemColor.desktop);
-		solutionsTable.setModel(new DefaultTableModel(
-			new Object[][] {
-			},
-			new String[] {
-				"Done", "Time used", "Attempt", "Lang"
-			}
-		) {
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = -2844255540862281738L;
-			Class[] columnTypes = new Class[] {
-				Boolean.class, Object.class, String.class, String.class
-			};
-			public Class getColumnClass(int columnIndex) {
-				return columnTypes[columnIndex];
-			}
-			boolean[] columnEditables = new boolean[] {
-				false, false, false, false
-			};
-			public boolean isCellEditable(int row, int column) {
-				return columnEditables[column];
-			}
-		});
+		solutionsTable.setModel(this.solutionsData);
 		solutionsTable.getColumnModel().getColumn(0).setResizable(false);
 		solutionsTable.getColumnModel().getColumn(0).setPreferredWidth(15);
 		solutionsTable.getColumnModel().getColumn(0).setMinWidth(11);
@@ -910,6 +936,31 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 			abd.setVisible(true);
 			
 			main.setAddBevDialog(abd);
+		}
+	}
+	private class LoadTaskAction extends AbstractAction {
+
+		private static final long serialVersionUID = -525579174058082691L;
+		
+		MainInterfaceForDialogs main;
+
+		public LoadTaskAction(MainInterfaceForDialogs main) {
+			this.main = main;
+			
+			putValue(NAME, "SwingAction");
+			putValue(SHORT_DESCRIPTION, "Some short description");
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			int returnVal = fcf.fc.showOpenDialog(null);
+			
+			if (returnVal == JFileChooser.APPROVE_OPTION) {
+				File selectedFile = fcf.fc.getSelectedFile();
+				if (selectedFile.canRead()) {
+					main.loadTask(selectedFile);
+					fcf.setSavedPath(selectedFile);
+				}
+			}
 		}
 	}
 }

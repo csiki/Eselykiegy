@@ -14,10 +14,10 @@ import misc.Trigger;
  * @author csiki
  *
  */
-public class Game implements GameLogic, Trigger {  // TODO send blood alc content information to MainFrame!!!
+public class Game implements GameLogic, Trigger {
 	
 	UserInterface ui;
-	private Task currentTask;
+	private Task currentTask = null;
 	private Player player;
 	private List<Compiler> compilers = new ArrayList<Compiler>();
 	private List<Solution> solutions = new ArrayList<Solution>();
@@ -46,7 +46,7 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 	private float calculateAlcComsumeVol(SolutionOutcome sout) {
 		if (sout == SolutionOutcome.Solved)
 			return this.currentTask.solvedAlcVol;
-		else if (sout.code > 1 && sout.code < 6)
+		else if (sout.code > 1 && sout.code < 7)
 			return this.currentTask.mistakeAlcVol;
 
 		return 0.0F;
@@ -59,16 +59,23 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 	 */
 	private Task openFile(File file) {
 		
-		if (!file.exists())
+		if (!file.exists() || !file.canRead())
 			return null;
-			
+		
+		/// substring the extension
+		String extension = "";
+		int i = file.getPath().lastIndexOf('.');
+		if (i > 0)
+		    extension = file.getPath().substring(i+1);
+		if (!extension.equals("class"))
+			return null;
+		
 		FileInputStream fis = null;
 		ObjectInputStream ois = null;
 		try {
 			fis = new FileInputStream(file);
 			ois = new ObjectInputStream(fis);
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		
@@ -76,10 +83,8 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 		try {
 			task = (Task) ois.readObject();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -87,7 +92,6 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 			ois.close();
 			fis.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -209,10 +213,10 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 	}
 	
 	@Override
-	public TaskValidationOutcome loadTask(String path) {
+	public TaskValidationOutcome loadTask(File taskFile) {
 		TaskValidationOutcome tvout = null;
 		
-		Task task = openFile(new File(path));
+		Task task = openFile(taskFile);
 		
 		if (task == null)
 			return TaskValidationOutcome.NoFileFound;
@@ -240,26 +244,39 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 	}
 	
 	@Override
-	public SolutionOutcome sendSolution(int compilerID, String code) {
+	public SolutionOutcome evaluateSolution(int compilerID, String code) {
+		Solution solution = this.solutions.get(this.solutions.size() - 1);
 		
-		SolutionOutcome sout = this.solutions.get(this.solutions.size() - 1).validator(this.compilers.get(compilerID), code);
+		SolutionOutcome sout = solution.validator(this.compilers.get(compilerID), code, this.stopper.showTimeElapsed());
+		// TODO its not atomic, what if allowedTime elapse while evaluating?
 		
+		/// refresh number of attempts on GUI
+		this.ui.refreshAttemptNum(solution.getAttemptNum());
+		
+		/// calculate alcohol vol
 		this.alcToDrink = this.calculateAlcComsumeVol(sout);
-		
-		/// terminate stopper if solved
-		if (sout == SolutionOutcome.Solved)
-			stopper.surrender();
 		
 		/// choose beverage
 		if (this.alcToDrink > 0)
 			ui.chooseBev(this.alcToDrink);
+		
+		/// if task ended
+		if (sout == SolutionOutcome.Solved || sout == SolutionOutcome.OutOfAttemp) {
+			this.stopper.surrender();
+			this.currentTask = null; // sign, that there's no task to solve at the moment
+			this.ui.endTask(solution);
+		}
 		
 		return sout;
 	}
 	
 	@Override
 	public void giveUp() {
-		stopper.surrender();
+		Solution solution = this.solutions.get(this.solutions.size() - 1);
+		
+		solution.giveUp(this.stopper.surrender());
+		this.currentTask = null; // sign, that there's no task to solve at the moment
+		this.ui.endTask(solution);
 	}
 	
 	@Override
@@ -274,7 +291,7 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 		if (this.alcToDrink > 0)
 			ui.chooseBev(this.alcToDrink);
 		
-		return this.alcToDrink;
+		return bevToDrink;
 	}
 	
 	@Override
@@ -282,6 +299,51 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 		player.pour(bevID, vol);
 	}
 	
+	@Override
+	public boolean isAnyTaskLoaded() {
+		if (this.currentTask == null)
+			return false;
+		return true;
+	}
+	
+	@Override
+	public long sumTimeLeft() {
+		long sum = 0;
+		
+		for (Solution s : this.solutions)
+			if (s.getSout() == SolutionOutcome.Solved)
+				sum += s.getTask().timeAllowed - s.getTimeUsed();
+		
+		return sum;
+	}
+
+	@Override
+	public int rateOfRightSolutions() {
+		int attemptsNum = 0;
+		int rightNum = 0;
+		
+		for (Solution s : solutions) {
+			attemptsNum += s.getAttemptNum();
+			if (s.getSout() == SolutionOutcome.Solved)
+				++rightNum;
+		}
+		
+		if (attemptsNum == 0)
+			return 0;
+		
+		return (int) ((((float) (rightNum)) / ((float) (attemptsNum))) * 100);
+	}
+
+	@Override
+	public float consumedAlcohol() {
+		return player.getConsumedAlc();
+	}
+	
+	@Override
+	public float bloodAlcContent() {
+		// TODO rendes kidolgozása
+		return 0.0F;
+	}
 	
 	/*
 	 * Implemented method from interface Trigger:
@@ -298,7 +360,10 @@ public class Game implements GameLogic, Trigger {  // TODO send blood alc conten
 	
 	@Override
 	public void shoot() {
-		ui.endTask();
+		Solution solution = this.solutions.get(this.solutions.size() - 1);
+		
+		solution.outOfTime();
+		this.currentTask = null;
+		ui.endTask(solution);
 	}
-
 }

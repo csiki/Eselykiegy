@@ -36,9 +36,9 @@ public class Task implements Serializable {
 	 */
 	public final float solvedAlcVol;
 	/**
-	 * max number of mistakes allowed
+	 * max number of attempts allowed
 	 */
-	public final int mistakesAllowed;
+	public final int attemptsAllowed;
 	/**
 	 * time allowed for solving the task, in millisecs
 	 */
@@ -52,7 +52,7 @@ public class Task implements Serializable {
 			String validOutput,
 			float mistakeAlcVol,
 			float solvedAlcVol,
-			int mistakesAllowed,
+			int attemptsAllowed,
 			long timeAllowed
 	) {
 		this.id = id;
@@ -62,7 +62,7 @@ public class Task implements Serializable {
 		this.validOutput = validOutput;
 		this.mistakeAlcVol = mistakeAlcVol;
 		this.solvedAlcVol = solvedAlcVol;
-		this.mistakesAllowed = mistakesAllowed;
+		this.attemptsAllowed = attemptsAllowed;
 		this.timeAllowed = timeAllowed;
 	}
 }

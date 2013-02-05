@@ -708,7 +708,7 @@ Rename
     { SrcId 6009 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "boolean:=loadTask(String)" }
+        { Text "TaskValidationOutcome:=loadTask(File)" }
     }
     { UpdatedAttr name }
 }
@@ -917,7 +917,7 @@ Rename
     { SrcId 6905 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "Solution:=sendSolution(int,String)" }
+        { Text "SolutionOutcome:=evaluateSolution(compID:int, code:String)" }
     }
     { UpdatedAttr name }
 }

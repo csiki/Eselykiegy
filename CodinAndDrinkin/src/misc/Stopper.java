@@ -57,9 +57,18 @@ public class Stopper implements Runnable {
 	
 	/**
 	 * Prevent the shot, if not late.
+	 * @return spent time from startTime till surrender
 	 */
-	public void surrender() {
+	public long surrender() {
 		this.danger = false;
+		return System.currentTimeMillis() - startTime;
 	}
 	
+	/**
+	 * Get the spent time since startTime
+	 * @return spent time since startTime
+	 */
+	public long showTimeElapsed() {
+		return System.currentTimeMillis() - startTime;
+	}
 }

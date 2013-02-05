@@ -28,4 +28,8 @@ public abstract class Compiler {
 	 */
 	abstract public double run(String fileName, String[] inputs, String output, Boolean error);
 	
+	@Override
+	public final String toString() {
+		return this.langName;
+	}
 }

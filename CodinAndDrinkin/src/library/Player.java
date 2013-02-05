@@ -24,7 +24,7 @@ public class Player {
 	/**
 	 * in dl
 	 */
-	private float consumedAlc;
+	private float consumedAlc = 0.0F;
 	private Crate crate;
 
 	Player(String name, Sex sex, int height, int weight, float bloodVol) {
@@ -84,6 +84,10 @@ public class Player {
 		return this.crate;
 	}
 	
+	/*
+	 * Getters
+	 */
+	
 	public Sex getSex() {
 		return this.sex;
 	}
@@ -94,5 +98,9 @@ public class Player {
 	
 	public int getHeight() {
 		return this.height;
+	}
+	
+	public float getConsumedAlc() {
+		return this.consumedAlc;
 	}
 }

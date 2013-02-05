@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "SolutionOutcome:=sendSolution(compID:int,code:String)" }
+    { Name "SolutionOutcome:=evaluateSolution(compID:int,code:String)" }
     { Type UmlSynchronousMessage }
     { ObjectId 6897 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "SolutionOutcome:=sendSolution(int,String)" }
+    { Value "SolutionOutcome:=sendSolution(compID:int,code:String)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 15328 }
+    { ObjectId 27329 }
 }
 

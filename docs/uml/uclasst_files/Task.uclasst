@@ -293,7 +293,7 @@ FillTable UmlClassTable
 					{ ObjectCache  } } }
 			{ Row	{ Appid 2976 }
 				{ Cell	{ Appid 2970 }
-					{ Label "mistakesAllowed" }
+					{ Label "attemptsAllowed" }
 					
 					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 25322 }  } { Object { PDMType node } { MappingName Attribute } { ID 25320 } { GUID "UID_84A3D2D9-DF82-41c9-9907-9287DB044B71" }  } } }
 				{ Cell	{ Appid 2971 }

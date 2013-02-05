@@ -199,9 +199,9 @@ FillTable UmlClassTable
 				{ Cell	{ Appid 1831 }
 					 } } } }
 	{ Hsect	{ Appid 1672 }
-		{ NumRows 7 }
+		{ NumRows 8 }
 		{ Hidden False }
-		{ NumVisRows 7 }
+		{ NumVisRows 8 }
 		{ Vsect	{ Appid 1673 }
 		{ NumCols 3 }
 		{ Hidden False }
@@ -270,6 +270,17 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 2410 }
+					
+					{ ObjectCache  } } }
+			{ Row	{ Appid 2447 }
+				{ Cell	{ Appid 2444 }
+					{ Label "OutOfAttempt" }
+					
+					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 28014 }  } { Object { PDMType node } { MappingName Attribute } { ID 28012 } { GUID "UID_099ADD80-53A5-4c06-A304-0A2BD54AB5EE" }  } } }
+				{ Cell	{ Appid 2445 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2446 }
 					
 					{ ObjectCache  } } }
 			{ Row	{ Appid 2375 }
@@ -364,6 +375,18 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 2421 }
+					 } }
+			{ Row	{ Appid 2448 }
+				{ Cell	{ Appid 2454 }
+					
+					{ ObjectCache { Object { PDMType item } { MappingName AttributeVisibility } { ID 28027 }  } } }
+				{ Cell	{ Appid 2455 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2456 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2457 }
 					 } }
 			{ Row	{ Appid 2376 }
 				{ Cell	{ Appid 2382 }
@@ -472,6 +495,21 @@ FillTable UmlClassTable
 					 }
 				{ Cell	{ Appid 2426 }
 					 } }
+			{ Row	{ Appid 2449 }
+				{ ObjectCache { Object { PDMType note } { MappingName AttributeCxxDefinition } { ID 28018 }  } }
+				{ Cell	{ Appid 2458 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2459 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2460 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2461 }
+					 }
+				{ Cell	{ Appid 2462 }
+					 } }
 			{ Row	{ Appid 2377 }
 				{ ObjectCache { Object { PDMType note } { MappingName AttributeCxxDefinition } { ID 17814 }  } }
 				{ Cell	{ Appid 2386 }
@@ -550,6 +588,16 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 2429 }
+					 } }
+			{ Row	{ Appid 2450 }
+				{ ObjectCache { Object { PDMType note } { MappingName AttributeAda95Definition } { ID 28020 }  } }
+				{ Cell	{ Appid 2463 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2464 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2465 }
 					 } }
 			{ Row	{ Appid 2378 }
 				{ ObjectCache { Object { PDMType note } { MappingName AttributeAda95Definition } { ID 17816 }  } }
@@ -649,6 +697,20 @@ FillTable UmlClassTable
 				{ Cell	{ Appid 2433 }
 					
 					{ ObjectCache  } } }
+			{ Row	{ Appid 2451 }
+				{ ObjectCache { Object { PDMType note } { MappingName AttributeJavaDefinition } { ID 28022 }  } }
+				{ Cell	{ Appid 2466 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2467 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2468 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2469 }
+					
+					{ ObjectCache  } } }
 			{ Row	{ Appid 2379 }
 				{ ObjectCache { Object { PDMType note } { MappingName AttributeJavaDefinition } { ID 17818 }  } }
 				{ Cell	{ Appid 2394 }
@@ -738,6 +800,18 @@ FillTable UmlClassTable
 				{ Cell	{ Appid 2436 }
 					 }
 				{ Cell	{ Appid 2437 }
+					 } }
+			{ Row	{ Appid 2452 }
+				{ ObjectCache { Object { PDMType note } { MappingName AttributeIDLDefinition } { ID 28024 }  } }
+				{ Cell	{ Appid 2470 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2471 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2472 }
+					 }
+				{ Cell	{ Appid 2473 }
 					 } }
 			{ Row	{ Appid 2380 }
 				{ ObjectCache { Object { PDMType note } { MappingName AttributeIDLDefinition } { ID 17820 }  } }
@@ -868,6 +942,25 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 2443 }
+					 } }
+			{ Row	{ Appid 2453 }
+				{ ObjectCache { Object { PDMType note } { MappingName AttributeCsharpImplementation } { ID 28026 }  } }
+				{ Cell	{ Appid 2474 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2475 }
+					
+					{ ObjectCache { Object { PDMType item } { MappingName UmlCsharpAttributeStatic } { ID 28028 }  } } }
+				{ Cell	{ Appid 2476 }
+					
+					{ ObjectCache { Object { PDMType item } { MappingName UmlCsharpAttributeGetter } { ID 28029 }  } } }
+				{ Cell	{ Appid 2477 }
+					
+					{ ObjectCache { Object { PDMType item } { MappingName UmlCsharpAttributeSetter } { ID 28030 }  } } }
+				{ Cell	{ Appid 2478 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 2479 }
 					 } }
 			{ Row	{ Appid 2381 }
 				{ ObjectCache { Object { PDMType note } { MappingName AttributeCsharpImplementation } { ID 17822 }  } }

@@ -52,5 +52,15 @@ public class Crate implements CrateInterface {
 	public int getSize() {
 		return this.beverages.size();
 	}
+
+	@Override
+	public boolean gotAnyAlcohol() {
+		float sumvol = 0.0F;
+		
+		for (Beverage b : beverages)
+			sumvol += b.getVol();
+			
+		return sumvol > 0.0F;
+	}
 	
 }

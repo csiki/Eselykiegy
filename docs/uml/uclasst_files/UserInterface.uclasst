@@ -420,9 +420,9 @@ FillTable UmlClassTable
 				{ Cell	{ Appid 311 }
 					 } } } }
 	{ Hsect	{ Appid 96 }
-		{ NumRows 4 }
+		{ NumRows 5 }
 		{ Hidden False }
-		{ NumVisRows 4 }
+		{ NumVisRows 5 }
 		{ Vsect	{ Appid 97 }
 		{ NumCols 3 }
 		{ Hidden False }
@@ -468,6 +468,17 @@ FillTable UmlClassTable
 					{ Label "min:int, sec:int" }
 					 }
 				{ Cell	{ Appid 709 }
+					
+					{ ObjectCache  } } }
+			{ Row	{ Appid 746 }
+				{ Cell	{ Appid 744 }
+					{ Label "refreshAttemptNum" }
+					{ PropertyList { UmlCxxCodeGenId "228" } }
+					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 28247 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 28233 }  } { Object { PDMType node } { MappingName Operation } { ID 28231 } { GUID "UID_7D706A5C-E0A2-43e4-94C5-EBA974969980" }  } } }
+				{ Cell	{ Appid 753 }
+					{ Label "int" }
+					 }
+				{ Cell	{ Appid 745 }
 					
 					{ ObjectCache  } } } }
 		{ Vsect	{ Appid 98 }
@@ -524,6 +535,19 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 721 }
+					
+					{ ObjectCache  } } }
+			{ Row	{ Appid 747 }
+				{ Cell	{ Appid 754 }
+					
+					{ ObjectCache { Object { PDMType item } { MappingName OperationVisibility } { ID 28248 }  } } }
+				{ Cell	{ Appid 755 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 756 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 757 }
 					
 					{ ObjectCache  } } } }
 		{ Vsect	{ Appid 99 }
@@ -597,6 +621,23 @@ FillTable UmlClassTable
 					{ ObjectCache  } }
 				{ Cell	{ Appid 726 }
 					
+					{ ObjectCache  } } }
+			{ Row	{ Appid 748 }
+				{ ObjectCache { Object { PDMType note } { MappingName OperationCxxDefinition } { ID 28237 }  } }
+				{ Cell	{ Appid 758 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 759 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 760 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 761 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 762 }
+					
 					{ ObjectCache  } } } }
 		{ Vsect	{ Appid 100 }
 		{ NumCols 3 }
@@ -644,6 +685,17 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 729 }
+					
+					{ ObjectCache  } } }
+			{ Row	{ Appid 749 }
+				{ ObjectCache { Object { PDMType note } { MappingName OperationAda95Definition } { ID 28239 }  } }
+				{ Cell	{ Appid 763 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 764 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 765 }
 					
 					{ ObjectCache  } } } }
 		{ Vsect	{ Appid 101 }
@@ -705,6 +757,20 @@ FillTable UmlClassTable
 					{ ObjectCache  } }
 				{ Cell	{ Appid 733 }
 					
+					{ ObjectCache  } } }
+			{ Row	{ Appid 750 }
+				{ ObjectCache { Object { PDMType note } { MappingName OperationJavaDefinition } { ID 28241 }  } }
+				{ Cell	{ Appid 766 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 767 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 768 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 769 }
+					
 					{ ObjectCache  } } } }
 		{ Vsect	{ Appid 102 }
 		{ NumCols 4 }
@@ -764,6 +830,20 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 737 }
+					
+					{ ObjectCache  } } }
+			{ Row	{ Appid 751 }
+				{ ObjectCache { Object { PDMType note } { MappingName OperationIDLDefinition } { ID 28243 }  } }
+				{ Cell	{ Appid 770 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 771 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 772 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 773 }
 					
 					{ ObjectCache  } } } }
 		{ Vsect	{ Appid 103 }
@@ -845,6 +925,25 @@ FillTable UmlClassTable
 					
 					{ ObjectCache  } }
 				{ Cell	{ Appid 743 }
+					 } }
+			{ Row	{ Appid 752 }
+				{ ObjectCache { Object { PDMType note } { MappingName OperationCsharpImplementation } { ID 28245 }  } }
+				{ Cell	{ Appid 774 }
+					
+					{ ObjectCache { Object { PDMType item } { MappingName UmlCsharpOperationVisibility } { ID 28249 }  } } }
+				{ Cell	{ Appid 775 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 776 }
+					
+					{ ObjectCache { Object { PDMType item } { MappingName UmlCsharpOperationStatic } { ID 28250 }  } } }
+				{ Cell	{ Appid 777 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 778 }
+					
+					{ ObjectCache  } }
+				{ Cell	{ Appid 779 }
 					 } } } }
 	{ Hsect	{ Appid 104 }
 		{ NumRows 1 }

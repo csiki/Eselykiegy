@@ -33,4 +33,10 @@ public interface CrateInterface {
 	 * @return size
 	 */
 	public int getSize();
+	
+	/**
+	 * Loop over the beverages to see if there's any.
+	 * @return whether the sumvol>0
+	 */
+	public boolean gotAnyAlcohol();
 }

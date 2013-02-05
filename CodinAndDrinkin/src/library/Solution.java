@@ -5,7 +5,7 @@ package library;
  * @author csiki
  *
  */
-public class Solution {
+public class Solution implements SolutionInterface {
 	
 	private SolutionOutcome sout = SolutionOutcome.Unvalidated;
 	/**
@@ -17,9 +17,9 @@ public class Solution {
 	 */
 	private long runtime = 0;
 	/**
-	 * number of evaluating invalid solutions
+	 * number of evaluating solutions
 	 */
-	private int mistakes = 0;
+	private int attempts = 0;
 	private String code;
 	private Task task;
 	private Compiler compiler;
@@ -29,10 +29,11 @@ public class Solution {
 	}
 	
 	/**
-	 * Validates itself according to code, using compiler. Updates mistakes, runtime, duration and sout (returns with the last).
-	 * @return SolutionOutcome: outcome of the validation
+	 * Validates itself according to code, using compiler. Updates attempts, runtime, duration, code, compiler and sout.
+	 * If the solution has any error, and the number of attempts reached the max allowed, it returns SolutionOutcome.OutOfAttemp whatever.
+	 * @return outcome of the validation
 	 */
-	public SolutionOutcome validator(Compiler compiler, String code) { // TODO
+	public SolutionOutcome validator(Compiler compiler, String code, long timeElapsed) { // TODO
 		SolutionOutcome retVal = null;
 		return retVal;
 	}
@@ -59,5 +60,57 @@ public class Solution {
 	 */
 	public Task getTask() {
 		return this.task;
+	}
+	
+	/**
+	 * Get this.sout.
+	 * @return the current classification of the solution
+	 */
+	public SolutionOutcome getSout() {
+		return this.sout;
+	}
+	
+	/**
+	 * Called by Game when allowedTime elapses.
+	 */
+	public void outOfTime() {
+		this.sout = SolutionOutcome.OutOfTime;
+		this.duration = this.task.timeAllowed;
+		this.runtime = 0;
+	}
+	
+	/**
+	 * Called by Game if player gives up.
+	 * @param timeElapsed in millisecs
+	 */
+	public void giveUp(long timeElapsed) {
+		this.sout = SolutionOutcome.GivenUp;
+		this.duration = timeElapsed;
+		this.runtime = 0;
+	}
+	
+	
+	/*
+	 * Implemented methods from interface GameLogic:
+	 */
+
+	@Override
+	public boolean isSolved() {
+		return this.sout == SolutionOutcome.Solved;
+	}
+
+	@Override
+	public long getTimeUsed() {
+		return this.duration;
+	}
+
+	@Override
+	public int getAttemptNum() {
+		return this.attempts;
+	}
+
+	@Override
+	public String getLang() {
+		return this.compiler.toString();
 	}
 }

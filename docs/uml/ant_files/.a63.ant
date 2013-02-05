@@ -22,3 +22,27 @@ NodeObject 	24523
  { SequenceId 	24515}
  { Gocha 	0 }
 }
+NodeObject 	28215
+{
+ { Name 	"Solution"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	106}
+ { GUID 	"UID_5C9691A9-8B65-4783-9194-2870CC579C16"}
+ { SequenceId 	28178}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	28216
+{
+ { Name 	"validator"}
+ { Type 	UmlOperation}
+ { Sig 	"Compiler, String, long"}
+ { ScopeNodeId 	106}
+ { ObjectId 	2731}
+ { GUID 	"UID_B2EAEEFB-1FDD-46cc-B12D-2E0904B00727"}
+ { SequenceId 	28178}
+ { Gocha 	0 }
+}

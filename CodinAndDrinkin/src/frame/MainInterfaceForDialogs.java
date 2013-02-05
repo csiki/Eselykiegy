@@ -1,5 +1,7 @@
 package frame;
 
+import java.io.File;
+
 /**
  * MainFrame realizes, dialogs uses.
  * @author csiki
@@ -28,4 +30,10 @@ public interface MainInterfaceForDialogs {
 	 * AddBevDialog uses, when the OK button pressed.
 	 */
 	public void addBevDialogReady();
+	
+	/**
+	 * Called after FileChooserFrame returns with a valid File.
+	 * @param taskFile
+	 */
+	public void loadTask(File taskFile);
 }
