@@ -1,5 +1,7 @@
 package library;
 
+import java.io.File;
+
 /**
  * Storing one solution's data and a reference to a Task. Able to validate itself.
  * @author csiki
@@ -33,26 +35,50 @@ public class Solution implements SolutionInterface {
 	 * If the solution has any error, and the number of attempts reached the max allowed, it returns SolutionOutcome.OutOfAttemp whatever.
 	 * @return outcome of the validation
 	 */
-	public SolutionOutcome validator(Compiler compiler, String code, long timeElapsed) { // TODO
-		SolutionOutcome retVal = null;
-		return retVal;
-	}
-	
-	/**
-	 * Update code.
-	 * @param code programming code
-	 */
-	public void setCode(String code) {
+	public SolutionOutcome validator(Compiler compiler, String code, long timeElapsed) {
+		this.attempts++;
+		this.duration = timeElapsed;
 		this.code = code;
+		this.compiler = compiler;
+		this.runtime = 0;
+		
+		if (timeElapsed > this.task.timeAllowed) {
+			this.sout = SolutionOutcome.OutOfTime;
+			return SolutionOutcome.OutOfTime;
+		}
+		
+		if (this.attempts > this.task.attemptsAllowed) {
+			this.sout = SolutionOutcome.OutOfAttemp;
+			return SolutionOutcome.OutOfAttemp;
+		}
+		
+		/// compiling
+		Boolean error = new Boolean(Boolean.FALSE);
+		File compiledFile = compiler.compile(code, error);
+		
+		if (error) {
+			this.sout = SolutionOutcome.CompileTimeError;
+			return SolutionOutcome.CompileTimeError;
+		}
+		
+		/// running
+		String output = new String("");
+		this.runtime = compiler.run(compiledFile, this.task.inputs, output, error);
+		
+		if (error) {
+			this.sout = SolutionOutcome.RuntimeError;
+			return SolutionOutcome.RuntimeError;
+		}
+		
+		/// validating output
+		if (!this.task.validOutput.equals(output)) {
+			this.sout = SolutionOutcome.InvalidOutput;
+			return SolutionOutcome.InvalidOutput;
+		}
+		
+		return SolutionOutcome.Solved;
 	}
 	
-	/**
-	 * Update compiler.
-	 * @param cmp
-	 */
-	public void setCompiler(Compiler compiler) {
-		this.compiler = compiler;
-	}
 	
 	/**
 	 * Returns with task. Uses Game.isPassed(int).

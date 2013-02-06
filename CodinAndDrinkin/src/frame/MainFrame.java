@@ -34,12 +34,12 @@ import javax.swing.JEditorPane;
 import java.awt.BorderLayout;
 import java.awt.SystemColor;
 import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import javax.swing.UIManager;
 import javax.swing.ScrollPaneConstants;
 
+import library.CompilerInterface;
 import library.CrateInterface;
 import library.GameLogic;
 import library.Sex;
@@ -51,10 +51,11 @@ import library.UserInterface;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import javax.swing.Action;
+import java.awt.event.ActionListener;
 
 public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialogs, MainInterfaceForBeverageList {
 
@@ -101,10 +102,10 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	private final Action exitAction = new ExitAction(frmCodindrinkin);
 	private final Action addBevAction = new AddBevAction(this);
 	private final Action loadTaskAction = new LoadTaskAction(this);
+	private final Action giveUpAction = new GiveUpAction(this);
+	private final Action evaluateAction = new EvaluateAction(this);
 
-	/**
-	 * Create the application.
-	 */
+
 	public MainFrame(GameLogic game) {
 		this.game = game;
 	}
@@ -121,62 +122,78 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	 * Methods run at state switch
 	 */
 	private void toStateOutOfBeverage() {
-		// TODO message ablak
 		/// enable/disable items
-		mntmAddBeverage.setEnabled(true);
-		mntmNewGame.setEnabled(false);
-		mntmLoadNewTask.setEnabled(false);
-		mntmEndCurrentTask.setEnabled(false);
-		langChoose.setEnabled(false);
-		code.setEnabled(false);
-		btnGiveup.setEnabled(false);
-		btnSend.setEnabled(false);
-		
+		this.mntmAddBeverage.setEnabled(true);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(false);
+		this.mntmEndCurrentTask.setEnabled(false);
+		this.langChoose.setEnabled(false);
+		this.code.setEnabled(false);
+		this.btnGiveup.setEnabled(false);
+		this.btnSend.setEnabled(false);
 		this.bevList.setDrinkBtnEnabled(false);
+		
+		/// message
+		JOptionPane.showMessageDialog(null, "You are out of alcohol! I pity you. (Beverage/Add beverage)");
 	}
 	
 	private void toStateAbleToLoadTask() {
-		// TODO message ablak
 		/// enable/disable items
-		mntmAddBeverage.setEnabled(true);
-		mntmNewGame.setEnabled(false);
-		mntmLoadNewTask.setEnabled(true);
-		mntmEndCurrentTask.setEnabled(false);
-		langChoose.setEnabled(false);
-		code.setEnabled(false);
-		btnGiveup.setEnabled(false);
-		btnSend.setEnabled(false);
-		
+		this.mntmAddBeverage.setEnabled(true);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(true);
+		this.mntmEndCurrentTask.setEnabled(false);
+		this.langChoose.setEnabled(false);
+		this.code.setEnabled(false);
+		this.btnGiveup.setEnabled(false);
+		this.btnSend.setEnabled(false);
 		this.bevList.setDrinkBtnEnabled(false);
+		
+		/// message
+		JOptionPane.showMessageDialog(null, "You have enough alcohol to load tasks! (Task/Load a task)");
 	}
 	
 	private void toStateTaskStarted() {
-		// TODO
 		/// enable/disable items
-		mntmAddBeverage.setEnabled(true);
-		mntmNewGame.setEnabled(false);
-		mntmLoadNewTask.setEnabled(false);
-		mntmEndCurrentTask.setEnabled(true);
-		langChoose.setEnabled(true);
-		code.setEnabled(true);
-		btnGiveup.setEnabled(true);
-		btnSend.setEnabled(true);
-		
+		this.mntmAddBeverage.setEnabled(true);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(false);
+		this.mntmEndCurrentTask.setEnabled(true);
+		this.langChoose.setEnabled(true);
+		this.code.setEnabled(true);
+		this.btnGiveup.setEnabled(true);
+		this.btnSend.setEnabled(true);
 		this.bevList.setDrinkBtnEnabled(false);
+		
+		/// message
+		JOptionPane.showMessageDialog(null, "A task has been loaded! Have fun!");
 	}
 	
 	private void toStateMustDrink() {
-		// TODO message ablak
-		mntmAddBeverage.setEnabled(true);
-		mntmNewGame.setEnabled(false);
-		mntmLoadNewTask.setEnabled(false);
-		mntmEndCurrentTask.setEnabled(false);
-		langChoose.setEnabled(false);
-		code.setEnabled(false);
-		btnGiveup.setEnabled(false);
-		btnSend.setEnabled(false);
-		
+		this.mntmAddBeverage.setEnabled(true);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(false);
+		this.mntmEndCurrentTask.setEnabled(false);
+		this.langChoose.setEnabled(false);
+		this.code.setEnabled(false);
+		this.btnGiveup.setEnabled(false);
+		this.btnSend.setEnabled(false);
 		this.bevList.setDrinkBtnEnabled(true);
+		
+		/// message
+		JOptionPane.showMessageDialog(null, "It seems you have to drink some! Choose one of your beverage! (Right side/Beverages - Drink button)");
+	}
+	
+	private void toStateTaskContinues() {
+		this.mntmAddBeverage.setEnabled(true);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(false);
+		this.mntmEndCurrentTask.setEnabled(true);
+		this.langChoose.setEnabled(true);
+		this.code.setEnabled(true);
+		this.btnGiveup.setEnabled(true);
+		this.btnSend.setEnabled(true);
+		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
 	
@@ -238,8 +255,13 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.solutionsSent.setText(Integer.toString(num));		
 	}
 	
+	@Override
+	public void addCompilerToComboBox(String cname) {
+		this.langChoose.addItem(cname);
+	}
+	
 	/*
-	 * Implemented methods from interface InterfaceForDialogs
+	 * Implemented methods from interface MainInterfaceForDialogs
 	 */
 	
 	@Override
@@ -301,15 +323,32 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	@Override
 	public void loadTask(File taskFile) {
 		TaskValidationOutcome tvo = this.game.loadTask(taskFile);
+		String msg = null;
 		
-		if (tvo == TaskValidationOutcome.NoFileFound) {
-			// TODO message
-		} else if (tvo == TaskValidationOutcome.NotEnoughAlcohol) {
-			// TODO message
-		} else if (tvo == TaskValidationOutcome.PreTaskNotSolved) {
-			// TODO message
-		}
-		// if valid Game calls UserInterface.taskStarted()
+		if (tvo == TaskValidationOutcome.NoFileFound)
+			msg = "Error: No such file found!";
+		else if (tvo == TaskValidationOutcome.NotEnoughAlcohol)
+			msg = "Error: Not enough alcohol volume to start that task! Pour/add a new beverage!";
+		else if (tvo == TaskValidationOutcome.PreTaskNotSolved)
+			msg = "Error: Previous required task has not been solved yet!";
+		
+		if (tvo.code != 0) // error
+			JOptionPane.showMessageDialog(null, msg);
+	}
+	
+	@Override
+	public void giveUp() {
+		this.game.giveUp();
+		
+		if (this.crate.gotAnyAlcohol())
+			toStateAbleToLoadTask();
+		else
+			toStateOutOfBeverage();
+	}
+	
+	@Override
+	public void evaluateSolution() {
+		this.game.evaluateSolution(this.langChoose.getSelectedIndex(), this.code.getText());
 	}
 	
 	
@@ -319,6 +358,15 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	
 	@Override
 	public void bevDrink(int bevID) {
+		if (this.game.isAnyTaskLoaded())
+			this.toStateTaskContinues();
+		else if (!this.crate.gotAnyAlcohol())
+			this.toStateOutOfBeverage();
+		else
+			this.toStateAbleToLoadTask();
+		
+		// TODO állapotokkal lehetnek gebaszok, nem csak itt !
+		
 		float howMuchToDrink = game.bevToDrink(bevID);
 
 		String msg = "Drink " + howMuchToDrink + " dl of your " + crate.getBevName(bevID) + "!";
@@ -336,6 +384,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		
 		this.game.bevToPour(bevID, Float.parseFloat(amount));
 		this.bevList.bevVolChanged(bevID);
+		
+		if (this.game.isAnyTaskLoaded())
+			this.toStateTaskContinues();
+		else
+			this.toStateAbleToLoadTask();
 	}
 
 	/**
@@ -381,6 +434,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		mnTask.add(mntmLoadNewTask);
 		
 		mntmEndCurrentTask = new JMenuItem("Ends current task");
+		mntmEndCurrentTask.setAction(giveUpAction);
 		mntmEndCurrentTask.setEnabled(false);
 		mnTask.add(mntmEndCurrentTask);
 		
@@ -790,10 +844,15 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		langChoose = new JComboBox();
 		langChoose.setEnabled(false);
 		langChoose.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		langChoose.setModel(new DefaultComboBoxModel(new String[] {"C", "C++", "Java"}));
+		langChoose.setModel(new DefaultComboBoxModel());
 		langChoose.setMinimumSize(new Dimension(200, 10));
 		langChoose.setPreferredSize(new Dimension(80, 10));
 		panel_3.add(langChoose, "4, 2, fill, fill");
+		
+		/// here fill langChoose with compilers
+		List<CompilerInterface> clist = this.game.getCompilers();
+		for (CompilerInterface ci : clist)
+			langChoose.addItem(ci.getName());
 		
 		code = new JEditorPane();
 		code.setEnabled(false);
@@ -838,11 +897,13 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 				FormFactory.DEFAULT_ROWSPEC,}));
 		
 		btnGiveup = new JButton("GiveUp");
+		btnGiveup.setAction(this.giveUpAction);
 		btnGiveup.setEnabled(false);
 		btnGiveup.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_4.add(btnGiveup, "10, 2");
 		
 		btnSend = new JButton("Evaluate");
+		btnSend.setAction(evaluateAction);
 		btnSend.setEnabled(false);
 		btnSend.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_4.add(btnSend, "12, 2, right, default");
@@ -904,6 +965,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 			main.setNewGameDialog(ngd);
 		}
 	}
+	
 	private class ExitAction extends AbstractAction {
 		private static final long serialVersionUID = -1678701054654365490L;
 		
@@ -919,6 +981,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 			this.frame.dispose();
 		}
 	}
+	
 	private class AddBevAction extends AbstractAction {
 		private static final long serialVersionUID = 8189324588774534630L;
 		
@@ -938,6 +1001,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 			main.setAddBevDialog(abd);
 		}
 	}
+	
 	private class LoadTaskAction extends AbstractAction {
 
 		private static final long serialVersionUID = -525579174058082691L;
@@ -947,8 +1011,8 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		public LoadTaskAction(MainInterfaceForDialogs main) {
 			this.main = main;
 			
-			putValue(NAME, "SwingAction");
-			putValue(SHORT_DESCRIPTION, "Some short description");
+			putValue(NAME, "Load a task");
+			putValue(SHORT_DESCRIPTION, "Search for a task on your machine");
 		}
 		
 		public void actionPerformed(ActionEvent e) {
@@ -961,6 +1025,42 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 					fcf.setSavedPath(selectedFile);
 				}
 			}
+		}
+	}
+	
+	private class GiveUpAction extends AbstractAction { // TODO lehet nem mûködik, MouseAdapter kell
+		
+		private static final long serialVersionUID = 5131608867029857409L;
+		
+		MainInterfaceForDialogs main;
+		
+		public GiveUpAction(MainInterfaceForDialogs main) {
+			this.main = main;
+			
+			putValue(NAME, "Give up");
+			putValue(SHORT_DESCRIPTION, "Ends the current task");
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			this.main.giveUp();
+		}
+	}
+	
+	private class EvaluateAction extends AbstractAction { // TODO lehet nem mûködik, MouseAdapter kell
+		
+		private static final long serialVersionUID = -2100265375462952149L;
+		
+		MainInterfaceForDialogs main;
+		
+		public EvaluateAction(MainInterfaceForDialogs main) {
+			this.main = main;
+			
+			putValue(NAME, "Evaluate");
+			putValue(SHORT_DESCRIPTION, "Validate the solution");
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			main.evaluateSolution();
 		}
 	}
 }

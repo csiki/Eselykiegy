@@ -435,24 +435,24 @@ FillTable UmlClassTable
 					{ PropertyList { UmlCxxCodeGenId "14" } }
 					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 1805 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 1791 }  } { Object { PDMType node } { MappingName Operation } { ID 1789 } { GUID "UID_0D72E72C-D766-4191-B7D4-C5C98FB07E49" }  } } }
 				{ Cell	{ Appid 2057 }
-					{ Label "fileName:String, error:Boolean" }
+					{ Label "code:String, error:Boolean" }
 					 }
 				{ Cell	{ Appid 2049 }
-					{ Label "String" }
+					{ Label "File" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 1816 }  } } } }
+					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 29248 }  } } } }
 			{ Row	{ Appid 1652 }
 				{ Cell	{ Appid 1659 }
 					{ Label "run" }
 					{ PropertyList { UmlCxxCodeGenId "13" } }
 					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 1695 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 1681 }  } { Object { PDMType node } { MappingName Operation } { ID 1679 } { GUID "UID_277821AD-6267-490e-9EB0-E8C53648FF99" }  } } }
 				{ Cell	{ Appid 1660 }
-					{ Label "fileName:String, inputs:String[], output:String, error:Boolean" }
+					{ Label "compiledFile:File, inputs:String[], output:String, error:Boolean" }
 					 }
 				{ Cell	{ Appid 1661 }
-					{ Label "double" }
+					{ Label "long" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 2046 }  } } } } }
+					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 29258 }  } } } } }
 		{ Vsect	{ Appid 1438 }
 		{ NumCols 4 }
 		{ Hidden False }

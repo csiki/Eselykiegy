@@ -6,11 +6,16 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import compilers.CCompiler;
+import compilers.CppCompiler;
+import compilers.JavaCompiler;
+
 import misc.Stopper;
 import misc.Trigger;
 
 /**
- * Runs the game.
+ * Runs the whole game.
  * @author csiki
  *
  */
@@ -34,8 +39,31 @@ public class Game implements GameLogic, Trigger {
 	 */
 	private Stopper stopper;
 	
+	/**
+	 * used by evaluateSolution() to signal SolutionOutcome.OutOfTime outcome should not happen during evaluation
+	 */
+	private volatile boolean underEvaluation = false;
+	
+	/**
+	 * used by evaluateSolution() and Trigger.shoot() to signal the allowed time elapsed during evaluation
+	 */
+	private volatile boolean outOfTimeDuringEvaluation = false;
+	
+	/**
+	 * used by GameLogic.bloodAlcContent() to determine where the drinking started approximately
+	 * set in Game constructor
+	 * in millisecs
+	 */
+	private long timeGameStarted;
+	
 	
 	public Game() {
+		this.timeGameStarted = System.currentTimeMillis();
+		
+		/// add new compilers here !
+		this.compilers.add(new CCompiler("C"));
+		this.compilers.add(new CppCompiler("C++"));
+		this.compilers.add(new JavaCompiler("Java"));
 	}
 	
 	/**
@@ -105,7 +133,7 @@ public class Game implements GameLogic, Trigger {
 	 */
 	private TaskValidationOutcome taskValidation(Task task) {
 		
-		if (!isPassed(task.priorTaskID))
+		if (!this.isSolved(task.priorTaskID))
 			return TaskValidationOutcome.PreTaskNotSolved;
 		
 		if (task.solvedAlcVol > sumAlcohol())
@@ -128,21 +156,6 @@ public class Game implements GameLogic, Trigger {
 	}
 	
 	/**
-	 * Calculate the blood volume of the player according to http://easycalculation.com/medical/blood-volume.php.
-	 * @param sex
-	 * @param height in cm
-	 * @param weight in kg
-	 * @return blood volume
-	 */
-	private float calculateBloodVol(Sex sex, int height, int weight) {
-		float heightInM3 = (float) Math.pow((((float)height)/100), 3);
-		if (sex == Sex.Male)
-			return (float) (0.3669 * heightInM3 + 0.03219 * ((float)weight) + 0.6041);
-		else
-			return (float) (0.3561 * heightInM3 + 0.03308 * ((float)weight) + 0.1833);
-	}
-	
-	/**
 	 * Calculates how much of the given beverage should be consumed, considering alcVol alcohol volume.
 	 * @param bevID as in crate
 	 * @param alcLeft in dl, reference, set in method; >0 if volume of the beverage was not enough
@@ -162,19 +175,19 @@ public class Game implements GameLogic, Trigger {
 	
 	/**
 	 * Check if the Task, given by the taskID, has been solved or not (returns true, whether the solution was valid or not).
-	 * If the loaded task has been solved already, returns false.
+	 * If taskID == 0, no pretask required.
 	 * @param taskID
 	 * @return
 	 */
-	private boolean isPassed(int taskID) {
+	private boolean isSolved(int taskID) {
 		boolean pretaskSolved = false;
 		
-		for (Solution s : solutions) {
+		if (taskID == 0) // no pretask required
+			return true;
+		
+		for (Solution s : solutions)
 			if (s.getTask().id == taskID)
 				pretaskSolved = true;
-			if (s.getTask().id == taskID)
-				return false;
-		}
 		
 		return pretaskSolved;
 	}
@@ -197,12 +210,12 @@ public class Game implements GameLogic, Trigger {
 	
 	
 	/*
-	 * Implemented methods from interface GameLogic:
+	 * Implemented methods from interface GameLogic
 	 */
 	
 	@Override
 	public CrateInterface savePlayer(String name, Sex sex, int height, int weight) {
-		this.player = new Player(name, sex, height, weight, calculateBloodVol(sex, height, weight));
+		this.player = new Player(name, sex, height, weight);
 		
 		return player.getCrate();
 	}
@@ -221,7 +234,7 @@ public class Game implements GameLogic, Trigger {
 		if (task == null)
 			return TaskValidationOutcome.NoFileFound;
 		
-		tvout = taskValidation(task);
+		tvout = taskValidation(task); // at the end returns with it if not valid
 		
 		if (tvout == TaskValidationOutcome.ValidLoad) {
 
@@ -245,10 +258,12 @@ public class Game implements GameLogic, Trigger {
 	
 	@Override
 	public SolutionOutcome evaluateSolution(int compilerID, String code) {
+		
+		this.underEvaluation = true;
 		Solution solution = this.solutions.get(this.solutions.size() - 1);
 		
 		SolutionOutcome sout = solution.validator(this.compilers.get(compilerID), code, this.stopper.showTimeElapsed());
-		// TODO its not atomic, what if allowedTime elapse while evaluating?
+		this.underEvaluation = false;
 		
 		/// refresh number of attempts on GUI
 		this.ui.refreshAttemptNum(solution.getAttemptNum());
@@ -261,7 +276,8 @@ public class Game implements GameLogic, Trigger {
 			ui.chooseBev(this.alcToDrink);
 		
 		/// if task ended
-		if (sout == SolutionOutcome.Solved || sout == SolutionOutcome.OutOfAttemp) {
+		if (sout == SolutionOutcome.Solved || sout == SolutionOutcome.OutOfAttemp || this.outOfTimeDuringEvaluation) {
+			this.outOfTimeDuringEvaluation = false;
 			this.stopper.surrender();
 			this.currentTask = null; // sign, that there's no task to solve at the moment
 			this.ui.endTask(solution);
@@ -341,12 +357,31 @@ public class Game implements GameLogic, Trigger {
 	
 	@Override
 	public float bloodAlcContent() {
-		// TODO rendes kidolgozása
-		return 0.0F;
+		float alcConsumedInOz = this.player.getConsumedAlc() * 3.38140227F;
+		float weightInPounds = this.player.getWeight() * 2.20462262F;
+		float timeInHour = (float) ( ((double) (System.currentTimeMillis() - this.timeGameStarted)) / 3600000 );
+		
+		float alcDistributionRatio;
+		if (player.getSex() == Sex.Male)
+			alcDistributionRatio = 0.73F;
+		else
+			alcDistributionRatio = 0.66F;
+		
+		return (float) ((alcConsumedInOz * (0.823 * 100 / 16) / weightInPounds * alcDistributionRatio) - 0.015F * timeInHour);
+	}
+	
+	@Override
+	public List<CompilerInterface> getCompilers() {
+		List<CompilerInterface> clist = new ArrayList<CompilerInterface>();
+		
+		for (Compiler c : this.compilers)
+			clist.add(c);
+		
+		return clist;
 	}
 	
 	/*
-	 * Implemented method from interface Trigger:
+	 * Implemented method from interface Trigger
 	 */
 	
 	@Override
@@ -360,6 +395,12 @@ public class Game implements GameLogic, Trigger {
 	
 	@Override
 	public void shoot() {
+		
+		if (this.underEvaluation) { // OutOfTime occurs during evaluation; evaluateSolution() ends task later
+			this.outOfTimeDuringEvaluation = true;
+			return;
+		}
+		
 		Solution solution = this.solutions.get(this.solutions.size() - 1);
 		
 		solution.outOfTime();

@@ -24,7 +24,16 @@ NoteObject 2
     { ObjectId 28263 }
 }
 
-NoteObject 3
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "interface" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 29097 }
+}
+
+NoteObject 4
 {
     { Type GenericObject }
     { Name "" }
@@ -32,12 +41,12 @@ NoteObject 3
     { ObjectId 28265 }
 }
 
-ItemObject 4
+ItemObject 5
 {
     { Type ObjectName }
     { Value "SolutionInterface" }
     { GuidRef "" }
-    { NoteId 3 }
+    { NoteId 4 }
     { ObjectId 28266 }
 }
 

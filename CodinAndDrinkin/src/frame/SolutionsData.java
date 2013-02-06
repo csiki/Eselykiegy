@@ -27,7 +27,6 @@ public class SolutionsData extends AbstractTableModel {
 
 	@Override
 	public int getRowCount() {
-		// TODO Auto-generated method stub
 		return this.solutions.size();
 	}
 	

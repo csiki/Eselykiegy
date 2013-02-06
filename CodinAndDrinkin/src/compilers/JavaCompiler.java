@@ -1,5 +1,7 @@
 package compilers;
 
+import java.io.File;
+
 import library.Compiler;
 
 /**
@@ -7,19 +9,30 @@ import library.Compiler;
  * @author csiki
  *
  */
-public class JavaCompiler extends Compiler {
+public final class JavaCompiler extends Compiler {
+
+	public JavaCompiler(String name) {
+		super(name);
+	}
+
 
 	@Override
-	public String compile(String fileName, Boolean error) {
+	public File compile(String code, Boolean error) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public double run(String fileName, String[] inputs, String output,
+	public long run(File compiledFile, String[] inputs, String output,
 			Boolean error) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+	
+	
+	@Override
+	public String getName() {
+		return this.langName;
 	}
 
 }

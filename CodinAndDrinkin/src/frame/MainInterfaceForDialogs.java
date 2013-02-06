@@ -36,4 +36,14 @@ public interface MainInterfaceForDialogs {
 	 * @param taskFile
 	 */
 	public void loadTask(File taskFile);
+	
+	/**
+	 * Called when GiveUp button or Task/End task clicked.
+	 */
+	public void giveUp();
+	
+	/**
+	 * Called when Evaluate button pressed
+	 */
+	public void evaluateSolution();
 }

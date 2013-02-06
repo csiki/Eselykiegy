@@ -20,19 +20,14 @@ public class Player {
 	/**
 	 * in dl
 	 */
-	private final float bloodVol;
-	/**
-	 * in dl
-	 */
 	private float consumedAlc = 0.0F;
 	private Crate crate;
 
-	Player(String name, Sex sex, int height, int weight, float bloodVol) {
+	Player(String name, Sex sex, int height, int weight) {
 		this.name = name;
 		this.sex = sex;
 		this.height = height;
 		this.weight = weight;
-		this.bloodVol = bloodVol;
 		
 		this.crate = new Crate();
 	}
@@ -47,7 +42,6 @@ public class Player {
 		try {
 			crate.get(bevID).consume(vol);
 		} catch (NotEnoughAlcoholException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

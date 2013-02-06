@@ -36,4 +36,10 @@ public interface UserInterface {
 	 * @param num
 	 */
 	public void refreshAttemptNum(int num);
+	
+	/**
+	 * Adds a new element to MainFrame.langChoose.
+	 * @param cname name of the compiler language
+	 */
+	public void addCompilerToComboBox(String cname);
 }

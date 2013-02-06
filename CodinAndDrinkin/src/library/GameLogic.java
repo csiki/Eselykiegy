@@ -1,6 +1,7 @@
 package library;
 
 import java.io.File;
+import java.util.List;
 
 /**
  * Interface for functionalities UserInterface uses, Game realizes.
@@ -87,8 +88,14 @@ public interface GameLogic {
 	public float consumedAlcohol();
 	
 	/**
-	 * Returns with blood alcohol content.
+	 * Returns with blood alcohol content. Uses Widmark's Basic Formula.
 	 * @return in thousandth
 	 */
 	public float bloodAlcContent();
+	
+	/**
+	 * Returns a lists of loaded compilers, to fill combobox.
+	 * @return
+	 */
+	public List<CompilerInterface> getCompilers();
 }

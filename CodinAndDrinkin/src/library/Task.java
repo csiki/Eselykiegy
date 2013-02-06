@@ -22,7 +22,7 @@ public class Task implements Serializable {
 	/**
 	 * in order, to input during the run of the (solution) program
 	 */
-	public final List<String> inputs;
+	public final String[] inputs;
 	/**
 	 * expected output of the (solution) program
 	 */
@@ -48,7 +48,7 @@ public class Task implements Serializable {
 			int id,
 			int priorTaskID,
 			String description,
-			List<String> inputs,
+			String[] inputs,
 			String validOutput,
 			float mistakeAlcVol,
 			float solvedAlcVol,

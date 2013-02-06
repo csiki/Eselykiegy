@@ -1,0 +1,43 @@
+FileObject 1
+{
+    { Name "a383" }
+    { Type ObjectAnnotation }
+    { GUID "UID_260CDC70-1316-4eda-B78F-6CAA769CF8C3" }
+}
+
+NodeObject 99999
+{
+    { Name "CompilerInterface" }
+    { Type UmlClass }
+    { ObjectId 29100 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_46BC6A65-8C14-4964-BF3C-18129943D236" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 29107 }
+}
+
+NoteObject 3
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99999 }
+    { ObjectId 29109 }
+}
+
+ItemObject 4
+{
+    { Type ObjectName }
+    { Value "CompilerInterface" }
+    { GuidRef "" }
+    { NoteId 3 }
+    { ObjectId 29110 }
+}
+
