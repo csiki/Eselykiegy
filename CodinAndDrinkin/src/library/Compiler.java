@@ -1,6 +1,7 @@
 package library;
 
 import java.io.File;
+import java.util.List;
 
 
 /**
@@ -32,7 +33,7 @@ public abstract class Compiler implements CompilerInterface {
 	 * @param error reference to a boolean, it is set inside the method, if there was any errors during running
 	 * @return runtime, if error occurs 0
 	 */
-	abstract public long run(File compiledFile, String[] inputs, String output, Boolean error);
+	abstract public long run(File compiledFile, List<String> inputs, String output, Boolean error);
 	
 	@Override
 	public final String toString() {

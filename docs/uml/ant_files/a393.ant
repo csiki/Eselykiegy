@@ -1,0 +1,73 @@
+FileObject 1
+{
+    { Name "a393" }
+    { Type ObjectAnnotation }
+    { GUID "UID_CCE4760D-9150-4589-BAD2-C2AB219ADE52" }
+}
+
+NodeObject 99999
+{
+    { Name "Task" }
+    { Type UmlClass }
+    { ObjectId 107 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_A427BCD5-9C21-4904-92C9-B2FE61B73014" }
+}
+
+NodeObject 99998
+{
+    { Name "TaskGenerator" }
+    { Type UmlPackage }
+    { ObjectId 29405 }
+    { Sig "" }
+    { ScopeNodeId 0 }
+    { GUID "UID_5D2F29DA-415D-4209-A613-D17F6C8EABD6" }
+}
+
+LinkObject 99997
+{
+    { Name "" }
+    { Type UmlDependency }
+    { ObjectId 29406 }
+    { AnnotFileId 1 }
+    { Sig "" }
+    { ToNodeId 99999 }
+    { FromNodeId 99998 }
+    { GUID "UID_9F214C13-C71C-413c-847F-8ACB591FA306" }
+}
+
+NoteObject 2
+{
+    { Type UmlExtensibilityDefinition }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 29411 }
+}
+
+ItemObject 3
+{
+    { Type UmlStereotype }
+    { Value "uses" }
+    { GuidRef "" }
+    { NoteId 2 }
+    { ObjectId 29418 }
+}
+
+NoteObject 4
+{
+    { Type GenericObject }
+    { Name "" }
+    { OwnerId 99997 }
+    { ObjectId 29413 }
+}
+
+ItemObject 5
+{
+    { Type ObjectName }
+    { Value "" }
+    { GuidRef "" }
+    { NoteId 4 }
+    { ObjectId 29414 }
+}
+

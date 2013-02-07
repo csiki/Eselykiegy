@@ -752,8 +752,14 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 				FormFactory.RELATED_GAP_COLSPEC,
 				FormFactory.DEFAULT_COLSPEC,
 				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
 				FormFactory.DEFAULT_COLSPEC,},
 			new RowSpec[] {
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,
 				FormFactory.RELATED_GAP_ROWSPEC,
@@ -792,6 +798,12 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		JLabel lblDl_1 = new JLabel("dl");
 		lblDl_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		panel_11.add(lblDl_1, "6, 6");
+		
+		JLabel lblCsikicoderteam = new JLabel("csiki@coderteam");
+		lblCsikicoderteam.setPreferredSize(new Dimension(80, 30));
+		lblCsikicoderteam.setForeground(Color.GRAY);
+		lblCsikicoderteam.setFont(new Font("Tahoma", Font.ITALIC, 9));
+		panel_11.add(lblCsikicoderteam, "2, 8, 9, 1, right, bottom");
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
 		scrollPane_2.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);

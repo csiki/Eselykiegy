@@ -1,6 +1,7 @@
 package compilers;
 
 import java.io.File;
+import java.util.List;
 
 import library.Compiler;
 
@@ -23,7 +24,7 @@ public final class JavaCompiler extends Compiler {
 	}
 
 	@Override
-	public long run(File compiledFile, String[] inputs, String output,
+	public long run(File compiledFile, List<String> inputs, String output,
 			Boolean error) {
 		// TODO Auto-generated method stub
 		return 0;

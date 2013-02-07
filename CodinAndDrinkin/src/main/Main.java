@@ -10,7 +10,7 @@ import frame.MainFrame;
 public class Main {
 	public static void main(String[] args) {
 		
-		/// initiate Game
+		/// initialise Game
 		Game game = new Game();
 		
 		/// launch the main window
