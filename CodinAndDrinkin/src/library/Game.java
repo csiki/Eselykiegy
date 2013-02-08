@@ -160,20 +160,22 @@ public class Game implements GameLogic, Trigger {
 	
 	/**
 	 * Calculates how much of the given beverage should be consumed, considering alcVol alcohol volume.
+	 * Sets this.accToDrink!
 	 * @param bevID as in crate
-	 * @param alcLeft in dl, reference, set in method; >0 if volume of the beverage was not enough
 	 * @return volume of the beverage should be consumed
 	 */
-	private float calculateBevConsumeVol(int bevID, Float alcLeft) {
-		alcLeft = 0.0F;
+	private float calculateBevConsumeVol(int bevID) {
 		float bevAlcVol = crate.getBevVol(bevID) * crate.getBevABV(bevID);
 		
 		if (this.alcToDrink > bevAlcVol) {
-			alcLeft = this.alcToDrink - bevAlcVol;
+			this.alcToDrink = this.alcToDrink - bevAlcVol;
 			return crate.getBevVol(bevID); // drink the whole of it
 		}
 		
-		return this.alcToDrink / crate.getBevABV(bevID);
+		float tempAlcToDrink = this.alcToDrink;
+		this.alcToDrink = 0.0F;
+		
+		return tempAlcToDrink / crate.getBevABV(bevID);
 	}
 	
 	/**
@@ -303,12 +305,12 @@ public class Game implements GameLogic, Trigger {
 	
 	@Override
 	public float bevToDrink(int bevID) {
-		Float alcLeft = 0.0F;
+		float alcToDrinkOrig = this.alcToDrink;
 		
-		float bevToDrink = calculateBevConsumeVol(bevID, alcLeft);
+		float bevToDrink = calculateBevConsumeVol(bevID);
 		
-		this.player.consume(bevID, bevToDrink, this.alcToDrink - alcLeft);
-		this.alcToDrink = alcLeft;
+		this.player.consume(bevID, bevToDrink, alcToDrinkOrig - this.alcToDrink);
+		// this.alcToDrink already set in calculateBevConsumeVol()
 		
 		if (this.alcToDrink > 0) {
 			ui.chooseBev(this.alcToDrink);

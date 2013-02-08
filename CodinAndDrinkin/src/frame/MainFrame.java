@@ -132,7 +132,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(false);
 		
 		/// message
-		JOptionPane.showMessageDialog(null, "You are out of alcohol! I pity you to be honest :/ (Beverage/Add beverage).");
+		JOptionPane.showMessageDialog(null, "You are out of alcohol! :/ (Beverage/Add beverage).");
 	}
 	
 	private void toStateAbleToLoadTask() {
@@ -412,7 +412,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.bevVolChanged(bevID);
 		this.consumedAlc.setText(String.format("%.2f", game.getConsumedAlc()));
 		
-		String msg = "Drink " + howMuchToDrink + " dl of your " + crate.getBevName(bevID) + "! Cin-cin!";
+		String msg = "Drink " + String.format("%.2f", howMuchToDrink) + " dl of your " + crate.getBevName(bevID) + "! Cin-cin!";
 		JOptionPane.showMessageDialog(null, msg);
 	}
 
