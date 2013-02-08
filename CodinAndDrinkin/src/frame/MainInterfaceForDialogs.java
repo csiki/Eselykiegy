@@ -22,7 +22,7 @@ public interface MainInterfaceForDialogs {
 	
 	/**
 	 * Save a reference of AddBevDialog, to ask for it's attributes.
-	 * @param abgd
+	 * @param abd
 	 */
 	public void setAddBevDialog(AddBevDialog abd);
 	

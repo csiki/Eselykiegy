@@ -61,7 +61,7 @@ public class Player {
 	 * Creates a beverage and adds it to the crate.
 	 * @param name
 	 * @param vol in dl
-	 * @param ABV in rate, like 0.4
+	 * @param abv in rate, like 0.4
 	 * @return the id of the added beverage, as in crate
 	 */
 	public int addBev(String name, float vol, float abv) {

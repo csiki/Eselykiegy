@@ -54,7 +54,7 @@ public class Solution implements SolutionInterface {
 		
 		/// compiling
 		Boolean error = new Boolean(Boolean.FALSE);
-		File compiledFile = compiler.compile(code, error);
+		File compiledFile = compiler.compile(this.code, error);
 		
 		if (error) {
 			this.sout = SolutionOutcome.CompileTimeError;
@@ -82,18 +82,10 @@ public class Solution implements SolutionInterface {
 	
 	/**
 	 * Returns with task. Uses Game.isPassed(int).
-	 * @return
+	 * @return task
 	 */
 	public Task getTask() {
 		return this.task;
-	}
-	
-	/**
-	 * Get this.sout.
-	 * @return the current classification of the solution
-	 */
-	public SolutionOutcome getSout() {
-		return this.sout;
 	}
 	
 	/**
@@ -137,6 +129,14 @@ public class Solution implements SolutionInterface {
 
 	@Override
 	public String getLang() {
+		if (this.compiler == null)
+			return "none";
+		
 		return this.compiler.toString();
+	}
+	
+	@Override
+	public SolutionOutcome getSout() {
+		return this.sout;
 	}
 }

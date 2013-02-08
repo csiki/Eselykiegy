@@ -30,4 +30,10 @@ public interface SolutionInterface {
 	 * @return Solution.compiler.toString()
 	 */
 	public String getLang();
+	
+	/**
+	 * Get this.sout.
+	 * @return the current classification of the solution
+	 */
+	public SolutionOutcome getSout();
 }

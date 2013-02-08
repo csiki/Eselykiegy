@@ -14,6 +14,7 @@ public class Generator implements GeneratorInterface {
 	
 	private int taskID;
 	private int taskPriorTaskID;
+	private String taskTitle;
 	private String taskDescription;
 	private List<String> taskInputs;
 	private String taskValidOutput;
@@ -26,6 +27,7 @@ public class Generator implements GeneratorInterface {
 	public void init() {
 		this.taskID = 0;
 		this.taskPriorTaskID = 0;
+		this.taskTitle = "";
 		this.taskDescription = "";
 		this.taskInputs = new ArrayList<String>();
 		this.taskValidOutput = "";
@@ -48,6 +50,7 @@ public class Generator implements GeneratorInterface {
 		Task task = new Task(
 				this.taskID,
 				this.taskPriorTaskID,
+				this.taskTitle,
 				this.taskDescription,
 				this.taskInputs,
 				this.taskValidOutput,
@@ -77,17 +80,20 @@ public class Generator implements GeneratorInterface {
 		Map<String,String> vars = new HashMap<String,String>();
 		String inputs = "";
 		for (String i : this.taskInputs)
-			inputs += i + ";";
+			inputs += i + ",";
+		if (inputs.length() > 0)
+			inputs = inputs.substring(0, inputs.length()-1); // cut last comma
 		
 		vars.put("id", Integer.toString(this.taskID));
 		vars.put("priorTaskID", Integer.toString(this.taskPriorTaskID));
 		vars.put("description", this.taskDescription);
-		vars.put("inputs", inputs);
+		vars.put("title", this.taskTitle);
+		vars.put("inputs[]", "{ " + inputs + " }");
 		vars.put("validOutput", this.taskValidOutput);
-		vars.put("mistakeAlcVol", Float.toString(this.taskMistakeAlcVol));
-		vars.put("solvedAlcVol", Float.toString(this.taskSolvedAlcVol));
+		vars.put("mistakeAlcVol(dl)", Float.toString(this.taskMistakeAlcVol));
+		vars.put("solvedAlcVol(dl)", Float.toString(this.taskSolvedAlcVol));
 		vars.put("attemptsAllowed", Integer.toString(this.taskAttemptsAllowed));
-		vars.put("timeAllowed", Long.toString(this.taskTimeAllowed));
+		vars.put("timeAllowed(1/1000sec)", Long.toString(this.taskTimeAllowed));
 		
 		return vars;
 	}
@@ -108,6 +114,8 @@ public class Generator implements GeneratorInterface {
 
 	@Override
 	public void saveDescription(String description) {
+		description = description.replaceAll("\\\\n", "\n");
+		description = description.replaceAll("\\\\t", "\t");
 		this.taskDescription = description;
 	}
 
@@ -118,6 +126,8 @@ public class Generator implements GeneratorInterface {
 
 	@Override
 	public void saveValidOutput(String output) {
+		output = output.replaceAll("\\\\n", "\n");
+		output = output.replaceAll("\\\\t", "\t");
 		this.taskValidOutput = output;
 	}
 
@@ -139,5 +149,10 @@ public class Generator implements GeneratorInterface {
 	@Override
 	public void saveTimeAllowed(long time) {
 		this.taskTimeAllowed = time;
+	}
+
+	@Override
+	public void saveTitle(String title) {
+		this.taskTitle = title;
 	}
 }

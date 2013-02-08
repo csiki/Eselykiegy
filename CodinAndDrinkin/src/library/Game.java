@@ -40,14 +40,14 @@ public class Game implements GameLogic, Trigger {
 	private Stopper stopper;
 	
 	/**
-	 * used by evaluateSolution() to signal SolutionOutcome.OutOfTime outcome should not happen during evaluation
+	 * used to notice if outOfTime occurs during action
 	 */
-	private volatile boolean underEvaluation = false;
+	private volatile boolean underAction = false;
 	
 	/**
-	 * used by evaluateSolution() and Trigger.shoot() to signal the allowed time elapsed during evaluation
+	 * if outOfTime occurs when underAction is true, set true
 	 */
-	private volatile boolean outOfTimeDuringEvaluation = false;
+	private volatile boolean outOfTimeDuringAction = false;
 	
 	/**
 	 * used by GameLogic.bloodAlcContent() to determine where the drinking started approximately
@@ -69,14 +69,14 @@ public class Game implements GameLogic, Trigger {
 	/**
 	 * Calculates the volume of alcohol, that should be drunk, according to currentTask and sout.
 	 * @param sout
-	 * @return alcohol volume
+	 * @return alcohol volume, in dl
 	 */
 	private float calculateAlcComsumeVol(SolutionOutcome sout) {
 		if (sout == SolutionOutcome.Solved)
-			return this.currentTask.solvedAlcVol;
+			return this.currentTask.solvedAlcVol / 10; // from cl to dl
 		else if (sout.code > 1 && sout.code < 7)
-			return this.currentTask.mistakeAlcVol;
-
+			return this.currentTask.mistakeAlcVol / 10; // from cl to dl
+		
 		return 0.0F;
 	}
 	
@@ -95,7 +95,7 @@ public class Game implements GameLogic, Trigger {
 		int i = file.getPath().lastIndexOf('.');
 		if (i > 0)
 		    extension = file.getPath().substring(i+1);
-		if (!extension.equals("class"))
+		if (!extension.equals("task"))
 			return null;
 		
 		FileInputStream fis = null;
@@ -133,10 +133,13 @@ public class Game implements GameLogic, Trigger {
 	 */
 	private TaskValidationOutcome taskValidation(Task task) {
 		
+		if (this.isSolved(task.id))
+			return TaskValidationOutcome.HasAlreadySolved;
+		
 		if (!this.isSolved(task.priorTaskID))
 			return TaskValidationOutcome.PreTaskNotSolved;
 		
-		if (task.solvedAlcVol > sumAlcohol())
+		if ((task.solvedAlcVol / 10.0F) > sumAlcohol()) // cl to dl
 			return TaskValidationOutcome.NotEnoughAlcohol;
 		
 		return TaskValidationOutcome.ValidLoad;
@@ -149,8 +152,8 @@ public class Game implements GameLogic, Trigger {
 	private float sumAlcohol() {
 		float sum = 0.0F;
 		
-		for (int i=0; i<crate.getSize(); ++i)
-			sum += crate.getBevVol(i) * crate.getBevABV(i);
+		for (int i=0; i<this.crate.getSize(); ++i)
+			sum += this.crate.getBevVol(i) * this.crate.getBevABV(i);
 		
 		return sum;
 	}
@@ -216,13 +219,15 @@ public class Game implements GameLogic, Trigger {
 	@Override
 	public CrateInterface savePlayer(String name, Sex sex, int height, int weight) {
 		this.player = new Player(name, sex, height, weight);
+		this.crate = player.getCrate();
 		
-		return player.getCrate();
+		return this.crate;
 	}
 	
 	@Override
 	public void addBev(String name, float vol, int abv) {
-		this.player.addBev(name, vol, abv);
+		float rateABV = ((float) (abv)) / 100; // e.g. 20% to 0.2
+		this.player.addBev(name, vol, rateABV);
 	}
 	
 	@Override
@@ -259,25 +264,26 @@ public class Game implements GameLogic, Trigger {
 	@Override
 	public SolutionOutcome evaluateSolution(int compilerID, String code) {
 		
-		this.underEvaluation = true;
+		this.underAction = true;
 		Solution solution = this.solutions.get(this.solutions.size() - 1);
 		
 		SolutionOutcome sout = solution.validator(this.compilers.get(compilerID), code, this.stopper.showTimeElapsed());
-		this.underEvaluation = false;
+		this.underAction = false;
 		
 		/// refresh number of attempts on GUI
 		this.ui.refreshAttemptNum(solution.getAttemptNum());
 		
-		/// calculate alcohol vol
+		/// calculate alcohol vol in dl
 		this.alcToDrink = this.calculateAlcComsumeVol(sout);
 		
 		/// choose beverage
-		if (this.alcToDrink > 0)
+		if (this.alcToDrink > 0) {
 			ui.chooseBev(this.alcToDrink);
-		
+			this.underAction = true;
+		}
 		/// if task ended
-		if (sout == SolutionOutcome.Solved || sout == SolutionOutcome.OutOfAttemp || this.outOfTimeDuringEvaluation) {
-			this.outOfTimeDuringEvaluation = false;
+		if (sout == SolutionOutcome.Solved || sout == SolutionOutcome.OutOfAttemp || this.outOfTimeDuringAction) {
+			this.outOfTimeDuringAction = false;
 			this.stopper.surrender();
 			this.currentTask = null; // sign, that there's no task to solve at the moment
 			this.ui.endTask(solution);
@@ -304,8 +310,21 @@ public class Game implements GameLogic, Trigger {
 		this.player.consume(bevID, bevToDrink, this.alcToDrink - alcLeft);
 		this.alcToDrink = alcLeft;
 		
-		if (this.alcToDrink > 0)
+		if (this.alcToDrink > 0) {
 			ui.chooseBev(this.alcToDrink);
+			this.underAction = true;
+		}
+		
+		/// end task if outOfTime during drinking
+		this.underAction = false;
+		if (this.outOfTimeDuringAction) {
+			Solution solution = this.solutions.get(solutions.size() - 1);
+			solution.outOfTime();
+			this.outOfTimeDuringAction = false;
+			this.stopper.surrender();
+			this.currentTask = null; // sign, that there's no task to solve at the moment
+			this.ui.endTask(solution);
+		}
 		
 		return bevToDrink;
 	}
@@ -356,10 +375,12 @@ public class Game implements GameLogic, Trigger {
 	}
 	
 	@Override
-	public float bloodAlcContent() {
+	public float bloodAlcContent() { // TODO ez nem ezrelék !!!
 		float alcConsumedInOz = this.player.getConsumedAlc() * 3.38140227F;
 		float weightInPounds = this.player.getWeight() * 2.20462262F;
 		float timeInHour = (float) ( ((double) (System.currentTimeMillis() - this.timeGameStarted)) / 3600000 );
+		
+		// TODO 9,7dl tiszta alkoholra 1ezreléket ír, nem jó; nézd át ezt -> http://www.elsosegely.hu/cikk.58.hogyan_szamoljuk_ki_a_veralkoholszintet
 		
 		float alcDistributionRatio;
 		if (player.getSex() == Sex.Male)
@@ -380,6 +401,16 @@ public class Game implements GameLogic, Trigger {
 		return clist;
 	}
 	
+	@Override
+	public float getAlcToDrink() {
+		return this.alcToDrink;
+	}
+	
+	@Override
+	public float getConsumedAlc() {
+		return player.getConsumedAlc();
+	}
+	
 	/*
 	 * Implemented method from interface Trigger
 	 */
@@ -396,8 +427,8 @@ public class Game implements GameLogic, Trigger {
 	@Override
 	public void shoot() {
 		
-		if (this.underEvaluation) { // OutOfTime occurs during evaluation; evaluateSolution() ends task later
-			this.outOfTimeDuringEvaluation = true;
+		if (this.underAction) { // OutOfTime occurs during evaluation; evaluateSolution() ends task later
+			this.outOfTimeDuringAction = true;
 			return;
 		}
 		

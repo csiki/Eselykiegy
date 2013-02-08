@@ -47,7 +47,7 @@ NodeObject 99996
 
 LinkObject 99995
 {
-    { Name "int:=addBeverage(String,float,float)" }
+    { Name "int:=addBev(String,float,float)" }
     { Type UmlSynchronousMessage }
     { ObjectId 5586 }
     { AnnotFileId 1 }
@@ -111,9 +111,9 @@ NoteObject 7
 ItemObject 8
 {
     { Type ObjectName }
-    { Value "Beverage:=addBeverage(String,float,float)" }
+    { Value "int:=addBeverage(String,float,float)" }
     { GuidRef "" }
     { NoteId 7 }
-    { ObjectId 20761 }
+    { ObjectId 29627 }
 }
 

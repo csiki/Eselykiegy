@@ -4,7 +4,7 @@ Diagram UmlSequenceDiagram
     { Format "1.7" }
     { Scale 0.82 }
     { PanX -1009 }
-    { PanY -909 }
+    { PanY -1263 }
     { Alignment 1 }
     { GUID "UID_21CCCA42-8E1A-4bd8-8866-DE350AF9E3CF" }
     { Summary
@@ -39,12 +39,12 @@ Node 7
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%active object%%1357665497_6344" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357665497_0_6344" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%active object%%1357665497_6344" }
         }
     }
     { Object
@@ -83,12 +83,12 @@ Node 85
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357666931_6344" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357666931_0_6344" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357666931_6344" }
         }
     }
     { Object
@@ -121,12 +121,12 @@ Node 88
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357667013_6344" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357667013_0_6344" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357667013_6344" }
         }
     }
     { Object
@@ -213,12 +213,12 @@ Node 180
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357782237_7916" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357782237_0_7916" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357782237_7916" }
         }
     }
     { Object
@@ -334,12 +334,12 @@ Node 270
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357786683_7916" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357786683_0_7916" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357786683_7916" }
         }
     }
     { Object
@@ -399,12 +399,12 @@ Node 327
     }
     { PropertyList
         { Property
-            { Name "AnonymousName" }
-            { Value "%%passive object%%1357826121_4196" }
-        }
-        { Property
             { Name "AnonymousNameClass" }
             { Value "%%class%%1357826121_0_4196" }
+        }
+        { Property
+            { Name "AnonymousName" }
+            { Value "%%passive object%%1357826121_4196" }
         }
     }
     { Object
@@ -1100,7 +1100,7 @@ Arc 178
         { Offset 1 -784 }
     }
     { Label
-        { Text "int:=addBeverage(String,float,float)" }
+        { Text "int:=addBev(String,float,float)" }
     }
     { PropertyList
         { Property

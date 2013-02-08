@@ -41,7 +41,13 @@ public class SolutionsData extends AbstractTableModel {
 			case 0: return solutions.get(row).isSolved();
 			case 1:
 				int secs = (int) (solutions.get(row).getTimeUsed() / 1000);
-				return Integer.toString(secs / 60) + ":" + Integer.toString(secs % 60);
+				String secDisplay = Integer.toString(secs % 60);
+				String minDisplay = Integer.toString(secs / 60);
+				if ((secs % 60) < 10)
+					secDisplay = "0" + secDisplay;
+				if ((secs / 60) < 10)
+					minDisplay = "0" + minDisplay;
+				return minDisplay + ":" + secDisplay;
 			case 2: return solutions.get(row).getAttemptNum();
 			case 3: return solutions.get(row).getLang();
 		}

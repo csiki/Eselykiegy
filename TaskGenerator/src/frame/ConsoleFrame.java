@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Map;
-
 import library.GeneratorInterface;
 
 public class ConsoleFrame {
@@ -105,28 +104,30 @@ public class ConsoleFrame {
 		String value;
 		int spacePos = arg.indexOf(" ");
 		if (spacePos > 0) {
-			id = arg.substring(0, spacePos);
+			id = (arg.substring(0, spacePos)).toLowerCase(); // +lowercase
 			value = arg.substring(spacePos + 1, arg.length());
 		} else
 			return false;
 		
-		/// here add more task variables
+		/// here add further task variables (lowercase)
 		if (id.equals("id"))
 			this.generator.saveID(Integer.parseInt(value));
-		else if (id.equals("attemptsAllowed"))
+		else if (id.equals("attemptsallowed"))
 			this.generator.saveAttemptsAllowed(Integer.parseInt(value));
-		else if (id.equals("mistakeAlcVol"))
+		else if (id.equals("mistakealcvol"))
 			this.generator.saveMistakeAlcVol(Float.parseFloat(value));
 		else if (id.equals("description"))
 			this.generator.saveDescription(value);
-		else if (id.equals("timeAllowed"))
+		else if (id.equals("timeallowed"))
 			this.generator.saveTimeAllowed(Long.parseLong(value));
-		else if (id.equals("solvedAlcVol"))
+		else if (id.equals("solvedalcvol"))
 			this.generator.saveSolvedAlcVol(Float.parseFloat(value));
-		else if (id.equals("validOutput"))
+		else if (id.equals("validoutput"))
 			this.generator.saveValidOutput(value);
-		else if (id.equals("priorTaskID"))
+		else if (id.equals("priortaskid"))
 			this.generator.savePriorTaskID(Integer.parseInt(value));
+		else if (id.equals("title"))
+			this.generator.saveTitle(value);
 		else
 			return false;
 			
@@ -143,12 +144,12 @@ public class ConsoleFrame {
 		String value;
 		int spacePos = arg.indexOf(" ");
 		if (spacePos > 0) {
-			id = arg.substring(0, spacePos);
+			id = (arg.substring(0, spacePos)).toLowerCase(); // lowercase
 			value = arg.substring(spacePos + 1, arg.length());
 		} else
 			return false;
 		
-		/// here add more task lists
+		/// here add further task lists (lowercase)
 		if (id.equals("inputs"))
 			this.generator.addInput(value);
 		else
@@ -178,17 +179,22 @@ public class ConsoleFrame {
 	 */
 	private String status() {
 		String status = "\nStatus:\n=====================================================================\n";
-		status += "Task variable name\tValue\n---------------------------------------------------------------------\n";
+		status += "Task variable name\t\tValue\n---------------------------------------------------------------------\n";
 		
-		@SuppressWarnings("unchecked")
 		Map<String,String> vars = this.generator.status();
-		
+		String value;
 		for (String key : vars.keySet()) {
+			value = vars.get(key);
+			value = value.replaceAll("\n", "\n\t\t\t\t");
+			
 			if (key.length() < 8)
-				status += key + "\t\t\t" + vars.get(key) + "\n";
+				status += key + "\t\t\t\t" + value + "\n";
+			else if (key.length() < 16)
+				status += key + "\t\t\t" + value + "\n";
 			else
-				status += key + "\t\t" + vars.get(key) + "\n";
+				status += key + "\t\t" + value + "\n";
 		}
+		status += "---------------------------------------------------------------------\n";
 		
 		return status;
 	}
@@ -201,17 +207,19 @@ public class ConsoleFrame {
 		String help = "";
 		
 		/// header
-		help += "\nHelp: (args in use may be divided by space in order)\n=====================================================================\n";
+		help += "\nHelp: (args in use may be divided by a space in order)\n=====================================================================\n";
 		help += "Command name\tArg(s)\t\t\tDescription\n---------------------------------------------------------------------\n";
 		
 		/// commands
-		help += "set\t\tidentifier, value\tSets a task variable,\n\t\t\t\t\tidentified by identifier.\n";
+		help += "set\t\tidentifier, value\tSets a task variable,\n\t\t\t\t\tidentified by identifier.\n\t\t\t\t\tUse \"\\n\" for newline.\n";
 		help += "add\t\tidentifier, item\tAdds item to the identified\n\t\t\t\t\tlist (e.g. inputs).\n";
 		help += "clear\t\t-\t\t\tEmpty all the task variables.\n";
 		help += "status\t\t-\t\t\tLists task variables and\n\t\t\t\t\tits values.\n";
 		help += "save\t\tpath(def: \"tasks/\")\tSerialize and save task\n\t\t\t\t\tto the given path.\n\t\t\t\t\tPath may end\n\t\t\t\t\twith a slash (\"/\").\n";
 		help += "help\t\t-\t\t\tBrings up this.\n";
 		help += "exit\t\t-\t\t\tExits.\n";
+		
+		help += "---------------------------------------------------------------------\n";
 		
 		return help;
 	}

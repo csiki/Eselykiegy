@@ -55,7 +55,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.Action;
-import java.awt.event.ActionListener;
+import javax.swing.SwingConstants;
 
 public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialogs, MainInterfaceForBeverageList {
 
@@ -110,9 +110,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.game = game;
 	}
 	
-	/**
-	 * @wbp.parser.entryPoint
-	 */
+	
 	@Override
 	public void run() {
 		initialize();
@@ -134,7 +132,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(false);
 		
 		/// message
-		JOptionPane.showMessageDialog(null, "You are out of alcohol! I pity you. (Beverage/Add beverage)");
+		JOptionPane.showMessageDialog(null, "You are out of alcohol! I pity you to be honest :/ (Beverage/Add beverage).");
 	}
 	
 	private void toStateAbleToLoadTask() {
@@ -196,13 +194,25 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
+	private void toStateAbleToLoadTaskAgain() {
+		/// enable/disable items
+		this.mntmAddBeverage.setEnabled(true);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(true);
+		this.mntmEndCurrentTask.setEnabled(false);
+		this.langChoose.setEnabled(false);
+		this.code.setEnabled(false);
+		this.btnGiveup.setEnabled(false);
+		this.btnSend.setEnabled(false);
+		this.bevList.setDrinkBtnEnabled(false);
+	}
 	
 	/*
 	 * Implemented methods from interface UserInterface
 	 */
 	@Override
 	public void chooseBev(float alcVol) {
-		this.alcLeft.setText(Float.toString(alcVol * 10.0F)); // from dl to cl
+		this.alcLeft.setText(String.format("%.1f", alcVol * 10.0F)); // from dl to cl
 		
 		/// state transition
 		toStateMustDrink();
@@ -211,43 +221,70 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	@Override
 	public void startTask(Task task) {
 		
+		/// state transition
+		toStateTaskStarted();
+		
 		/// set items
+		String preTaskDisplay = Integer.toString(task.priorTaskID);
+		if (task.priorTaskID == 0)
+			preTaskDisplay = "none";
+		this.taskName.setText(task.title);
 		this.taskID.setText(Integer.toString(task.id));
-		this.preTaskID.setText(Integer.toString(task.priorTaskID));
+		this.preTaskID.setText(preTaskDisplay);
 		this.taskDescription.setText(task.description);
 		
 		this.outcome.setText(SolutionOutcome.Unvalidated.toString());
-		this.ellapsedTime.setText("0");
+		this.ellapsedTime.setText("00:00");
 		
 		int seconds = (int) (task.timeAllowed / 1000);
-		this.deadline.setText(seconds / 60 + ":" + seconds % 60);
+		String secDisplay = Integer.toString(seconds % 60);
+		String minDisplay = Integer.toString(seconds / 60);
+		if ((seconds % 60) < 10)
+			secDisplay = "0" + secDisplay;
+		if ((seconds / 60) < 10)
+			minDisplay = "0" + minDisplay;
+		
+		this.deadline.setText(minDisplay + ":" + secDisplay);
 		this.solutionsSent.setText("0");
 		this.solutionsPermited.setText(Integer.toString(task.attemptsAllowed));
-		
-		/// state transition
-		toStateTaskStarted();
 	}
 
 	@Override
 	public void endTask(SolutionInterface solution) {
 		/// state transition
 		if (this.crate.gotAnyAlcohol())
-			toStateAbleToLoadTask();
+			toStateAbleToLoadTaskAgain();
 		else
 			toStateOutOfBeverage();
+		
+		/// update solution outcome
+		this.outcome.setText(solution.getSout().toString());
 		
 		/// update GUI Solutions table
 		solutionsData.addSolution(solution); // fire included
 		
 		/// update Time left, Rate of right solutions
 		int secs = (int) (this.game.sumTimeLeft() / 1000);
-		this.timeLeft.setText(Integer.toString(secs / 60) + ":" + Integer.toString(secs % 60));
+		String secDisplay = Integer.toString(secs % 60);
+		String minDisplay = Integer.toString(secs / 60);
+		if ((secs % 60) < 10)
+			secDisplay = "0" + secDisplay;
+		if ((secs / 60) < 10)
+			minDisplay = "0" + minDisplay;
+		this.timeLeft.setText(minDisplay + ":" + secDisplay);
 		this.rateOfSolutions.setText(Integer.toString(this.game.rateOfRightSolutions()));
 	}
 	
 	@Override
 	public void refreshTime(int min, int sec) {
-		this.ellapsedTime.setText(Integer.toString(min) + ":" + Integer.toString(sec));
+		String secDisplay = Integer.toString(sec);
+		String minDisplay = Integer.toString(min);
+		if (sec < 10)
+			secDisplay = "0" + secDisplay;
+		if (min < 10)
+			minDisplay = "0" + minDisplay;
+		
+		this.ellapsedTime.setText(minDisplay + ":" + secDisplay);
 	}
 	
 	@Override
@@ -307,6 +344,8 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	
 	@Override
 	public void addBevDialogReady() {
+		boolean gotAlcohol = crate.gotAnyAlcohol();
+		
 		/// add to Crate
 		game.addBev(abd.getInputName(), Float.parseFloat(abd.getInputVol()), Integer.parseInt(abd.getInputAlcVol()));
 		
@@ -316,6 +355,8 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		/// state transition
 		if (game.isAnyTaskLoaded())
 			toStateTaskStarted();
+		else if (gotAlcohol)
+			toStateAbleToLoadTaskAgain();
 		else
 			toStateAbleToLoadTask();
 	}
@@ -326,11 +367,13 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		String msg = null;
 		
 		if (tvo == TaskValidationOutcome.NoFileFound)
-			msg = "Error: No such file found!";
+			msg = "Error: No proper file found! Extension may be \".task\".";
 		else if (tvo == TaskValidationOutcome.NotEnoughAlcohol)
 			msg = "Error: Not enough alcohol volume to start that task! Pour/add a new beverage!";
 		else if (tvo == TaskValidationOutcome.PreTaskNotSolved)
-			msg = "Error: Previous required task has not been solved yet!";
+			msg = "Error: A required task has not been solved yet! Choose another one!";
+		else if (tvo == TaskValidationOutcome.HasAlreadySolved)
+			msg = "Error: That task has already been solved! Choose another one!";
 		
 		if (tvo.code != 0) // error
 			JOptionPane.showMessageDialog(null, msg);
@@ -339,11 +382,6 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	@Override
 	public void giveUp() {
 		this.game.giveUp();
-		
-		if (this.crate.gotAnyAlcohol())
-			toStateAbleToLoadTask();
-		else
-			toStateOutOfBeverage();
 	}
 	
 	@Override
@@ -365,11 +403,16 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		else
 			this.toStateAbleToLoadTask();
 		
-		// TODO állapotokkal lehetnek gebaszok, nem csak itt !
-		
+		/// calculate how much to drink
 		float howMuchToDrink = game.bevToDrink(bevID);
-
-		String msg = "Drink " + howMuchToDrink + " dl of your " + crate.getBevName(bevID) + "!";
+		
+		/// bloodAlcContentlbl, update alcLeft, consumed beverage vol, consumedAlc on GUI
+		this.bloodAlcContentlbl.setText(String.format("%.0f", this.game.bloodAlcContent()));
+		this.alcLeft.setText(String.format("%.1f", this.game.getAlcToDrink() * 10.0F)); // from dl to cl
+		this.bevList.bevVolChanged(bevID);
+		this.consumedAlc.setText(String.format("%.2f", game.getConsumedAlc()));
+		
+		String msg = "Drink " + howMuchToDrink + " dl of your " + crate.getBevName(bevID) + "! Cin-cin!";
 		JOptionPane.showMessageDialog(null, msg);
 	}
 
@@ -634,6 +677,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		panel_8.add(lblTime, "2, 2");
 		
 		this.ellapsedTime = new JLabel("-");
+		ellapsedTime.setHorizontalAlignment(SwingConstants.RIGHT);
 		this.ellapsedTime.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_8.add(this.ellapsedTime, "4, 2");
 		
@@ -648,6 +692,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		panel_8.add(lblSent, "2, 4");
 		
 		this.solutionsSent = new JLabel("-");
+		solutionsSent.setHorizontalAlignment(SwingConstants.RIGHT);
 		this.solutionsSent.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_8.add(this.solutionsSent, "4, 4");
 		
@@ -772,6 +817,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		panel_11.add(lblTimeLeft, "2, 2");
 		
 		this.timeLeft = new JLabel("-");
+		timeLeft.setHorizontalAlignment(SwingConstants.RIGHT);
 		this.timeLeft.setFont(new Font("Tahoma", Font.BOLD, 12));
 		panel_11.add(this.timeLeft, "4, 2");
 		
@@ -792,6 +838,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		panel_11.add(lblConsumedAlcohol, "2, 6");
 		
 		this.consumedAlc = new JLabel("-");
+		this.consumedAlc.setHorizontalAlignment(SwingConstants.RIGHT);
 		this.consumedAlc.setFont(new Font("Tahoma", Font.BOLD, 12));
 		panel_11.add(this.consumedAlc, "4, 6");
 		
@@ -812,19 +859,19 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		scrollPane_2.setMaximumSize(new Dimension(150, 32767));
 		panel_6.add(scrollPane_2, BorderLayout.WEST);
 		
-		solutionsTable = new JTable();
-		solutionsTable.setBackground(SystemColor.desktop);
-		solutionsTable.setModel(this.solutionsData);
-		solutionsTable.getColumnModel().getColumn(0).setResizable(false);
-		solutionsTable.getColumnModel().getColumn(0).setPreferredWidth(15);
-		solutionsTable.getColumnModel().getColumn(0).setMinWidth(11);
-		solutionsTable.getColumnModel().getColumn(1).setResizable(false);
-		solutionsTable.getColumnModel().getColumn(1).setPreferredWidth(45);
-		solutionsTable.getColumnModel().getColumn(2).setResizable(false);
-		solutionsTable.getColumnModel().getColumn(2).setPreferredWidth(20);
-		solutionsTable.getColumnModel().getColumn(3).setResizable(false);
-		solutionsTable.getColumnModel().getColumn(3).setPreferredWidth(20);
-		scrollPane_2.setViewportView(solutionsTable);
+		this.solutionsTable = new JTable();
+		this.solutionsTable.setBackground(SystemColor.desktop);
+		this.solutionsTable.setModel(this.solutionsData);
+		this.solutionsTable.getColumnModel().getColumn(0).setResizable(false);
+		this.solutionsTable.getColumnModel().getColumn(0).setPreferredWidth(15);
+		this.solutionsTable.getColumnModel().getColumn(0).setMinWidth(11);
+		this.solutionsTable.getColumnModel().getColumn(1).setResizable(false);
+		this.solutionsTable.getColumnModel().getColumn(1).setPreferredWidth(45);
+		this.solutionsTable.getColumnModel().getColumn(2).setResizable(false);
+		this.solutionsTable.getColumnModel().getColumn(2).setPreferredWidth(20);
+		this.solutionsTable.getColumnModel().getColumn(3).setResizable(false);
+		this.solutionsTable.getColumnModel().getColumn(3).setPreferredWidth(20);
+		scrollPane_2.setViewportView(this.solutionsTable);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setPreferredSize(new Dimension(10, 30));
@@ -1040,7 +1087,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 	}
 	
-	private class GiveUpAction extends AbstractAction { // TODO lehet nem mûködik, MouseAdapter kell
+	private class GiveUpAction extends AbstractAction {
 		
 		private static final long serialVersionUID = 5131608867029857409L;
 		
@@ -1058,7 +1105,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 	}
 	
-	private class EvaluateAction extends AbstractAction { // TODO lehet nem mûködik, MouseAdapter kell
+	private class EvaluateAction extends AbstractAction {
 		
 		private static final long serialVersionUID = -2100265375462952149L;
 		

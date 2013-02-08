@@ -598,7 +598,7 @@ Rename
     { SrcId 5594 }
     { Dependency MessageItemValueChange }
     { Label
-        { Text "addBeverage(String,float,int)" }
+        { Text "int:=addBev(String,float,float)" }
     }
     { UpdatedAttr name }
 }

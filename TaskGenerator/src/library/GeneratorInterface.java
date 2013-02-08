@@ -17,7 +17,7 @@ public interface GeneratorInterface {
 	/**
 	 * Initialise a Task object, then serialize and save it to the given location.
 	 * No filename needed, it is saved in [id].task form.
-	 * @param path, ending with a slash, default: tasks/
+	 * @param path ending with a slash, default: tasks/
 	 */
 	public void serialize(String path);
 	
@@ -36,9 +36,15 @@ public interface GeneratorInterface {
 	
 	/**
 	 * Sets task priorTaskID
-	 * @param priorID, if 0 no task required beforehand
+	 * @param priorID if 0 no task required beforehand
 	 */
 	public void savePriorTaskID(int priorID);
+	
+	/**
+	 * Sets task title.
+	 * @param title
+	 */
+	public void saveTitle(String title);
 	
 	/**
 	 * Sets task description.

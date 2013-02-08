@@ -14,7 +14,7 @@ public interface DialogInputValidationInterface {
 	
 	/**
 	 * checkIfOK() uses, for validating inputs.
-	 * @return
+	 * @return if all inputs valid
 	 */
 	public boolean inputValidation();
 }

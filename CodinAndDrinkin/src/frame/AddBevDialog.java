@@ -16,8 +16,6 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.SwingConstants;
@@ -199,7 +197,7 @@ public class AddBevDialog extends JDialog implements DialogInputValidationInterf
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
 				okButton = new JButton("OK");
-				okButton.addMouseListener(new OkAction(this, this.main));
+				okButton.setAction(new OkAction(this, this.main));
 				okButton.setEnabled(false);
 				okButton.setActionCommand("OK");
 				buttonPane.add(okButton);
@@ -228,17 +226,21 @@ public class AddBevDialog extends JDialog implements DialogInputValidationInterf
 		}
 	}
 	
-	private class OkAction extends MouseAdapter {
+	private class OkAction extends AbstractAction {
+		
+		private static final long serialVersionUID = -4659724538545607682L;
+		
 		MainInterfaceForDialogs main;
 		JDialog jd;
 		
 		OkAction(JDialog jd, MainInterfaceForDialogs main) {
 			this.jd = jd;
 			this.main = main;
+			putValue(NAME, "OK");
 		}
-		
+
 		@Override
-		public void mouseClicked(MouseEvent arg0) {
+		public void actionPerformed(ActionEvent arg0) {
 			this.main.addBevDialogReady();
 			jd.dispose();
 		}

@@ -6,6 +6,7 @@ import java.awt.FlowLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import com.jgoodies.forms.layout.FormLayout;
@@ -19,7 +20,6 @@ import java.awt.Dimension;
 import javax.swing.SwingConstants;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
-import javax.swing.Action;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -38,7 +38,6 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 	private JRadioButton rdbtnMale = new JRadioButton("male");
 	private JRadioButton rdbtnFemale = new JRadioButton("female");
 	private JButton okButton = new JButton("OK");
-	private final Action cancelAction = new CancelAction(this);
 	
 	/*
 	 * Implemented methods from interface DialogInputValidationInterface
@@ -166,6 +165,7 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 			rdbtnFemale.addMouseListener(new MouseAdapter() {
 				@Override
 				public void mouseClicked(MouseEvent arg0) {
+					JOptionPane.showMessageDialog(null, "Looking for a real man? I'd check the coderteam right away!");
 					checkIfOK();
 				}
 			});
@@ -187,6 +187,9 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 				height.addKeyListener(new KeyAdapter() {
 					@Override
 					public void keyReleased(KeyEvent e) {
+						if (height.getText().matches("[1-2][0-9][0-9]"))
+							if (Integer.parseInt(height.getText()) > 190)
+								JOptionPane.showMessageDialog(null, "Have considered playing basketball?");
 						checkIfOK();
 					}
 				});
@@ -214,6 +217,9 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 				weight.addKeyListener(new KeyAdapter() {
 					@Override
 					public void keyReleased(KeyEvent e) {
+						if (weight.getText().matches("[1-2]?[0-9][0-9]"))
+							if (Integer.parseInt(weight.getText()) > 100)
+								JOptionPane.showMessageDialog(null, "A little workout now and then shouldn't heart that much.");
 						checkIfOK();
 					}
 				});
@@ -231,7 +237,7 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
-				okButton.addMouseListener(new OkAction(this, this.main));
+				okButton.setAction(new OkAction(this, this.main));
 				okButton.setEnabled(false);
 				okButton.setActionCommand("OK");
 				buttonPane.add(okButton);
@@ -239,7 +245,7 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 			}
 			{
 				JButton cancelButton = new JButton("Cancel");
-				cancelButton.setAction(cancelAction);
+				cancelButton.setAction(new CancelAction(this));
 				cancelButton.setActionCommand("Cancel");
 				buttonPane.add(cancelButton);
 			}
@@ -260,17 +266,21 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 		}
 	}
 	
-	private class OkAction extends MouseAdapter {
+	private class OkAction extends AbstractAction {
+		
+		private static final long serialVersionUID = -1563354365974572438L;
+		
 		MainInterfaceForDialogs main;
 		JDialog jd;
 		
 		OkAction(JDialog jd, MainInterfaceForDialogs main) {
 			this.jd = jd;
 			this.main = main;
+			putValue(NAME, "OK");
 		}
-		
+
 		@Override
-		public void mouseClicked(MouseEvent arg0) {
+		public void actionPerformed(ActionEvent arg0) {
 			this.main.newGameDialogReady();
 			jd.dispose();
 		}

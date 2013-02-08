@@ -1,9 +1,6 @@
 package frame;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-
 import library.GeneratorInterface;
 
 public class SwingFrame implements Runnable {

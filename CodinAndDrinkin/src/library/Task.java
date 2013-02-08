@@ -18,6 +18,10 @@ public class Task implements Serializable {
 	 */
 	public final int priorTaskID;
 	/**
+	 * title of task
+	 */
+	public final String title;
+	/**
 	 * directive for the task
 	 */
 	public final String description;
@@ -30,11 +34,11 @@ public class Task implements Serializable {
 	 */
 	public final String validOutput;
 	/**
-	 * volume of alcohol prescribed for making a mistake
+	 * volume of alcohol prescribed for making a mistake in cl
 	 */
 	public final float mistakeAlcVol;
 	/**
-	 * volume of alcohol prescribed for solving the task
+	 * volume of alcohol prescribed for solving the task in cl
 	 */
 	public final float solvedAlcVol;
 	/**
@@ -49,6 +53,7 @@ public class Task implements Serializable {
 	Task(
 			int id,
 			int priorTaskID,
+			String title,
 			String description,
 			List<String> inputs,
 			String validOutput,
@@ -59,6 +64,7 @@ public class Task implements Serializable {
 	) {
 		this.id = id;
 		this.priorTaskID = priorTaskID;
+		this.title = title;
 		this.description = description;
 		this.inputs = inputs;
 		this.validOutput = validOutput;

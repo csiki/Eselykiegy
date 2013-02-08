@@ -15,7 +15,7 @@ import library.CrateInterface;
  * @author csiki
  *
  */
-public class BeverageList extends JPanel implements BevListInterfaceForHandler {
+public class BeverageList extends JPanel implements BevListInterfaceForHandler { // TODO javadoc !
 
 	private static final long serialVersionUID = -8202771727033276797L;
 	
@@ -42,7 +42,7 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 			return; // false call
 		
 		int newID = beverages.size();
-		BeverageHandler bev = new BeverageHandler(this, newID, crate.getBevName(newID), Float.toString(crate.getBevVol(newID)));
+		BeverageHandler bev = new BeverageHandler(this, newID, crate.getBevName(newID), String.format("%.1f", crate.getBevVol(newID)));
 		beverages.add(bev);
 		
 		addBevToGUI(bev);
@@ -68,7 +68,7 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 	}
 	
 	public void bevVolChanged(int bevID) {
-		beverages.get(bevID).updateVol(Float.toString(crate.getBevVol(bevID)));
+		beverages.get(bevID).updateVol(String.format("%.1f", crate.getBevVol(bevID)));
 	}
 	
 	public void setDrinkBtnEnabled(boolean e) {

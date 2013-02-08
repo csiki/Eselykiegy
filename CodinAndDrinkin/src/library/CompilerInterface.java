@@ -9,8 +9,8 @@ package library;
 public interface CompilerInterface {
 	
 	/**
-	 * Returns with the name of the Compiler
-	 * @return
+	 * Returns with the name of the Compiler.
+	 * @return programming language name
 	 */
 	public String getName();
 	

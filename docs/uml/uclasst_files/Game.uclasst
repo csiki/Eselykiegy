@@ -244,7 +244,7 @@ FillTable UmlClassTable
 					{ ObjectCache  } } }
 			{ Row	{ Appid 2630 }
 				{ Cell	{ Appid 2624 }
-					{ Label "underEvaluation" }
+					{ Label "underAction" }
 					
 					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 29010 }  } { Object { PDMType node } { MappingName Attribute } { ID 29008 } { GUID "UID_25BACAC7-72D1-4af6-8715-F6535F40C551" }  } } }
 				{ Cell	{ Appid 2625 }
@@ -256,7 +256,7 @@ FillTable UmlClassTable
 					{ ObjectCache  } } }
 			{ Row	{ Appid 2663 }
 				{ Cell	{ Appid 2627 }
-					{ Label "outOfTimeDuringEvaluation" }
+					{ Label "outOfTimeDuringAction" }
 					
 					{ ObjectCache { Object { PDMType note } { MappingName AttributeDefinition } { ID 29014 }  } { Object { PDMType node } { MappingName Attribute } { ID 29012 } { GUID "UID_8654F35E-1152-4866-934F-D4F15E361E52" }  } } }
 				{ Cell	{ Appid 2628 }

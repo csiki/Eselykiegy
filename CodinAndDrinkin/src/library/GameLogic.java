@@ -25,13 +25,12 @@ public interface GameLogic {
 	 * @param name
 	 * @param vol in dl
 	 * @param ABV like 40(%)
-	 * @return the id of the beverage in the crate, for later use
 	 */
 	public void addBev(String name, float vol, int ABV);
 	
 	/**
 	 * Loads a task, if it can be.
-	 * @param path
+	 * @param taskFile
 	 * @return the interface can load or not the task, and if not, the problem
 	 */
 	public TaskValidationOutcome loadTask(File taskFile);
@@ -95,7 +94,19 @@ public interface GameLogic {
 	
 	/**
 	 * Returns a lists of loaded compilers, to fill combobox.
-	 * @return
+	 * @return compiler interfaces in list
 	 */
 	public List<CompilerInterface> getCompilers();
+	
+	/**
+	 * Returns volume of alcohol that is left to drink.
+	 * @return in dl
+	 */
+	public float getAlcToDrink();
+	
+	/**
+	 * Returns volume of alcohol the player have drunk.
+	 * @return in dl
+	 */
+	public float getConsumedAlc();
 }
