@@ -90,8 +90,8 @@ public class Generator implements GeneratorInterface {
 		vars.put("title", this.taskTitle);
 		vars.put("inputs[]", "{ " + inputs + " }");
 		vars.put("validOutput", this.taskValidOutput);
-		vars.put("mistakeAlcVol(dl)", Float.toString(this.taskMistakeAlcVol));
-		vars.put("solvedAlcVol(dl)", Float.toString(this.taskSolvedAlcVol));
+		vars.put("mistakeAlcVol(cl)", Float.toString(this.taskMistakeAlcVol));
+		vars.put("solvedAlcVol(cl)", Float.toString(this.taskSolvedAlcVol));
 		vars.put("attemptsAllowed", Integer.toString(this.taskAttemptsAllowed));
 		vars.put("timeAllowed(1/1000sec)", Long.toString(this.taskTimeAllowed));
 		
