@@ -26,7 +26,7 @@ public class ConsoleFrame {
 		String msg;
 		
 		System.out.println("Console interface for creating tasks for Codin&Drinkin - csiki@coderteam\n");
-		System.out.println("Type \"help\" and press enter if got any question..");
+		System.out.println("Type \"help\" and press return if you got any question..");
 		while (true) {
 			try {
 				line = br.readLine();
