@@ -56,7 +56,7 @@ public class Solution implements SolutionInterface {
 		Boolean error = new Boolean(Boolean.FALSE);
 		File compiledFile = compiler.compile(this.code, error);
 		
-		if (error) {
+		if (error || compiledFile == null) {
 			this.sout = SolutionOutcome.CompileTimeError;
 			return SolutionOutcome.CompileTimeError;
 		}
