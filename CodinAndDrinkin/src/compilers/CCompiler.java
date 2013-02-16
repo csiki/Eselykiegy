@@ -12,7 +12,7 @@ import library.Compiler;
 
 
 /**
- * Compiles and runs C code.
+ * Compiles and runs C code. gcc needed!
  * @author csiki
  *
  */
