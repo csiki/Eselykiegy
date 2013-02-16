@@ -36,6 +36,7 @@ import java.awt.SystemColor;
 import javax.swing.JTable;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
+import javax.swing.text.PlainDocument;
 import javax.swing.UIManager;
 import javax.swing.ScrollPaneConstants;
 
@@ -79,7 +80,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	private JComboBox langChoose;
 	private JEditorPane code;
 	private JButton btnGiveup;
-	private JButton btnSend;
+	private JButton btnEvaluate;
 	private JLabel namelbl;
 	private JLabel sexlbl;
 	private JLabel bloodAlcContentlbl;
@@ -128,7 +129,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.langChoose.setEnabled(false);
 		this.code.setEnabled(false);
 		this.btnGiveup.setEnabled(false);
-		this.btnSend.setEnabled(false);
+		this.btnEvaluate.setEnabled(false);
 		this.bevList.setDrinkBtnEnabled(false);
 		
 		/// message
@@ -144,7 +145,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.langChoose.setEnabled(false);
 		this.code.setEnabled(false);
 		this.btnGiveup.setEnabled(false);
-		this.btnSend.setEnabled(false);
+		this.btnEvaluate.setEnabled(false);
 		this.bevList.setDrinkBtnEnabled(false);
 		
 		/// message
@@ -152,6 +153,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	}
 	
 	private void toStateTaskStarted() {
+		/// empty code
+		this.code.setText("");
+		
 		/// enable/disable items
 		this.mntmAddBeverage.setEnabled(true);
 		this.mntmNewGame.setEnabled(false);
@@ -160,7 +164,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.langChoose.setEnabled(true);
 		this.code.setEnabled(true);
 		this.btnGiveup.setEnabled(true);
-		this.btnSend.setEnabled(true);
+		this.btnEvaluate.setEnabled(true);
 		this.bevList.setDrinkBtnEnabled(false);
 		
 		/// message
@@ -175,7 +179,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.langChoose.setEnabled(false);
 		this.code.setEnabled(false);
 		this.btnGiveup.setEnabled(false);
-		this.btnSend.setEnabled(false);
+		this.btnEvaluate.setEnabled(false);
 		this.bevList.setDrinkBtnEnabled(true);
 		
 		/// message
@@ -190,7 +194,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.langChoose.setEnabled(true);
 		this.code.setEnabled(true);
 		this.btnGiveup.setEnabled(true);
-		this.btnSend.setEnabled(true);
+		this.btnEvaluate.setEnabled(true);
 		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
@@ -203,7 +207,20 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.langChoose.setEnabled(false);
 		this.code.setEnabled(false);
 		this.btnGiveup.setEnabled(false);
-		this.btnSend.setEnabled(false);
+		this.btnEvaluate.setEnabled(false);
+		this.bevList.setDrinkBtnEnabled(false);
+	}
+	
+	private void toStateUnderEvaluation() {
+		/// enable/disable items
+		this.mntmAddBeverage.setEnabled(false);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(false);
+		this.mntmEndCurrentTask.setEnabled(false);
+		this.langChoose.setEnabled(false);
+		this.code.setEnabled(false);
+		this.btnGiveup.setEnabled(false);
+		this.btnEvaluate.setEnabled(false);
 		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
@@ -252,10 +269,12 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	@Override
 	public void endTask(SolutionInterface solution) {
 		/// state transition
-		if (this.crate.gotAnyAlcohol())
-			toStateAbleToLoadTaskAgain();
+		if (this.crate.gotAnyAlcohol()) {
+			if (!solution.isSolved())
+				this.toStateAbleToLoadTaskAgain();
+		}
 		else
-			toStateOutOfBeverage();
+			this.toStateOutOfBeverage();
 		
 		/// update solution outcome
 		this.outcome.setText(solution.getSout().toString());
@@ -389,6 +408,26 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.game.evaluateSolution(this.langChoose.getSelectedIndex(), this.code.getText());
 	}
 	
+	@Override
+	public void informUserAboutSolutionOutcome(SolutionOutcome sout) {
+		String msg;
+		if (sout == SolutionOutcome.OutOfTime)
+			msg = "Failure: out of time!";
+		else if (sout == SolutionOutcome.OutOfAttemp)
+			msg = "Failure: out of attempt!";
+		else if (sout == SolutionOutcome.CompileTimeError)
+			msg = "Failure: compile time error!";
+		else if (sout == SolutionOutcome.RuntimeError)
+			msg = "Failure: runtime error!";
+		else if (sout == SolutionOutcome.InvalidOutput)
+			msg = "Failure: invalid output!";
+		else
+			msg = "Success!!!44";
+		
+		this.outcome.setText(sout.toString());
+		
+		JOptionPane.showMessageDialog(null, msg);
+	}
 	
 	/*
 	 * Implemented methods from interface MainInterfaceForBeverageList
@@ -926,6 +965,8 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		gbc_code.fill = GridBagConstraints.BOTH;
 		gbc_code.gridx = 0;
 		gbc_code.gridy = 8;
+		if (code.getDocument() instanceof PlainDocument)
+			code.getDocument().putProperty(PlainDocument.tabSizeAttribute, 4);
 		getFrmCodindrinkin().getContentPane().add(code, gbc_code);
 		
 		JPanel panel_4 = new JPanel();
@@ -955,17 +996,17 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 				FormFactory.RELATED_GAP_ROWSPEC,
 				FormFactory.DEFAULT_ROWSPEC,}));
 		
-		btnGiveup = new JButton("GiveUp");
-		btnGiveup.setAction(this.giveUpAction);
-		btnGiveup.setEnabled(false);
-		btnGiveup.setFont(new Font("Tahoma", Font.BOLD, 14));
-		panel_4.add(btnGiveup, "10, 2");
+		this.btnGiveup = new JButton("GiveUp");
+		this.btnGiveup.setAction(this.giveUpAction);
+		this.btnGiveup.setEnabled(false);
+		this.btnGiveup.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panel_4.add(this.btnGiveup, "10, 2");
 		
-		btnSend = new JButton("Evaluate");
-		btnSend.setAction(evaluateAction);
-		btnSend.setEnabled(false);
-		btnSend.setFont(new Font("Tahoma", Font.BOLD, 14));
-		panel_4.add(btnSend, "12, 2, right, default");
+		this.btnEvaluate = new JButton("Evaluate");
+		this.btnEvaluate.setAction(evaluateAction);
+		this.btnEvaluate.setEnabled(false);
+		this.btnEvaluate.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panel_4.add(this.btnEvaluate, "12, 2, right, default");
 		
 		// set window visible
 		getFrmCodindrinkin().setVisible(true);
@@ -1119,6 +1160,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 		
 		public void actionPerformed(ActionEvent e) {
+			toStateUnderEvaluation();
 			main.evaluateSolution();
 		}
 	}

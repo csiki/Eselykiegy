@@ -189,7 +189,7 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 					public void keyReleased(KeyEvent e) {
 						if (height.getText().matches("[1-2][0-9][0-9]"))
 							if (Integer.parseInt(height.getText()) > 190)
-								JOptionPane.showMessageDialog(null, "Have considered playing basketball?");
+								JOptionPane.showMessageDialog(null, "Have you considered playing basketball?");
 						checkIfOK();
 					}
 				});

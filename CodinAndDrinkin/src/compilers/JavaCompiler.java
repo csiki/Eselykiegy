@@ -1,9 +1,12 @@
 package compilers;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.util.List;
 
 import library.Compiler;
@@ -13,7 +16,7 @@ import library.Compiler;
  * @author csiki
  *
  */
-public final class JavaCompiler extends Compiler {
+public final class JavaCompiler extends Compiler { // NOT USED !
 
 	public JavaCompiler(String name) {
 		super(name);
@@ -21,21 +24,76 @@ public final class JavaCompiler extends Compiler {
 
 
 	@Override
+	public File compile(String code) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public String run(File compiledFile, List<String> inputs) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	/*@Override
 	public File compile(String code, Boolean error) {
-		/// create file
-		File compiledFileDir = new File("runnable");
-		compiledFileDir.mkdir();
-		File compiledFile = null;
+		
+		// TODO headert, classnevet main fvényt ne kelljen neki írni, mer ugyanannak kell h a neve legyen a filenak... C-be és C++ba is
+		
+		/// create temp dir
+		File codeFileDir = new File("code");
+		codeFileDir.mkdir();
+		File temp = null;
 		try {
-			compiledFile = File.createTempFile("runnable", ".class", compiledFileDir);
+			temp = File.createTempFile("code", Long.toString(System.nanoTime()), codeFileDir);
+		} catch (IOException e3) {
+			// TODO Auto-generated catch block
+			e3.printStackTrace();
+		} // TODO
+
+	    if(!(temp.delete())) {
+			try {
+				throw new IOException("Could not delete temp file: " + temp.getAbsolutePath());
+			} catch (IOException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
+	    }
+			
+	    if(!(temp.mkdir())) {
+			try {
+				throw new IOException("Could not create temp directory: " + temp.getAbsolutePath());
+			} catch (IOException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
+	    }
+	    
+		/// create code file
+		File codeFile = null;
+		try {
+			codeFile = File.createTempFile("code", ".java", codeFileDir);
 		} catch (IOException e1) {
-			//e1.printStackTrace();
+			error = true;
+			return null;
+		}
+		
+		/// fill the file
+		FileWriter fw;
+		BufferedWriter bw;
+		try {
+			fw = new FileWriter(codeFile);
+			bw = new BufferedWriter(fw);
+			bw.write(code);
+			bw.close();
+		} catch (IOException e1) {
 			error = true;
 			return null;
 		}
 		
 		/// compile
-		String compileFileCommand = "javac " + compiledFile.getPath();
+		new File("runnable").mkdir();
+		String compileFileCommand = "javac -sourcepath code -classpath runnable " + codeFile.getPath();
 		try {
 			Process compileProcess = Runtime.getRuntime().exec(compileFileCommand);
 
@@ -62,7 +120,7 @@ public final class JavaCompiler extends Compiler {
             return null;
         }
         
-		return compiledFile;
+		return temp; // TODO
 	}
 
 	@Override
@@ -86,7 +144,7 @@ public final class JavaCompiler extends Compiler {
         }
 		
 		return 0;
-	}
+	}*/
 	
 	
 	@Override

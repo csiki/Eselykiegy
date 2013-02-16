@@ -39,9 +39,8 @@ public interface GameLogic {
 	 * Validate the solution, calculates the consumable alcohol for the validation outcome, signal UserInterface if it's >0 about choosing beverage to drink.
 	 * @param compilerID as in the list, compilers
 	 * @param code the programming code
-	 * @return outcome of the solution validation
 	 */
-	public SolutionOutcome evaluateSolution(int compilerID, String code);
+	public void evaluateSolution(int compilerID, String code);
 	
 	/**
 	 * Stops the timer.

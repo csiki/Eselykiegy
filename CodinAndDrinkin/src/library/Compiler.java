@@ -18,22 +18,19 @@ public abstract class Compiler implements CompilerInterface {
 	}
 	
 	/**
-	 * Compiles the given code, and if there is no error, creates a compiled (byte) file.
+	 * Compiles the given code, and if there is no error. Creates a code text file (under folder 'code') and a compiled (runnable) file (under folder 'runnable').
 	 * @param code programming code
-	 * @param error reference to a boolean, it is set inside the method, if there was any errors during compilation
-	 * @return the path of the file created
+	 * @return the path of the file created; if null, error occurred
 	 */
-	abstract public File compile(String code, Boolean error);
+	abstract public File compile(String code);
 	
 	/**
 	 * Run the given compiled (byte) file and provide the given inputs.
 	 * @param compiledFile file containing the (byte) runnable code
 	 * @param inputs the desired inputs in order, to provide during running
-	 * @param output reference to a String, it is set inside the method; the output of the program
-	 * @param error reference to a boolean, it is set inside the method, if there was any errors during running
-	 * @return runtime, if error occurs 0
+	 * @return output string, if null error occurred
 	 */
-	abstract public long run(File compiledFile, List<String> inputs, String output, Boolean error);
+	abstract public String run(File compiledFile, List<String> inputs);
 	
 	@Override
 	public final String toString() {

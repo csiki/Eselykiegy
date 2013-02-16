@@ -63,7 +63,7 @@ public class Game implements GameLogic, Trigger {
 		/// add new compilers here !
 		this.compilers.add(new CCompiler("C"));
 		this.compilers.add(new CppCompiler("C++"));
-		this.compilers.add(new JavaCompiler("Java"));
+		//this.compilers.add(new JavaCompiler("Java"));
 	}
 	
 	/**
@@ -264,7 +264,7 @@ public class Game implements GameLogic, Trigger {
 	}
 	
 	@Override
-	public SolutionOutcome evaluateSolution(int compilerID, String code) {
+	public void evaluateSolution(int compilerID, String code) {
 		
 		this.underAction = true;
 		Solution solution = this.solutions.get(this.solutions.size() - 1);
@@ -278,6 +278,9 @@ public class Game implements GameLogic, Trigger {
 		/// calculate alcohol vol in dl
 		this.alcToDrink = this.calculateAlcComsumeVol(sout);
 		
+		/// send solution outcome to GUI
+		this.ui.informUserAboutSolutionOutcome(sout);
+		
 		/// choose beverage
 		if (this.alcToDrink > 0) {
 			ui.chooseBev(this.alcToDrink);
@@ -285,13 +288,20 @@ public class Game implements GameLogic, Trigger {
 		}
 		/// if task ended
 		if (sout == SolutionOutcome.Solved || sout == SolutionOutcome.OutOfAttemp || this.outOfTimeDuringAction) {
+			
+			/// update Solution.sout
+			if (sout == SolutionOutcome.Solved)
+				solution.solved();
+			else if (sout == SolutionOutcome.OutOfAttemp)
+				solution.outOfAttempt();
+			else if (this.outOfTimeDuringAction)
+				solution.outOfTime();
+			
 			this.outOfTimeDuringAction = false;
 			this.stopper.surrender();
 			this.currentTask = null; // sign, that there's no task to solve at the moment
 			this.ui.endTask(solution);
 		}
-		
-		return sout;
 	}
 	
 	@Override

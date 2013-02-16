@@ -15,10 +15,6 @@ public class Solution implements SolutionInterface {
 	 */
 	private long duration = 0;
 	/**
-	 * time spent running the (solution) program
-	 */
-	private long runtime = 0;
-	/**
 	 * number of evaluating solutions
 	 */
 	private int attempts = 0;
@@ -40,7 +36,6 @@ public class Solution implements SolutionInterface {
 		this.duration = timeElapsed;
 		this.code = code;
 		this.compiler = compiler;
-		this.runtime = 0;
 		
 		if (timeElapsed > this.task.timeAllowed) {
 			this.sout = SolutionOutcome.OutOfTime;
@@ -52,20 +47,22 @@ public class Solution implements SolutionInterface {
 			return SolutionOutcome.OutOfAttemp;
 		}
 		
-		/// compiling
-		Boolean error = new Boolean(Boolean.FALSE);
-		File compiledFile = compiler.compile(this.code, error);
+		/// make code and runnable dir for code and binary files if haven't been
+		new File("code").mkdir();
+		new File("runnable").mkdir();
 		
-		if (error || compiledFile == null) {
+		/// compiling
+		File compiledFile = compiler.compile(this.code);
+		
+		if (compiledFile == null) {
 			this.sout = SolutionOutcome.CompileTimeError;
 			return SolutionOutcome.CompileTimeError;
 		}
 		
 		/// running
-		String output = new String("");
-		this.runtime = compiler.run(compiledFile, this.task.inputs, output, error);
+		String output = compiler.run(compiledFile, this.task.inputs);
 		
-		if (error) {
+		if (output == null) {
 			this.sout = SolutionOutcome.RuntimeError;
 			return SolutionOutcome.RuntimeError;
 		}
@@ -94,7 +91,6 @@ public class Solution implements SolutionInterface {
 	public void outOfTime() {
 		this.sout = SolutionOutcome.OutOfTime;
 		this.duration = this.task.timeAllowed;
-		this.runtime = 0;
 	}
 	
 	/**
@@ -104,7 +100,20 @@ public class Solution implements SolutionInterface {
 	public void giveUp(long timeElapsed) {
 		this.sout = SolutionOutcome.GivenUp;
 		this.duration = timeElapsed;
-		this.runtime = 0;
+	}
+	
+	/**
+	 * Called by Game.evaluateSolution() to set sout to Solved.
+	 */
+	public void solved() {
+		this.sout = SolutionOutcome.Solved;
+	}
+	
+	/**
+	 * Called by Game.evaluateSolution() to set sout to OutOfAttemp.
+	 */
+	public void outOfAttempt() {
+		this.sout = SolutionOutcome.OutOfAttemp;
 	}
 	
 	

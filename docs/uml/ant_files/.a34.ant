@@ -118,3 +118,27 @@ NodeObject 	29242
  { SequenceId 	29193}
  { Gocha 	0 }
 }
+NodeObject 	30921
+{
+ { Name 	"Compiler"}
+ { Type 	UmlClass}
+ { Sig 	""}
+ { ScopeNodeId 	0}
+ { ObjectId 	108}
+ { GUID 	"UID_D295B602-1D1E-490d-9CE2-2505B223FB57"}
+ { SequenceId 	30909}
+ { Gocha 	-1 }
+}
+
+
+NodeObject 	30922
+{
+ { Name 	"run"}
+ { Type 	UmlOperation}
+ { Sig 	"compiledFile:File, inputs:String[]"}
+ { ScopeNodeId 	108}
+ { ObjectId 	1679}
+ { GUID 	"UID_277821AD-6267-490e-9EB0-E8C53648FF99"}
+ { SequenceId 	30909}
+ { Gocha 	0 }
+}

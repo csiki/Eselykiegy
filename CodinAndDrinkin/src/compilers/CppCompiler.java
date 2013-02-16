@@ -18,16 +18,15 @@ public final class CppCompiler extends Compiler {
 
 	
 	@Override
-	public File compile(String code, Boolean error) {
+	public File compile(String code) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
 	@Override
-	public long run(File compiledFile, List<String> inputs, String output,
-			Boolean error) {
+	public String run(File compiledFile, List<String> inputs) {
 		// TODO Auto-generated method stub
-		return 0;
+		return null;
 	}
 	
 	

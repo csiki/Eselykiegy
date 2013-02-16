@@ -435,7 +435,7 @@ FillTable UmlClassTable
 					{ PropertyList { UmlCxxCodeGenId "14" } }
 					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 1805 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 1791 }  } { Object { PDMType node } { MappingName Operation } { ID 1789 } { GUID "UID_0D72E72C-D766-4191-B7D4-C5C98FB07E49" }  } } }
 				{ Cell	{ Appid 2057 }
-					{ Label "code:String, error:Boolean" }
+					{ Label "code:String" }
 					 }
 				{ Cell	{ Appid 2049 }
 					{ Label "File" }
@@ -447,12 +447,12 @@ FillTable UmlClassTable
 					{ PropertyList { UmlCxxCodeGenId "13" } }
 					{ ObjectCache { Object { PDMType item } { MappingName UmlOperationCxxCodeGenId } { ID 1695 }  } { Object { PDMType note } { MappingName OperationDefinition } { ID 1681 }  } { Object { PDMType node } { MappingName Operation } { ID 1679 } { GUID "UID_277821AD-6267-490e-9EB0-E8C53648FF99" }  } } }
 				{ Cell	{ Appid 1660 }
-					{ Label "compiledFile:File, inputs:String[], output:String, error:Boolean" }
+					{ Label "compiledFile:File, inputs:String[]" }
 					 }
 				{ Cell	{ Appid 1661 }
-					{ Label "long" }
+					{ Label "String" }
 					
-					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 29258 }  } } } } }
+					{ ObjectCache { Object { PDMType item } { MappingName OperationReturnType } { ID 30927 }  } } } } }
 		{ Vsect	{ Appid 1438 }
 		{ NumCols 4 }
 		{ Hidden False }

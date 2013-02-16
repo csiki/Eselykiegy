@@ -42,4 +42,10 @@ public interface UserInterface {
 	 * @param cname name of the compiler language
 	 */
 	public void addCompilerToComboBox(String cname);
+	
+	/**
+	 * Before any message could be sent after evaluating the solution, it is called by Game to inform the user about the outcome.
+	 * @param sout outcome
+	 */
+	public void informUserAboutSolutionOutcome(SolutionOutcome sout);
 }
