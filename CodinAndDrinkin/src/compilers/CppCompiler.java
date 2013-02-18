@@ -46,7 +46,7 @@ public final class CppCompiler extends Compiler {
 		}
 		
 		/// compile temp code file
-		String command = "g++ " + codeFile.getPath() + " -o runnable\\" + codeFile.getName() + ".exe";
+		String command = "g++ " + codeFile.getPath() + " -o runnable" + File.separatorChar + codeFile.getName() + ".exe";
 		try {
 			Process pr = Runtime.getRuntime().exec(command);
 			
@@ -64,7 +64,7 @@ public final class CppCompiler extends Compiler {
 			return null;
 		}
 		
-		return new File("runnable/" + codeFile.getName() + ".exe");
+		return new File("runnable" + File.separatorChar + codeFile.getName() + ".exe");
 	}
 	
 	@Override
