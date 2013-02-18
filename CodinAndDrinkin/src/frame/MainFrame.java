@@ -458,14 +458,16 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	@Override
 	public void bevPour(int bevID) {
 		String amount = JOptionPane.showInputDialog(null, "How much to pour?");
-
-		Pattern ap = Pattern.compile("[0-9]+[.]?[0-9]?");
-		Matcher am = ap.matcher(amount);
-		if (!am.matches() || Float.parseFloat(amount) == 0)
-			return;
 		
-		this.game.bevToPour(bevID, Float.parseFloat(amount));
-		this.bevList.bevVolChanged(bevID);
+		if (amount != null) {
+			Pattern ap = Pattern.compile("[0-9]+[.]?[0-9]?");
+			Matcher am = ap.matcher(amount);
+			if (!am.matches() || Float.parseFloat(amount) == 0)
+				return;
+			
+			this.game.bevToPour(bevID, Float.parseFloat(amount));
+			this.bevList.bevVolChanged(bevID);
+		}
 		
 		if (this.game.isAnyTaskLoaded())
 			this.toStateTaskContinues();
