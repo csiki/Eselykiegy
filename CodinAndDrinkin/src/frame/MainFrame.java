@@ -440,7 +440,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		else if (!this.crate.gotAnyAlcohol())
 			this.toStateOutOfBeverage();
 		else
-			this.toStateAbleToLoadTask();
+			this.toStateAbleToLoadTaskAgain();
 		
 		/// calculate how much to drink
 		float howMuchToDrink = game.bevToDrink(bevID);
@@ -470,7 +470,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		if (this.game.isAnyTaskLoaded())
 			this.toStateTaskContinues();
 		else
-			this.toStateAbleToLoadTask();
+			this.toStateAbleToLoadTaskAgain();
 	}
 
 	/**

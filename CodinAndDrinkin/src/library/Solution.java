@@ -68,7 +68,7 @@ public class Solution implements SolutionInterface {
 		}
 		
 		/// validating output
-		if (!this.task.validOutput.equals(output)) {
+		if (!this.task.validOutput.equals(output) && !this.task.validOutput.equals(output + "\n")) {
 			this.sout = SolutionOutcome.InvalidOutput;
 			return SolutionOutcome.InvalidOutput;
 		}
