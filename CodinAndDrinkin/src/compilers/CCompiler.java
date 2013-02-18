@@ -94,9 +94,6 @@ public final class CCompiler extends Compiler {
 			if (output.length() > 0)
 				output = output.substring(0, output.length() - 1);
 			
-			if (pr.exitValue() != 0) // failure
-				return null;
-			
 		} catch (IOException e) {
 			return null;
 		}
