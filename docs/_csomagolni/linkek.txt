@@ -1,7 +1,0 @@
-Vérmennyiség mérés: http://easycalculation.com/medical/blood-volume.php
-
-C, C++, Java fordításról: 
-http://stackoverflow.com/questions/8999075/how-to-compile-run-java-and-c-file-from-java-code
-http://stackoverflow.com/questions/3643939/java-process-with-input-output-stream
-
-A process osztályról: http://docs.oracle.com/javase/7/docs/api/java/lang/Process.html
