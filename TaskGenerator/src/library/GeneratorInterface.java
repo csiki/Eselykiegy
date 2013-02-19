@@ -87,4 +87,10 @@ public interface GeneratorInterface {
 	 * @param time in millisecs
 	 */
 	public void saveTimeAllowed(long time);
+	
+	/**
+	 * Loads an existing .task file.
+	 * @param filePath
+	 */
+	public String load(String filePath);
 }

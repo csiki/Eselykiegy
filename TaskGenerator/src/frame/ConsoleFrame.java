@@ -83,6 +83,9 @@ public class ConsoleFrame {
 		if (commandName.equals("help")) {
 			return this.help();
 		}
+		if (commandName.equals("load")) {
+			return this.load(arg);
+		}
 		
 		return "No command like \"" + commandName + "\" found.";
 	}
@@ -171,6 +174,15 @@ public class ConsoleFrame {
 	 */
 	private void save(String arg) {
 		this.generator.serialize(arg);
+	}
+	
+	/**
+	 * Loads an existing .task file.
+	 * @param arg
+	 * @return
+	 */
+	private String load(String arg) {
+		return this.generator.load(arg);
 	}
 	
 	/**
