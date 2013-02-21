@@ -3,6 +3,11 @@ package frame;
 import javax.swing.JFrame;
 import library.GeneratorInterface;
 
+/**
+ * Swing GUI for generating tasks. Under construction...
+ * @author csiki
+ *
+ */
 public class SwingFrame implements Runnable {
 
 	private JFrame frame;

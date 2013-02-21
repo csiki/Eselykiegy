@@ -32,25 +32,25 @@ public interface GeneratorInterface {
 	 * Sets task id.
 	 * @param id
 	 */
-	public void saveID(int id);
+	public void setID(int id);
 	
 	/**
 	 * Sets task priorTaskID
 	 * @param priorID if 0 no task required beforehand
 	 */
-	public void savePriorTaskID(int priorID);
+	public void setPriorTaskID(int priorID);
 	
 	/**
 	 * Sets task title.
 	 * @param title
 	 */
-	public void saveTitle(String title);
+	public void setTitle(String title);
 	
 	/**
 	 * Sets task description.
 	 * @param description
 	 */
-	public void saveDescription(String description);
+	public void setDescription(String description);
 	
 	/**
 	 * Adds a new one to task inputs.
@@ -62,35 +62,85 @@ public interface GeneratorInterface {
 	 * Sets task validOutput.
 	 * @param output
 	 */
-	public void saveValidOutput(String output);
+	public void setValidOutput(String output);
 	
 	/**
 	 * Sets task mistakeAlcVol.
 	 * @param alcVol in dl
 	 */
-	public void saveMistakeAlcVol(float alcVol);
+	public void setMistakeAlcVol(float alcVol);
 	
 	/**
 	 * Sets task solvedAlcVol.
 	 * @param alcVol in dl
 	 */
-	public void saveSolvedAlcVol(float alcVol);
+	public void setSolvedAlcVol(float alcVol);
 	
 	/**
 	 * Sets task attemptsAllowed.
 	 * @param attempts
 	 */
-	public void saveAttemptsAllowed(int attempts);
+	public void setAttemptsAllowed(int attempts);
 	
 	/**
 	 * Sets timeAllowed.
 	 * @param time in millisecs
 	 */
-	public void saveTimeAllowed(long time);
+	public void setTimeAllowed(long time);
 	
 	/**
 	 * Loads an existing .task file.
 	 * @param filePath
 	 */
 	public String load(String filePath);
+	
+	/**
+	 * Sets id to default.
+	 */
+	public void clearID();
+	
+	/**
+	 * Sets attemptsAllowed to default.
+	 */
+	public void clearAttemptsAllowed();
+	
+	/**
+	 * Sets mistakeAlcVol to default.
+	 */
+	public void clearMistakeAlcVol();
+	
+	/**
+	 * Sets description to default.
+	 */
+	public void clearDescription();
+	
+	/**
+	 * Sets timeAllowed to default.
+	 */
+	public void clearTimeAllowed();
+	
+	/**
+	 * Sets solvedAlcVol to default.
+	 */
+	public void clearSolvedAlcVol();
+	
+	/**
+	 * Sets validOutput to default.
+	 */
+	public void clearValidOutput();
+	
+	/**
+	 * Sets priorTaskID to default.
+	 */
+	public void clearPriorTaskID();
+	
+	/**
+	 * Sets title to default.
+	 */
+	public void clearTitle();
+	
+	/**
+	 * Empty inputs.
+	 */
+	public void clearInputs();
 }

@@ -27,6 +27,11 @@ import java.awt.event.MouseEvent;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Dialog for getting player's data like name, sex, height, weight.
+ * @author csiki
+ *
+ */
 public class NewGameDialog extends JDialog implements DialogInputValidationInterface {
 	private static final long serialVersionUID = -4923393269220341951L;
 	
@@ -72,31 +77,51 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 		return true;
 	}
 	
-	/*
-	 * Getters
+
+	/**
+	 * Getter for player's name.
+	 * @return player's name
 	 */
 	public String getInputName() {
 		return this.name.getText();
 	}
 	
+	/**
+	 * Getter for player's height.
+	 * @return player's height
+	 */
 	public String getInputHeight() {
 		return this.height.getText();
 	}
 	
+	/**
+	 * Getter for player's weight.
+	 * @return player's weight
+	 */
 	public String getInputWeight() {
 		return this.weight.getText();
 	}
 	
+	/**
+	 * Getter if player is male.
+	 * @return true if male
+	 */
 	public boolean getInputSexMale() {
 		return this.rdbtnMale.isSelected();
 	}
 	
+	/**
+	 * Getter if player is female.
+	 * @return true if female
+	 */
 	public boolean getInputSexFemale() {
 		return this.rdbtnFemale.isSelected();
 	}
 	
+	
 	/**
-	 * Create the dialog.
+	 * Creates the dialog.
+	 * @param main
 	 */
 	public NewGameDialog(MainInterfaceForDialogs main) {
 		this.main = main;
@@ -251,7 +276,12 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 			}
 		}
 	}
-
+	
+	/**
+	 * Action for button Cancel.
+	 * @author csiki
+	 *
+	 */
 	private class CancelAction extends AbstractAction {
 		private static final long serialVersionUID = -6281457554887252620L;
 		
@@ -266,6 +296,11 @@ public class NewGameDialog extends JDialog implements DialogInputValidationInter
 		}
 	}
 	
+	/**
+	 * Action for button OK.
+	 * @author csiki
+	 *
+	 */
 	private class OkAction extends AbstractAction {
 		
 		private static final long serialVersionUID = -1563354365974572438L;

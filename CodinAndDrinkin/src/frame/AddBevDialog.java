@@ -22,6 +22,11 @@ import javax.swing.SwingConstants;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+/**
+ * Dialog for adding new beverage to the list.
+ * @author csiki
+ *
+ */
 public class AddBevDialog extends JDialog implements DialogInputValidationInterface {
 
 	private static final long serialVersionUID = 2630925821214975124L;
@@ -66,23 +71,33 @@ public class AddBevDialog extends JDialog implements DialogInputValidationInterf
 		return true;
 	}
 	
-	/*
-	 * Getters
+	/**
+	 * Getter, called by MainFrame.
+	 * @return beverage name
 	 */
 	public String getInputName() {
 		return this.name.getText();
 	}
 	
+	/**
+	 * Getter, called by MainFrame.
+	 * @return beverage volume
+	 */
 	public String getInputVol() {
 		return this.vol.getText();
 	}
 	
+	/**
+	 * Getter, called by MainFrame.
+	 * @return beverage alcohol %
+	 */
 	public String getInputAlcVol() {
 		return this.alcVol.getText();
 	}
 	
 	/**
 	 * Create the dialog.
+	 * @param main interface to communicate with MainFrame
 	 */
 	public AddBevDialog(MainInterfaceForDialogs main) {
 		this.main = main;
@@ -212,6 +227,11 @@ public class AddBevDialog extends JDialog implements DialogInputValidationInterf
 		}
 	}
 	
+	/**
+	 * Action for cancel button.
+	 * @author csiki
+	 *
+	 */
 	private class CancelAction extends AbstractAction {
 		private static final long serialVersionUID = -6281457554887252620L;
 		
@@ -226,6 +246,11 @@ public class AddBevDialog extends JDialog implements DialogInputValidationInterf
 		}
 	}
 	
+	/**
+	 * Action for OK button.
+	 * @author csiki
+	 *
+	 */
 	private class OkAction extends AbstractAction {
 		
 		private static final long serialVersionUID = -4659724538545607682L;

@@ -7,6 +7,7 @@ package library;
  */
 public class Player {
 	
+	@SuppressWarnings("unused")
 	private final String name;
 	private final Sex sex;
 	/**
@@ -78,22 +79,35 @@ public class Player {
 		return this.crate;
 	}
 	
-	/*
-	 * Getters
-	 */
 	
+	/**
+	 * Getter for player's sex.
+	 * @return player's sex
+	 */
 	public Sex getSex() {
 		return this.sex;
 	}
 	
+	/**
+	 * Getter for player's weight.
+	 * @return player's weight
+	 */
 	public int getWeight() {
 		return this.weight;
 	}
 	
+	/**
+	 * Getter for player's height.
+	 * @return player's height
+	 */
 	public int getHeight() {
 		return this.height;
 	}
 	
+	/**
+	 * Getter for player's consumed alcohol volume.
+	 * @return alcohol volume
+	 */
 	public float getConsumedAlc() {
 		return this.consumedAlc;
 	}

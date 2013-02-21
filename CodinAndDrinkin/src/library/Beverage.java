@@ -46,14 +46,26 @@ public class Beverage {
 			this.vol -= vol;
 	}
 	
+	/**
+	 * Getter for beverage name.
+	 * @return beverage name
+	 */
 	public String getName() {
 		return this.name;
 	}
 	
+	/**
+	 * Getter for beverage volume.
+	 * @return beverage volume
+	 */
 	public float getVol() {
 		return this.vol;
 	}
 	
+	/**
+	 * Getter for alcohol by volume.
+	 * @return alcohol by volume (like 0.4)
+	 */
 	public float getABV() {
 		return this.abv;
 	}

@@ -12,7 +12,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Task generator for temporary storing a task, managing its values, serializing and saving.
+ * @author csiki
+ *
+ */
 public class Generator implements GeneratorInterface {
 	
 	private int taskID;
@@ -101,22 +105,19 @@ public class Generator implements GeneratorInterface {
 		return vars;
 	}
 	
-	/*
-	 * Save methods
-	 */
-	
+
 	@Override
-	public void saveID(int id) {
+	public void setID(int id) {
 		this.taskID = id;
 	}
 
 	@Override
-	public void savePriorTaskID(int priorID) {
+	public void setPriorTaskID(int priorID) {
 		this.taskPriorTaskID = priorID;
 	}
 
 	@Override
-	public void saveDescription(String description) {
+	public void setDescription(String description) {
 		description = description.replaceAll("\\\\n", "\n");
 		description = description.replaceAll("\\\\t", "\t");
 		this.taskDescription = description;
@@ -128,34 +129,34 @@ public class Generator implements GeneratorInterface {
 	}
 
 	@Override
-	public void saveValidOutput(String output) {
+	public void setValidOutput(String output) {
 		output = output.replaceAll("\\\\n", "\n");
 		output = output.replaceAll("\\\\t", "\t");
 		this.taskValidOutput = output;
 	}
 
 	@Override
-	public void saveMistakeAlcVol(float alcVol) {
+	public void setMistakeAlcVol(float alcVol) {
 		this.taskMistakeAlcVol = alcVol;
 	}
 
 	@Override
-	public void saveSolvedAlcVol(float alcVol) {
+	public void setSolvedAlcVol(float alcVol) {
 		this.taskSolvedAlcVol = alcVol;
 	}
 
 	@Override
-	public void saveAttemptsAllowed(int attempts) {
+	public void setAttemptsAllowed(int attempts) {
 		this.taskAttemptsAllowed = attempts;
 	}
 
 	@Override
-	public void saveTimeAllowed(long time) {
+	public void setTimeAllowed(long time) {
 		this.taskTimeAllowed = time;
 	}
 
 	@Override
-	public void saveTitle(String title) {
+	public void setTitle(String title) {
 		this.taskTitle = title;
 	}
 
@@ -213,5 +214,58 @@ public class Generator implements GeneratorInterface {
 		this.taskValidOutput = task.validOutput;
 		
 		return "Task loaded.";
+	}
+
+	@Override
+	public void clearID() {
+		this.taskID = 0;
+	}
+
+	@Override
+	public void clearAttemptsAllowed() {
+		this.taskAttemptsAllowed = 0;
+	}
+
+	@Override
+	public void clearMistakeAlcVol() {
+		this.taskMistakeAlcVol = 0.0F;
+		
+	}
+
+	@Override
+	public void clearDescription() {
+		this.taskDescription = "";
+		
+	}
+
+	@Override
+	public void clearTimeAllowed() {
+		this.taskTimeAllowed = 0;
+		
+	}
+
+	@Override
+	public void clearSolvedAlcVol() {
+		this.taskSolvedAlcVol = 0.0F;
+	}
+
+	@Override
+	public void clearValidOutput() {
+		this.taskValidOutput = "";
+	}
+
+	@Override
+	public void clearPriorTaskID() {
+		this.taskPriorTaskID = 0;
+	}
+
+	@Override
+	public void clearTitle() {
+		this.taskTitle = "";
+	}
+
+	@Override
+	public void clearInputs() {
+		this.taskInputs.clear();
 	}
 }

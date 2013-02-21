@@ -11,6 +11,9 @@ import java.util.List;
  */
 public abstract class Compiler implements CompilerInterface {
 	
+	/**
+	 * language name
+	 */
 	protected final String langName;
 	
 	protected Compiler(String name) {

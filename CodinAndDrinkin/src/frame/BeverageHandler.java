@@ -40,10 +40,18 @@ public class BeverageHandler {
 		this.lblDl = new JLabel("dl");
 	}
 	
+	/**
+	 * Called by BeverageList, if beverage volume changed.
+	 * @param vol beverage volume
+	 */
 	public void updateVol(String vol) {
 		this.lblVol.setText(vol);
 	}
 	
+	/**
+	 * Initialise Drink button.
+	 * @return GridBagConstraints
+	 */
 	public GridBagConstraints initBtnDrink() {
 		this.btnDrink = new JButton("Drink");
 		this.btnDrink.setFont(new Font("Tahoma", Font.PLAIN, 9));
@@ -58,6 +66,10 @@ public class BeverageHandler {
 		return gbc_btnDrink;
 	}
 	
+	/**
+	 * Initialise Pour button.
+	 * @return GridBagConstraints
+	 */
 	public GridBagConstraints initBtnPour() {
 		this.btnPour = new JButton("Pour");
 		this.btnPour.setFont(new Font("Tahoma", Font.PLAIN, 9));
@@ -71,6 +83,10 @@ public class BeverageHandler {
 		return gbc_btnPour;
 	}
 	
+	/**
+	 * Initialise label for beverage name.
+	 * @return GridBagConstraints
+	 */
 	public GridBagConstraints initLblBevName() {
 		this.lblBevName.setMaximumSize(new Dimension(100, 14));
 		this.lblBevName.setFont(new Font("Tahoma", Font.PLAIN, 11));
@@ -84,6 +100,10 @@ public class BeverageHandler {
 		return gbc_lblBevName;
 	}
 	
+	/**
+	 * Initialise label for beverage volume.
+	 * @return GridBagConstraints
+	 */
 	public GridBagConstraints initLblVol() {
 		GridBagConstraints gbc_lbldl = new GridBagConstraints();
 		gbc_lbldl.insets = new Insets(0, 0, 0, 5);
@@ -93,6 +113,10 @@ public class BeverageHandler {
 		return gbc_lbldl;
 	}
 	
+	/**
+	 * Initialise label for unit "dl".
+	 * @return GridBagConstraints
+	 */
 	public GridBagConstraints initLblDl() {
 		this.lblDl.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		GridBagConstraints gbc_lblDl = new GridBagConstraints();
@@ -103,38 +127,68 @@ public class BeverageHandler {
 		return gbc_lblDl;
 	}
 	
+	/**
+	 * Enables or disables Drink button.
+	 * @param e - true to enable drink button, otherwise false
+	 */
 	public void setDrinkBtnEnabled(boolean e) {
 		this.btnDrink.setEnabled(e);
 	}
 	
 	
-	/*
-	 * Getters
+	/**
+	 * Getter for beverage id.
+	 * @return beverage id
 	 */
 	public int getId() {
 		return id;
 	}
-
+	
+	/**
+	 * Getter for button Drink.
+	 * @return drink button
+	 */
 	public JButton getBtnDrink() {
 		return btnDrink;
 	}
-
+	
+	/**
+	 * Getter for button Pour.
+	 * @return pour button
+	 */
 	public JButton getBtnPour() {
 		return btnPour;
 	}
-
+	
+	/**
+	 * Getter for label beverage name.
+	 * @return label
+	 */
 	public JLabel getLblBevName() {
 		return lblBevName;
 	}
-
+	
+	/**
+	 * Getter for label beverage volume.
+	 * @return label
+	 */
 	public JLabel getLblVol() {
 		return lblVol;
 	}
-
+	
+	/**
+	 * Getter for label unit "dl".
+	 * @return label
+	 */
 	public JLabel getLblDl() {
 		return lblDl;
 	}
 	
+	/**
+	 * Action for button Pour.
+	 * @author csiki
+	 *
+	 */
 	private class PourAction extends AbstractAction {
 
 		private static final long serialVersionUID = 8354977488379078992L;
@@ -150,6 +204,11 @@ public class BeverageHandler {
 		}
 	}
 	
+	/**
+	 * Action for button Drink.
+	 * @author csiki
+	 *
+	 */
 	private class DrinkAction extends AbstractAction {
 
 		private static final long serialVersionUID = 8261130949357386433L;

@@ -7,6 +7,11 @@ import javax.swing.table.AbstractTableModel;
 
 import library.SolutionInterface;
 
+/**
+ * Table model for representing solution results in a JTable.
+ * @author csiki
+ *
+ */
 public class SolutionsData extends AbstractTableModel {
 	
 	private static final long serialVersionUID = 3345494844960327520L;
@@ -15,6 +20,10 @@ public class SolutionsData extends AbstractTableModel {
 	
 	String[] columnNames = {"Done", "Time used", "Attempt", "Lang."};
 	
+	/**
+	 * Adds a new row to the table. Calls fireTableDataChanged() as well.
+	 * @param solution to add
+	 */
 	public void addSolution(SolutionInterface solution) {
 		solutions.add(solution);
 		this.fireTableDataChanged();

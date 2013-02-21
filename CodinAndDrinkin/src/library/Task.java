@@ -12,6 +12,9 @@ public class Task implements Serializable {
 	
 	private static final long serialVersionUID = 3481787982673316347L;
 	
+	/**
+	 * primary identifier
+	 */
 	public final int id;
 	/**
 	 * id of task that should be solved beforehand

@@ -9,7 +9,6 @@ import java.util.List;
 
 import compilers.CCompiler;
 import compilers.CppCompiler;
-import compilers.JavaCompiler;
 
 import misc.Stopper;
 import misc.Trigger;
@@ -21,6 +20,9 @@ import misc.Trigger;
  */
 public class Game implements GameLogic, Trigger {
 	
+	/**
+	 * reference to MainFrame
+	 */
 	UserInterface ui;
 	private Task currentTask = null;
 	private Player player;
@@ -387,12 +389,10 @@ public class Game implements GameLogic, Trigger {
 	}
 	
 	@Override
-	public float bloodAlcContent() { // TODO ez nem ezrelék !!!
+	public float bloodAlcContent() {
 		float alcConsumedInOz = this.player.getConsumedAlc() * 3.38140227F;
 		float weightInPounds = this.player.getWeight() * 2.20462262F;
 		float timeInHour = (float) ( ((double) (System.currentTimeMillis() - this.timeGameStarted)) / 3600000 );
-		
-		// TODO 9,7dl tiszta alkoholra 1ezreléket ír, nem jó; nézd át ezt -> http://www.elsosegely.hu/cikk.58.hogyan_szamoljuk_ki_a_veralkoholszintet
 		
 		float alcDistributionRatio;
 		if (player.getSex() == Sex.Male)

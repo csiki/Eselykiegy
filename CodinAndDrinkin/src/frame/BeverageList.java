@@ -37,6 +37,9 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 		this.setLayout(gbl_bevPanel);
 	}
 	
+	/**
+	 * Called by MainFrame if a beverage is added. Adds it to the list.
+	 */
 	public void bevAdded() {
 		if (beverages.size() == crate.getSize())
 			return; // false call
@@ -48,6 +51,10 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 		addBevToGUI(bev);
 	}
 	
+	/**
+	 * Adds a beverage to the GUI.
+	 * @param bev - beverage to add
+	 */
 	private void addBevToGUI(BeverageHandler bev) {
 		GridBagConstraints gbc = bev.initBtnDrink();
 		this.add(bev.getBtnDrink(), gbc);
@@ -67,15 +74,27 @@ public class BeverageList extends JPanel implements BevListInterfaceForHandler {
 		this.validate();
 	}
 	
+	/**
+	 * Called by MainFrame if vol of a beverage changes. Updates beverage volume.
+	 * @param bevID - id of beverage that should be updated
+	 */
 	public void bevVolChanged(int bevID) {
 		beverages.get(bevID).updateVol(String.format("%.1f", crate.getBevVol(bevID)));
 	}
 	
+	/**
+	 * Enables or disables all Drink buttons.
+	 * @param e - true to enable, false to disable
+	 */
 	public void setDrinkBtnEnabled(boolean e) {
 		for (BeverageHandler bh : this.beverages)
 			bh.setDrinkBtnEnabled(e);
 	}
 	
+	/**
+	 * Sets crate.
+	 * @param crate
+	 */
 	public void setCrate(CrateInterface crate) {
 		this.crate = crate;
 	}

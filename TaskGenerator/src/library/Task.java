@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Storing data describing a task. Can be serialized and then loaded.
+ * Copy of CodinAndDrinkin.library.Task.java!
  * @author csiki
  *
  */

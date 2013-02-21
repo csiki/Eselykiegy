@@ -1,7 +1,7 @@
 package library;
 
 /**
- * So depressing.
+ * So depressing. Thrown more is to drunk from a beverage that is possible.
  * @author csiki
  *
  */

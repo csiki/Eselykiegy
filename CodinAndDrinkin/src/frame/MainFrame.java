@@ -120,6 +120,10 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	/*
 	 * Methods run at state switch
 	 */
+	
+	/**
+	 * GUI state - out of beverage.
+	 */
 	private void toStateOutOfBeverage() {
 		/// enable/disable items
 		this.mntmAddBeverage.setEnabled(true);
@@ -136,6 +140,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		JOptionPane.showMessageDialog(null, "You are out of alcohol! :/ (Beverage/Add beverage).");
 	}
 	
+	/**
+	 * GUI state - able to load task.
+	 */
 	private void toStateAbleToLoadTask() {
 		/// enable/disable items
 		this.mntmAddBeverage.setEnabled(true);
@@ -152,6 +159,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		JOptionPane.showMessageDialog(null, "You have enough alcohol to load tasks! (Task/Load a task)");
 	}
 	
+	/**
+	 * GUI state - player started solving a task.
+	 */
 	private void toStateTaskStarted() {
 		/// empty code
 		this.code.setText("");
@@ -171,6 +181,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		JOptionPane.showMessageDialog(null, "A task has been loaded! Have fun!");
 	}
 	
+	/**
+	 * GUI state - player must drink.
+	 */
 	private void toStateMustDrink() {
 		this.mntmAddBeverage.setEnabled(true);
 		this.mntmNewGame.setEnabled(false);
@@ -186,6 +199,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		JOptionPane.showMessageDialog(null, "It seems you have to drink some! Choose one of your beverage! (Right side/Beverages - Drink button)");
 	}
 	
+	/**
+	 * GUI state - interruption occurred when solving a task, and it returns.
+	 */
 	private void toStateTaskContinues() {
 		this.mntmAddBeverage.setEnabled(true);
 		this.mntmNewGame.setEnabled(false);
@@ -198,6 +214,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
+	/**
+	 * GUI state - interruption occurred when in ableToLoadTask, and it returns.
+	 */
 	private void toStateAbleToLoadTaskAgain() {
 		/// enable/disable items
 		this.mntmAddBeverage.setEnabled(true);
@@ -211,6 +230,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
+	/**
+	 * GUI state - code under evaluation.
+	 */
 	private void toStateUnderEvaluation() {
 		/// enable/disable items
 		this.mntmAddBeverage.setEnabled(false);
@@ -954,6 +976,10 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		for (CompilerInterface ci : clist)
 			langChoose.addItem(ci.getName());
 		
+		JScrollPane scrollPaneCode = new JScrollPane();
+		scrollPaneCode.setPreferredSize(new Dimension(106, 280));
+		scrollPaneCode.setMinimumSize(new Dimension(6, 220));
+		
 		code = new JEditorPane();
 		code.setEnabled(false);
 		code.setBorder(new LineBorder(new Color(0, 0, 0)));
@@ -969,7 +995,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		gbc_code.gridy = 8;
 		if (code.getDocument() instanceof PlainDocument)
 			code.getDocument().putProperty(PlainDocument.tabSizeAttribute, 4);
-		getFrmCodindrinkin().getContentPane().add(code, gbc_code);
+		scrollPaneCode.setViewportView(code);
+		scrollPaneCode.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		getFrmCodindrinkin().getContentPane().add(scrollPaneCode, gbc_code);
 		
 		JPanel panel_4 = new JPanel();
 		panel_4.setMinimumSize(new Dimension(200, 40));
@@ -1047,6 +1075,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		return frmCodindrinkin;
 	}
 	
+	/**
+	 * Action for menu item Game/New Game.
+	 * @author csiki
+	 *
+	 */
 	private class NewGameAction extends AbstractAction {
 		
 		private static final long serialVersionUID = -2173983948654467929L;
@@ -1068,6 +1101,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 	}
 	
+	/**
+	 * Action for menu item Game/Exit.
+	 * @author csiki
+	 *
+	 */
 	private class ExitAction extends AbstractAction {
 		private static final long serialVersionUID = -1678701054654365490L;
 		
@@ -1084,6 +1122,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 	}
 	
+	/**
+	 * Action for menu item Beverage/Add beverage.
+	 * @author csiki
+	 *
+	 */
 	private class AddBevAction extends AbstractAction {
 		private static final long serialVersionUID = 8189324588774534630L;
 		
@@ -1104,6 +1147,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 	}
 	
+	/**
+	 * Action for menu item Task/Load a task.
+	 * @author csiki
+	 *
+	 */
 	private class LoadTaskAction extends AbstractAction {
 
 		private static final long serialVersionUID = -525579174058082691L;
@@ -1130,6 +1178,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 	}
 	
+	/**
+	 * Action for button GiveUp.
+	 * @author csiki
+	 *
+	 */
 	private class GiveUpAction extends AbstractAction {
 		
 		private static final long serialVersionUID = 5131608867029857409L;
@@ -1148,6 +1201,11 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		}
 	}
 	
+	/**
+	 * Action for button Evaluate.
+	 * @author csiki
+	 *
+	 */
 	private class EvaluateAction extends AbstractAction {
 		
 		private static final long serialVersionUID = -2100265375462952149L;

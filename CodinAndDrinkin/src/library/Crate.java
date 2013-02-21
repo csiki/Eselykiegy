@@ -9,6 +9,10 @@ import java.util.List;
  *
  */
 public class Crate implements CrateInterface {
+	
+	/**
+	 * container of beverages
+	 */
 	private List<Beverage> beverages = new ArrayList<Beverage>();
 	
 	/**
