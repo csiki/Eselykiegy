@@ -11,8 +11,13 @@ public class Main {
 	public static void main(String[] args) {
 		
 		/// initialise Game
-		Game game = new Game();
-		
+		Game game;
+		try {
+			game = new Game();
+		} catch (Error e) {
+			e.printStackTrace();
+			return;
+		}
 		/// launch the main window
 		MainFrame window = new MainFrame(game);
 		

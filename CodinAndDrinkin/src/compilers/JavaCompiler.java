@@ -152,4 +152,11 @@ public final class JavaCompiler extends Compiler { // NOT USED !
 		return this.langName;
 	}
 
+
+	@Override
+	public boolean checkEnvironment() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

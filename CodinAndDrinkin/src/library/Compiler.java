@@ -35,6 +35,12 @@ public abstract class Compiler implements CompilerInterface {
 	 */
 	abstract public String run(File compiledFile, List<String> inputs);
 	
+	/**
+	 * Checks if the environment is proper for compiling and running in certain programming language.
+	 * @return true if the environment meets the requirements, false otherwise
+	 */
+	abstract public boolean checkEnvironment();
+	
 	@Override
 	public final String toString() {
 		return this.langName;

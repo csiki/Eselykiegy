@@ -246,6 +246,22 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(false);
 	}
 	
+	/**
+	 * GUI state - must drink again.
+	 */
+	private void toStateMustDrinkAgain() {
+		/// enable/disable items
+		this.mntmAddBeverage.setEnabled(true);
+		this.mntmNewGame.setEnabled(false);
+		this.mntmLoadNewTask.setEnabled(false);
+		this.mntmEndCurrentTask.setEnabled(false);
+		this.langChoose.setEnabled(false);
+		this.code.setEnabled(false);
+		this.btnGiveup.setEnabled(false);
+		this.btnEvaluate.setEnabled(false);
+		this.bevList.setDrinkBtnEnabled(true);
+	}
+	
 	/*
 	 * Implemented methods from interface UserInterface
 	 */
@@ -286,6 +302,14 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.deadline.setText(minDisplay + ":" + secDisplay);
 		this.solutionsSent.setText("0");
 		this.solutionsPermited.setText(Integer.toString(task.attemptsAllowed));
+		
+		/// window for description in new thread, to avoid blocking the counter
+		new Thread() {
+			@Override
+			public void run() {
+				JOptionPane.showMessageDialog(null, taskDescription.getText());
+			}
+		}.start();
 	}
 
 	@Override
@@ -440,7 +464,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		else if (sout == SolutionOutcome.CompileTimeError)
 			msg = "Failure: compile time error!";
 		else if (sout == SolutionOutcome.RuntimeError)
-			msg = "Failure: runtime error!";
+			msg = "Failure: runtime error (or gcc is not installed properly)!";
 		else if (sout == SolutionOutcome.InvalidOutput)
 			msg = "Failure: invalid output!";
 		else
@@ -491,7 +515,9 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 			this.bevList.bevVolChanged(bevID);
 		}
 		
-		if (this.game.isAnyTaskLoaded())
+		if (this.game.getAlcToDrink() > 0)
+			this.toStateMustDrinkAgain();
+		else if (this.game.isAnyTaskLoaded())
 			this.toStateTaskContinues();
 		else
 			this.toStateAbleToLoadTaskAgain();
@@ -772,7 +798,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		panel_8.add(this.outcome, "2, 6, 7, 1");
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setPreferredSize(new Dimension(2, 45));
+		scrollPane.setPreferredSize(new Dimension(6, 45));
 		GridBagConstraints gbc_scrollPane = new GridBagConstraints();
 		gbc_scrollPane.gridwidth = 3;
 		gbc_scrollPane.insets = new Insets(0, 0, 0, 5);
@@ -1032,7 +1058,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.btnGiveup.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_4.add(this.btnGiveup, "10, 2");
 		
-		this.btnEvaluate = new JButton("Evaluate");
+		this.btnEvaluate = new JButton("Run");
 		this.btnEvaluate.setAction(evaluateAction);
 		this.btnEvaluate.setEnabled(false);
 		this.btnEvaluate.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -1215,7 +1241,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		public EvaluateAction(MainInterfaceForDialogs main) {
 			this.main = main;
 			
-			putValue(NAME, "Evaluate");
+			putValue(NAME, "Run");
 			putValue(SHORT_DESCRIPTION, "Validate the solution");
 		}
 		

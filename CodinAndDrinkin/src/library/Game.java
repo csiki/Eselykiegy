@@ -7,6 +7,8 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import compilers.CCompiler;
 import compilers.CppCompiler;
 
@@ -63,9 +65,23 @@ public class Game implements GameLogic, Trigger {
 		this.timeGameStarted = System.currentTimeMillis();
 		
 		/// add new compilers here !
-		this.compilers.add(new CCompiler("C"));
-		this.compilers.add(new CppCompiler("C++"));
-		//this.compilers.add(new JavaCompiler("Java"));
+		Compiler c = new CCompiler("C"); // C
+		if (c.checkEnvironment())
+			this.compilers.add(c);
+		else
+			JOptionPane.showMessageDialog(null, "No gcc is installed or is not in path! You cannot program in C!");
+		
+		Compiler cpp = new CppCompiler("C++"); // C++
+		if (cpp.checkEnvironment())
+			this.compilers.add(cpp);
+		else
+			JOptionPane.showMessageDialog(null, "No g++ is installed or is not in path! You cannot program in C++!");
+		
+		/// check if any compiler is available
+		if (this.compilers.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "No compiler available, Codin&Drinkin terminates!");
+			throw new Error("No compiler available!");
+		}
 	}
 	
 	/**
