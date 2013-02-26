@@ -528,7 +528,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	 */
 	private void initialize() {
 		getFrmCodindrinkin().setResizable(false);
-		getFrmCodindrinkin().setTitle("Codin&Drinkin");
+		getFrmCodindrinkin().setTitle("Codin&Drinkin - csiki@coderteam");
 		getFrmCodindrinkin().setIconImage(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("/javax/swing/plaf/metal/icons/ocean/computer.gif")));
 		getFrmCodindrinkin().setMinimumSize(new Dimension(800, 600));
 		getFrmCodindrinkin().setPreferredSize(new Dimension(800, 600));
