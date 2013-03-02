@@ -18,7 +18,7 @@ public class SolutionsData extends AbstractTableModel {
 	
 	List<SolutionInterface> solutions = new ArrayList<SolutionInterface>();
 	
-	String[] columnNames = {"Done", "Time used", "Attempt", "Lang."};
+	String[] columnNames = {"ID", "Done", "Time", "Attempt", "Lang."};
 	
 	/**
 	 * Adds a new row to the table. Calls fireTableDataChanged() as well.
@@ -31,7 +31,7 @@ public class SolutionsData extends AbstractTableModel {
 	
 	@Override
 	public int getColumnCount() {
-		return 4;
+		return 5;
 	}
 
 	@Override
@@ -47,8 +47,9 @@ public class SolutionsData extends AbstractTableModel {
 	@Override
 	public Object getValueAt(int row, int col) {
 		switch(col) {
-			case 0: return solutions.get(row).isSolved();
-			case 1:
+			case 0: return solutions.get(row).getTaskID();
+			case 1: return solutions.get(row).isSolved();
+			case 2:
 				int secs = (int) (solutions.get(row).getTimeUsed() / 1000);
 				String secDisplay = Integer.toString(secs % 60);
 				String minDisplay = Integer.toString(secs / 60);
@@ -57,8 +58,8 @@ public class SolutionsData extends AbstractTableModel {
 				if ((secs / 60) < 10)
 					minDisplay = "0" + minDisplay;
 				return minDisplay + ":" + secDisplay;
-			case 2: return solutions.get(row).getAttemptNum();
-			case 3: return solutions.get(row).getLang();
+			case 3: return solutions.get(row).getAttemptNum();
+			case 4: return solutions.get(row).getLang();
 		}
 		
 		return null;

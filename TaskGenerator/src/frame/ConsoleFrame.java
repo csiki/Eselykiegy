@@ -30,7 +30,7 @@ public class ConsoleFrame {
 		String line;
 		String msg;
 		
-		System.out.println("Console interface for creating tasks for Codin&Drinkin - csiki@coderteam\n");
+		System.out.println("\nConsole interface for creating tasks for Codin&Drinkin - csiki@coderteam\n========================================================================\n");
 		System.out.println("Type \"help\" and press return if you got any question..");
 		while (true) {
 			try {

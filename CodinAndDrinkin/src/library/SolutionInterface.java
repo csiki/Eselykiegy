@@ -32,8 +32,14 @@ public interface SolutionInterface {
 	public String getLang();
 	
 	/**
-	 * Get this.sout.
+	 * Get SolutionOutcome.
 	 * @return the current classification of the solution
 	 */
 	public SolutionOutcome getSout();
+	
+	/**
+	 * Get id of task.
+	 * @return id of task
+	 */
+	public int getTaskID();
 }

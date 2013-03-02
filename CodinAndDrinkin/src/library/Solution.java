@@ -148,4 +148,9 @@ public class Solution implements SolutionInterface {
 	public SolutionOutcome getSout() {
 		return this.sout;
 	}
+
+	@Override
+	public int getTaskID() {
+		return this.task.id;
+	}
 }

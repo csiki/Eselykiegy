@@ -464,7 +464,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		else if (sout == SolutionOutcome.CompileTimeError)
 			msg = "Failure: compile time error!";
 		else if (sout == SolutionOutcome.RuntimeError)
-			msg = "Failure: runtime error (or gcc is not installed properly)!";
+			msg = "Failure: runtime error!";
 		else if (sout == SolutionOutcome.InvalidOutput)
 			msg = "Failure: invalid output!";
 		else
@@ -952,14 +952,16 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.solutionsTable.setBackground(SystemColor.desktop);
 		this.solutionsTable.setModel(this.solutionsData);
 		this.solutionsTable.getColumnModel().getColumn(0).setResizable(false);
-		this.solutionsTable.getColumnModel().getColumn(0).setPreferredWidth(15);
-		this.solutionsTable.getColumnModel().getColumn(0).setMinWidth(11);
+		this.solutionsTable.getColumnModel().getColumn(0).setPreferredWidth(6);
+		this.solutionsTable.getColumnModel().getColumn(0).setMinWidth(6);
 		this.solutionsTable.getColumnModel().getColumn(1).setResizable(false);
-		this.solutionsTable.getColumnModel().getColumn(1).setPreferredWidth(45);
+		this.solutionsTable.getColumnModel().getColumn(1).setPreferredWidth(15);
 		this.solutionsTable.getColumnModel().getColumn(2).setResizable(false);
-		this.solutionsTable.getColumnModel().getColumn(2).setPreferredWidth(20);
+		this.solutionsTable.getColumnModel().getColumn(2).setPreferredWidth(28);
 		this.solutionsTable.getColumnModel().getColumn(3).setResizable(false);
 		this.solutionsTable.getColumnModel().getColumn(3).setPreferredWidth(20);
+		this.solutionsTable.getColumnModel().getColumn(4).setResizable(false);
+		this.solutionsTable.getColumnModel().getColumn(4).setPreferredWidth(20);
 		scrollPane_2.setViewportView(this.solutionsTable);
 		
 		JPanel panel_3 = new JPanel();

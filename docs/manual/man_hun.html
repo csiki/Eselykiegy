@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Felhaszn�l�i k�zik�nyv a Codin&#38;Drinkin&#169; szoftverhez</title>
+	<title>Felhasználói kézikönyv a Codin&#38;Drinkin&#169; szoftverhez</title>
 	<link rel="stylesheet" type="text/css" href="man.css" />
+	<meta charset="utf-8">
 </head>
 
 <body>
 
 <section id="head">
-	<h1>Felhaszn�l�i k�zik�nyv a Codin&#38;Drinkin&#169; szoftverhez</h1>
-	<p>Hogyan futtasd �s fejleszd a Codin&#38;Drinkin&#169; szoftvert.</p>
+	<h1>Felhasználói kézikönyv a Codin&#38;Drinkin&#169; szoftverhez</h1>
+	<p>Hogyan futtasd és fejleszd a Codin&#38;Drinkin&#169; szoftvert.</p>
 	<p><a href="man_eng.html">In English</a></p>
 </section>
 
@@ -18,98 +19,104 @@
 	
 	<!-- Table of contents -->
 	<article id="tableOfContents">
-		<h2>0. Tartalomjegyz�k</h2>
+		<h2>0. Tartalomjegyzék</h2>
 		
 		<ol start="0">
 			<li>
-				<a href="#tableOfContents">Tartalomjegyz�k</a>
+				<a href="#tableOfContents">Tartalomjegyzék</a>
 			</li>
 			<li>
-				<a href="#purpose">Program feladata, c�lja</a>
+				<a href="#purpose">Program feladata, célja</a>
 			</li>
 			<li>
-				<a href="#use">Haszn�lat</a>
+				<a href="#use">Használat</a>
 			</li>
 			<ol start="1">
 				<li>
-					<a href="#preparations">El�k�sz�letek</a>
+					<a href="#preparations">Előkészületek</a>
 				</li>
 				<ol start="1">
 					<li>
-						<a href="#install">Install�l�s</a>
+						<a href="#install">Installálás</a>
 					</li>
 					<li>
-						<a href="#environment">K�vetelm�nyek</a>
+						<a href="#environment">Követelmények</a>
 					</li>
 				</ol>
 				<li>
-					<a href="#run">Futtat�s</a>
+					<a href="#run">Futtatás</a>
 				</li>
 				<ol start="1">
 					<li>
-						<a href="#start">Program ind�t�sa</a>
+						<a href="#start">Program indítása</a>
 					</li>
 					<li>
-						<a href="#startGame">�j j�t�k ind�t�sa</a>
+						<a href="#interface">Felhasználói felület</a>
 					</li>
 					<li>
-						<a href="#addBev">Ital hozz�ad�sa</a>
+						<a href="#startGame">Új játék indítása</a>
 					</li>
 					<li>
-						<a href="#loadTask">Feladat bet�lt�se</a>
+						<a href="#addBev">Ital hozzáadása</a>
 					</li>
 					<li>
-						<a href="#solvingTask">Feladat megold�sa</a>
+						<a href="#loadTask">Feladat betöltése</a>
+					</li>
+					<li>
+						<a href="#solvingTask">Feladat megoldása</a>
 					</li>
 					<ol start="1">
 						<li>
-							<a href="#chooseLang">Nyelv kiv�laszt�sa</a>
+							<a href="#chooseLang">Nyelv kiválasztása</a>
 						</li>
 						<li>
-							<a href="#insertCode">Megold�s bevitele</a>
+							<a href="#insertCode">Megoldás bevitele</a>
 						</li>
 						<li>
-							<a href="#runCode">Megold�s lefuttat�sa</a>
+							<a href="#runCode">Megoldás lefuttatása</a>
 						</li>
 						<li>
-							<a href="#classifySolution">Megold�s oszt�lyoz�sa</a>
+							<a href="#classifySolution">Megoldás osztályozása</a>
 						</li>
 						<li>
-							<a href="#drink">Iv�s</a>
+							<a href="#drink">Ivás</a>
 						</li>
 						<li>
-							<a href="#pour">Hozz��nt�s</a>
+							<a href="#pour">Hozzáöntés</a>
 						</li>
 						<li>
-							<a href="#giveup">Felad�s</a>
+							<a href="#giveup">Feladás</a>
 						</li>
 						<li>
-							<a href="#presentSolution">Eredm�ny feljegyz�se</a>
+							<a href="#presentSolution">Eredmény feljegyzése</a>
 						</li>
 					</ol>
 				</ol>
 				<li>
-					<a href="#results">Eredm�nyek �sszevet�se (eredm�nyh�rdet�s)</a>
+					<a href="#results">Eredmények összevetése (eredményhírdetés)</a>
 				</li>
 			</ol>
 			<li>
-				<a href="#developement">Feladatok l�trehoz�sa</a>
+				<a href="#developement">Feladatok létrehozása</a>
 			</li>
 			<li>
-				<a href="#developement">Fejleszt�s</a>
+				<a href="#developement">Fejlesztés</a>
 			</li>
 			<ol start="1">
 				<li>
-					<a href="#devEnvironment">Fejleszt�i k�rnyezet</a>
+					<a href="#devEnvironment">Fejlesztői környezet</a>
 				</li>
 				<li>
 					<a href="#packages">Csomagok</a>
 				</li>
 				<li>
-					<a href="#packegesUsed">Felhaszn�lt k�ls� csomag(ok)</a>
+					<a href="#packegesUsed">Felhasznált külső csomag(ok)</a>
 				</li>
 				<li>
-					<a href="#docs">Dokument�ci�</a>
+					<a href="#addCompiler">Új programozási nyelv hozzáadása</a>
+				</li>
+				<li>
+					<a href="#docs">Dokumentáció</a>
 				</li>
 			</ol>
 		</ol>
@@ -118,134 +125,498 @@
 	
 	<!-- Articles -->
 	<article id="purpose">
-		<h2>1. Program feladata, c�lja</h2>
-		<p>Program l�trej�tt�nek oka �s funkcionalit�sainak r�vid le�r�sa.</p>
+		<h2>1. Program feladata, célja</h2>
+		<p>Program létrejöttének oka és funkcionalitásainak rövid leírása.</p>
+		
+		<p>
+		A szoftver feladata egy esélykiegyenlítős programozás (verseny) során, egy-egy játékos játékmenetét vezetni, lehetőség szerint egységesíteni a többi játékos játékmenetével, mindenkinek egyenlő esélyeket biztosítva.
+		További feladata olyan adatok adminisztrációja, mint az eddig megivott alkohol mennyisége, a véralkoholszint, feladatokra adott megoldások helyességének aránya, használt programozási nyelvek, a feladatok megoldására felhasznált idő, vagy próbálkozások száma.
+		A felhasználó által megírt kódot lefordítja, lefuttatja, bemenetek biztosít ha szükséges és ellenőrzi a kimenetet.
+		</p>
+		<p>
+		TaskGenerator console-os programmal hozhatunk létre feladatokat, melyeket Codin&#38;Drinkin&#169; szoftverrel játszathatunk (TaskGenerator használatához lásd: <a href="#developement">Feladatok létrehozása</a>).
+		</p>
+		<p>
+		A program képes:
+		</p>
+		<ul>
+			<li>egy játékos felvételére,</li>
+			<li>több alkoholtartalmú ital felvételére, adminisztrációjára,</li>
+			<li>TaskGenerator-ral szérializált feladatok betöltésére, játszatására,</li>
+			<li>a felhasználó által különböző nyelveken írt programok fordítására, futtatására, bemenetek biztosítására, kimenetek validálására,</li>
+			<li>a felhasználó konzekvens utasítására alkohol fogyasztására,</li>
+			<li>a felhasználó eredményességének, alkoholfogyasztásának adminisztrációjára.</li>
+		</ul>
+		
+		<p class="important">
+		A program elsődleges célja, hogy az esélykiegyenlítős programozás versenyét rendszeres eseménnyé avanzsálja,
+		melyben ötvözi az algoritmusok és programnyelvek oktatását, és az önfelett szórakozást kompetitív keretek közt.
+		</p>
+		
 	</article>
 	
 	<article id="use">
-		<h2>2. Haszn�lat</h2>
-		<p>�tmutat� a program haszn�latba helyez�s�hez �s futtat�s�hoz.</p>
+		<h2>2. Használat</h2>
+		<p>Útmutató a program használatba helyezéséhez és futtatásához.</p>
 	</article>
 	
 	<article id="preparations">
-		<h3>2.1 El�k�sz�letek</h3>
-		<p>A szoftver install�l�sa, futtat�si k�rnyezet�nek k�vetelm�nyei.</p>
+		<h3>2.1 Előkészületek</h3>
+		<p>A szoftver installálása, futtatási környezetének követelményei.</p>
 	</article>
 	
 	<article id="install">
-		<h4>2.1.1 Install�l�s</h4>
-		<p>A szoftver "telep�t�se".</p>
+		<h4>2.1.1 Installálás</h4>
+		<p>A szoftver "telepítése".</p>
+		
+		<p>
+		Különösebb telepítésre nincs szükség; a program futás közben maga köré létrehoz 2 mappát a kód- és futtatható fájloknak (code és runnable mappa).
+		</p>
+		<p class="important">
+		A CodinAndDrinkin.jar állomány elegendő a program elindításához.
+		</p>
 	</article>
 	
 	<article id="environment">
-		<h4>2.1.2 K�vetelm�nyek</h4>
-		<p>A futtat� k�rnyezettel szemben t�masztott k�vetelm�nyek, �s azok biztos�t�s�nak le�r�sa, �tmutat�ja.</p>
+		<h4>2.1.2 Követelmények</h4>
+		<p>A futtató környezettel szemben támasztott követelmények, és azok biztosításának leírása, útmutatója.</p>
+		
+		<h6>JDK 6</h6>
+		<p>
+		A CodinAndDrinkin.jar futtatásához szükség van JDK 6 (vagy újabb) Java futtató környezetre a használt rendszeren. Amennyiben ez nincs jelen, innen letölthető, majd installálható: <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE Downloads</a>.
+		</p>
+		
+		<h6>GCC installálása</h6>
+		<p>
+		A dokumentáció létrejöttekor (2013. február) két fordító volt jelen a programban: C és C++.
+		Ahhoz, hogy ezek működhessenek szükségünk van gcc és g++ fordítóra a rendszeren, amiknek bent kell lenniük path-ban.
+		</p>
+		<p>
+		Amennyiben nincs fenn gcc, vagy g++ (tipikusan ha fent van CodeBlocks, akkor fent kell lennie), töltsük le, majd telepítsük innen: <a href="http://www.gnu.org/software/gcc/releases.html">GCC Releases</a> vagy <a href="http://www.codeblocks.org/downloads/26">CodeBlocks binary download</a>.
+		</p>
+		<p>
+		CodeBlocks kis szerencsével beállítja gcc-t és g++-t path-ba. Tesztelhetjük a következő módon: indítsunk windows alatt egy command prompt-ot, linux alatt termialt, majd írjuk be, hogy "gcc -v".
+		Ha a cmd vagy a terminal nem tudja értelmezni a parancsot, akkor nincs path-ba. A megfelelő kimenet windowson a következő:
+		</p>
+		<pre>C:\Users\csiki>gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=c:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/m
+ingw32/4.7.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../gcc-4.7.0/configure --enable-languages=c,c++,ada,fortran,obj
+c,obj-c++ --disable-sjlj-exceptions --with-dwarf2 --enable-shared --enable-libgo
+mp --disable-win32-registry --enable-libstdcxx-debug --disable-build-poststage1-
+with-cxx --enable-version-specific-runtime-libs --build=mingw32 --prefix=/mingw
+Thread model: win32
+gcc version 4.7.0 (GCC)</pre>
+		
+		<p>
+		Amennyiben nincs path-ban (nincs beállítva megfelelően a környezeti változó) a következőket csináljuk windows7 alatt: Számítógép / Rendszer tulajdonságai / Speciális rendszerbeállítások / Környezeti változók.
+		Itt a Rendszerváltozóknál megkeressük a Path változót, kiválasztjuk, majd rákattintunk a Szerkesztésre. Itt megtoldjuk a Változó értékét a következőkkel: ";C:\gcc_eleresi_utja\MinGW\bin\" (pontosvesszővel válasszuk el az előző elérési útvonaltól).
+		Pl. ha CodeBlocksot telepítettünk alapbeállításokkal 64 bites win7re: ";C:\Program Files (x86)\CodeBlocks\MinGW\bin\".
+		</p>
+		<p>
+		Linux alatt a környezeti változók (environment variables) beállítását disztribúciónként változó lehet, keressünk utána, hogyan lehetséges.
+		</p>
+		
+		<p class="info">
+		Amennyiben C és C++ fordítón kívül más is van/lett implementálva Codin&#38;Drinkin&#169;-be, ide írjuk le a követelményeket!
+		</p>
 	</article>
 	
 	<article id="run">
-		<h3>2.2 Futtat�s</h3>
-		<p>Program kezel�se fut�s k�zben, haszn�lat�nak le�r�sa.</p>
+		<h3>2.2 Futtatás</h3>
+		<p>Program kezelése futás közben, használatának leírása.</p>
 	</article>
 	
 	<article id="start">
-		<h4>2.2.1 Program ind�t�sa</h4>
-		<p>Program elind�t�s�nak menete.</p>
+		<h4>2.2.1 Program indítása</h4>
+		<p>Program elindításának menete.</p>
+		
+		<p>Program indítása a CodinAndDrinkin.jar indításával történik, amennyiben a <a href="#environment">Követelmények</a> biztosítottak.</p>
+		<p>
+		Amennyiben C, vagy C++ (az implementációjuktól függően további) fordítók működéséhez szükséges <a href="#environment">Követelmények</a> nincsenek biztosítva, a program jelzi ezt induláskor.
+		Ha egy fordítónak sincs biztosítva, a program terminál a felhasználói felület betöltése előtt (ezt is jelzi egy üzenettel).
+		</p>
+	</article>
+	
+	<article id="interface">
+		<h4>2.2.2 Felhasználói felület</h4>
+		<p>A felhasználói interface részeinek rövid leírása, bemutatása.</p>
+		
+		<p>
+		A felhasználói interface így nézhet ki win7-en.
+		</p>
+		<img src="GUIactive.jpg" />
+		
+		<h6>Menü funkcionalitása</h6>
+		<img src="GUImenu.jpg" />
+		<ul>
+			<li>Game</li>
+			<ul>
+				<li>New Game: új játék indítása.</li>
+				<li>Exit: program bezárása.</li>
+			</ul>
+			
+			<li>Beverage</li>
+			<ul>
+				<li>Add beverage: új alkoholmentes ital hozzáadása a listához.</li>
+			</ul>
+			
+			<li>Task</li>
+			<ul>
+				<li>Load a task: új feladat betöltése</li>
+				<li>Give up: jelenleg betöltött feladat passzolása (feladása).</li>
+			</ul>
+			
+			<li>Help</li>
+			<ul>
+				<li>User's manual: a jelenlegi doksi megnyitása; magyar és angol használói és fejlesztői leírás.</li>
+			</ul>
+		</ul>
+		
+		<h6>Player részleg</h6>
+		<ul>
+			<li>
+				Name: játékos neve.
+			</li>
+			<li>
+				Sex: játékos neme (male - férfi, female - nő).
+			</li>
+			<li>
+				BloodAlcContent: véralkoholszint ezrelékben a programban adminisztrált elfogyasztott alkohol, nem, és testsúly alapján számolva.
+			</li>
+		</ul>
+		<img src="GUIplayer.jpg" />
+		
+		<h6>Feladat részleg</h6>
+		<ul>
+			<li>
+				Current task: az aktuális feladat neve.
+			</li>
+			<li>
+				Task ID: az aktuális feladat számazonosítója.
+			</li>
+			<li>
+				PreTask ID: a feladat elkezdéséhez előkövetelményként támasztott másik feladat számazonsítója.
+			</li>
+			<li>
+				Time: az eltelt idő per a felhasználható idő.
+			</li>
+			<li>
+				Attempt: eddigi próbálkozások száma per a megengedett.
+			</li>
+			<li>
+				[Attempt alatt]: az aktuális feladat legutóbbi megoldásának futási eredménye (Unvalidated - még nem érkezett próbálkozás; CompiletimeError - fordítási idejű hiba; RuntimeError - futásidejű hiba; InvalidOutput - hibás kimenet; Solved - helyesen megoldva; OutOfAttempt - túl sok próbálkozás; OutOfTime - kifutott az időből).
+			</li>
+			<li>
+				Task description: az aktuális feladat leírása.
+			</li>
+		</ul>
+		<img src="GUItask.jpg" />
+		
+		<h6>Megoldás beküldő részleg</h6>
+		<ul>
+			<li>Programming language lenyíló fül: programnyelv kiválasztó; a kiválasztottba írjuk a megoldást (próbálkozások között szabadon változtatható).</li>
+			<li>[Programming language alatti] szerkeszthető szövegmező: ide írjuk a megoldásnak szánt kódot.</li>
+			<li>GiveUp gomb: az aktuális feladat passzolása (feladása).</li>
+			<li>Run gomb: a megírt kód beküldése (lefordítása, majd lefuttatása).</li>
+		</ul>
+		<img src="GUIsolve.jpg" />
+		
+		<h6>Beverages részleg</h6>
+		<p>Betöltött italok felsorolására.</p>
+		<ul>
+			<li>[(?) alc left to drink]: (?) mennyiségű (színtiszta) alkoholt kell még elfogyasztani.</li>
+			<li>Drink gomb: inni lehet az italból (amennyiben van még alkohol amit el kell fogyasztani).</li>
+			<li>Pour gomb: növelni lehet az adott ital mennyiségét.</li>
+		</ul>
+		<img src="GUIbevs.jpg" />
+		
+		<h6>Solutions részleg</h6>
+		<ul>
+			<li>ID: a megoldott feladat számazonosítója.</li>
+			<li>Done: a feladatot sikeresen megoldotta e, vagy nem.</li>
+			<li>Time: a felhasznált idő.</li>
+			<li>Attempts: próbálkozások száma.</li>
+			<li>Lang.: feladat megoldásához használt nyelv.</li>
+		</ul>
+		<img src="GUIsolutions.jpg" />
+		
+		<h6>Érdekességek részleg</h6>
+		<ul>
+			<li>Time left: az eddig betöltött feladatok megoldása során megmaradt idők összessége (a passzolt feladatok nem adnak hozzá semmit).</li>
+			<li>Rate of right solutions: a helyes próbálkozások aránya az összeshez képest százalékban.</li>
+			<li>Consumed alcohol: az eddig elfogyasztott összes tiszta alkohol mennyisége deciliterben.</li>
+		</ul>
+		<img src="GUIfacts.jpg" />
 	</article>
 	
 	<article id="startGame">
-		<h4>2.2.2 �j j�t�k ind�t�sa</h4>
-		<p>�j j�t�k ind�t�s�nak menete.</p>
+		<h4>2.2.3 Új játék indítása</h4>
+		<p>Új játék indításának menete.</p>
+		
+		<p>
+		Új játék indítása a Game menüpont alatt található New Game menüelemre való kattintással történik.
+		</p>
+		<p>
+		Ekkor előjön egy dialógus ablak melyben a játékosnak meg kell adnia nevét, nemét, magasságát, tömegét.
+		Az OK gomb lenyomása csak akkor történhet meg, ha minden értéket megadunk és ha az értékek látszólag helyek.
+		</p>
+		<p>
+		Ezt követően a Player részleg mezői kitöltődnek és lehetőségünk nyílik egy (vagy több) ital felvételére.
+		</p>
 	</article>
 	
 	<article id="addBev">
-		<h4>2.2.3 Ital hozz�ad�sa</h4>
-		<p>�j (alkoholtartalm�) ital hozz�ad�sa a list�hoz.</p>
+		<h4>2.2.4 Ital hozzáadása</h4>
+		<p>Új (alkoholtartalmú) ital hozzáadása a listához.</p>
+		
+		<p>
+		Amint elindítottunk egy játékot, fel kell vegyünk egy vagy több alkoholtartalmú italt a listára, hogy elkezdhessünk feladatokat oldani.
+		</p>
+		<p>
+		Egy újabb ital felvételéhez kattintsunk a Beverages menüpont alatt található Add beverage menüelemre.
+		</p>
+		<p>
+		Ekkor előjön egy dialógus ablak melyben a játékosnak meg kell adnia az ital nevét (pl. sör, vodka, stb.), mennyiségét amennyivel rendelkezik deciliterben, és az alkohol százalékát.
+		Az OK gomb lenyomása csak akkor történhet meg, ha minden mező helyesen van kitöltve.
+		</p>
+		<p>
+		Amint hozzáadtuk, a Beverages részlegen megjelenik az ital nevével és mennyiségével.
+		</p>
 	</article>
 	
 	<article id="loadTask">
-		<h4>2.2.4 Feladat bet�lt�se</h4>
-		<p>�j feladat megnyit�sa �s a feladat r�szleg r�szeinek magyar�zata.</p>
+		<h4>2.2.5 Feladat betöltése</h4>
+		<p>Új feladat megnyitásának menete.</p>
+		
+		<p>
+		Egy új feladat betöltése akkor történhet meg, ha nincs aktuális feladat betöltve, ha a betöltendő feladat nem lett még a játék során betöltve, ha a betöltendő feladatra előírt előző feladat már be volt töltve, illetve ha elegendő alkohol áll rendelkezésre a feladat megoldását követő fogyasztáásra.
+		</p>
+		
+		<p>
+		Egy új feladat betöltéséhez kattintsunk a Task menüpont alatt található Load a task menüelemre.
+		</p>
+		
+		<p>
+		Ekkor előjön egy fájlválasztó ablak, melyben meg kell keresnünk azt a .task kiterjesztésű fájlt, melyet be szeretnénk tölteni.
+		Ha betöltöttük, előjön egy ablak mely értesít, hogy a feladat betöltése sikeres volt e, ha nem, miért.
+		Ezt követően előugrik egy újabb ablak, mely a feladat leírását tartalmazza, és ebben a pillanatban az időszámláló is elindul.
+		</p>
 	</article>
 	
 	<article id="solvingTask">
-		<h4>2.2.5 Feladat megold�sa</h4>
-		<p>Bet�lt�tt feladat megold�s�nak menete.</p>
+		<h4>2.2.6 Feladat megoldása</h4>
+		<p>Betöltött feladat megoldásának menete.</p>
+		
+		<p>
+		A feladat részlegben olvashatjuk a feladat szövegét, továbbá, hogy mennyi időnk van a megoldásokra és, hány próbálkozás megengedett.
+		</p>
 	</article>
 	
 	<article id="chooseLang">
-		<h5>2.2.5.1 Nyelv kiv�laszt�sa</h5>
-		<p>Programoz�si nyelv - amiben a megold�st �rjuk - kiv�laszt�s�nak menete.</p>
+		<h5>2.2.6.1 Nyelv kiválasztása</h5>
+		<p>Programozási nyelv - amiben a megoldást írjuk - kiválasztásának menete.</p>
+		
+		<p>
+		Amint értelmeztük a feladatot, válasszunk egy nekünk szimpatikus nyelvet a Programming language után lévő legördülő listából.
+		</p>
 	</article>
 	
 	<article id="insertCode">
-		<h5>2.2.5.2 Megold�s bevitele</h5>
-		<p>Megold�s bevitele a felhaszn�l�i fel�letre.</p>
+		<h5>2.2.6.2 Megoldás bevitele</h5>
+		<p>Megoldás bevitele a felhasználói felületre.</p>
+		
+		<p>
+		Kezdjük írni a kódot a legürdülő lista alatti szövegmezőbe.
+		</p>
+		
+		<p class="info">
+		Ügyeljünk arra, hogy minden használt könyvtárat (pl.: stdio.h, iostream, stb.) linkeljünk a program elején.
+		</p>
 	</article>
 	
 	<article id="runCode">
-		<h5>2.2.5.3 Megold�s lefuttat�sa</h5>
-		<p>Megold�s bek�ld�se / lefuttat�sa / evalu�l�sa.</p>
+		<h5>2.2.6.3 Megoldás lefuttatása</h5>
+		<p>Megoldás beküldése, lefuttatása, evaluálása.</p>
+		
+		<p>
+		Amint késznek találjuk a megoldásunk, kattintsunk a Run gombra.
+		Ezzel megkezdődik prograszétvagyokmunk fordítása majd futtatása.
+		Ez beletelhet pár másodpercbe is (maximum 7 másodperc).
+		</p>
+		
+		<p class="important">
+		Ha 7 másodpercen belül nem ad üzenetet a program a megoldásunk helyességéről, a szoftver valószínűleg megfagyott, vagy nem várt állapotba került, amit nem tud kezelni.
+		Ebben az esetben indítsuk újra a szoftvert és kezdjük előlről az ivást.
+		</p>
 	</article>
 	
 	<article id="classifySolution">
-		<h5>2.2.5.4 Megold�s oszt�lyoz�sa</h5>
-		<p>Megold�s eredm�ny�nek oszt�lyoz�sa.</p>
+		<h5>2.2.6.4 Megoldás osztályozása</h5>
+		<p>Megoldás eredményének osztályozása.</p>
+		
+		<p>
+		Amint a fordítás megtörtént és kiértékelődött a megoldásunk, a következő üzeneteket kaphatjuk:
+		</p>
+		<ul>
+			<li>"Failure: compile time error!": probléma lépett fel a megoldásunk fordításakor.</li>
+			<li>"Failure: runtime error (or gcc is not installed properly)!": probléma lépett fel megoldásunk futtatásakor.</li>
+			<li>"Failure: out of time!": kifutottunk az időből.</li>
+			<li>"Failure: out of attempt!": kifutottunk a próbálkozásokból.</li>
+			<li>"Failure: invalid output!": rossz kimenetet adott a megoldásunk.</li>
+			<li>"Success!!!44": sikeresen megoldottuk a feladatot.</li>
+		</ul>
 	</article>
 	
 	<article id="drink">
-		<h5>2.2.5.5 Iv�s</h5>
-		<p>A k�telez� italfogyaszt�s menete a felhaszn�l�i interface-en.</p>
+		<h5>2.2.6.5 Ivás</h5>
+		<p>A kötelező italfogyasztás menete a felhasználói interface-en.</p>
+		
+		<p>
+		Egy utasítás fog megjelenni, hogy válasszunk a betöltött italaink közül, melyikből szeretnénk fogyasztani (Drink gombbal választhatunk).
+		Az elfogyasztandó tiszta alkoholmennyiség a Beverages feladat mellett, piros színnel szerepel.
+		</p>
+		
+		<p>
+		Amint kiválasztottuk az italunk, a program kiadja mennyit is kell abból elfogyasztanunk deciliterben.
+		Addig válasszunk amíg az elfogyasztandó alkohol mennyiségünk > 0.
+		</p>
+		
+		<p class="info">
+		Több italból való fogyasztás akkor lehetséges, ha a választott italainkban nincs elegendő alkohol mennyiség.
+		</p>
+		
+		<p>
+		Ha elfogyasztottuk az előírtakat, betölthetjük a következő feladatot.
+		</p>
 	</article>
 	
 	<article id="pour">
-		<h5>2.2.5.6 Hozz��nt�s</h5>
-		<p>Egy fajta ital volumen�nek megn�vel�se / hozz��nt�s a felhaszn�l�i interface-en.</p>
+		<h5>2.2.6.6 Hozzáöntés</h5>
+		<p>Egy fajta ital volumenének megnövelése / hozzáöntés a felhasználói interface-en.</p>
+		
+		<p>
+		Amennyiben a játék során új italokat szereztünk be, melyeknek az alkoholszázaléka megegyezik (vagy teljesen megyezik) egy már betöltött italéval, lehetőségünk van a betöltött ital mennyiségét megnövelni.
+		</p>
+		
+		<p>
+		Ezt az ital neve előtt található Pour gombbal tehetjük meg.
+		Miután rákattintottunk a gombra egy dialógus ablak fog beugrani egy mezővel.
+		Írjuk a mezőbe mennyit szeretnénk hozzáönteni deciliterben. Nyomjunk az OK gombra.
+		</p>
 	</article>
 	
 	<article id="giveup">
-		<h5>2.2.5.7 Felad�s</h5>
-		<p>Feladni a feladat megold�s�t.</p>
+		<h5>2.2.6.7 Feladás</h5>
+		<p>Feladni a feladat megoldását.</p>
+		
+		<p>
+		Amennyiben túl nagy falatnak tartjuk a feladatot, fel is adhatjuk annak megoldását.
+		Erre két módunk is van: rákattintunk menüből Task/Give upmenüelemre, vagy az interface alján található GiveUp gombra.
+		</p>
+		
+		<p class="important">
+		Amennyiben feladjuk a feladatot, nem lesz lehetőségünk (ebben a játékmenetben) még egyszer betölteni.
+		A feladatra elhasznált idő ebben az esetben, a felhasználható maximum lesz.
+		</p>
 	</article>
 	
 	<article id="presentSolution">
-		<h5>2.2.5.8 Eredm�ny feljegyz�se</h5>
-		<p>Eredm�ny feljegyz�se, prezent�l�sa a felhaszn�l�i interface-en a feladat megold�s�t (vagy felad�st) k�vet�en.</p>
+		<h5>2.2.6.8 Eredmény feljegyzése</h5>
+		<p>Eredmény feljegyzése, prezentálása a felhasználói interface-en a feladat megoldását (vagy feladást) követően.</p>
+		
+		<p>
+		Amint a feladatot megoldottuk, vagy passzoltuk, a Solutions részlegen megjelenik a megoldásunk leírása a táblázat új soraként.
+		</p>
+		
+		<p>
+		Oszlopok jelentése:
+		</p>
+		<ul>
+			<li>ID: a feladat számazonsítója.</li>
+			<li>Done: pipa ha feladat megoldódott, üres négyzet ha nem.</li>
+			<li>Time: a feladatra felhasznált idő.</li>
+			<li>Attempt: próbálkozások száma.</li>
+			<li>Lang.: a megoldáshoz használt programozási nyelv.</li>
+		</ul>
 	</article>
 	
 	<article id="results">
-		<h3>2.3 Eredm�nyek �sszevet�se (eredm�nyh�rdet�s)</h3>
-		<p>Eredm�nyek �sszevet�se m�s j�t�kosok eredm�ny�vel, k�l�nb�z� sorrendeket �ll�t�sa j�t�kosok k�zt
-		egy esetleges eredm�nyh�rdet�shez.</p>
+		<h3>2.3 Eredmények összevetése (eredményhírdetés)</h3>
+		<p>Eredmények összevetése más játékosok eredményével, különböző sorrendeket állítása játékosok közt
+		egy esetleges eredményhírdetéshez.</p>
+		
+		<p>
+		Amennyiben játékosok csoportjával ugyanazokat a feladatokat (ugyanabban a sorrendben) elvégeztetjük, a végén lehetőségünk adódhat a játékosok rangsorolására, eredményhírdetésre.
+		</p>
+		
+		<p>
+		Sorrend felállítására a következő lehetőségeink lehetnek:
+		</p>
+		<ul>
+			<li>A feladatok megoldására használt idő: Time left értéke az Érdekességek részlegben (akinek több ideje maradt vissza a feladatok megoldása során, az előrébb kerül).</li>
+			<li>Beküldött megoldások helyességének aránya: Rate of right solutions értéke Érdekességek részlegben (itt megadhatunk egy minimális feladat számot amit el kell végezni, hogy szerepeljenek ebben a rangsorolásban).</li>
+			<li>Az elfogyasztott alkoholmennyiség után: Consumed alcohol értéke az Érdekességek részlegben (nyílván aki többet ivott, az kerül előrébb a sorban).</li>
+			<li>A megoldott feladatok száma alapján: Solutions táblából leolvasható.</li>
+		</ul>
+		
+		<p>
+		Továbbá adható különdíj:
+		</p>
+		<ul>
+			<li>a legmagasabb véralkoholszintű játékosnak,</li>
+			<li>a legtöbb programnyelvet (sikeresen) alkalmazó játékosnak.</li>
+		</ul>
+		
+		<p class="info">
+		A játékosok eredményeinek összevetésére egyelőre csak a PC állhat rendelkezésre (papír-ceruza) (háhá).
+		Feljegyezzük a játékosok eredményeit leolvasva egyenként az interface-ekről, majd azokat összevetjük.
+		Ennek gépesítésére megoldás lehet egy új osztály létrehozása, melyben elmentünk Player adatokat és a Solution-ök listáját.
+		Ezt szerializáljuk és írunk egy programot ami ezeket fájlokat beolvassa és összeveti, majd különböző sorrendeket állít fel (hajrá).
+		</p>
+		
 	</article>
 	
 	<article id="taskCreation">
-		<h2>3. Feladatok l�trehoz�sa</h2>
-		<p>Feladatok gener�l�sa, melyeket k�s�bb a programba j�tszatni lehet.</p>
+		<h2>3. Feladatok létrehozása</h2>
+		<p>Feladatok generálása, melyeket később a programba játszatni lehet.</p>
+		
+		<p>
+		
+		</p>
 	</article>
 	
 	<article id="developement">
-		<h2>4. Fejleszt�s</h2>
-		<p>�tmutat�s a szoftver k�s�bbi fejleszt�s�hez, �j funci�k implement�l�s�hoz.</p>
+		<h2>4. Fejlesztés</h2>
+		<p>Útmutatás a szoftver későbbi fejlesztéséhez, új funciók implementálásához.</p>
 	</article>
 	
 	<article id="devEnvironment">
-		<h3>4.1 Fejleszt�i k�rnyezet</h3>
-		<p>A program fejleszt�s�hez haszn�lt fejleszt�i k�rnyezet, JDK verzi�, ford�t�.</p>
+		<h3>4.1 Fejlesztői környezet</h3>
+		<p>A program fejlesztéséhez használt fejlesztői környezet, JDK verzió, fordító.</p>
 	</article>
 	
 	<article id="packages">
 		<h3>4.2 Csomagok</h3>
-		<p>A programot fel�p�t� Java package-ek �s tartalmuk r�vid le�r�sa.</p>
+		<p>A programot felépítő Java package-ek és tartalmuk rövid leírása.</p>
 	</article>
 	
 	<article id="packegesUsed">
-		<h3>4.3 Felhaszn�lt k�ls� csomag(ok)</h3>
-		<p>A programhoz linkelt, alkalmazott k�ls� csomag(ok).</p>
+		<h3>4.3 Felhasznált külső csomag(ok)</h3>
+		<p>A programhoz linkelt, alkalmazott külső csomag(ok).</p>
+	</article>
+	
+	<article id="addCompiler">
+		<h3>4.4 Új programozási nyelv hozzáadása</h3>
+		<p>Egy újabb fordító implementálása a szoftverbe, hogy a feladatokra adott megoldásokat egy újabb nyelven is megtörténhessen.</p>
 	</article>
 	
 	<article id="docs">
-		<h3>4.4 Dokument�ci�</h3>
-		<p>Szoftver java-dokument�ci�ja.</p>
+		<h3>4.5 Dokumentáció</h3>
+		<p>Szoftver java-dokumentációja.</p>
 	</article>
 	<!-- /Articles -->
 	
