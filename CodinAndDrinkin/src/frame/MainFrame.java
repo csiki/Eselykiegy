@@ -11,6 +11,8 @@ import java.awt.event.MouseEvent;
 import javax.swing.JMenu;
 import java.awt.Toolkit;
 import javax.swing.JPanel;
+
+import java.awt.Desktop;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Color;
@@ -52,6 +54,7 @@ import library.UserInterface;
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -105,6 +108,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	private final Action loadTaskAction = new LoadTaskAction(this);
 	private final Action giveUpAction = new GiveUpAction(this);
 	private final Action evaluateAction = new EvaluateAction(this);
+	private final Action helpAction = new HelpAction();
 
 
 	public MainFrame(GameLogic game) {
@@ -574,6 +578,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		menuBar.add(mnHelp);
 		
 		JMenuItem mntmUsersManual = new JMenuItem("User's manual");
+		mntmUsersManual.setAction(this.helpAction);
 		mnHelp.add(mntmUsersManual);
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -1250,6 +1255,27 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		public void actionPerformed(ActionEvent e) {
 			toStateUnderEvaluation();
 			main.evaluateSolution();
+		}
+	}
+	
+	/**
+	 * Action for menu item Help/User's manual.
+	 * @author csiki
+	 *
+	 */
+	private class HelpAction extends AbstractAction {
+		private static final long serialVersionUID = 8189324588774534630L;
+		
+		public HelpAction() {
+			putValue(NAME, "Manual");
+			putValue(SHORT_DESCRIPTION, "Open user's manual (in hungarian)");
+		}
+		public void actionPerformed(ActionEvent arg0) {
+			try {
+				Desktop.getDesktop().open(new File("manual/man_hun.html"));
+			} catch (IOException e) {
+				JOptionPane.showMessageDialog(null, "No manual found sry. :/");
+			}
 		}
 	}
 }

@@ -21,7 +21,7 @@ public abstract class Compiler implements CompilerInterface {
 	}
 	
 	/**
-	 * Compiles the given code, and if there is no error. Creates a code text file (under folder 'code') and a compiled (runnable) file (under folder 'runnable').
+	 * Compiles the given code. If there is no error, creates a code text file (under folder 'code') and a compiled (runnable) file (under folder 'runnable').
 	 * @param code programming code
 	 * @return the path of the file created; if null, error occurred
 	 */
@@ -31,7 +31,7 @@ public abstract class Compiler implements CompilerInterface {
 	 * Run the given compiled (byte) file and provide the given inputs.
 	 * @param compiledFile file containing the (byte) runnable code
 	 * @param inputs the desired inputs in order, to provide during running
-	 * @return output string, if null error occurred
+	 * @return output of the given program, if null error occurred
 	 */
 	abstract public String run(File compiledFile, List<String> inputs);
 	
