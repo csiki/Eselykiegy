@@ -511,7 +511,7 @@ gcc version 4.7.0 (GCC)</pre>
 	
 	<article id="giveup">
 		<h5>2.2.6.7 Feladás</h5>
-		<p>Feladni a feladat megoldását.</p>
+		<p>Feladni a feladat megoldását, passzolni.</p>
 		
 		<p>
 		Amennyiben túl nagy falatnak tartjuk a feladatot, fel is adhatjuk annak megoldását.
@@ -585,8 +585,54 @@ gcc version 4.7.0 (GCC)</pre>
 		<p>Feladatok generálása, melyeket később a programba játszatni lehet.</p>
 		
 		<p>
-		
+		Feladatok létrehozásához szükségünk van a TaskGenerator nevű programra (avagy írjunk egyet).
+		A futtatható program (TaskGenerator.jar) mellett található egy batch (Windowsra) és egy bash (Linuxra) fájl:
+		TaskGenerator.bat és TaskGenerator.sh. Ezek futtatása adott rendszeren parancssorba / terminálba elindítja konzolosan a TaskGeneratort.
+		Amennyiben ezek nem állnak rendelkezésre, indítsunk egy parancssort / terminált és gépeljük be a következőt: "java -jar TaskGenerator.jar" (JDK 6 musthave).
 		</p>
+		
+		<p>
+		Miután elindítottuk, a "help" parancssal megleshetitek, milyen parancsok állnak rendelkezésre egy feladat létrehozásához.
+		</p>
+		
+		<pre>C:\CSIKI\PROGRAMING\Java\Eselykiegy\TaskGenerator>java -jar TaskGenerator.jar
+
+Console interface for creating tasks for Codin&Drinkin - csiki@coderteam
+========================================================================
+
+Type "help" and press return if you got any question..
+help
+
+Help: (args in use may be divided by a space in order)
+=====================================================================
+Command name    Arg(s)                  Description
+---------------------------------------------------------------------
+set             identifier, value       Sets a task variable,
+                                        identified by identifier.
+                                        Use "\n" for newline.
+add             identifier, item        Adds item to the identified
+                                        list (e.g. inputs).
+clear           [identifier]            Sets value of a task variable
+                                        to default. Empty all task
+                                        variables if no identifier
+                                        specified.
+status          -                       Lists task variables and
+                                        its values.
+save            path(def: "tasks/")     Serialize and save task
+                                        to the given path.
+                                        Path may end
+                                        with a slash ("/").
+load            path                    Loads the values of an
+                                        existing .task file.
+help            -                       Brings up this table.
+exit            -                       Exits.
+---------------------------------------------------------------------</pre>
+		
+		<p class="info">
+		Útmutató: írjuk be, hogy "status", a task változók neveinek azonosításához, majd "set"-tel állítsuk be a változókat, "add"-al pedig bővítsük a tömbö(ke)t,
+		"clear"-rel töröljünk egy, vagy az összes elemet, majd "save"-vel mentsük el (mentési hely: "eleresi_ut_amit_megadsz/[task_id].task")!
+		</p>
+		
 	</article>
 	
 	<article id="developement">
