@@ -64,7 +64,7 @@ public class Game implements GameLogic, Trigger {
 	public Game() {
 		this.timeGameStarted = System.currentTimeMillis();
 		
-		/// add new compilers here !
+		/// compilers
 		Compiler c = new CCompiler("C"); // C
 		if (c.checkEnvironment())
 			this.compilers.add(c);
@@ -76,6 +76,8 @@ public class Game implements GameLogic, Trigger {
 			this.compilers.add(cpp);
 		else
 			JOptionPane.showMessageDialog(null, "No g++ is installed or is not in path! You cannot program in C++!");
+		
+		/// NEW COMPILERS HERE !!!
 		
 		/// check if any compiler is available
 		if (this.compilers.isEmpty()) {

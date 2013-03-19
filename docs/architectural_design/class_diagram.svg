@@ -3,7 +3,7 @@
 	baseProfile="full"
 	height="100%"
 	version="1.1"
-	viewBox="0 0 766 316"
+	viewBox="0 0 766 368"
 	width="100%"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:ev="http://www.w3.org/2001/xml-events"
@@ -13,78 +13,78 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="182, 90 329, 90 329, 168 182, 168 182, 90 "
+			points="342, 100 450, 100 450, 190 342, 190 342, 100 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="183"
-			x2="329"
-			y1="121"
-			y2="121"/>
+			x1="341"
+			x2="450"
+			y1="145"
+			y2="145"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="183"
-			x2="329"
-			y1="99"
-			y2="99"/>
+			x1="341"
+			x2="450"
+			y1="106"
+			y2="106"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="183"
-			x2="183"
-			y1="90"
-			y2="168"/>
+			x1="341"
+			x2="341"
+			y1="100"
+			y2="190"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="183"
-			x2="329"
-			y1="168"
-			y2="168"/>
+			x1="341"
+			x2="450"
+			y1="190"
+			y2="190"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="329"
-			x2="329"
-			y1="90"
-			y2="168"/>
+			x1="450"
+			x2="450"
+			y1="100"
+			y2="190"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="183"
-			x2="329"
-			y1="90"
-			y2="90"/>
+			x1="341"
+			x2="450"
+			y1="100"
+			y2="100"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="256"
-			y="95">
+			x="396"
+			y="104">
 			Game
 		</text>
 
@@ -95,30 +95,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="190"
-			y="105">
+			x="347"
+			y="111">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="186"
-			y="105">
+			x="344"
+			y="111">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="190"
-			y="105">
+			x="347"
+			y="111">
 			currentTask : Task
 		</text>
 
@@ -129,30 +129,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="190"
-			y="126">
+			x="347"
+			y="162">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="186"
-			y="126">
+			x="344"
+			y="162">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="190"
-			y="126">
+			x="347"
+			y="162">
 			calculateAlcComsumeVol( SolutionOutcome ) : float
 		</text>
 
@@ -163,31 +163,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="191"
-			y="144">
+			x="347"
+			y="174">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="187"
-			y="144">
+			x="344"
+			y="174">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="191"
-			y="144">
-			taskValidation( Task ) : boolean
+			x="347"
+			y="174">
+			taskValidation( Task ) : TaskValidationOutcome
 		</text>
 
 	</g>
@@ -197,30 +197,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="191"
-			y="135">
+			x="347"
+			y="168">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="187"
-			y="135">
+			x="344"
+			y="168">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="191"
-			y="135">
+			x="347"
+			y="168">
 			openFile( File ) : Task
 		</text>
 
@@ -231,31 +231,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="191"
-			y="153">
+			x="347"
+			y="186">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="187"
-			y="153">
+			x="344"
+			y="186">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="191"
-			y="153">
-			calculateBloodVol( int, int ) : float
+			x="347"
+			y="186">
+			isSolved( taskID:int ) : boolean
 		</text>
 
 	</g>
@@ -265,31 +265,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="190"
-			y="162">
-			-
+			x="347"
+			y="156">
+			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="186"
-			y="162">
+			x="344"
+			y="156">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="190"
-			y="162">
-			isPassed( taskID:int ) : boolean
+			x="347"
+			y="156">
+			addCompiler( Compiler )
 		</text>
 
 	</g>
@@ -299,31 +299,235 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="191"
-			y="114">
+			x="347"
+			y="117">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="187"
-			y="114">
+			x="344"
+			y="117">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="191"
-			y="114">
-			currentTaskStartTime : long
+			x="347"
+			y="117">
+			alcToDrink : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="347"
+			y="123">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="344"
+			y="123">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="347"
+			y="123">
+			stopper : Stopper
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="347"
+			y="180">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="344"
+			y="180">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="347"
+			y="180">
+			calculateBevComsumeVol( bevID:int, alcLeft:Float ) : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="347"
+			y="150">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="344"
+			y="150">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="347"
+			y="150">
+			setUI( UserInterface )
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="347"
+			y="129">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="344"
+			y="129">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="347"
+			y="129">
+			underAction : boolean
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="347"
+			y="135">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="344"
+			y="135">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="347"
+			y="135">
+			outOfTimeDuringAction : boolean
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="347"
+			y="141">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="344"
+			y="141">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="347"
+			y="141">
+			timeGameStarted : long
 		</text>
 
 	</g>
@@ -332,78 +536,78 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="383, 116 481, 116 481, 194 383, 194 383, 116 "
+			points="497, 154 573, 154 573, 219 497, 219 497, 154 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="383"
-			x2="481"
-			y1="173"
-			y2="173"/>
+			x1="496"
+			x2="573"
+			y1="186"
+			y2="186"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="383"
-			x2="481"
-			y1="125"
-			y2="125"/>
+			x1="496"
+			x2="573"
+			y1="160"
+			y2="160"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="383"
-			x2="383"
-			y1="116"
-			y2="194"/>
+			x1="496"
+			x2="496"
+			y1="153"
+			y2="219"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="383"
-			x2="481"
-			y1="194"
-			y2="194"/>
+			x1="496"
+			x2="573"
+			y1="219"
+			y2="219"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="481"
-			x2="481"
-			y1="116"
-			y2="194"/>
+			x1="573"
+			x2="573"
+			y1="153"
+			y2="219"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="383"
-			x2="481"
-			y1="116"
-			y2="116"/>
+			x1="496"
+			x2="573"
+			y1="153"
+			y2="153"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="432"
-			y="121">
+			x="535"
+			y="157">
 			Player
 		</text>
 
@@ -414,30 +618,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="391"
-			y="130">
+			x="502"
+			y="164">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="386"
-			y="130">
+			x="499"
+			y="164">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="391"
-			y="130">
+			x="502"
+			y="164">
 			name : String
 		</text>
 
@@ -448,30 +652,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="391"
-			y="139">
+			x="502"
+			y="170">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="387"
-			y="139">
+			x="499"
+			y="170">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="391"
-			y="139">
+			x="502"
+			y="170">
 			weight : int
 		</text>
 
@@ -482,30 +686,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="391"
-			y="148">
+			x="502"
+			y="176">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="387"
-			y="148">
+			x="499"
+			y="176">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="391"
-			y="148">
+			x="502"
+			y="176">
 			height : int
 		</text>
 
@@ -516,30 +720,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="391"
-			y="166">
+			x="502"
+			y="182">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="387"
-			y="166">
+			x="499"
+			y="182">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="391"
-			y="166">
+			x="502"
+			y="182">
 			consumedAlc : float
 		</text>
 
@@ -550,31 +754,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="391"
-			y="178">
+			x="502"
+			y="191">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="386"
-			y="178">
+			x="499"
+			y="191">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="391"
-			y="178">
-			consume( Beverage, float, float )
+			x="502"
+			y="191">
+			consume( bevID:int, float, alcVol:float )
 		</text>
 
 	</g>
@@ -584,31 +788,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="391"
-			y="187">
+			x="502"
+			y="203">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="387"
-			y="187">
+			x="499"
+			y="203">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="391"
-			y="187">
-			getBev( bevID:int ) : Beverage
+			x="502"
+			y="203">
+			addBev( String, float, float ) : int
 		</text>
 
 	</g>
@@ -618,31 +822,99 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="391"
-			y="157">
-			-
+			x="502"
+			y="197">
+			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="387"
-			y="157">
+			x="499"
+			y="197">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="391"
-			y="157">
-			bloodVol : float
+			x="502"
+			y="197">
+			pour( bevID:int, float )
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="502"
+			y="209">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="499"
+			y="209">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="502"
+			y="209">
+			getCrate() : CrateInterface
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="502"
+			y="215">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="499"
+			y="215">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="502"
+			y="215">
+			getConsumedAlc() : float
 		</text>
 
 	</g>
@@ -651,78 +923,78 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="530, 98 623, 98 623, 158 530, 158 530, 98 "
+			points="606, 142 661, 142 661, 201 606, 201 606, 142 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="623"
-			y1="137"
-			y2="137"/>
+			x1="606"
+			x2="662"
+			y1="169"
+			y2="169"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="623"
-			y1="107"
-			y2="107"/>
+			x1="606"
+			x2="662"
+			y1="148"
+			y2="148"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="530"
-			y1="98"
-			y2="158"/>
+			x1="606"
+			x2="606"
+			y1="142"
+			y2="202"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="623"
-			y1="158"
-			y2="158"/>
+			x1="606"
+			x2="662"
+			y1="202"
+			y2="202"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="623"
-			x2="623"
-			y1="98"
-			y2="158"/>
+			x1="662"
+			x2="662"
+			y1="142"
+			y2="202"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="623"
-			y1="98"
-			y2="98"/>
+			x1="606"
+			x2="662"
+			y1="142"
+			y2="142"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="577"
-			y="103">
+			x="634"
+			y="145">
 			Beverage
 		</text>
 
@@ -733,30 +1005,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="538"
-			y="113">
+			x="611"
+			y="152">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="534"
-			y="113">
+			x="608"
+			y="152">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="538"
-			y="113">
+			x="611"
+			y="152">
 			name : String
 		</text>
 
@@ -767,30 +1039,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="538"
-			y="121">
+			x="611"
+			y="158">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="534"
-			y="121">
+			x="609"
+			y="158">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="538"
-			y="121">
+			x="611"
+			y="158">
 			abv : float
 		</text>
 
@@ -801,31 +1073,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="538"
-			y="130">
+			x="611"
+			y="164">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="534"
-			y="130">
+			x="609"
+			y="164">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="538"
-			y="130">
-			amount : float
+			x="611"
+			y="164">
+			vol : float
 		</text>
 
 	</g>
@@ -835,31 +1107,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="538"
-			y="143">
+			x="611"
+			y="173">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="534"
-			y="143">
+			x="608"
+			y="173">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="538"
-			y="143">
-			pour( amount:float ) : void
+			x="611"
+			y="173">
+			pour( vol:float ) : void
 		</text>
 
 	</g>
@@ -869,31 +1141,133 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="538"
-			y="152">
+			x="611"
+			y="179">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="534"
-			y="152">
+			x="608"
+			y="179">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="538"
-			y="152">
-			consume( amount:float ) : void
+			x="611"
+			y="179">
+			consume( vol:float ) : void
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="611"
+			y="191">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="608"
+			y="191">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="611"
+			y="191">
+			getVol() : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="611"
+			y="197">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="609"
+			y="197">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="611"
+			y="197">
+			getABV() : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="611"
+			y="185">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="608"
+			y="185">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="611"
+			y="185">
+			getName() : String
 		</text>
 
 	</g>
@@ -902,78 +1276,78 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="366, 228 456, 228 456, 306 366, 306 366, 228 "
+			points="466, 245 566, 245 566, 317 466, 317 466, 245 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="366"
-			x2="456"
-			y1="285"
-			y2="285"/>
+			x1="466"
+			x2="566"
+			y1="278"
+			y2="278"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="366"
-			x2="456"
-			y1="237"
-			y2="237"/>
+			x1="466"
+			x2="566"
+			y1="251"
+			y2="251"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="366"
-			x2="366"
-			y1="228"
-			y2="306"/>
+			x1="466"
+			x2="466"
+			y1="245"
+			y2="317"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="366"
-			x2="456"
-			y1="306"
-			y2="306"/>
+			x1="466"
+			x2="566"
+			y1="317"
+			y2="317"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="456"
-			x2="456"
-			y1="228"
-			y2="306"/>
+			x1="566"
+			x2="566"
+			y1="245"
+			y2="317"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="366"
-			x2="456"
-			y1="228"
-			y2="228"/>
+			x1="466"
+			x2="566"
+			y1="245"
+			y2="245"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="411"
-			y="233">
+			x="516"
+			y="248">
 			Solution
 		</text>
 
@@ -984,31 +1358,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="374"
-			y="243">
+			x="472"
+			y="255">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="370"
-			y="243">
+			x="469"
+			y="255">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="374"
-			y="243">
-			soutcome : SolutionOutcome
+			x="472"
+			y="255">
+			sout : SolutionOutcome
 		</text>
 
 	</g>
@@ -1018,43 +1392,9 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="374"
-			y="252">
-			-
-		</text>
-
-		<text
-			fill="rgb(0, 0, 0)"
-			font-family="Arial"
-			font-size="5.409091"
-			text-anchor="end"
-			x="370"
-			y="252">
-			 
-		</text>
-
-		<text
-			fill="rgb(0, 0, 0)"
-			font-family="Arial"
-			font-size="5.409091"
-			text-anchor="start"
-			x="374"
-			y="252">
-			duration : float = 0.0
-		</text>
-
-	</g>
-
-	<g>
-
-		<text
-			fill="rgb(0, 0, 0)"
-			font-family="Arial"
-			font-size="5.409091"
-			text-anchor="end"
-			x="374"
+			x="472"
 			y="261">
 			-
 		</text>
@@ -1062,9 +1402,9 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="370"
+			x="469"
 			y="261">
 			 
 		</text>
@@ -1072,11 +1412,11 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="374"
+			x="472"
 			y="261">
-			runtime : double = 0.0
+			duration : long = 0.0
 		</text>
 
 	</g>
@@ -1086,31 +1426,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="374"
-			y="270">
+			x="472"
+			y="267">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="370"
-			y="270">
+			x="469"
+			y="267">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="374"
-			y="270">
-			mistakes : int = 0
+			x="472"
+			y="267">
+			attempts : int = 0
 		</text>
 
 	</g>
@@ -1120,30 +1460,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="374"
-			y="278">
+			x="472"
+			y="274">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="370"
-			y="278">
+			x="469"
+			y="274">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="374"
-			y="278">
+			x="472"
+			y="274">
 			code : String
 		</text>
 
@@ -1154,31 +1494,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="374"
-			y="291">
+			x="472"
+			y="282">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="370"
-			y="291">
+			x="469"
+			y="282">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="374"
-			y="291">
-			validator() : SolutionOutcome
+			x="472"
+			y="282">
+			validator( Compiler, String, long ) : SolutionOutcome
 		</text>
 
 	</g>
@@ -1188,9 +1528,145 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="374"
+			x="472"
+			y="288">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="469"
+			y="288">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="472"
+			y="288">
+			getTask() : Task
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="472"
+			y="294">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="469"
+			y="294">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="472"
+			y="294">
+			outOfTime()
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="472"
+			y="306">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="469"
+			y="306">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="472"
+			y="306">
+			giveUp( elapsedTime:long )
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="472"
+			y="312">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="469"
+			y="312">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="472"
+			y="312">
+			solved()
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="472"
 			y="300">
 			+
 		</text>
@@ -1198,9 +1674,9 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="370"
+			x="469"
 			y="300">
 			 
 		</text>
@@ -1208,11 +1684,11 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="374"
+			x="472"
 			y="300">
-			setCode( String ) : void
+			outOfAttempt()
 		</text>
 
 	</g>
@@ -1221,78 +1697,78 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="219, 184 300, 184 300, 253 219, 253 219, 184 "
+			points="394, 205 443, 205 443, 271 394, 271 394, 205 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="220"
-			x2="300"
-			y1="249"
-			y2="249"/>
+			x1="394"
+			x2="442"
+			y1="269"
+			y2="269"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="220"
-			x2="300"
-			y1="193"
-			y2="193"/>
+			x1="394"
+			x2="442"
+			y1="212"
+			y2="212"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="220"
-			x2="220"
-			y1="183"
-			y2="252"/>
+			x1="394"
+			x2="394"
+			y1="205"
+			y2="271"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="220"
-			x2="300"
-			y1="252"
-			y2="252"/>
+			x1="394"
+			x2="442"
+			y1="271"
+			y2="271"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="300"
-			x2="300"
-			y1="183"
-			y2="252"/>
+			x1="442"
+			x2="442"
+			y1="205"
+			y2="271"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="220"
-			x2="300"
-			y1="183"
-			y2="183"/>
+			x1="394"
+			x2="442"
+			y1="205"
+			y2="205"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="260"
-			y="189">
+			x="418"
+			y="209">
 			Task
 		</text>
 
@@ -1303,30 +1779,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="227"
-			y="198">
+			x="400"
+			y="222">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="223"
-			y="198">
+			x="397"
+			y="222">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="227"
-			y="198">
+			x="400"
+			y="222">
 			priorTaskID : int = 0
 		</text>
 
@@ -1337,30 +1813,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="227"
-			y="207">
+			x="400"
+			y="228">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="223"
-			y="207">
+			x="397"
+			y="228">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="227"
-			y="207">
+			x="400"
+			y="228">
 			description : String
 		</text>
 
@@ -1371,30 +1847,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="227"
-			y="216">
+			x="400"
+			y="234">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="223"
-			y="216">
+			x="397"
+			y="234">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="227"
-			y="216">
+			x="400"
+			y="234">
 			inputs : String[]
 		</text>
 
@@ -1405,30 +1881,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="227"
-			y="225">
+			x="400"
+			y="240">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="223"
-			y="225">
+			x="397"
+			y="240">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="227"
-			y="225">
+			x="400"
+			y="240">
 			validOutput : String
 		</text>
 
@@ -1439,31 +1915,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="227"
-			y="234">
+			x="400"
+			y="246">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="223"
-			y="234">
+			x="397"
+			y="246">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="227"
-			y="234">
-			mistakeAlcAmount : float
+			x="400"
+			y="246">
+			mistakeAlcVol : float
 		</text>
 
 	</g>
@@ -1473,31 +1949,133 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="227"
-			y="243">
+			x="400"
+			y="252">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="223"
-			y="243">
+			x="397"
+			y="252">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="227"
-			y="243">
-			solvedAlcAmount : float
+			x="400"
+			y="252">
+			solvedAlcVol : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="400"
+			y="216">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="397"
+			y="216">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="400"
+			y="216">
+			id : int
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="400"
+			y="258">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="397"
+			y="258">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="400"
+			y="258">
+			attemptsAllowed : int
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="400"
+			y="265">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="397"
+			y="265">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="400"
+			y="265">
+			timeAllowed : long
 		</text>
 
 	</g>
@@ -1506,78 +2084,78 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="0, 207 200, 207 200, 249 0, 249 0, 207 "
+			points="262, 216 353, 216 353, 244 262, 244 262, 216 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="0"
-			x2="200"
-			y1="228"
-			y2="228"/>
+			x1="262"
+			x2="352"
+			y1="230"
+			y2="230"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="0"
-			x2="200"
-			y1="216"
-			y2="216"/>
+			x1="262"
+			x2="352"
+			y1="222"
+			y2="222"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="0"
-			x2="0"
-			y1="207"
-			y2="249"/>
+			x1="262"
+			x2="262"
+			y1="215"
+			y2="244"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="0"
-			x2="200"
-			y1="249"
-			y2="249"/>
+			x1="262"
+			x2="352"
+			y1="244"
+			y2="244"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="200"
-			x2="200"
-			y1="207"
-			y2="249"/>
+			x1="352"
+			x2="352"
+			y1="215"
+			y2="244"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="0"
-			x2="200"
-			y1="207"
-			y2="207"/>
+			x1="262"
+			x2="352"
+			y1="215"
+			y2="215"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="100"
-			y="211">
+			x="307"
+			y="219">
 			Compiler
 		</text>
 
@@ -1588,30 +2166,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="8"
-			y="221">
+			x="267"
+			y="226">
 			-
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="3"
-			y="221">
+			x="264"
+			y="226">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="8"
-			y="221">
+			x="267"
+			y="226">
 			langName : String
 		</text>
 
@@ -1622,31 +2200,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="8"
-			y="242">
+			x="268"
+			y="240">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="3"
-			y="242">
+			x="265"
+			y="240">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="8"
-			y="242">
-			run( fileName:String, inputs:String[], output:String, error:Boolean ) : double
+			x="268"
+			y="240">
+			run( compiledFile:File, inputs:String[] ) : String
 		</text>
 
 	</g>
@@ -1656,31 +2234,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="8"
-			y="233">
+			x="267"
+			y="234">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="3"
-			y="233">
+			x="264"
+			y="234">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="8"
-			y="233">
-			compile( fileName:String, error:Boolean ) : String
+			x="267"
+			y="234">
+			compile( code:String ) : File
 		</text>
 
 	</g>
@@ -1689,28 +2267,28 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="674, 100 756, 100 756, 122 674, 122 674, 100 "
+			points="700, 142 756, 142 756, 158 700, 158 700, 142 "
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="715"
-			y="104">
+			x="728"
+			y="146">
 			«exception»
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="715"
-			y="109">
+			x="728"
+			y="149">
 			NotEnoughAlcoholException
 		</text>
 
@@ -1720,88 +2298,88 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="395, 34 447, 34 447, 74 395, 74 395, 34 "
+			points="568, 113 604, 113 604, 140 568, 140 568, 113 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="395"
-			x2="447"
-			y1="71"
-			y2="71"/>
+			x1="568"
+			x2="604"
+			y1="139"
+			y2="139"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="395"
-			x2="447"
-			y1="50"
-			y2="50"/>
+			x1="568"
+			x2="604"
+			y1="124"
+			y2="124"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="395"
-			x2="395"
-			y1="34"
-			y2="74"/>
+			x1="568"
+			x2="568"
+			y1="113"
+			y2="141"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="395"
-			x2="447"
-			y1="74"
-			y2="74"/>
+			x1="568"
+			x2="604"
+			y1="141"
+			y2="141"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="447"
-			x2="447"
-			y1="34"
-			y2="74"/>
+			x1="604"
+			x2="604"
+			y1="113"
+			y2="141"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="395"
-			x2="447"
-			y1="34"
-			y2="34"/>
+			x1="568"
+			x2="604"
+			y1="113"
+			y2="113"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="421"
-			y="38">
+			x="586"
+			y="116">
 			«enumeration»
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="421"
-			y="43">
+			x="586"
+			y="119">
 			Sex
 		</text>
 
@@ -1812,20 +2390,20 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="399"
-			y="55">
+			x="571"
+			y="128">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="403"
-			y="55">
+			x="574"
+			y="128">
 			Male
 		</text>
 
@@ -1836,20 +2414,20 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="399"
-			y="64">
+			x="571"
+			y="134">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="403"
-			y="64">
+			x="574"
+			y="134">
 			Female
 		</text>
 
@@ -1859,88 +2437,88 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="538, 193 594, 193 594, 260 538, 260 538, 193 "
+			points="605, 206 647, 206 647, 271 605, 271 605, 206 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="538"
-			x2="594"
-			y1="258"
-			y2="258"/>
+			x1="605"
+			x2="647"
+			y1="269"
+			y2="269"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="538"
-			x2="594"
-			y1="210"
-			y2="210"/>
+			x1="605"
+			x2="647"
+			y1="218"
+			y2="218"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="538"
-			x2="538"
-			y1="193"
-			y2="261"/>
+			x1="605"
+			x2="605"
+			y1="207"
+			y2="271"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="538"
-			x2="594"
-			y1="261"
-			y2="261"/>
+			x1="605"
+			x2="647"
+			y1="271"
+			y2="271"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="594"
-			x2="594"
-			y1="193"
-			y2="261"/>
+			x1="647"
+			x2="647"
+			y1="207"
+			y2="271"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="538"
-			x2="594"
-			y1="193"
-			y2="193"/>
+			x1="605"
+			x2="647"
+			y1="207"
+			y2="207"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="566"
-			y="198">
+			x="626"
+			y="209">
 			«enumeration»
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="566"
-			y="203">
+			x="626"
+			y="212">
 			SolutionOutcome
 		</text>
 
@@ -1951,20 +2529,20 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="541"
-			y="223">
+			x="607"
+			y="228">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="545"
-			y="223">
+			x="610"
+			y="228">
 			Solved
 		</text>
 
@@ -1975,20 +2553,20 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="541"
-			y="232">
+			x="607"
+			y="234">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="545"
-			y="232">
+			x="610"
+			y="234">
 			CompiletimeError
 		</text>
 
@@ -1999,20 +2577,20 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="541"
-			y="241">
+			x="607"
+			y="240">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="545"
-			y="241">
+			x="610"
+			y="240">
 			RuntimeError
 		</text>
 
@@ -2023,20 +2601,20 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="541"
-			y="250">
+			x="607"
+			y="246">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="545"
-			y="250">
+			x="610"
+			y="246">
 			InvalidOutput
 		</text>
 
@@ -2047,21 +2625,103 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="541"
-			y="214">
+			x="607"
+			y="222">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="545"
-			y="214">
+			x="610"
+			y="222">
 			Unvalidated
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="607"
+			y="264">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="610"
+			y="264">
+			GivenUp
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="607"
+			y="252">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="610"
+			y="252">
+			OutOfTime
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="610"
+			y="258">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="607"
+			y="258">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="610"
+			y="258">
+			OutOfAttempt
 		</text>
 
 	</g>
@@ -2070,90 +2730,90 @@
 
 		<polygon
 			fill="rgb(229, 229, 229)"
-			points="84, 0 213, 0 213, 76 84, 76 84, 0 "
+			points="249, 0 343, 0 343, 101 249, 101 249, 0 "
 			stroke="none"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="85"
-			x2="213"
-			y1="20"
-			y2="20"/>
+			x1="249"
+			x2="343"
+			y1="13"
+			y2="13"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="85"
-			x2="213"
-			y1="16"
-			y2="16"/>
+			x1="249"
+			x2="343"
+			y1="11"
+			y2="11"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="85"
-			x2="85"
+			x1="249"
+			x2="249"
 			y1="0"
-			y2="76"/>
+			y2="100"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="85"
-			x2="213"
-			y1="76"
-			y2="76"/>
+			x1="249"
+			x2="343"
+			y1="100"
+			y2="100"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="213"
-			x2="213"
+			x1="343"
+			x2="343"
 			y1="0"
-			y2="76"/>
+			y2="100"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="85"
-			x2="213"
+			x1="249"
+			x2="343"
 			y1="0"
 			y2="0"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			font-style="italic"
 			text-anchor="middle"
-			x="149"
-			y="5">
+			x="296"
+			y="3">
 			«interface»
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			font-style="italic"
 			text-anchor="middle"
-			x="149"
-			y="10">
+			x="296"
+			y="6">
 			GameLogic
 		</text>
 
@@ -2164,31 +2824,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="92"
-			y="25">
+			x="254"
+			y="18">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="88"
-			y="25">
+			x="251"
+			y="18">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="92"
-			y="25">
-			savePlayer( String, Sex, int, int ) : boolean
+			x="254"
+			y="18">
+			savePlayer( String, Sex, int, int ) : CrateInterface
 		</text>
 
 	</g>
@@ -2198,31 +2858,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="92"
-			y="34">
+			x="254"
+			y="24">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="88"
-			y="34">
+			x="251"
+			y="24">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="92"
-			y="34">
-			addBev( String, float, int ) : int
+			x="254"
+			y="24">
+			addBev( String, float, int )
 		</text>
 
 	</g>
@@ -2232,31 +2892,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="92"
-			y="43">
+			x="254"
+			y="30">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="88"
-			y="43">
+			x="251"
+			y="30">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="92"
-			y="43">
-			loadTask( String ) : boolean
+			x="254"
+			y="30">
+			loadTask( File ) : TaskValidationOutcome
 		</text>
 
 	</g>
@@ -2266,31 +2926,31 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="92"
-			y="52">
+			x="254"
+			y="36">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="88"
-			y="52">
+			x="251"
+			y="36">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="92"
-			y="52">
-			sendSolution( int, String ) : SolutionOutcome
+			x="254"
+			y="36">
+			evaluateSolution( int, String ) : SolutionOutcome
 		</text>
 
 	</g>
@@ -2300,30 +2960,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="92"
-			y="61">
+			x="255"
+			y="48">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="88"
-			y="61">
+			x="252"
+			y="48">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="92"
-			y="61">
+			x="255"
+			y="48">
 			bevToDrink( bevID:int ) : float
 		</text>
 
@@ -2334,30 +2994,30 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="92"
-			y="70">
+			x="255"
+			y="54">
 			+
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="end"
-			x="88"
-			y="70">
+			x="252"
+			y="54">
 			 
 		</text>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="start"
-			x="92"
-			y="70">
+			x="255"
+			y="54">
 			bevToPour( bevID:int, vol:float )
 		</text>
 
@@ -2368,10 +3028,2118 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
+			text-anchor="end"
+			x="254"
+			y="42">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="251"
+			y="42">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="254"
+			y="42">
+			giveUp()
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="255"
+			y="60">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="252"
+			y="60">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="255"
+			y="60">
+			isAnyTaskLoaded() : boolean
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="254"
+			y="66">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="251"
+			y="66">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="254"
+			y="66">
+			sumTimeLeft() : long
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="255"
+			y="72">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="252"
+			y="72">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="255"
+			y="72">
+			rateOfRightSolutions() : int
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="255"
+			y="78">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="252"
+			y="78">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="255"
+			y="78">
+			consumedAlcohol() : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="254"
+			y="85">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="251"
+			y="85">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="254"
+			y="85">
+			getCompilers() : CompilerInterface[]
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="254"
+			y="91">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="251"
+			y="91">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="254"
+			y="91">
+			getAlcLeft() : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="255"
+			y="97">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="252"
+			y="97">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="255"
+			y="97">
+			getConsumedAlc() : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="195, 138 257, 138 257, 184 195, 184 195, 138 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="195"
+			x2="257"
+			y1="151"
+			y2="151"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="195"
+			x2="257"
+			y1="149"
+			y2="149"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="195"
+			x2="195"
+			y1="138"
+			y2="184"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="195"
+			x2="257"
+			y1="184"
+			y2="184"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="257"
+			x2="257"
+			y1="138"
+			y2="184"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="195"
+			x2="257"
+			y1="138"
+			y2="138"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			font-style="italic"
 			text-anchor="middle"
-			x="176"
-			y="178">
+			x="226"
+			y="141">
+			«interface»
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			font-style="italic"
+			text-anchor="middle"
+			x="226"
+			y="144">
+			UserInterface
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="201"
+			y="155">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="198"
+			y="155">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="201"
+			y="155">
+			chooseBev( alcVol:float )
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="201"
+			y="161">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="198"
+			y="161">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="201"
+			y="161">
+			startTask( Task )
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="201"
+			y="168">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="198"
+			y="168">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="201"
+			y="168">
+			endTask()
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="201"
+			y="174">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="198"
+			y="174">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="201"
+			y="174">
+			refreshTime( min:int, sec:int )
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="201"
+			y="180">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="198"
+			y="180">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="201"
+			y="180">
+			refreshAttemptNum( int )
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="449, 66 494, 66 494, 112 449, 112 449, 66 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="449"
+			x2="495"
+			y1="110"
+			y2="110"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="449"
+			x2="495"
+			y1="77"
+			y2="77"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="449"
+			x2="449"
+			y1="66"
+			y2="112"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="449"
+			x2="495"
+			y1="112"
+			y2="112"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="495"
+			x2="495"
+			y1="66"
+			y2="112"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="449"
+			x2="495"
+			y1="66"
+			y2="66"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="472"
+			y="70">
+			«enumeration»
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="472"
+			y="73">
+			TaskValidationOutcome
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="452"
+			y="87">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="454"
+			y="87">
+			NotEnoughAlcohol
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="452"
+			y="94">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="454"
+			y="94">
+			PreTaskNotSolved
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="451"
+			y="106">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="454"
+			y="106">
+			ValidLoad
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="452"
+			y="81">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="454"
+			y="81">
+			NoFileFound
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="452"
+			y="100">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="454"
+			y="100">
+			HasAlreadySolved
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="277, 179 299, 179 299, 189 277, 189 277, 179 "
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="288"
+			y="182">
+			Interface
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="556, 63 612, 63 612, 85 556, 85 556, 63 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="556"
+			x2="612"
+			y1="71"
+			y2="71"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="556"
+			x2="612"
+			y1="69"
+			y2="69"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="556"
+			x2="556"
+			y1="63"
+			y2="85"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="556"
+			x2="612"
+			y1="85"
+			y2="85"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="612"
+			x2="612"
+			y1="63"
+			y2="85"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="556"
+			x2="612"
+			y1="63"
+			y2="63"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="584"
+			y="66">
+			Crate
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="561"
+			y="81">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="558"
+			y="81">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="561"
+			y="81">
+			get( bevID:int ) : Beverage
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="561"
+			y="75">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="558"
+			y="75">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="561"
+			y="75">
+			add( Beverage ) : int
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="367, 4 433, 4 433, 50 367, 50 367, 4 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="367"
+			x2="433"
+			y1="17"
+			y2="17"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="367"
+			x2="433"
+			y1="15"
+			y2="15"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="367"
+			x2="367"
+			y1="4"
+			y2="50"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="367"
+			x2="433"
+			y1="50"
+			y2="50"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="433"
+			x2="433"
+			y1="4"
+			y2="50"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="367"
+			x2="433"
+			y1="4"
+			y2="4"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			font-style="italic"
+			text-anchor="middle"
+			x="400"
+			y="7">
+			«interface»
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			font-style="italic"
+			text-anchor="middle"
+			x="400"
+			y="10">
+			CrateInterface
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="372"
+			y="27">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="369"
+			y="27">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="372"
+			y="27">
+			getBevVol( bevID:int ) : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="373"
+			y="34">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="370"
+			y="34">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="373"
+			y="34">
+			getBevABV( bevID:int ) : float
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="372"
+			y="21">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="369"
+			y="21">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="372"
+			y="21">
+			getBevName( bevID:int ) : String
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="372"
+			y="40">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="369"
+			y="40">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="372"
+			y="40">
+			getSize() : int
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="373"
+			y="46">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="370"
+			y="46">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="373"
+			y="46">
+			gotAnyAlcohol() : boolean
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="263, 283 293, 283 293, 293 263, 293 263, 283 "
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="278"
+			y="286">
+			CppCompiler
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="311, 282 337, 282 337, 292 311, 292 311, 282 "
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="324"
+			y="285">
+			CCompiler
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="349, 282 379, 282 379, 292 349, 292 349, 282 "
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="364"
+			y="285">
+			JavaCompiler
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="160, 52 201, 52 201, 99 160, 99 160, 52 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="161"
+			x2="201"
+			y1="90"
+			y2="90"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="161"
+			x2="201"
+			y1="58"
+			y2="58"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="161"
+			x2="161"
+			y1="51"
+			y2="99"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="161"
+			x2="201"
+			y1="99"
+			y2="99"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="201"
+			x2="201"
+			y1="51"
+			y2="99"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="161"
+			x2="201"
+			y1="51"
+			y2="51"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="181"
+			y="55">
+			Stopper
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="166"
+			y="74">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="163"
+			y="74">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="166"
+			y="74">
+			shootTime : long
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="166"
+			y="62">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="163"
+			y="62">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="166"
+			y="62">
+			trigger : Trigger
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="166"
+			y="95">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="163"
+			y="95">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="166"
+			y="95">
+			surrender()
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="166"
+			y="86">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="163"
+			y="86">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="166"
+			y="86">
+			danger : boolean
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="166"
+			y="68">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="163"
+			y="68">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="166"
+			y="68">
+			startTime : long
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="166"
+			y="80">
+			-
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="163"
+			y="80">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="166"
+			y="80">
+			warnTime : long
+		</text>
+
+	</g>
+
+	<g>
+
+		<path
+			d="M 238.000000 27.000000 A 2 2 0 1 1 237.999999 26.998000 "
+			fill="rgb(229, 229, 229)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			font-style="italic"
+			text-anchor="middle"
+			x="236"
+			y="25">
+			Runnable
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="196, 101 251, 101 251, 124 196, 124 196, 101 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="196"
+			x2="250"
+			y1="110"
+			y2="110"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="196"
+			x2="250"
+			y1="108"
+			y2="108"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="196"
+			x2="196"
+			y1="102"
+			y2="124"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="196"
+			x2="250"
+			y1="124"
+			y2="124"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="250"
+			x2="250"
+			y1="102"
+			y2="124"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="196"
+			x2="250"
+			y1="102"
+			y2="102"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="223"
+			y="104">
+			Trigger
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="201"
+			y="120">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="199"
+			y="120">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="201"
+			y="120">
+			shoot()
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="201"
+			y="114">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="199"
+			y="114">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="201"
+			y="114">
+			warn( elapsedTime:long )
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="380, 312 441, 312 441, 358 380, 358 380, 312 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="381"
+			x2="441"
+			y1="325"
+			y2="325"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="381"
+			x2="441"
+			y1="323"
+			y2="323"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="381"
+			x2="381"
+			y1="312"
+			y2="358"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="381"
+			x2="441"
+			y1="358"
+			y2="358"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="441"
+			x2="441"
+			y1="312"
+			y2="358"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="381"
+			x2="441"
+			y1="312"
+			y2="312"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			font-style="italic"
+			text-anchor="middle"
+			x="411"
+			y="315">
+			«interface»
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			font-style="italic"
+			text-anchor="middle"
+			x="411"
+			y="318">
+			SolutionInterface
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="386"
+			y="329">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="383"
+			y="329">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="386"
+			y="329">
+			isSolved() : boolean
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="386"
+			y="335">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="383"
+			y="335">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="386"
+			y="335">
+			getTimeUsed() : long
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="386"
+			y="341">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="383"
+			y="341">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="386"
+			y="341">
+			getAttemptNum() : int
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="386"
+			y="348">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="383"
+			y="348">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="386"
+			y="348">
+			getLang() : String
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="386"
+			y="354">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="383"
+			y="354">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="386"
+			y="354">
+			getSout() : SolutionOutcome
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(229, 229, 229)"
+			points="130, 215 174, 215 174, 232 130, 232 130, 215 "
+			stroke="none"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="130"
+			x2="174"
+			y1="224"
+			y2="224"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="130"
+			x2="174"
+			y1="222"
+			y2="222"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="130"
+			x2="130"
+			y1="216"
+			y2="232"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="130"
+			x2="174"
+			y1="232"
+			y2="232"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="174"
+			x2="174"
+			y1="216"
+			y2="232"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="130"
+			x2="174"
+			y1="216"
+			y2="216"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="152"
+			y="218">
+			CompilerInterface
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="135"
+			y="228">
+			+
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="end"
+			x="132"
+			y="228">
+			 
+		</text>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="135"
+			y="228">
+			getName() : String
+		</text>
+
+	</g>
+
+	<g>
+
+		<polygon
+			fill="rgb(0, 0, 0)"
+			fill-opacity="0.100000"
+			points="0, 206 25, 206 25, 212 100, 212 100, 252 0, 252 "
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="0"
+			x2="25"
+			y1="212"
+			y2="212"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="start"
+			x="0"
+			y="210">
+			TaskGenerator
+		</text>
+
+	</g>
+
+	<g>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="321"
+			y="222">
 			-compilers
 		</text>
 
@@ -2382,38 +5150,10 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="273"
-			y="177">
-			-tasks
-		</text>
-
-	</g>
-
-	<g>
-
-		<text
-			fill="rgb(0, 0, 0)"
-			font-family="Arial"
-			font-size="5.409091"
-			text-anchor="middle"
-			x="484"
-			y="109">
-			-beverages
-		</text>
-
-	</g>
-
-	<g>
-
-		<text
-			fill="rgb(0, 0, 0)"
-			font-family="Arial"
-			font-size="5.409091"
-			text-anchor="middle"
-			x="420"
-			y="115">
+			x="541"
+			y="155">
 			-sex
 		</text>
 
@@ -2424,10 +5164,10 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="348"
-			y="103">
+			x="527"
+			y="155">
 			-player
 		</text>
 
@@ -2438,10 +5178,10 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="353"
-			y="259">
+			x="418"
+			y="299">
 			-compiler
 		</text>
 
@@ -2452,10 +5192,10 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="375"
-			y="232">
+			x="510"
+			y="250">
 			-task
 		</text>
 
@@ -2466,10 +5206,10 @@
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="330"
-			y="174">
+			x="514"
+			y="237">
 			-solutions
 		</text>
 
@@ -2480,76 +5220,67 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="109"
-			x2="114"
-			y1="207"
-			y2="200"/>
+			x1="311"
+			x2="312"
+			y1="216"
+			y2="210"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="116"
-			x2="109"
-			y1="204"
-			y2="207"/>
+			x1="315"
+			x2="311"
+			y1="212"
+			y2="216"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="109"
-			x2="183"
-			y1="207"
-			y2="157"/>
-
-	</g>
-
-	<g>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="260"
-			x2="257"
-			y1="184"
-			y2="176"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="262"
-			x2="260"
-			y1="176"
-			y2="184"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="260"
-			x2="259"
-			y1="184"
+			x1="311"
+			x2="342"
+			y1="216"
 			y2="168"/>
 
-		<text
+	</g>
+
+	<g>
+
+		<line
 			fill="rgb(0, 0, 0)"
-			font-family="Arial"
-			font-size="5.409091"
-			text-anchor="middle"
-			x="268"
-			y="176">
-			*
-		</text>
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="419"
+			x2="417"
+			y1="205"
+			y2="201"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="420"
+			x2="419"
+			y1="200"
+			y2="205"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="416"
+			x2="419"
+			y1="190"
+			y2="205"/>
 
 	</g>
 
@@ -2558,40 +5289,40 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="523"
-			y1="108"
-			y2="112"/>
+			x1="514"
+			x2="509"
+			y1="245"
+			y2="242"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="522"
-			x2="530"
-			y1="106"
-			y2="108"/>
+			x1="511"
+			x2="514"
+			y1="240"
+			y2="245"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="473"
-			y1="108"
-			y2="116"/>
+			x1="450"
+			x2="514"
+			y1="180"
+			y2="245"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="521"
-			y="102">
+			x="514"
+			y="238">
 			0..*
 		</text>
 
@@ -2602,41 +5333,41 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="675"
-			x2="669"
-			y1="116"
-			y2="121"/>
+			x1="700"
+			x2="696"
+			y1="154"
+			y2="157"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="666"
-			x2="675"
-			y1="117"
-			y2="116"/>
+			x1="695"
+			x2="700"
+			y1="154"
+			y2="154"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-dasharray="10.818182, 5.409091"
-			stroke-width="0.540909"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="603"
-			x2="675"
-			y1="146"
-			y2="116"/>
+			x1="651"
+			x2="700"
+			y1="175"
+			y2="154"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="638"
-			y="130">
+			x="675"
+			y="164">
 			«throws»
 		</text>
 
@@ -2647,32 +5378,32 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="426"
-			x2="430"
-			y1="74"
-			y2="81"/>
+			x1="569"
+			x2="565"
+			y1="134"
+			y2="139"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="425"
-			x2="426"
-			y1="82"
-			y2="74"/>
+			x1="563"
+			x2="569"
+			y1="136"
+			y2="134"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="434"
-			x2="426"
-			y1="116"
-			y2="74"/>
+			x1="541"
+			x2="569"
+			y1="154"
+			y2="134"/>
 
 	</g>
 
@@ -2681,40 +5412,40 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="395"
-			x2="387"
-			y1="116"
-			y2="117"/>
+			x1="527"
+			x2="521"
+			y1="154"
+			y2="153"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="388"
-			x2="395"
-			y1="112"
-			y2="116"/>
+			x1="522"
+			x2="527"
+			y1="150"
+			y2="154"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="395"
-			x2="329"
-			y1="116"
-			y2="106"/>
+			x1="527"
+			x2="450"
+			y1="154"
+			y2="124"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="388"
-			y="107">
+			x="523"
+			y="147">
 			1
 		</text>
 
@@ -2725,41 +5456,41 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="538"
-			x2="532"
-			y1="211"
-			y2="217"/>
+			x1="605"
+			x2="601"
+			y1="219"
+			y2="223"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="529"
-			x2="538"
-			y1="212"
-			y2="211"/>
+			x1="600"
+			x2="605"
+			y1="220"
+			y2="219"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-dasharray="10.818182, 5.409091"
-			stroke-width="0.540909"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="402"
-			x2="538"
-			y1="286"
-			y2="211"/>
+			x1="491"
+			x2="605"
+			y1="278"
+			y2="219"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="469"
-			y="247">
+			x="548"
+			y="248">
 			«returns»
 		</text>
 
@@ -2770,40 +5501,40 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="300"
-			x2="308"
-			y1="199"
-			y2="199"/>
+			x1="443"
+			x2="448"
+			y1="217"
+			y2="217"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="306"
-			x2="300"
-			y1="203"
-			y2="199"/>
+			x1="447"
+			x2="443"
+			y1="221"
+			y2="217"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="397"
-			x2="300"
-			y1="228"
-			y2="199"/>
+			x1="510"
+			x2="443"
+			y1="245"
+			y2="217"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="306"
-			y="210">
+			x="445"
+			y="226">
 			1
 		</text>
 
@@ -2814,50 +5545,561 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="366"
-			x2="277"
-			y1="244"
-			y2="273"/>
+			x1="466"
+			x2="413"
+			y1="267"
+			y2="290"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="200"
-			x2="208"
+			x1="347"
+			x2="352"
 			y1="245"
+			y2="246"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="350"
+			x2="347"
+			y1="249"
 			y2="245"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="207"
-			x2="200"
+			x1="413"
+			x2="347"
+			y1="290"
+			y2="245"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="348"
+			y="253">
+			1
+		</text>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="611"
+			x2="606"
+			y1="206"
+			y2="206"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="607"
+			x2="611"
+			y1="203"
+			y2="206"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="450"
+			x2="611"
+			y1="129"
+			y2="206"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="343"
+			x2="349"
+			y1="49"
+			y2="51"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="349"
+			x2="345"
+			y1="51"
+			y2="55"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="345"
+			x2="343"
+			y1="55"
+			y2="49"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="394"
+			x2="347"
+			y1="100"
+			y2="53"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="456"
+			x2="450"
+			y1="66"
+			y2="66"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="452"
+			x2="456"
+			y1="63"
+			y2="66"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="343"
+			x2="456"
+			y1="21"
+			y2="66"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="257"
+			x2="263"
+			y1="167"
+			y2="167"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="263"
+			x2="261"
+			y1="167"
+			y2="172"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="261"
+			x2="257"
+			y1="172"
+			y2="167"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="282"
+			x2="261"
+			y1="178"
+			y2="169"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="406"
+			x2="401"
+			y1="205"
+			y2="206"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="402"
+			x2="406"
+			y1="203"
+			y2="205"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="299"
+			x2="406"
+			y1="183"
+			y2="205"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="638"
+			x2="634"
+			y1="142"
+			y2="139"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="637"
+			x2="638"
+			y1="137"
+			y2="142"/>
+
+		<polygon
+			fill="rgb(0, 0, 0)"
+			points="598, 86 602, 88 603, 92 599, 90 598, 86 "
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="638"
+			x2="603"
+			y1="142"
+			y2="92"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="639"
+			y="135">
+			0..*
+		</text>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="574"
+			x2="573"
+			y1="85"
+			y2="91"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="570"
+			x2="574"
+			y1="89"
+			y2="85"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="543"
+			x2="574"
+			y1="154"
+			y2="85"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="566"
+			y="90">
+			1
+		</text>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="433"
+			x2="439"
+			y1="19"
+			y2="19"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="439"
+			x2="438"
+			y1="19"
+			y2="24"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="438"
+			x2="433"
+			y1="24"
+			y2="19"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="578"
+			x2="438"
+			y1="63"
+			y2="21"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="301"
+			x2="302"
+			y1="245"
+			y2="250"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="302"
+			x2="297"
+			y1="250"
+			y2="248"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="297"
+			x2="301"
+			y1="248"
+			y2="245"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="286"
+			x2="299"
+			y1="283"
+			y2="250"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="319"
+			x2="323"
+			y1="245"
+			y2="249"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="323"
+			x2="318"
+			y1="249"
+			y2="250"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="318"
+			x2="319"
 			y1="250"
 			y2="245"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="277"
-			x2="200"
-			y1="273"
+			x1="326"
+			x2="320"
+			y1="282"
+			y2="250"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="338"
+			x2="344"
+			y1="245"
+			y2="247"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="344"
+			x2="339"
+			y1="247"
+			y2="250"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="339"
+			x2="338"
+			y1="250"
 			y2="245"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="366"
+			x2="342"
+			y1="282"
+			y2="249"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="418"
+			x2="418"
+			y1="50"
+			y2="55"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="415"
+			x2="418"
+			y1="55"
+			y2="50"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="407"
+			x2="418"
+			y1="100"
+			y2="50"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="206"
-			y="257">
+			x="411"
+			y="56">
 			1
 		</text>
 
@@ -2868,156 +6110,632 @@
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="538"
-			x2="529"
-			y1="193"
-			y2="193"/>
+			x1="374"
+			x2="372"
+			y1="50"
+			y2="55"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="531"
-			x2="538"
-			y1="188"
-			y2="193"/>
+			x1="369"
+			x2="374"
+			y1="53"
+			y2="50"/>
 
 		<line
 			fill="rgb(0, 0, 0)"
 			stroke="rgb(0, 0, 0)"
-			stroke-dasharray="10.818182, 5.409091"
-			stroke-width="0.540909"
+			stroke-width="0.370019"
 			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="329"
-			x2="538"
-			y1="120"
-			y2="193"/>
-
-	</g>
-
-	<g>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="213"
-			x2="222"
-			y1="59"
-			y2="61"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="222"
-			x2="217"
-			y1="61"
-			y2="67"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="217"
-			x2="213"
-			y1="67"
-			y2="59"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-dasharray="10.818182, 5.409091"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="251"
-			x2="219"
-			y1="90"
-			y2="64"/>
-
-	</g>
-
-	<g>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="530"
-			x2="523"
-			y1="101"
-			y2="103"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="523"
-			x2="530"
-			y1="98"
-			y2="101"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-dasharray="10.818182, 5.409091"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="329"
-			x2="530"
-			y1="96"
-			y2="101"/>
-
-	</g>
-
-	<g>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="403"
-			x2="395"
-			y1="228"
-			y2="227"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="398"
-			x2="403"
-			y1="222"
-			y2="228"/>
-
-		<line
-			fill="rgb(0, 0, 0)"
-			stroke="rgb(0, 0, 0)"
-			stroke-width="0.540909"
-			style="stroke-linejoin:bevel;stroke-linecap:square;"
-			x1="303"
-			x2="403"
-			y1="168"
-			y2="228"/>
+			x1="295"
+			x2="374"
+			y1="178"
+			y2="50"/>
 
 		<text
 			fill="rgb(0, 0, 0)"
 			font-family="Arial"
-			font-size="5.409091"
+			font-size="3.700192"
 			text-anchor="middle"
-			x="400"
-			y="217">
-			0..*
+			x="366"
+			y="53">
+			1
+		</text>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="606"
+			x2="601"
+			y1="149"
+			y2="151"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="600"
+			x2="606"
+			y1="148"
+			y2="149"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="573"
+			x2="606"
+			y1="154"
+			y2="149"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="234"
+			x2="231"
+			y1="27"
+			y2="32"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="231"
+			x2="228"
+			y1="32"
+			y2="27"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="228"
+			x2="234"
+			y1="27"
+			y2="27"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="187"
+			x2="230"
+			y1="52"
+			y2="29"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="201"
+			x2="207"
+			y1="60"
+			y2="60"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="206"
+			x2="201"
+			y1="63"
+			y2="60"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="360"
+			x2="201"
+			y1="100"
+			y2="60"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="205"
+			y="68">
+			1
+		</text>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="251"
+			x2="256"
+			y1="106"
+			y2="104"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="256"
+			x2="256"
+			y1="104"
+			y2="109"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="256"
+			x2="251"
+			y1="109"
+			y2="106"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="342"
+			x2="256"
+			y1="105"
+			y2="106"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="224"
+			x2="219"
+			y1="101"
+			y2="98"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="222"
+			x2="224"
+			y1="96"
+			y2="101"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="201"
+			x2="224"
+			y1="73"
+			y2="101"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="225"
+			y="94">
+			1
+		</text>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="241"
+			x2="246"
+			y1="138"
+			y2="135"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="247"
+			x2="241"
+			y1="139"
+			y2="138"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="342"
+			x2="241"
+			y1="115"
+			y2="138"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="292"
+			x2="294"
+			y1="101"
+			y2="106"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="290"
+			x2="292"
+			y1="106"
+			y2="101"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="290"
+			x2="292"
+			y1="178"
+			y2="101"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="569"
+			x2="564"
+			y1="121"
+			y2="124"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="563"
+			x2="569"
+			y1="121"
+			y2="121"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="299"
+			x2="569"
+			y1="180"
+			y2="121"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="605"
+			x2="600"
+			y1="210"
+			y2="211"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="600"
+			x2="605"
+			y1="208"
+			y2="210"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="299"
+			x2="605"
+			y1="181"
+			y2="210"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="412"
+			x2="407"
+			y1="312"
+			y2="309"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="409"
+			x2="412"
+			y1="307"
+			y2="312"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="291"
+			x2="412"
+			y1="189"
+			y2="312"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="430"
+			x2="433"
+			y1="312"
+			y2="307"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="433"
+			x2="436"
+			y1="307"
+			y2="311"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="436"
+			x2="430"
+			y1="311"
+			y2="312"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="466"
+			x2="435"
+			y1="286"
+			y2="309"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="449"
+			x2="445"
+			y1="86"
+			y2="90"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="444"
+			x2="449"
+			y1="87"
+			y2="86"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="296"
+			x2="449"
+			y1="178"
+			y2="86"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="174"
+			x2="179"
+			y1="218"
+			y2="215"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="179"
+			x2="179"
+			y1="215"
+			y2="220"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="179"
+			x2="174"
+			y1="220"
+			y2="218"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="262"
+			x2="179"
+			y1="219"
+			y2="218"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="164"
+			x2="169"
+			y1="215"
+			y2="212"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="169"
+			x2="164"
+			y1="216"
+			y2="215"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="277"
+			x2="164"
+			y1="185"
+			y2="215"/>
+
+	</g>
+
+	<g>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="394"
+			x2="389"
+			y1="209"
+			y2="211"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="389"
+			x2="394"
+			y1="207"
+			y2="209"/>
+
+		<line
+			fill="rgb(0, 0, 0)"
+			stroke="rgb(0, 0, 0)"
+			stroke-dasharray="7.400384, 3.700192"
+			stroke-width="0.370019"
+			style="stroke-linejoin:bevel;stroke-linecap:square;"
+			x1="25"
+			x2="394"
+			y1="209"
+			y2="209"/>
+
+		<text
+			fill="rgb(0, 0, 0)"
+			font-family="Arial"
+			font-size="3.700192"
+			text-anchor="middle"
+			x="209"
+			y="209">
+			«uses»
 		</text>
 
 	</g>

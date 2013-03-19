@@ -70,7 +70,7 @@ p.info {
 	width: 800px;
 	background-color: #FFFEBA;
 	border: 1px solid #EDE905;
-	padding: 10px 10px 20px 0px;
+	padding: 10px 10px 20px 10px;
 }
 p.info:before {
 	content: "? ";

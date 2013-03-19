@@ -11,7 +11,6 @@
 <section id="head">
 	<h1>Felhasználói kézikönyv a Codin&#38;Drinkin&#169; szoftverhez</h1>
 	<p>Hogyan futtasd és fejleszd a Codin&#38;Drinkin&#169; szoftvert.</p>
-	<p><a href="man_eng.html">In English</a></p>
 </section>
 
 <section id="body">
@@ -105,12 +104,6 @@
 			<ol start="1">
 				<li>
 					<a href="#devEnvironment">Fejlesztői környezet</a>
-				</li>
-				<li>
-					<a href="#packages">Csomagok</a>
-				</li>
-				<li>
-					<a href="#packegesUsed">Felhasznált külső csomag(ok)</a>
 				</li>
 				<li>
 					<a href="#addCompiler">Új programozási nyelv hozzáadása</a>
@@ -643,26 +636,75 @@ exit            -                       Exits.
 	<article id="devEnvironment">
 		<h3>4.1 Fejlesztői környezet</h3>
 		<p>A program fejlesztéséhez használt fejlesztői környezet, JDK verzió, fordító.</p>
+		
+		<p>A project Eclipse 3.5.0 alatt készült; JDK 6-ban fejlesztve, Java SE 1.6 futtató környezettel.</p>
 	</article>
-	
-	<article id="packages">
-		<h3>4.2 Csomagok</h3>
-		<p>A programot felépítő Java package-ek és tartalmuk rövid leírása.</p>
-	</article>
-	
-	<article id="packegesUsed">
-		<h3>4.3 Felhasznált külső csomag(ok)</h3>
-		<p>A programhoz linkelt, alkalmazott külső csomag(ok).</p>
-	</article>
-	
+		
 	<article id="addCompiler">
-		<h3>4.4 Új programozási nyelv hozzáadása</h3>
+		<h3>4.2 Új programozási nyelv hozzáadása</h3>
 		<p>Egy újabb fordító implementálása a szoftverbe, hogy a feladatokra adott megoldásokat egy újabb nyelven is megtörténhessen.</p>
+		
+		<p>
+		Ha új fordítót szeretnél implementálni, a compilers package-hez adj hozzá egy új osztályt,
+		ami lehetőleg tükrözi a fordítót nyelv elnevezését (pl.: PythonCompiler).
+		</p>
+		
+		<p>
+		Ezt az újjonan létrehozott osztályt örököltesd a library package, Compiler osztályából, ahogy az a C és C++ fordítóknál is meg van oldva, pl.:
+		</p>
+		<pre>public final class PythonCompiler extends Compiler {...}</pre>
+		
+		<p>
+		Ezt követően valósítsd meg megfelelően a konstruktorát, pl.:
+		</p>
+		<pre>public PythonCompiler(String name) {
+	super(name);
+}</pre>
+		
+		<p>
+		Implementáld a Compiler class-ból öröklődő compile(), run() és checkEnvironment() metódusokat. Funkcionalitásuk, visszatérési értékük javadocba definiálva van. Pl.:
+		</p>
+		
+		<pre>@Override
+public File compile(String code) {
+	...
+}
+
+@Override
+public String run(File compiledFile, List&#60;String&#62; inputs) {
+	...
+}
+
+@Override
+public boolean checkEnvironment() {
+	...
+}</pre>
+		
+		<p>
+		Ha ez is megvan, elvileg kész vagy a fordító megírásával, már csak hozzá kell adnod ahhoz a listához, amit a felhasználó ki tud majd választani.
+		Ezt a library package Game osztályának konstruktorában tudod megtenni, ott inicializálódnak a fordítók. Ott valószínűleg találni fogsz egy "/// NEW COMPILERS HERE !!!" sort,
+		ahova beillesztheted a következő kódot pl.:
+		</p>
+		
+		<pre>Compiler python = new PythonCompiler("Py"); // Python
+if (python.checkEnvironment())
+	this.compilers.add(python);
+else
+	JOptionPane.showMessageDialog(null, "Error üzenet a felhasználónak,
+	hogy valamiért nem tud a program majd pythont fordítani!");</pre>
+		
+		<p class="important">
+		Ezt a részt mindenképp a "/// check if any compiler is available" megjegyzés elé írjátok, mivel az ellenőrzi,
+		hogy érdemes-e elindulnia a programnak ~ van e legalább egy fordító ami működik!
+		</p>
 	</article>
-	
+
 	<article id="docs">
-		<h3>4.5 Dokumentáció</h3>
-		<p>Szoftver java-dokumentációja.</p>
+		<h3>4.3 Dokumentáció</h3>
+		<p>Szoftver java dokumentációja.</p>
+		
+		<p>Amennyiben a könyvtárfelépítés maradt, relatívan így érheted el a Javadoksit (angolul): <a target="_blank" href="../javadoc/index.html">Javadoc</a></p>
+		<p>Másik lehetőség GitHub-on keresztül: <a target="_blank" href="http://github.com/csiki/Eselykiegy.git">GitHub repo</a></p>
 	</article>
 	<!-- /Articles -->
 	
