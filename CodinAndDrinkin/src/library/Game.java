@@ -10,8 +10,8 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 import compilers.CCompiler;
+import compilers.CSharpCompiler;
 import compilers.CppCompiler;
-
 import misc.Stopper;
 import misc.Trigger;
 
@@ -78,6 +78,12 @@ public class Game implements GameLogic, Trigger {
 			JOptionPane.showMessageDialog(null, "No g++ is installed or is not in path! You cannot program in C++!");
 		
 		/// NEW COMPILERS HERE !!!
+
+		Compiler csharp = new CSharpCompiler("C#"); // C++
+		if (csharp.checkEnvironment())
+			this.compilers.add(csharp);
+		else
+			JOptionPane.showMessageDialog(null, "No csc.exe is installed or is not in path! You cannot program in C#!");
 		
 		/// check if any compiler is available
 		if (this.compilers.isEmpty()) {
