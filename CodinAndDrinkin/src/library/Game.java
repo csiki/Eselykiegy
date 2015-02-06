@@ -416,7 +416,7 @@ public class Game implements GameLogic, Trigger {
 	public float bloodAlcContent() {
 		float alcConsumedInOz = this.player.getConsumedAlc() * 3.38140227F;
 		float weightInPounds = this.player.getWeight() * 2.20462262F;
-		float timeInHour = (float) ( ((double) (System.currentTimeMillis() - this.timeGameStarted)) / 3600000 );
+		float timeInHour = (float) ( ((double) (System.currentTimeMillis() - this.timeGameStarted)) / 3600000F );
 		
 		float alcDistributionRatio;
 		if (player.getSex() == Sex.Male)
@@ -424,7 +424,9 @@ public class Game implements GameLogic, Trigger {
 		else
 			alcDistributionRatio = 0.66F;
 		
-		return (float) ((alcConsumedInOz * (0.823 * 100 / 16) / weightInPounds * alcDistributionRatio) - 0.015F * timeInHour);
+		System.out.println("result: " + ((float) ((alcConsumedInOz * (0.823 * 100F / 16F) / weightInPounds * alcDistributionRatio) - 0.015F * timeInHour)));
+		
+		return (float) ((alcConsumedInOz * (0.823 * 100F / 16F) / weightInPounds * alcDistributionRatio) - 0.015F * timeInHour);
 	}
 	
 	@Override
