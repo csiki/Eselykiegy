@@ -496,7 +496,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		float howMuchToDrink = game.bevToDrink(bevID);
 		
 		/// bloodAlcContentlbl, update alcLeft, consumed beverage vol, consumedAlc on GUI
-		this.bloodAlcContentlbl.setText(String.format("%.0f", this.game.bloodAlcContent()));
+		this.bloodAlcContentlbl.setText(String.format("%.2f", this.game.bloodAlcContent()));
 		this.alcLeft.setText(String.format("%.1f", this.game.getAlcToDrink() * 10.0F)); // from dl to cl
 		this.bevList.bevVolChanged(bevID);
 		this.consumedAlc.setText(String.format("%.2f", game.getConsumedAlc()));
