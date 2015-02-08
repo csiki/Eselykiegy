@@ -40,7 +40,7 @@ public class CSharpCompiler extends Compiler
 		File codeFile = null;
 		try
 		{
-			codeFile = File.createTempFile("code", ".cpp", new File("code"));
+			codeFile = File.createTempFile("code", ".cs", new File("code"));
 		}
 		catch (IOException e)
 		{

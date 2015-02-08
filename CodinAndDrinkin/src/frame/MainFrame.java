@@ -182,7 +182,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(false);
 		
 		/// message
-		JOptionPane.showMessageDialog(null, "A task has been loaded! Have fun!");
+		//JOptionPane.showMessageDialog(null, "A task has been loaded! Have fun!");
 	}
 	
 	/**
@@ -308,12 +308,12 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.solutionsPermited.setText(Integer.toString(task.attemptsAllowed));
 		
 		/// window for description in new thread, to avoid blocking the counter
-		new Thread() {
+		/*new Thread() {
 			@Override
 			public void run() {
 				JOptionPane.showMessageDialog(null, taskDescription.getText());
 			}
-		}.start();
+		}.start();*/
 	}
 
 	@Override
