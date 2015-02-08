@@ -6,6 +6,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 import java.awt.Component;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JMenu;
@@ -17,12 +19,16 @@ import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Color;
 import java.awt.Insets;
+
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.RowSpec;
 import com.jgoodies.forms.factories.FormFactory;
+
 import javax.swing.JLabel;
+
 import java.awt.Font;
+
 import javax.swing.border.LineBorder;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -33,8 +39,10 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JEditorPane;
+
 import java.awt.BorderLayout;
 import java.awt.SystemColor;
+
 import javax.swing.JTable;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
@@ -51,13 +59,16 @@ import library.SolutionOutcome;
 import library.Task;
 import library.TaskValidationOutcome;
 import library.UserInterface;
+
 import javax.swing.AbstractAction;
+
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import javax.swing.Action;
 import javax.swing.SwingConstants;
 
@@ -168,7 +179,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 	 */
 	private void toStateTaskStarted() {
 		/// empty code
-		this.code.setText("");
+		this.code.setText(this.game.getInitialCode(this.langChoose.getSelectedIndex()));
 		
 		/// enable/disable items
 		this.mntmAddBeverage.setEnabled(true);
@@ -1070,6 +1081,13 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.btnEvaluate.setEnabled(false);
 		this.btnEvaluate.setFont(new Font("Tahoma", Font.BOLD, 14));
 		panel_4.add(this.btnEvaluate, "12, 2, right, default");
+		
+		langChoose.addItemListener(new ItemListener() {
+		     @Override
+		     public void itemStateChanged(ItemEvent e) {
+		         toStateTaskStarted();
+		     }
+		 });
 		
 		// set window visible
 		getFrmCodindrinkin().setVisible(true);

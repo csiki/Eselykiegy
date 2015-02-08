@@ -108,4 +108,10 @@ public interface GameLogic {
 	 * @return in dl
 	 */
 	public float getConsumedAlc();
+	
+	/**
+	 * Returns initial code for the selected language
+	 * @return the code
+	 */
+	public String getInitialCode(int compilerID);
 }

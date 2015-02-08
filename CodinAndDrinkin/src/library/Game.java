@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 import compilers.CCompiler;
 import compilers.CSharpCompiler;
 import compilers.CppCompiler;
+import compilers.JavaCompiler;
 import compilers.PythonCompiler;
 import misc.Stopper;
 import misc.Trigger;
@@ -84,6 +85,10 @@ public class Game implements GameLogic, Trigger {
 		/*else
 			JOptionPane.showMessageDialog(null, "No csc.exe is installed or is not in path! You cannot program in C#!");*/
 
+		Compiler java = new JavaCompiler("Java"); // Java
+		if (java.checkEnvironment())
+			this.compilers.add(java);
+		
 		Compiler python = new PythonCompiler("Python"); // Python
 		if (python.checkEnvironment())
 			this.compilers.add(python);
@@ -482,5 +487,10 @@ public class Game implements GameLogic, Trigger {
 		solution.outOfTime();
 		this.currentTask = null;
 		ui.endTask(solution);
+	}
+
+	@Override
+	public String getInitialCode(int compilerID) {
+		return this.compilers.get(compilerID).getInitialCode();
 	}
 }
