@@ -200,7 +200,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.setDrinkBtnEnabled(true);
 		
 		/// message
-		JOptionPane.showMessageDialog(null, "It seems you have to drink some! Choose one of your beverage! (Right side/Beverages - Drink button)");
+		JOptionPane.showMessageDialog(null, "It seems you have to drink some. Choose one of your beverage! (Right side/Beverages - Drink button)");
 	}
 	
 	/**
