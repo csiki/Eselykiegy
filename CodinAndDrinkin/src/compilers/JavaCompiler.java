@@ -6,79 +6,31 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.util.List;
 
 import library.Compiler;
+import library.ProcessChecker;
 
-/**
- * Compiles and runs Java code.
- * @author csiki
- *
- */
-public final class JavaCompiler extends Compiler { // NOT USED !
+public final class JavaCompiler extends Compiler {
 
 	public JavaCompiler(String name) {
 		super(name);
 	}
 
-
 	@Override
 	public File compile(String code) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public String run(File compiledFile, List<String> inputs) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	/*@Override
-	public File compile(String code, Boolean error) {
-		
-		// TODO headert, classnevet main fvényt ne kelljen neki írni, mer ugyanannak kell h a neve legyen a filenak... C-be és C++ba is
-		
-		/// create temp dir
-		File codeFileDir = new File("code");
-		codeFileDir.mkdir();
-		File temp = null;
-		try {
-			temp = File.createTempFile("code", Long.toString(System.nanoTime()), codeFileDir);
-		} catch (IOException e3) {
-			// TODO Auto-generated catch block
-			e3.printStackTrace();
-		} // TODO
 
-	    if(!(temp.delete())) {
-			try {
-				throw new IOException("Could not delete temp file: " + temp.getAbsolutePath());
-			} catch (IOException e2) {
-				// TODO Auto-generated catch block
-				e2.printStackTrace();
-			}
-	    }
-			
-	    if(!(temp.mkdir())) {
-			try {
-				throw new IOException("Could not create temp directory: " + temp.getAbsolutePath());
-			} catch (IOException e2) {
-				// TODO Auto-generated catch block
-				e2.printStackTrace();
-			}
-	    }
-	    
-		/// create code file
+		
+		/// make temp code file
 		File codeFile = null;
 		try {
-			codeFile = File.createTempFile("code", ".java", codeFileDir);
-		} catch (IOException e1) {
-			error = true;
+			codeFile = new File("code/Main.java");
+			codeFile.createNewFile();
+		} catch (IOException e) {
 			return null;
 		}
 		
-		/// fill the file
+		/// fill temp code file
 		FileWriter fw;
 		BufferedWriter bw;
 		try {
@@ -87,75 +39,131 @@ public final class JavaCompiler extends Compiler { // NOT USED !
 			bw.write(code);
 			bw.close();
 		} catch (IOException e1) {
-			error = true;
 			return null;
 		}
 		
-		/// compile
-		new File("runnable").mkdir();
-		String compileFileCommand = "javac -sourcepath code -classpath runnable " + codeFile.getPath();
+		/// compile temp code file
+		String command = "javac -d runnable " + codeFile.getPath();
 		try {
-			Process compileProcess = Runtime.getRuntime().exec(compileFileCommand);
-
-			String line = "";
-			BufferedReader bri = new BufferedReader(
-					new InputStreamReader(compileProcess.getInputStream()));
-			BufferedReader bre = new BufferedReader(
-					new InputStreamReader(compileProcess.getErrorStream()));
-			while ((line = bri.readLine()) != null) {
-				System.out.println(line); // TODO nem kell késõbb
+			Process pr = Runtime.getRuntime().exec(command);
+			
+			/// wait for execution
+			Thread th = new Thread(new ProcessChecker(pr));
+			th.start();
+			int period = 0;
+			int maxWaitTime = 60; // in tenth of a second
+			while (period < maxWaitTime) {
+				if (!th.isAlive())
+					break;
+				try {
+					Thread.sleep(100);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				++period;
 			}
 			
-            bri.close();
-            
-            while ((line = bre.readLine()) != null) {
-            	System.out.println(line);
-            	error = true;
-            	return null;
-            }
-            bre.close();
-            compileProcess.waitFor();
-		} catch (Exception e) {
-            error = true;
-            return null;
-        }
-        
-		return temp; // TODO
+			if (th.isAlive()) { // if still alive, the process still runs (for too long), so destroy process (so the thread ends too)
+				pr.destroy();
+				return null;
+			}
+			
+			if (pr.exitValue() != 0)// = failure
+				return null;
+			
+		} catch (IOException e) {
+			return null;
+		}
+		
+		return new File("runnable" + File.separatorChar + "Main.class");
 	}
 
 	@Override
-	public long run(File compiledFile, List<String> inputs, String output, Boolean error) {
-		
-		String runFileCommand = "java " + compiledFile.getPath().split(".java")[0];
-		output = "";
-        try {
-        	Process runProcess = Runtime.getRuntime().exec(runFileCommand);
+	public String run(File compiledFile, List<String> inputs) {
 
-        	BufferedReader reader = new BufferedReader(new InputStreamReader(runProcess.getInputStream()));
-        	String line = reader.readLine();
-        	System.out.println("line = " + line); // TODO töröld és kell ami adja bemenetet és szedi kimenetet
-        	while (line != null) {
-        		System.out.println(line);
-        		line = reader.readLine();
-            }
-        } catch (Exception e) {
-            error = true;
-            return 0;
-        }
+		/// create command
+		// add folder of .class with -cp
+		String compiledName = compiledFile.getName();
+		String command = "java -cp " + compiledFile.getParent() + " " + compiledName.substring(0, compiledName.length() - 6);
 		
-		return 0;
-	}*/
-	
-	
+		/// add inputs as command args
+		for (String arg : inputs)
+			command += " " + arg;
+		
+		/// run binary
+		String output = "";
+		try {
+			Process pr = Runtime.getRuntime().exec(command);
+			
+			/// wait for execution
+			Thread th = new Thread(new ProcessChecker(pr));
+			th.start();
+			int period = 0;
+			int maxWaitTime = 60; // in tenth of a second
+			while (period < maxWaitTime) {
+				if (!th.isAlive())
+					break;
+				try {
+					Thread.sleep(100);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				++period;
+			}
+			
+			if (th.isAlive()) { // if still alive, the process still runs (for too long), so destroy process (so the thread ends too)
+				pr.destroy();
+				return null;
+			}
+			
+			/// get output
+			InputStreamReader isr = new InputStreamReader(pr.getInputStream());
+			BufferedReader br = new BufferedReader(isr);
+			String line;
+			while ((line = br.readLine()) != null)
+				output += line + '\n';
+			
+			/// cut off last \n
+			if (output.length() > 0)
+				output = output.substring(0, output.length() - 1);
+			
+		} catch (IOException e) {
+			return null;
+		}
+		
+		return output;
+	}
+
+	@Override
+	public String getInitialCode() {
+		return "public class Main\n{\n\t\n}";
+	}
+
 	@Override
 	public String getName() {
 		return this.langName;
 	}
 
-
 	@Override
 	public boolean checkEnvironment() {
-		// TODO Auto-generated method stub
+		String command = "javac -version";
+
+		try {
+			Process pr = Runtime.getRuntime().exec(command);
+
+			// / get output to end process
+			InputStreamReader isr = new InputStreamReader(pr.getInputStream());
+			BufferedReader br = new BufferedReader(isr);
+			while ((br.readLine()) != null)
+				;
+
+			if (pr.exitValue() == 0)
+				return true;
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 		return false;
 	}
 

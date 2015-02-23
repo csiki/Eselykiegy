@@ -41,6 +41,15 @@ public abstract class Compiler implements CompilerInterface {
 	 */
 	abstract public boolean checkEnvironment();
 	
+	/**
+	 * Return the initial code for starting the coding
+	 * @return the code
+	 */
+	public String getInitialCode()
+	{
+		return "";
+	}
+	
 	@Override
 	public final String toString() {
 		return this.langName;
