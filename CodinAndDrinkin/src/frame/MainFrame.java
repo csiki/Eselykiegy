@@ -501,7 +501,7 @@ public class MainFrame implements Runnable, UserInterface, MainInterfaceForDialo
 		this.bevList.bevVolChanged(bevID);
 		this.consumedAlc.setText(String.format("%.2f", game.getConsumedAlc()));
 		
-		String msg = "Drink " + String.format("%.2f", howMuchToDrink) + " dl of your " + crate.getBevName(bevID) + "! Cin-cin!";
+		String msg = "Drink " + String.format("%.2f", howMuchToDrink * 10F) + " cl of your " + crate.getBevName(bevID) + "! Cin-cin!";
 		JOptionPane.showMessageDialog(null, msg);
 	}
 

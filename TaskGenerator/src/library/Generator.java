@@ -38,10 +38,10 @@ public class Generator implements GeneratorInterface {
 		this.taskDescription = "";
 		this.taskInputs = new ArrayList<String>();
 		this.taskValidOutput = "";
-		this.taskMistakeAlcVol = 0.0F;
-		this.taskSolvedAlcVol = 0.0F;
-		this.taskAttemptsAllowed = 0;
-		this.taskTimeAllowed = 0;
+		this.taskMistakeAlcVol = 0.4F;
+		this.taskSolvedAlcVol = 0.8F;
+		this.taskAttemptsAllowed = 10;
+		this.taskTimeAllowed = 300000;
 	}
 	
 	@Override
@@ -100,7 +100,7 @@ public class Generator implements GeneratorInterface {
 		vars.put("mistakeAlcVol(cl)", Float.toString(this.taskMistakeAlcVol));
 		vars.put("solvedAlcVol(cl)", Float.toString(this.taskSolvedAlcVol));
 		vars.put("attemptsAllowed", Integer.toString(this.taskAttemptsAllowed));
-		vars.put("timeAllowed(1/1000sec)", Long.toString(this.taskTimeAllowed));
+		vars.put("timeAllowed(msec)", Long.toString(this.taskTimeAllowed));
 		
 		return vars;
 	}
@@ -152,7 +152,7 @@ public class Generator implements GeneratorInterface {
 
 	@Override
 	public void setTimeAllowed(long time) {
-		this.taskTimeAllowed = time;
+		this.taskTimeAllowed = time; // to ms
 	}
 
 	@Override
